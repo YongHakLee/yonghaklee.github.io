@@ -110,22 +110,21 @@ SSH(Secure Shell)는 네트워크를 통해 다른 컴퓨터에 접속하기 위
 
 SSH는 파일 전송 프로토콜인 SCP(Secure Copy)와 SFTP(Secure File Transfer Protocol)를 지원한다. 이를 통해 안전하게 파일을 업로드하거나 다운로드할 수 있다.
 
-[MobaXterm](https://mobaxterm.mobatek.net/)
-: SSH를 지원하는 프로그램이면서, 파일 조회와 전송 또한 편리하게 도와준다. (맛보기 또는 임시로 사용하길 권장하며, 웬만한 터미널 접속 및 작업은 VS Code로도 가능하다.) ([참고페이지](https://backendcode.tistory.com/270))
+### [MobaXterm](https://mobaxterm.mobatek.net/)
+SSH를 지원하는 프로그램이면서, 파일 조회와 전송 또한 편리하게 도와준다. (맛보기 또는 임시로 사용하길 권장하며, 웬만한 터미널 접속 및 작업은 VS Code로도 가능하다.) ([참고페이지](https://backendcode.tistory.com/270))
 
-### 사용법
-한글 인코딩 설정
-: [Settings] → [Terminal] → [Default font settings]<br>
-- Font chatset : DEFAULT (System)
-- Term charset : eucKR (Korean)
+#### 사용법
 
-SSH 접속
-: [Session] → [SSH]<br>
-- Remote Host : 서버 IP
-- Port : 기본 22
-- Bookmark settings
-    - Session name : 북마크 이름
-- 왼쪽 디렉토리 : 접속한 서버PC와 파일 주고받기 가능
+1. 한글 인코딩 설정
+- [Settings] → [Terminal] → [Default font settings]
+  - Font chatset : DEFAULT (System)
+  - Term charset : eucKR (Korean)
+2. SSH 접속
+- [Session] → [SSH]
+  - Remote Host : 서버 IP
+  - Port : 기본 22
+  - Bookmark settings → Session name : 북마크 이름
+  - 왼쪽 디렉토리 : 접속한 서버PC와 파일 주고받기 가능
 
 ---
 
@@ -139,3 +138,96 @@ SSH 접속
 서버 저장공간의 가장 상위 디렉토리는 `/`이고, NAS 저장공간의 디렉토리는 `/mnt/nas`이다.
 `ls /mnt/nas4` 명령어를 입력해보면 알 수 있는데,
 각자 `/mnt/nas4/lyh`처럼 이니셜로 디렉토리를 만들어 사용하고 있다.
+
+### [FileZilla](https://filezilla-project.org/)
+서버를 통해 원격 개발을 주로 하는 경우, 파일 관리 또한 서버의 저장공간에서 하게 될 것이다.
+그리고, 로컬 PC의 저장공간과 서버 PC의 저장공간에 있는 파일들을 서로 주고받아야 하는 경우가 많다.
+이러한 작업을 처리하기 위한 방법은 여러 가지가 있지만,
+파일 관리 프로그램인 [FileZilla](https://filezilla-project.org/)를 활용하는 것이 편리하다.
+
+#### 사용법
+
+1. FileZilla 다운로드 및 설치
+2. FileZilla 실행 → 파일 → 사이트 관리자 → 새 사이트에 서버 정보 입력
+   - 프로토콜: SFTP - SSH File Transfer Protocol
+   - 호스트: 서버 IP
+   - 포트: 22
+   - 사용자: 서버 로그인 계정
+   - 비밀번호: 서버 로그인 계정 비밀번호
+
+> FileZilla로 서버 중 하나에 접속하여 `/mnt/nas4` 경로로 이동한 뒤, 본인 이니셜 이름의 폴더가 없으면 생성해보자.
+{: .prompt-tip }
+
+![FileZilla](/assets/img/lab/01_filezilla.png)
+
+---
+
+## [VS Code (Visual Studio Code)](https://code.visualstudio.com/)
+
+---
+
+IDE (Integrated Development Environment)
+: 프로그래밍 작업을 위한 통합 개발 환경이다.
+코드 작성, 디버깅, 테스트, 배포 등 개발 과정을 완전히 지원하는 소프트웨어이다.
+주로 프로그래밍 언어를 지원하는 프로그램이며, 코드 작성 및 디버깅을 위한 다양한 기능을 제공한다.
+터미널을 통한 원격 접속 및 제어, 원격 코드 작성 및 편집, 원격 파일 관리 등을 포함한다.
+
+[VS Code (Visual Studio Code)](https://code.visualstudio.com/)
+: 마이크로소프트에서 개발한 무료 소스 코드 편집기이다.
+로컬 및 원격 개발을 위한 다양한 IDE가 존재하지만, VS Code 사용을 권장한다.
+무료이면서 다양한 확장 프로그램을 지원하여 편리한 개발 환경을 제공한다.
+
+### 원격 개발 세팅 (Remote SSH Setting)
+
+VS Code에서 원격 개발을 하기 위해서는 다음과 같은 준비가 필요하다.
+
+- VS Code 설치
+- Extension에서 Remote - SSH 설치
+
+![VS Code](/assets/img/lab/02_vscode_01.png)
+
+- `F1` → `Remote-SSh: Connect to Host..` → `Configure SSH Hosts..`
+
+![VS Code](/assets/img/lab/02_vscode_02.png)
+
+- 여러 개 나올 경우 `~~\.ssh\config` 또는  `~~/.ssh/config` 선택
+- 파일이 하나 열리는데, 아래 예시와 같이 입력하고 저장한다.
+
+```text
+# 서버명01
+Host 서버명01
+    HostName 서버명01의 IP
+    User 계정명
+    Port 22
+    
+# 서버명02
+Host 서버명02
+    HostName 서버명02의 IP
+    User 계정명
+    Port 22
+
+# 서버명03
+Host 서버명03
+    HostName 서버명03의 IP
+    User 계정명
+    Port 22
+
+# 서버명04
+Host 서버명04
+    HostName 서버명04의 IP
+    User 계정명
+    Port 22
+
+# 서버명05
+Host 서버명05
+    HostName 서버명05의 IP
+    User 계정명
+    Port 22
+```
+
+- 이제 `F1`을 누르고, `Remote-SSH: Connect to Host..`를 누르면,
+`서버명01 ~ 서버명05` 목록이 나오는데, 선택해서 접속하면 되고, os는 Linux로 선택한다.
+위 파일 예시에서 IP, 계정명, 비밀번호는 [이용학 연구원](/posts/profile)에게 문의하면 된다.
+어떤 서버를 사용할 것인지 또한 [이용학 연구원](/posts/profile)에게 문의하면 된다.
+- 특정 directory에 접속해야 하면 open folder를 누르고 입력하면 된다.
+
