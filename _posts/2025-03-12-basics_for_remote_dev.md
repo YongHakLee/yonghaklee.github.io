@@ -231,3 +231,81 @@ Host 서버명05
 어떤 서버를 사용할 것인지 또한 [이용학 연구원](/posts/profile)에게 문의하면 된다.
 - 특정 directory에 접속해야 하면 open folder를 누르고 입력하면 된다.
 
+---
+
+## GPU & CUDA & cuDNN
+
+우리가 서버를 사용하는 이유 중 하나는 GPU 사용 때문이다.<br>
+서버의 GPU 정보 조회는 `nvidia-smi` 명령어를 사용한다.
+
+```bash
+nvidia-smi
+```
+
+```bash
+Mon Mar 17 17:24:52 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.120                Driver Version: 550.120        CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3080 Ti     Off |   00000000:09:00.0 Off |                  N/A |
+|  0%   52C    P8             44W /  350W |      25MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 3080 Ti     Off |   00000000:0A:00.0 Off |                  N/A |
+|  0%   43C    P8             23W /  370W |      11MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A      2141      G   /usr/lib/xorg/Xorg                              9MiB |
+|    0   N/A  N/A      2397      G   /usr/bin/gnome-shell                            6MiB |
+|    1   N/A  N/A      2141      G   /usr/lib/xorg/Xorg                              4MiB |
++-----------------------------------------------------------------------------------------+
+```
+
+GPU 정보 읽기
+: sailab03 서버의 GPU 정보이다.<br>
+NVIDIA GeForce RTX 3080Ti 2개가 있다.<br>
+위에서부터 가장 왼쪽에 있는 숫자로 0번, 1번 GPU이다.<br>
+0번 GPU는 지금 25MiB를 사용중이다.<br>
+만약 현재 0번 GPU의 사용량이 10000Mib 이상이라면<br>
+GPU 사용이 필요한 작업을 진행할 경우 Out of Memory 에러가 발생할 확률이 높다.<br>
+<br>
+
+GPU 사용이 필요한 Python Script 실행
+: Python Script를 실행할 때, terminal에서 `python script.py` 와 같이 입력한다. 그런데 서버에 GPU가 여러 개이면서, GPU가 필요한 작업이 포함된 script라면 특정 GPU만 사용하게 할 수 있다. `CUDA_VISIBLE_DEVICES=GPU번호 python script.py` 와 같이 입력하면 된다.<br>
+`CUDA_VISIBLE_DEVICES=0 python script.py`: 0번 GPU만 사용하여 script.py를 실행한다.<br>
+`CUDA_VISIBLE_DEVICES=0,1 python script.py`: 0번, 1번 GPU를 사용하여 script.py를 실행한다.<br>
+<br>
+
+CUDA 버전 확인
+: GPU를 통한 연산에서 중요한 역할을 하는 CUDA Version 정보는 `nvcc -V` 명령어를 사용한다.
+
+```bash
+nvcc -V
+```
+
+```bash
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Mon_Apr__3_17:16:06_PDT_2023
+Cuda compilation tools, release 12.1, V12.1.105
+Build cuda_12.1.r12.1/compiler.32688072_0
+```
+
+- sailab02 서버의 CUDA Version 정보이다.
+- 12.1 버전인 것을 확인할 수 있다.
+
+> Pytorch와 같은 딥러닝 프레임워크는 CUDA 버전에 따라 설치 가능한 버전이 제한될 수 있으므로, CUDA 버전에 맞는 버전의 Pytorch를 설치해야 한다.
+{: .prompt-warning }
+
+---
+
