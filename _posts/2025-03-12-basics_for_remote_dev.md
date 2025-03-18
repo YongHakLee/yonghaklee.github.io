@@ -2,7 +2,7 @@
 title: 원격 개발을 위한 기본 안내
 date: 2025-03-12 17:57:40 +0900
 categories: [Lab]
-tags: [lab]     # TAG names should always be lowercase
+tags: [lab, manual]     # TAG names should always be lowercase
 ---
 
 ## 들어가며
