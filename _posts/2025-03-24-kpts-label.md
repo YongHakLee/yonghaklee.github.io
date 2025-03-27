@@ -43,13 +43,16 @@ Keypoint Detection
 ```bash
 (env_name) pip install labelme==5.4.1
 ```
-최신 버전은 오류가 발생할 가능성이 높다.
+최신 버전은 오류가 발생하는 경우가 많기 때문에
+`2025-03-27` 기준으로 `5.4.1` 버전을 사용하고 있다.
 `pip install package_name==version_number` 형식으로
 특정 버전을 설치할 수 있다.
 6. labelme를 실행한다.
 ```bash
 (env_name) labelme
 ```
+
+
 
 
 

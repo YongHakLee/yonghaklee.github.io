@@ -266,6 +266,41 @@ Host 서버명05
 어떤 서버를 사용할 것인지 또한 [이용학 연구원](/posts/profile)에게 문의하면 된다.
 - 특정 directory에 접속해야 하면 open folder를 누르고 입력하면 된다.
 
+### Interpreter 선택
+
+VS Code를 통해 원격 개발을 할 때는 Interpreter를 잘 선택해야 한다.
+예를 들어, 내가 사용하는 가상환경이 `A`라면, `A` 가상환경의 Python을 
+Interpreter로 선택해야 한다.
+
+#### .py 확장자 파일을 편집하고 있을 때
+
+오른쪽 하단에 아래와 같이 `{} Python 3.10.10`과 같은 형식으로 표시되는데,
+
+![VS Code](/assets/img/lab/02_vscode_03.png)
+
+`3.10.10`처럼 버전 숫자를 누르면 아래와 같이 Interpreter 선택 창이 나온다.
+
+![VS Code](/assets/img/lab/02_vscode_04.png)
+
+자신이 사용하는 가상환경에 맞게 Interpreter를 선택하자.
+
+
+#### .ipynb 확장자 파일을 편집하고 있을 때
+
+오른쪽 상단에 아래와 같이 `env_name (Python 3.10.10)`과 같은 형식으로 표시되는데,
+
+![VS Code](/assets/img/lab/02_vscode_05.png)
+
+`3.10.10`처럼 버전 숫자를 누르면 아래와 같이 Interpreter 선택 창이 나온다.
+
+![VS Code](/assets/img/lab/02_vscode_06.png)
+
+여기에 자신이 사용하는 가상환경이 나오지 않는다면,
+`Select Another Kernel`을 눌러 자신이 사용하는 가상환경을 선택한다.
+Jupyter Notebook을 사용하기 위해서는 몇 가지 Install해야 할 것들이 있다.
+만약 VS Code에서 Jupyter Notebook 또는 .ipynb 파일 등과 관련하여
+Install 버튼이 보인다면 눌러서 설치한다.
+
 ---
 
 ## 07. GPU & CUDA & cuDNN
