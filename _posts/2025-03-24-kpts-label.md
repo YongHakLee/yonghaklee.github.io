@@ -26,8 +26,7 @@ Keypoint Detection
 
 ## 02. labelme 준비
 
-1. Anaconda를 설치한다. [Anaconda](https://www.anaconda.com/)에 대한 설명은
-[여기](/posts/basics_for_remote_dev/#03-anaconda)를 참고한다.
+1. Anaconda를 설치한다.
 2. Anaconda Prompt를 실행한다.
 3. 가상환경을 생성한다.
 ```bash
@@ -35,11 +34,11 @@ Keypoint Detection
 # env_name은 생성할 가상환경의 이름이다.
 # python을 붙이면 가상환경을 생성할 때 Python이 같이 설치된다.
 ```
-4. 가상환경을 활성화한다.
+1. 가상환경을 활성화한다.
 ```bash
 (base) conda activate env_name
 ```
-5. lableme를 설치한다.
+1. lableme를 설치한다.
 ```bash
 (env_name) pip install labelme==5.4.1
 ```
@@ -47,7 +46,7 @@ Keypoint Detection
 `2025-03-27` 기준으로 `5.4.1` 버전을 사용하고 있다.
 `pip install package_name==version_number` 형식으로
 특정 버전을 설치할 수 있다.
-6. labelme를 실행한다.
+1. labelme를 실행한다.
 ```bash
 (env_name) labelme
 ```
