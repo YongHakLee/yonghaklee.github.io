@@ -20,8 +20,8 @@ order: 4
 ### ME
 ---
 
-저는 머신러닝, 딥러닝 분야에 관심이 많습니다.<br>
-부족하지만 끊임없이 발전하기 위해 노력하고 있습니다.
+I am interested in machine learning and deep learning.<br>
+Although I have much to learn, I continuously strive to improve.
 
 ---
 
@@ -75,4 +75,37 @@ Stage Diffusion Pipeline for Consistent Front-Back Clothing Generation,
 *Journal of Sensors*. <br>
 
 ---
+
+### PATENTS
+---
+
+[1] Kim S., Lee Y. and Kim J.,
+"Method and Apparatus for Automatic Body Circumference Measurement Using 2D and 3D Data Fusion",
+No. 10-2024-0077839, June 2024,
+Korean Intellectual Property Office, Filled.
+
+---
+
+### RESEARCH EXPERIENCE
+---
+
+- Graduate Student Researcher, Konkuk University, Department of Applied Statistics,
+- Statistical Artificial Intelligence Lab, Seoul, Korea, Mar 2020 - present.
+- Research Engineer, Mustree, Seoul, Korea, Mar 2022 - present.
+- Research Engineer, Deep Visions, Seoul, Korea, Mar 2020 - Dec 2021. 
+
+---
+
+### RESEARCH SUBJECTS
+---
+
+- Method for Developing an Image-based Mobile Fine Dust Measurement Device Using Raspberry Pi and Camera Modules.
+- Outlier Detection Method Based on Numerical Data Acquired by Gas Pipeline Inspection Robots.
+- Millimeter-level Accurate Object Measurement Method Using Mobile LiDAR Sensorbased Point Cloud Data.
+- Development of a Model and Management System for Monitoring Water Quality
+Changes in the Han River.
+
+---
+
+
 
