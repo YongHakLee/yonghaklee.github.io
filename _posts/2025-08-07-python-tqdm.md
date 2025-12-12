@@ -1,5 +1,5 @@
 ---
-title: tqdm
+title: Python 01. tqdm
 date: 2025-08-07 14:34:55 +0900
 categories: [Study, Python]
 tags: [study, python, tqdm]     # TAG names should always be lowercase
