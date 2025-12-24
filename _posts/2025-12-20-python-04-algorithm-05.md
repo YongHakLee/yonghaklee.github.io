@@ -194,3 +194,101 @@ def mostCommonWord(self, paragraph: str, banned: List[str]) -> str:
     # 가장 흔하게 등장하는 단어의 첫 번째 인덱스 리턴
     return counts.most_common(1)[0][0]
 ```
+
+---
+
+## 05 그룹 애너그램
+
+Q. 문자열 배열을 받아 애너그램 단위로 그룹핑하라. [(Leet Code)](https://leetcode.com/problems/group-anagrams)
+
+애너그램
+: 문자를 재배열하여 다른 뜻을 가진 단어로 바꾸는 것을 말한다.
+
+---
+
+### 풀이 1 정렬하여 딕셔너리에 추가
+
+```python
+def groupAnagrams(self, strs: [List[str]]) -> List[List[str]]:
+  anagrams = collections.defaultdict(list)
+
+  for word in strs:
+    # 정렬하여 딕셔너리에 추가
+    anagrams[''.join(sorted(word))].append(word)
+  return list(anagrams.values())
+```
+
+---
+
+### 여러 가지 정렬 방법
+
+- `sorted(List)`
+
+```python
+a = [2, 5, 1, 9, 7]
+sorted(a)
+[1, 2, 5, 7, 9]
+
+b = 'zbdaf'
+sorted(b)
+['a', 'b', 'd', 'f', 'z']
+
+b = 'zbdaf'
+"".join(sorted(b))
+'abdfz'
+```
+
+- `sort()` 유의사항
+
+```python
+alist.sort() # sort()는 리스트 자체를 정렬
+alist = blist.sort() # sort()는 None을 Return하므로 잘못된 구문
+```
+
+- `key` 옵션으로 정렬을 위한 키 또는 함수를 지정할 수 있다.
+
+```python
+# 길이 순서대로 정렬
+c = ['ccc', 'aaaa', 'd', 'bb']
+sorted(c, key=len)
+['d', 'bb', 'ccc', 'aaaa']
+```
+
+```python
+# 함수를 이용한 정렬
+a = ['cde', 'cfc', 'abc']
+sorted(a, key=labmda s: (s[0], s[-1]))
+['abc', 'cfc', 'cde']
+```
+
+---
+
+## 06 가장 긴 팰린드롬 부분 문자열
+
+Q. 가장 긴 팰린드롬 부분 문자열을 출력하라. [(Leet Code)](https://leetcode.com/problems/longest-palindromic-substring/)
+
+---
+
+### 풀이 1 중앙을 중심으로 확장하는 풀이
+```python
+def longestPalindrome(self, s: str) -> str:
+  # 팰린드롬 판별 및 투 포인터 확장
+  def expand(left: int, right: int) -> str:
+    while left >= 0 and right < len(s) and s[left] == s[right]:
+      left -= 1
+      right += 1
+    return s[left + 1:right]
+
+  # 해당 사항이 없을 때 빠르게 리턴
+  if len(s) < 2 or s == s[::-1]:
+    return s
+
+  result = ''
+  # 슬라이딩 윈도우 우측으로 이동
+  for i in range(len(s) - 1):
+    result = max(result, expand(i, i + 1), expand(i, i + 2), key=len)
+
+  return result
+  
+```
+
