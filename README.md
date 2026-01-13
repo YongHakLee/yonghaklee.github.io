@@ -1,84 +1,86 @@
-<!-- markdownlint-disable-next-line -->
-<div align="center">
+# YongHak Lee's Tech Blog
 
-  <!-- markdownlint-disable-next-line -->
-  # Chirpy Jekyll Theme
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?style=flat-square&logo=github)](https://yonghaklee.github.io)
+[![Jekyll](https://img.shields.io/badge/Jekyll-4.x-CC0000?style=flat-square&logo=jekyll)](https://jekyllrb.com/)
+[![Chirpy Theme](https://img.shields.io/badge/Theme-Chirpy%207.4.1-blue?style=flat-square)](https://github.com/cotes2020/jekyll-theme-chirpy)
 
-  A minimal, responsive, and feature-rich Jekyll theme for technical writing.
+A personal tech blog documenting my journey of continuous learning and growth.
 
-  [![CI](https://img.shields.io/github/actions/workflow/status/cotes2020/jekyll-theme-chirpy/ci.yml?logo=github)][ci]&nbsp;
-  [![Codacy Badge](https://img.shields.io/codacy/grade/4e556876a3c54d5e8f2d2857c4f43894?logo=codacy)][codacy]&nbsp;
-  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy?color=goldenrod)][license]&nbsp;
-  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?&logo=RubyGems&logoColor=ghostwhite&label=gem&color=orange)][gem]&nbsp;
-  [![Open in Dev Containers](https://img.shields.io/badge/Dev_Containers-Open-deepskyblue?logo=linuxcontainers)][open-container]
+[Visit Blog](https://yonghaklee.github.io) • [Topics](#topics)
 
-  [**Live Demo** →][demo]
+---
 
-  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
+## Overview
 
-</div>
+This is a personal tech blog built with [Jekyll](https://jekyllrb.com/) and the [Chirpy theme](https://github.com/cotes2020/jekyll-theme-chirpy). Hosted on GitHub Pages, it covers topics including Linux, Python, GitHub, and more.
 
-## Features
+### Features
 
-- Dark Theme
-- Localized UI language
-- Pinned Posts on Home Page
-- Hierarchical Categories
-- Trending Tags
-- Table of Contents
-- Last Modified Date
-- Syntax Highlighting
-- Mathematical Expressions
-- Mermaid Diagrams & Flowcharts
-- Dark Mode Images
-- Embed Media
-- Comment Systems
-- Built-in Search
-- Atom Feeds
-- PWA
-- Web Analytics
-- SEO & Performance Optimization
+- **Markdown-based posts** — Easy content creation and management
+- **Dark mode by default** — Comfortable reading experience
+- **Responsive design** — Optimized for all devices
+- **Search functionality** — Quick content discovery
+- **Table of contents** — Easy navigation for long articles
+- **PWA support** — Offline caching and installable as an app
 
-## Documentation
+## Topics
 
-To learn how to use, develop, and upgrade the project, please refer to the [Wiki][wiki].
+| Category   | Content                                        |
+| ---------- | ---------------------------------------------- |
+| **Linux**  | System administration, commands, configuration |
+| **Python** | tqdm, uv, syntax, algorithms                   |
+| **GitHub** | Version control, collaboration workflows       |
+| **CVAT**   | Image labeling, YOLO integration               |
 
-## Contributing
 
-Contributions (_pull requests_, _issues_, and _discussions_) are what make the open-source community such an amazing place
-to learn, inspire, and create. Any contributions you make are greatly appreciated.
-For details, see the "[Contributing Guidelines][contribute-guide]".
+## Writing New Posts
 
-## Credits
+Create a new file in the `_posts` folder with the following format:
 
-### Contributors
+```
+YYYY-MM-DD-title.md
+```
 
-Thanks to [all the contributors][contributors] involved in the development of the project!
+Include front matter at the top of the file:
 
-[![all-contributors](https://contrib.rocks/image?repo=cotes2020/jekyll-theme-chirpy&columns=16)][contributors]
-<sub> — Made with [contrib.rocks](https://contrib.rocks)</sub>
+```yaml
+---
+title: "Post Title"
+date: YYYY-MM-DD HH:MM:SS +0900
+categories: [Category1, Category2]
+tags: [tag1, tag2]
+---
 
-### Third-Party Assets
+Your post content...
+```
 
-This project is built on the [Jekyll][jekyllrb] ecosystem and some [great libraries][lib], and is developed using [VS Code][vscode] as well as tools provided by [JetBrains][jetbrains] under a non-commercial open-source software license.
+> [!NOTE]
+> You can write drafts in the `_drafts` folder and move them to `_posts` when ready.
 
-The avatar and favicon for the project's website are from [ClipartMAX][clipartmax].
+## Project Structure
 
-## License
+```
+├── _config.yml          # Jekyll configuration
+├── _posts/              # Published posts
+├── _drafts/             # Draft posts
+├── _includes/           # Reusable HTML partials
+├── _layouts/            # Page layouts
+├── _sass/               # SCSS styles
+├── _javascript/         # Client-side JavaScript
+├── assets/              # Static files (images, CSS, JS)
+└── tools/               # Development scripts
+```
 
-This project is published under [MIT License][license].
+## Tech Stack
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[ci]: https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml?query=event%3Apush+branch%3Amaster
-[codacy]: https://app.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade
-[license]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
-[open-container]: https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/cotes2020/jekyll-theme-chirpy
-[jekyllrb]: https://jekyllrb.com/
-[clipartmax]: https://www.clipartmax.com/middle/m2i8b1m2K9Z5m2K9_ant-clipart-childrens-ant-cute/
-[demo]: https://cotes2020.github.io/chirpy-demo/
-[wiki]: https://github.com/cotes2020/jekyll-theme-chirpy/wiki
-[contribute-guide]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/docs/CONTRIBUTING.md
-[contributors]: https://github.com/cotes2020/jekyll-theme-chirpy/graphs/contributors
-[lib]: https://github.com/cotes2020/chirpy-static-assets
-[vscode]: https://code.visualstudio.com/
-[jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
+- **Static Site Generator**: [Jekyll](https://jekyllrb.com/)
+- **Theme**: [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) v7.4.1
+- **Frontend**: Bootstrap 5, Popper.js
+- **Build Tools**: Rollup, PurgeCSS
+- **Hosting**: GitHub Pages
+
+## Resources
+
+- [Jekyll Documentation](https://jekyllrb.com/docs/)
+- [Chirpy Theme Guide](https://chirpy.cotes.page/)
+- [GitHub Pages Documentation](https://docs.github.com/pages)
