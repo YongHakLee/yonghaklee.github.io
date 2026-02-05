@@ -286,7 +286,9 @@ def longestPalindrome(self, s: str) -> str:
   result = ''
   # 슬라이딩 윈도우 우측으로 이동
   for i in range(len(s) - 1):
+    # 홀수 길이 팰린드롬과 짝수 길이 팰린드롬 모두 고려 (i, i+1)과 (i, i+2)    
     result = max(result, expand(i, i + 1), expand(i, i + 2), key=len)
+    
 
   return result
   
