@@ -240,4 +240,145 @@ arrived in Madrid two hours later. Finally she took a taxi from the airport to h
 - 'I cut my hand this morning.' 'How did you do?'
 - 'Why weren't you at the meeting yesterday?' 'I didn't know about it.'
 
+## Unit 013. I was doing (past continuous)
 
+---
+
+### A
+
+---
+
+- It is 6 o'clock now.
+- Paul is at home.
+- He's watching television.
+- At 4 o'clock he wasn't at home.
+- He was at the sports club.
+- He was swimming in the pool.
+- He wasn't watching television.
+
+### B
+
+---
+
+- What were you doing at 11.30 yesterday? Were you doing working?
+- 'What did he say?' 'I don't know. I wasn't listening.'
+- It was raining, so we didn't go out.
+- In 2001, we were living in Canada.
+- Today she's wearing a skirt, but yesterday she was wearing trousers.
+- I woke up early yesterday. It was a beautiful morning. The sun was shininig and the birds were singing.
+
+### C
+
+---
+
+- I'm working (now). I was working at 10.30 last night.
+- It isn't raining (now). It wasn't raining when we went out.
+- What are you doing (now)? What were you doing at 3 o'clock?
+
+### Exercise
+
+---
+
+- Rachel was at home. She was watching TV.
+- Jack and Kate were at the cinema. They were wathcing a film.
+- Tim was in his car. He was driving.
+- Tracey was at the station. She was waiting for a train.
+- Mr and Mrs Hall were in the park. They were walking.
+- I was at home. I was helping my mom.
+
+- At 8.45 she was washing her car.
+- At 10.45 she was playing tennis.
+- At 8 o'clock she was reading a newspaper.
+- At 12.10 she was cooking.
+- At 7.15 she was having breakfast.
+- At 9.30 she was cleaning the kitchen.
+
+- 'Where were you living in 1999?' 'In London.'
+- 'What were you doing at 2 o'clock?' 'I was asleep.'
+- 'Was it raining when you got up?' 'No, it was sunny.'
+- 'Why was Sue driving so fast?' 'Because she was late.'
+- 'Was Tim wearing a suit yesterday?' 'No, a T-shirt and jeans.'
+
+- He wasn't wearing a jacket.
+- He was carrying a bag.
+- He wasn't going to the dentist.
+- He was eating an ice-cream.
+- He wasn't carrying an umbrella.
+- He wasn't going home.
+- He was wearing a hat.
+- He wasn't riding a bicycle.
+
+## Unit 014. I was doing (past continuous) and I did (past simple)
+
+---
+
+### A
+
+---
+
+- Jack was reading a book.
+- The phone rang.
+- He stopped reading.
+- He answered the phone.
+
+- What happened? The phone rang. (*past simple*)
+- What was Jack doing when the phone rang? (*past continuous*)
+  - He was reading a book. (*past continuous*)
+- What did he do when the phone rang? (*past simple*)
+  - He stopped reading and answered the phone. (*past simple*)
+- Jack began reading before the phone rang.
+  - So when the phone rang, he was reading.
+
+### B
+
+---
+
+- What did you do yesterday morning?
+- We played tennis. (from 10 to 11.30, we played complete action)
+- Jack read a book yesterday. (= from beginning to end)
+- Did you watch the film on television last night?
+- It didn't rain while we were on holiday.
+
+- 'What were you doing at 10.30?' 'We were playing tennis.'
+  - unfinished action
+- Jack was reading a book when the phone rang.
+- Were you watching television when I phoned you?
+- It wasn't raining when I got up.
+
+- I started work at 9 o'clock and finished at 4.30. At 2.30 I was working.
+- It was raining when we went out. (= It started raining before we went out)
+- I saw Lucy and Steve this morning. They were waiting at the bus stop.
+- Kelly fell asleep while she was reading.
+
+### Exercise
+
+---
+
+- Lucy broke her arm last week. It happened when she was painting her room. She fell off the ladder.
+- The train arrived at the station and Paula got off. 
+Two friends of her, Jon and Rachel, were waiting to meet her.
+- Yesterday Sue was walking along the road when she met James.
+He was going to the station to catch a train and he was carrying a bag.
+They stopped to talk for a few minutes.
+
+- What were you doing when the phone rang?
+  - I was watching television.
+- Was Jane busy when you went to see her?
+  - Yes, she was studying.
+- What time did the post arrived this morning?
+  - It came while I was having breakfast.
+- Was Tracey at work today?
+  - No, she didn't go to work. She was ill.
+- How fast were you driving when the police stopped you?
+  - I'm not sure, but I wasn't driving very fast.
+- Did your team win the football match yesterday?
+  - The weather was very bad, so we didn't play.
+- How did you break the window?
+  - We were playing football. I kicked the ball and it hit the window.
+- Did you see Jenny last night?
+  - Yes, she was wearing a very nice jacket.
+- What were you doing at 2 o'clock this morning?
+  - I was asleep.
+- I lost my key last night.
+  - How did you get into the room?
+- I climbed in through a window.
