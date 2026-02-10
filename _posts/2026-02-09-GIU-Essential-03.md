@@ -72,3 +72,195 @@ tags: [study, english, giuessential]     # TAG names should always be lowercase
 - Does Bill know about the meeting tomorrow?
   - I don't think so. I haven't told him.
 - 'Do you want this magazine?' 'No, I've read it, thanks.'
+
+## Unit 016. I've just ... I've already ... I haven't ... yet (present perfect 2)
+
+---
+
+### A
+
+---
+
+- I've just ... 
+  - **just** = a short time ago
+
+- Are Diane and Paul here?
+  - They've just arrived.
+- Are you hungry?
+  - No, I've just had dinner.
+- Is Tom here?
+  - No, I'm afraid he's just gone. (= he has just gone.)
+
+### B
+
+---
+
+- I've already ... ()
+  - **already** = before you expected / before I expected
+
+- What time are Diane and Paul coming?
+  - They've already arrived. (= before you expected)
+- It's only 9 o'clock and Anna has already gone to bed. (= before I expected)
+- Jon, this is Emma.
+  - Yes, I know. We've already met.
+
+### C
+
+---
+
+- I haven't ... yet / Have you ... yet?
+  - **yet** = until now
+  - We use yet in negative sentences and questions. Yet is usually at the end.
+
+- Are Diane and Paul here?
+  - No, they haven't arrived yet.
+  - (but B expects Diane and Paul to arrive soon)
+- Does James know that you're going away?
+  - No, I haven't told him yet.
+  - (but B is going to tell him soon)
+- Silvia has bought a new dress, but she hasn't worn it yet.
+
+- Have Diane and Paul arrived yet?
+  - No, not yet. We're still waiting for them.
+- Has Nicole started her new job yet?
+  - No, she starts next week.
+- This is my new dress.
+  - Oh, it's nice. Have you worn it yet?
+
+### Exercise
+
+---
+
+- They've just arrived.
+- He's just got up.
+- They've just bought a car.
+- The race has just started.
+
+- What time is Pual arriving? 
+  - He's already arrived.
+- Do your friends want to see the film?
+  - No, they've already seen it.
+- Don't forget to phone Tom.
+  - I've already phoned Tom.
+- When is Martin going away?
+  - He's already gone away.
+- Do you want to read the newspaper?
+  - I've already read it.
+- When does Sarah start her new job?
+  - She's already started.
+
+- She hasn't gone out yet.
+- The bus has just gone.
+- The train hasn't left yet.
+- He hasn't opened it yet.
+- They've just finished their dinner.
+- It hasn't stopped raining yet.
+
+- Your friend has got a new job. Perhaps she has started it.
+  - Have you started your job yet?
+- Your friend has some new neighbours. Perhaps he has met them.
+  - Have you met your new neighbours yet?
+- Your friend may pay her phone bill. Perhaps she has paid it.
+  - Have you paid phone bill yet?
+- Tom was trying to sell his car. Perhaps he has sold it.
+  - Has he sold his car yet?
+
+## Unit 017. Have you ever ... ? (present perfect 3)
+
+---
+
+### A
+
+---
+
+- Have you been to Rome?
+  - Yes, I have. Many times.
+- Have you ever been to Japan?
+  - No, I've never been to Japan.
+
+> We use the *present perfect* (**have been** / **have had** / **have played** etc.) when we talk about a time from the past until now.
+
+- Have you been to France?
+  - No, I haven't
+- I've been to Canada, but I haven't been to the United States.
+- Mary is an interesting person. She has had many different jobs and has lived in many places.
+- I've seen that woman before, but I can't remember where.
+- How many times has Brazil won the World Cup?
+- Have you read this book?
+  - Yes, I've read it twice.
+
+### B
+
+---
+
+- Has Ann ever been to Australia?
+  - Yes, once.
+- Have you ever played golf?
+  - Yes, I play a lot.
+- My sister has never travelled by plane.
+- I've never ridden a horse.
+- Who is that man?
+  - I don't know. I've never seen him before.
+
+### C
+
+---
+
+- Where's Bill?
+  - He's away. He's gone to Spain. (= he is in Spain now)
+- (two weeks later) Hello, Bill.
+  - Hi. I've been on holiday. I've been to Spain.
+  - = He went to Spain, but now he is back
+
+- I can't find Susan. Where has she gone? (= where is she now?)
+- Oh, hello Susan! I was looking for you. Where have you been?
+
+### Exercise
+
+---
+
+- Have you ever been to London?
+  - No, never.
+- Have you ever played golf?
+  - Yes, many times.
+- Have you ever been to Australia?
+  - Yes, once.
+- Have you ever lost your passport?
+  - No, never
+- Have you ever *flown* in a helicopter?
+  - Yes, a few times.
+- Have you ever won a race?
+  - No, never.
+- Have you ever been to New York?
+  - Yes, twice
+- Have you ever driven a bus?
+  - No, never.
+- Have you ever broken your leg?
+  - Yes, once
+
+- She's been to New York twice.
+- She's been to Australia once.
+- She's never won a race.
+- She's flown in a helicopter a few times.
+- I've never been to New York.
+- I've never palyed tennis.
+- I've never driven a lorry.
+- I've been late for work or school a few times.
+
+- She has had many different jobs.
+- She has done a lot of interesting things.
+- She has travelled all over the world.
+- She has been married three times.
+- She has written ten books.
+- She has met a lot of interesting people.
+
+- Bill is on holiday at the moment. He's gone to Spain.
+- Where's Jane?
+  - She's not here. I think she's gone to the bank.
+- Hello, Sue. Where have you been? Have you been to the bank?
+- Have you ever been to Mexico? 
+  - No, never.
+- My parents aren't at home at the moment. They've gone out.
+- There's a new restaurant in town. Have you been to it?
+- Rebecca knows Paris well. She's been there mnay times.
+- Helen was here earlier, but I think she's gone now.
