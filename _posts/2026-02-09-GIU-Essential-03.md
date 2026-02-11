@@ -264,3 +264,101 @@ tags: [study, english, giuessential]     # TAG names should always be lowercase
 - There's a new restaurant in town. Have you been to it?
 - Rebecca knows Paris well. She's been there mnay times.
 - Helen was here earlier, but I think she's gone now.
+
+## Unit 018. How long have you  ... ? (present perfect 4)
+
+---
+
+### A
+
+---
+
+- Jane is on holiday in Ireland.
+- She is there now.
+- She arrived in Ireland on Monday.
+- Today is Thursday.
+- How long has she been in Ireland?
+  - She has been Ireland since monday.
+  - She has been Ireland for three days.
+
+### B
+
+---
+
+- Dan and Kate are married.
+  - They have been married for five years.
+  - (*not* They are married for five years.)
+- Are you married?
+  - How long have you been married?
+  - (*not* How long are you married?)
+- Do you know Lisa?
+  - How long have you known her?
+  - (*not* How long do you know her?)
+- I know Lisa.
+  - I've known her for a long time.
+  - (*not* I know her for ...)
+- Vicky lives in London.
+  - How long has she lived in London?
+  - She has lived there all her life.
+- I have a car.
+  - How long have you had your car?
+  - I've had it since April.
+
+- I'm learning German.
+  - How long have you been learning German?
+  - (*not* How long are you learning German?)
+  - I've been learning German for two years.
+- David is watching TV.
+  - How long has he been watching TV?
+  - He's been watching TV since 5 o'clock.
+- It's raining.
+  - It has been raining all day.
+
+### Exercise
+
+---
+
+- Jane is in Ireland. She has been in Ireland since Monday.
+- I know Lisa. I have known her for a long time.
+- Sarah and Andy are married. They have been married since 1999.
+- Brian is ill. He has been ill for the last few days.
+- We live in Scott Road. We have lived in there for a long time.
+- Catherine works in a bank. She has worked in a bank for five years.
+- Alan has a headache. He has had a haedache since he got up this morning.
+- I'm learning English. I have been learning English for six months.
+
+- Jane is on holiday.
+  - How long has she been on holiday?
+- Scott and Judy are in Brazil.
+  - How long have they been in Brazil?
+- I know Amy.
+  - How long have you known her?
+- Diana is Learning Italian.
+  - How long has she been learning Italian?
+- My brother lives in Canada.
+  - How long has he lived in Canada?
+- I'm a teacher.
+  - How long have you been a teacher?
+- It is raining.
+  - How long has it been raining?
+
+- They have been married for ten years.
+- She has lived in Wales all her life.
+- They have been on holiday since Sunday.
+- The sun has been shining all day.
+- She has been waiting for ten minutes.
+- He has had a beard since he was 20.
+
+- Mark has lived in Canada since April.
+- Jane and I are friends. I know her very well.
+- Jane and I are friends. I've known her for a long time.
+- Sorry, I'm late. How long have you been waiting?
+  - Not long. Only five minutes.
+- Martin works in a hotel now. He likes his job a lot.
+- Ruth is reading the newspaper. She has been reading it for two hours.
+- How long have you lived in this house?
+  - About ten years.
+- Is that a new coat?
+  - No, I have had this coat for a long time.
+- Tom is in Spain at the moment. He has been there for the last three days.
+
