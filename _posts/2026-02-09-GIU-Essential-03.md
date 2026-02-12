@@ -362,3 +362,193 @@ tags: [study, english, giuessential]     # TAG names should always be lowercase
   - No, I have had this coat for a long time.
 - Tom is in Spain at the moment. He has been there for the last three days.
 
+## Unit 019. for / since / go
+
+---
+
+### A
+
+---
+
+- We use **for** and **since** to say *how long*:
+  - Jane is in Ireland. She has been there (for three days.) or (since Monday.)
+
+- We use **for** + a period of time (**three days** / **two years** etc.)
+  - Richard has been in Canada for six months.
+  - We've been waiting for two hours.
+  - I've lived in London for a long time.
+
+- We use **since** + the start of the period (**Monday** / **9 o'clock** etc.)
+  - Richard has been in Canada since January.
+  - We've been waiting since 9 o'clock.
+  - I've lived in London since I was ten years old.
+  
+### B
+
+---
+
+- ago = before now:
+  - Susan started her new job three weeks ago. (= three weeks before now)
+  - 'When did Tom go out?' 'Ten minutes ago.' (= ten minutes before now)
+  - I had dinner an hour ago.
+  - Life was very different a hundred years ago.
+- We use **ago** with the *past* (started/did/has/was etc.) 
+
+- Compare **ago** and **for**:
+  - When did Jane arrive in Ireland?
+    - She arrived in Ireland three days ago.
+  - How long has she been in Ireland?
+    - She has been in Ireland for three days.
+
+### Exercise
+
+---
+
+- Jane has been in Ireland since Monday.
+- Jane has been in Ireland for three days.
+- My aunt has lived in Australia for 15 years.
+- Jennifer is in her office. She has been there since 7 o'clock.
+- India has been an independent country since 1947.
+- The bus is late. We've been waiting for 20 minutes.
+- Nobody lives in those houses. They have been empty for many years.
+- Michael has been ill for a long time. He has been in hospital since October.
+
+- When was your last meal?
+  - Three hours ago.
+- When was the last time you were ill?
+  - Three months ago.
+- When did you last go to the cinema? 
+  - A month ago.
+- When was the last time you were in a car?
+  - Six days ago.
+- When was the last time you went on holiday?
+  - A month ago.
+
+- Jane arrived in Ireland three days ago.
+- Jane has been in Ireland for three days.
+- Lynn and Mark have been married for 20 years.
+- Lynn and Mark got married 20 years ago.
+- Dan arrived an hour ago.
+- I bought these shoes a few days ago.
+- Silvia has been learning English for six months.
+- Have you known Lisa for a long time?
+
+- Jane is in Ireland - she arrived there three days ago.
+  - Jane has been in Ireland for three days.
+- Jack is here - he arrived on Tuesday.
+  - Jas has been here since Tuesday.
+- It's raining - it started an hour ago.
+  - It's been raining for an hour.
+- I know Sue - I first met her in 2002.
+  - I have known Sue since 2002.
+- Claire and Matthew are married - they got married six months ago.
+  - Claire and Matthew have been married for six months.
+- Liz is studying medicine at university - she started three years ago.
+  - Liz has been studying medicine for three years.
+- David plays the piano - he started when he was seven years old.
+  - David has played the piano since he was seven years old.
+
+- I've lived in this town for three years.
+- I've been in this lab for 2 weeks.
+- I've been learning Speak for 2 weeks.
+- I've known Yang since 2019.
+- I've had my laptop for 3 weeks.
+
+## Unit 020. I have done (present perfect) and I did (past)
+
+---
+
+### A
+
+---
+
+> With a *finished time* (yesterday / last week etc.), we use the past (arrived/saw/was etc.)
+
+- Do not use the present perfect (have arrived / have been etc.) with a finished time
+  - I saw Paula yesterday. 
+  - Where were you on Sunday afternoon?
+  - We didn't have a holiday last year.
+  - What did you do last night?
+    - I stayed at home.
+  - William Shakespeare lived from 1564 to 1616. He was a writer. He wrote many plays and poems.
+
+- Use the past to ask **When ...? or What time ...?**
+  - When did you buy your computer?
+  - What time did Andy go out?
+
+### B
+
+---
+
+- *present perfect*
+  - I have lost my key. (= I can't fint it *now*)
+  - Ben has hone home. (= he isn't here *now*)
+  - Have you seen Kate? (= where is she *now*?)
+  - Have you ever been to Spain? (= in your life, until *now*)
+  - My friend is a writer. He has written many books.
+  - The letter hasn't arrived yet.
+  - We've lived in Singapore for six years. (= we live there *now*)
+
+- *past*
+  - I lost my key last week.
+  - Ben went home ten minutes ago.
+  - Did you see Kate on Saturday?
+  - Did you go to Spain last year?
+  - Shakespeare wrote many plays and poems.
+  - The letter didn't arrive yesterday.
+  - We lived in Glasgow for six years, but now we live in Singapore.
+
+### Exercise
+
+---
+
+- Have you seen Kate? 
+  - Yes, I saw her five minutes ago.
+- Have you started your new job?
+  - Yes, I started it last week.
+- Have you friends arrived?
+  - Yes, they arrived at 5 o'clock.
+- Has Sarah gone away?
+  - Yes, she went away on Friday.
+- Have you worn your new suit?
+  - Yes, I wore it yesterday.
+
+- I've lost my key. I can't find it. 
+- Did you see Kate yesterday?
+- I finished my work at 2 o'clock.
+- I'm ready now. I've finished my work.
+- What time did you finish your work?
+- Sue isn't here. She's gone out.
+- Steve's grandmother died two years ago.
+- Where were you last night?
+
+- My friend is a writer. He has written many books.
+- We didn't have a holiday last year.
+- I played tennis yesterday afternoon.
+- What time did you go to bed last night?
+- Have you ever met a famous person?
+- The weather wasn't very good yesterday.
+- Kathy travels a lot. She has visited many conutries.
+- I switched off the light before going out this morning.
+- I live in New York now, but I lived in Mexico for many years.
+- What's Canada like? Is it beautiful?
+  - I don't know. I haven't been there.
+
+- Have you ever been to Florida?
+  - Yes, we went there on holiday two years ago.
+- Did you have a good time?
+  - Yes, it was great.
+
+- Where's Alan? Have you seen him?
+  - Yes, he went out a few minutes ago.
+- And Rachel?
+  - I don't know. I haven't seen her.
+
+- Rose works in a factory. She has worked there for six months.
+Before that she was a waitress in a restaurant.
+She worked there for two years, but she didn't enjoy it very much.
+
+- Do you know Martin's sister?
+  - I've seen her a few times, but I've never spoken to her. Have you ever spoken to her?
+- Yes, I met her at a party last week. She's very nice.
+
