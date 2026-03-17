@@ -1,6 +1,6 @@
 ---
 title: GIU Essential (Verb forms 023-024)
-date: 2026-02-13 15:00:31 +0900
+date: 2026-02-25 12:41:31 +0900
 categories: [Study, English]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
@@ -117,7 +117,89 @@ tags: [study, english, giuessential]     # TAG names should always be lowercase
 
 ---
 
-### A 
+### A. Regular verbs
 
 ---
+
+- I cleanded my room yesterday.
+- Charlie studied engineering at university.
+- I have cleaned my room.
+- Tina has lived in London for ten years.
+- These rooms are cleaned everyday.
+- My car has been repaired.
+
+### B. Irregular verbs
+
+---
+
+- I made a cake yesterday.
+- I have made some coffee.
+- Butter is made from milk.
+- Somebody broke this window last night.
+- Somebody has broken this window.
+- This window was broken last night.
+
+### Exercise
+
+---
+
+- make made
+- cut cut
+- get got
+- bring brought
+- pay paid
+- enjoy enjoyed
+- buy bought
+- sit sat
+- leave left
+- happen happened
+- hear heard
+- put put
+- catch caught
+- watch watched
+- understand understood
+
+- break broke broken
+- begin began begun
+- eat ate eaten
+- drink drank drunk
+- drive drove driven
+- speak spoke spoken
+- write wrote written
+- come came come
+- know knew known
+- take took taken
+- go went gone
+- give gave given
+- throw threw thrown
+- forget forgot forgotten
+
+- I washed my hands because they were dirty.
+- Somebody has broken this window.
+- I feel good. I slept very well last night.
+- We saw a really good film yesterday.
+- It rained a lot while we were on holiday.
+- I've lost my bag. Have you seen it?
+- Rosa's bicycle was stolen last week.
+- I went to bed early because I was tired.
+- Have you finished your work yet?
+- The shopping centre was built about 20 years ago.
+- Anna learned to drive when she was 18.
+- I've never ridden a horse.
+- Julia is a good friend of mine. I've known her for a long time.
+- Yesterday I fell and hurt my leg.
+- My brother ran in the London Marathon last year. Have you ever run in a marathon?
+
+- I have made some coffee. Would you like some?
+- Have you told John about your new job?
+- We played basketball on Sunday. We didn't play very well, but we won the game.
+- I know Gary, but I've never met his wife.
+- We were woken up by loud music in the middle of the night.
+- Stephanie jumped into the river and swam to the other side.
+- 'Did you like the film?' 'Yes, I thought it was very good.'
+- Many different languages are spoken in the Philippines.
+- Our holiday cost a lot of money because we stayed in an expensive hotel.
+- Have you ever driven a very fast car?
+- All the tickets for the concert were sold very quickly.
+- A bird flew in through the open window while we were having our dinner.
 
