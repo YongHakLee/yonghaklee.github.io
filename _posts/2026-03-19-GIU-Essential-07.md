@@ -303,3 +303,93 @@ tags: [study, english, giuessential]     # TAG names should always be lowercase
 
 ---
 
+- You shouldn't watch TV so much.
+- should + infinitive
+
+### B
+
+---
+
+- You should do something = it is good thing to do, it is right thing to do:
+  - Tom doesn't study enough. He should study harder.
+  - It's a good film. You should go and see it.
+  - When you play tennis, you should always watch the ball.
+
+### C
+
+---
+
+- You shouldn't do something = it is a not good thing to do.
+- Shouldn't = Should not:
+  - Tom shouldn't go to bed so late.
+  - You watch TV all the time. You shouldn't watch TV so much.
+
+### D
+
+---
+
+- We often say **I think** ... **should** ...
+
+- I think ... should ...:
+  - I think Lisa should buy some new clothes.
+    - (=I think it is a good idea.)
+  - It's late. I think I should go home now.
+  - Shall I buy this coat?
+    - Yes, I think you should.
+
+- I don't think ... should ...:
+  - I don't think you should work so hard.
+    - (=I don't think it is a good idea.)
+  - I don't think we should go yet. It's too early.
+
+- Do you think ... should ... ?:
+  - Do you think I should buy this hat?
+  - What time do you think we should go home?
+
+### E
+
+---
+
+- **Must** is stronger than **should**:
+  - It's a good film. You should go and see it.
+  - It's a fantastic film. You must go and see it.
+
+### F
+
+---
+
+- Another way to say **should** is **ought to**:
+  - It's a good film. You ought to go and see it. (= you should go)
+  - I think Lisa ought to buy some new clothes. (= Lisa should buy)
+
+
+### Exercise
+
+---
+
+- When you play tennis, you should watch the ball.
+- It's late and you're very tired. You should go to bed.
+- You should eat plenty of fruit and vegetables.
+- If you have time, you should visit the Science Museum. It's very interesting.
+- When you're driving, you should wear a seat belt.
+- It's too far to walk from here to the station. You should take a taxi.
+
+- She shouldn't watch TV so much. 
+- He shouldn't eat so much.
+- She shouldn't work so hard.
+- He shouldn't dirve so fast.
+
+- Do you think I should buy this jacket?
+- Do you think I should learn to drive?
+- Do you think I should get another job?
+- Do you think I should invite Gary?
+
+- We have to get up early tomorrow. I think we should go home now.
+- That coat is too big for you. I don't think you should buy it.
+- You don't need your car. I think you should sell it.
+- Karen needs a rest. I think she should have a holiday.
+- Sally and Dan are too young. I don't think they should get married.
+- You're not well this morning. I don't think you should go to work.
+- James isn't very well today. I think he should go to the doctor.
+- The hotel is too expensive for us. I don't think we should stay there.
+
