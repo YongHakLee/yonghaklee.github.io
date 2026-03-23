@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOF 디자인 패턴 시각화 가이드</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {}
+        }
+      };
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      /* 스크롤바 숨김 (가로 스크롤 영역) */
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      /* 인쇄 최적화 */
+      @media print {
+        body {
+          background-color: white !important;
+          color: black !important;
+        }
+        .print\\:hidden {
+          display: none !important;
+        }
+        .print\\:p-0 {
+          padding: 0 !important;
+        }
+        .print\\:grid-cols-1 {
+          grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+        }
+        .print\\:border-slate-300 {
+          border-color: #cbd5e1 !important;
+        }
+        .print\\:shadow-none {
+          box-shadow: none !important;
+        }
+        .print\\:break-inside-avoid {
+          break-inside: avoid !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-slate-50 text-slate-800 transition-colors duration-300 dark:bg-slate-900 dark:text-slate-200 font-sans antialiased"
+    style="-webkit-print-color-adjust: exact; print-color-adjust: exact;"
+  >
+    <div id="app" class="max-w-7xl mx-auto p-6 md:p-12 print:p-0 space-y-8">
+      <!-- UI가 JavaScript에 의해 여기에 렌더링됨 -->
+    </div>
+
+    <script>
+      // --- 상태 관리 ---
+      const state = {
+        activeTab: 'creational',
+        isDark: false
+      };
+
+      // --- 유틸리티: 도표용 노드 생성 함수 ---
+      function createNode({ type = 'box', color = 'blue', text = '', size = 'md', className = '', isDark = false }) {
+        const sizeClasses = {
+          sm: 'w-10 h-10 text-xs',
+          md: 'w-16 h-16 text-sm',
+          lg: 'w-24 h-24 text-base'
+        };
+        const shapeClass =
+          type === 'circle' ? 'rounded-full' : type === 'pill' ? 'rounded-full px-4 py-2 w-auto' : 'rounded-lg';
+
+        const colorClass = {
+          blue: isDark ? 'bg-blue-600 text-white border-blue-400' : 'bg-blue-500 text-white border-blue-600',
+          blueLight: isDark
+            ? 'bg-blue-900/50 text-blue-200 border-blue-700'
+            : 'bg-blue-100 text-blue-800 border-blue-200',
+          purple: isDark ? 'bg-purple-600 text-white border-purple-400' : 'bg-purple-500 text-white border-purple-600',
+          purpleLight: isDark
+            ? 'bg-purple-900/50 text-purple-200 border-purple-700'
+            : 'bg-purple-100 text-purple-800 border-purple-200',
+          green: isDark
+            ? 'bg-emerald-600 text-white border-emerald-400'
+            : 'bg-emerald-500 text-white border-emerald-600',
+          greenLight: isDark
+            ? 'bg-emerald-900/50 text-emerald-200 border-emerald-700'
+            : 'bg-emerald-100 text-emerald-800 border-emerald-200',
+          gray: isDark
+            ? 'bg-slate-700 text-slate-300 border-slate-500'
+            : 'bg-slate-200 text-slate-600 border-slate-300',
+          grayDark: isDark ? 'bg-slate-800 text-slate-200 border-slate-600' : 'bg-slate-700 text-white border-slate-800'
+        }[color];
+
+        return `<div class="flex items-center justify-center font-bold border-2 ${sizeClasses[size]} ${shapeClass} ${colorClass} ${className}">${text}</div>`;
+      }
+
+      // --- 패턴 데이터 생성 ---
+      const getPatternData = (isDark) => ({
+        creational: {
+          title: '생성 (Creational) 패턴',
+          icon: 'box',
+          description: '객체의 생성 방식을 캡슐화하여 결합도를 낮추고 유연하게 만들어주는 패턴이다.',
+          theme: 'blue',
+          items: [
+            {
+              name: 'Abstract Factory',
+              desc: '서로 관련되거나 의존적인 객체들의 조합(군)을 생성하는 인터페이스를 제공한다.',
+              analogy:
+                "가구 브랜드 세트 구매: '모던 스타일'을 고르면 모던 의자/책상이, '엔틱 스타일'을 고르면 엔틱 의자/책상이 세트로 생성된다.",
+              visual: `
+              <div class="flex items-center justify-center gap-6">
+                ${createNode({ type: 'box', color: 'grayDark', text: 'Factory', size: 'lg', isDark })}
+                <div class="flex flex-col gap-3">
+                  <div class="flex gap-3 p-3 rounded-lg border-2 border-dashed ${
+                    isDark ? 'bg-slate-800 border-slate-600' : 'bg-slate-50 border-slate-300'
+                  }">
+                    ${createNode({ type: 'circle', color: 'blue', size: 'sm', isDark })}
+                    ${createNode({ type: 'box', color: 'blue', size: 'sm', isDark })}
+                  </div>
+                  <div class="flex gap-3 p-3 rounded-lg border-2 border-dashed ${
+                    isDark ? 'bg-slate-800 border-slate-600' : 'bg-slate-50 border-slate-300'
+                  }">
+                    ${createNode({ type: 'circle', color: 'green', size: 'sm', isDark })}
+                    ${createNode({ type: 'box', color: 'green', size: 'sm', isDark })}
+                  </div>
+                </div>
+              </div>`
+            },
+            {
+              name: 'Factory Method',
+              desc: '객체 생성을 서브클래스에 위임하여, 어떤 인스턴스를 만들지 서브클래스가 결정하게 한다.',
+              analogy:
+                '물류 센터: 기본 물류 시스템 뼈대는 같지만, 배송 수단(트럭, 배)을 생성하는 결정은 각 서브클래스에 맡긴다.',
+              visual: `
+              <div class="flex flex-col items-center gap-3">
+                ${createNode({ type: 'pill', color: 'gray', text: 'Creator', isDark })}
+                <div class="flex gap-12">
+                  <i data-lucide="arrow-down" class="w-6 h-6 ${isDark ? 'text-slate-500' : 'text-slate-400'}"></i>
+                  <i data-lucide="arrow-down" class="w-6 h-6 ${isDark ? 'text-slate-500' : 'text-slate-400'}"></i>
+                </div>
+                <div class="flex gap-6">
+                  ${createNode({ type: 'box', color: 'blueLight', text: 'Sub A', isDark })}
+                  ${createNode({ type: 'box', color: 'blueLight', text: 'Sub B', isDark })}
+                </div>
+              </div>`
+            },
+            {
+              name: 'Builder',
+              desc: '복잡한 객체의 생성 과정과 표현 방법을 분리하여 동일한 절차에서 다른 결과를 만든다.',
+              analogy:
+                '서브웨이 샌드위치: 빵 -> 치즈 -> 야채 -> 소스라는 동일한 조립 과정을 거치지만 선택에 따라 다른 샌드위치가 완성된다.',
+              visual: `
+              <div class="flex items-center gap-3">
+                ${createNode({ type: 'box', color: 'gray', size: 'sm', text: '1', isDark })}
+                <i data-lucide="arrow-right" class="w-6 h-6 ${isDark ? 'text-slate-500' : 'text-slate-400'}"></i>
+                ${createNode({ type: 'box', color: 'gray', size: 'sm', text: '2', isDark })}
+                <i data-lucide="arrow-right" class="w-6 h-6 ${isDark ? 'text-slate-500' : 'text-slate-400'}"></i>
+                ${createNode({ type: 'box', color: 'gray', size: 'sm', text: '3', isDark })}
+                <i data-lucide="arrow-right" class="w-6 h-6 font-bold ${
+                  isDark ? 'text-blue-400' : 'text-blue-500'
+                }"></i>
+                ${createNode({ type: 'box', color: 'blue', size: 'lg', text: 'Result', isDark })}
+              </div>`
+            },
+            {
+              name: 'Prototype',
+              desc: '기존 객체를 복제(Clone)하여 새로운 객체를 생성한다.',
+              analogy:
+                "문서 복사: 빈 문서부터 새로 작성하는 대신, 기존 템플릿 문서를 '복제(Ctrl+C, V)'하여 수정해 사용한다.",
+              visual: `
+              <div class="flex items-center justify-center gap-8">
+                ${createNode({ type: 'box', color: 'blue', text: 'Original', size: 'lg', isDark })}
+                <div class="flex flex-col items-center">
+                  <i data-lucide="copy" class="w-8 h-8 mb-2 ${isDark ? 'text-slate-500' : 'text-slate-400'}"></i>
+                  <div class="w-12 h-px ${isDark ? 'bg-slate-600' : 'bg-slate-400'}"></div>
+                </div>
+                <div class="flex flex-col gap-3">
+                  ${createNode({ type: 'box', color: 'blueLight', text: 'Clone 1', isDark })}
+                  ${createNode({ type: 'box', color: 'blueLight', text: 'Clone 2', isDark })}
+                </div>
+              </div>`
+            },
+            {
+              name: 'Singleton',
+              desc: '클래스의 인스턴스가 오직 하나만 생성되도록 보장하고 전역에서 접근할 수 있게 한다.',
+              analogy:
+                '회사 프린터 관리자: 직원이 아무리 많아도 인쇄 명령을 처리하는 관리자는 오직 1명이어야 충돌이 없다.',
+              visual: `
+              <div class="flex flex-col items-center gap-4">
+                <div class="flex gap-8">
+                  ${createNode({ type: 'circle', color: 'gray', size: 'sm', text: 'Req', isDark })}
+                  ${createNode({ type: 'circle', color: 'gray', size: 'sm', text: 'Req', isDark })}
+                  ${createNode({ type: 'circle', color: 'gray', size: 'sm', text: 'Req', isDark })}
+                </div>
+                <div class="flex gap-8 ${isDark ? 'text-slate-500' : 'text-slate-400'}">
+                  <i data-lucide="arrow-down" class="w-6 h-6"></i>
+                  <i data-lucide="arrow-down" class="w-6 h-6"></i>
+                  <i data-lucide="arrow-down" class="w-6 h-6"></i>
+                </div>
+                ${createNode({
+                  type: 'box',
+                  color: 'blue',
+                  text: 'Only 1',
+                  size: 'lg',
+                  isDark,
+                  className: `shadow-lg ${isDark ? 'shadow-blue-900/40' : 'shadow-blue-200'}`
+                })}
+              </div>`
+            }
+          ]
+        },
+        structural: {
+          title: '구조 (Structural) 패턴',
+          icon: 'layout',
+          description: '클래스나 객체들을 조합하여 더 크고 복잡한 구조를 유연하게 만드는 패턴이다.',
+          theme: 'purple',
+          items: [
+            {
+              name: 'Adapter',
+              desc: '인터페이스가 호환되지 않는 클래스들을 연결하여 함께 작동할 수 있게 해준다.',
+              analogy:
+                '110V-220V 돼지코: 규격이 다른 두 시스템(한국 가전과 해외 콘센트) 사이에서 호환되도록 변환해준다.',
+              visual: `
+              <div class="flex items-center justify-center gap-3">
+                ${createNode({ type: 'circle', color: 'gray', text: 'A', isDark })}
+                <div class="text-xs px-4 py-2 rounded-lg font-bold flex items-center gap-1 ${
+                  isDark ? 'bg-purple-600 text-white' : 'bg-purple-500 text-white'
+                }">
+                  Adapter
+                </div>
+                ${createNode({ type: 'box', color: 'grayDark', text: 'B', isDark })}
+              </div>`
+            },
+            {
+              name: 'Bridge',
+              desc: '구현부와 추상층을 분리하여 각각 독립적으로 변형하고 확장할 수 있게 한다.',
+              analogy: '리모컨과 TV: 리모컨(추상) 디자인이 바뀌어도 TV(구현)를 새로 만들 필요가 없고 서로 독립적이다.',
+              visual: `
+              <div class="flex flex-col items-center gap-3">
+                <div class="flex gap-12 w-full justify-center">
+                  <div class="text-sm font-bold ${isDark ? 'text-slate-400' : 'text-slate-500'}">Abstraction</div>
+                  <div class="text-sm font-bold ${isDark ? 'text-slate-400' : 'text-slate-500'}">Implementation</div>
+                </div>
+                <div class="flex items-center gap-6">
+                  ${createNode({ type: 'box', color: 'purpleLight', text: 'Remote', isDark })}
+                  <i data-lucide="git-merge" class="w-8 h-8 rotate-90 ${
+                    isDark ? 'text-purple-400' : 'text-purple-500'
+                  }"></i>
+                  ${createNode({ type: 'box', color: 'grayDark', text: 'TV / PC', isDark })}
+                </div>
+              </div>`
+            },
+            {
+              name: 'Composite',
+              desc: '부분-전체를 트리 구조로 구성하며, 단일 객체와 복합 객체를 동일하게 다루게 한다.',
+              analogy:
+                "파일 시스템: '폴더' 안에는 '파일'이나 다른 '폴더'가 있다. 둘 다 동일하게 '삭제' 명령을 내릴 수 대.",
+              visual: `
+              <div class="flex flex-col items-center gap-3">
+                ${createNode({ type: 'box', color: 'purple', text: 'Root', size: 'md', isDark })}
+                <div class="flex gap-6">
+                  <div class="flex flex-col items-center">
+                    <div class="w-px h-6 ${isDark ? 'bg-slate-600' : 'bg-slate-300'}"></div>
+                    ${createNode({ type: 'circle', color: 'purpleLight', text: 'Leaf', size: 'sm', isDark })}
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <div class="w-px h-6 ${isDark ? 'bg-slate-600' : 'bg-slate-300'}"></div>
+                    ${createNode({ type: 'box', color: 'purpleLight', text: 'Node', size: 'md', isDark })}
+                    <div class="w-px h-6 ${isDark ? 'bg-slate-600' : 'bg-slate-300'}"></div>
+                    ${createNode({ type: 'circle', color: 'gray', text: 'Leaf', size: 'sm', isDark })}
+                  </div>
+                </div>
+              </div>`
+            },
+            {
+              name: 'Decorator',
+              desc: '객체에 동적으로 새로운 기능이나 책임을 덧붙여 추가한다.',
+              analogy: "커피 주문: 기본 '에스프레소'에 '샷 추가', '시럽 추가'를 겹겹이 감싸서 새로운 커피를 만든다.",
+              visual: `
+              <div class="relative flex items-center justify-center w-32 h-32">
+                <div class="absolute inset-0 border-4 rounded-xl ${
+                  isDark ? 'border-purple-800' : 'border-purple-200'
+                }"></div>
+                <div class="absolute inset-3 border-4 rounded-xl ${
+                  isDark ? 'border-purple-600' : 'border-purple-400'
+                }"></div>
+                ${createNode({ type: 'box', color: 'purple', text: 'Core', size: 'md', className: 'z-10', isDark })}
+              </div>`
+            },
+            {
+              name: 'Facade',
+              desc: '복잡한 서브시스템들을 감싸고, 사용하기 쉬운 단순한 단일 인터페이스를 제공한다.',
+              analogy:
+                '컴퓨터 전원 버튼: 버튼 하나만 누르면 내부의 CPU, 메모리, 파워 등 복잡한 시스템이 알아서 켜진다.',
+              visual: `
+              <div class="flex items-center gap-6">
+                ${createNode({ type: 'circle', color: 'gray', text: 'User', size: 'sm', isDark })}
+                <i data-lucide="arrow-right" class="w-6 h-6 ${isDark ? 'text-slate-500' : 'text-slate-400'}"></i>
+                ${createNode({ type: 'box', color: 'purple', text: 'Facade', isDark })}
+                <div class="flex flex-col gap-2 border-l-4 pl-6 ${isDark ? 'border-slate-600' : 'border-slate-200'}">
+                  ${createNode({ type: 'box', color: 'gray', size: 'sm', isDark })}
+                  ${createNode({ type: 'box', color: 'gray', size: 'sm', isDark })}
+                  ${createNode({ type: 'box', color: 'gray', size: 'sm', isDark })}
+                </div>
+              </div>`
+            },
+            {
+              name: 'Flyweight',
+              desc: '여러 객체가 공유할 수 있는 데이터를 묶어서 메모리 사용량을 대폭 줄인다.',
+              analogy:
+                "게임 속 숲: 1만 그루 나무의 '텍스처(공유)'는 1개만 메모리에 올리고, '위치 좌표'만 다르게 설정한다.",
+              visual: `
+              <div class="flex flex-col items-center gap-4">
+                ${createNode({ type: 'pill', color: 'purple', text: 'Shared State (Memory)', isDark })}
+                <div class="flex gap-6">
+                  <div class="w-px h-6 ${isDark ? 'bg-slate-600' : 'bg-slate-300'}"></div>
+                  <div class="w-px h-6 ${isDark ? 'bg-slate-600' : 'bg-slate-300'}"></div>
+                  <div class="w-px h-6 ${isDark ? 'bg-slate-600' : 'bg-slate-300'}"></div>
+                </div>
+                <div class="flex gap-4">
+                  ${createNode({ type: 'circle', color: 'purpleLight', text: 'A', size: 'sm', isDark })}
+                  ${createNode({ type: 'circle', color: 'purpleLight', text: 'B', size: 'sm', isDark })}
+                  ${createNode({ type: 'circle', color: 'purpleLight', text: 'C', size: 'sm', isDark })}
+                </div>
+              </div>`
+            },
+            {
+              name: 'Proxy',
+              desc: '다른 객체로의 접근을 제어하거나 흐름을 가로채기 위한 대리자 역할을 한다.',
+              analogy: '비서: 사장님(실제 객체)을 만나기 전에 비서(Proxy)가 먼저 일정을 필터링하고 접근을 제어한다.',
+              visual: `
+              <div class="flex items-center gap-4">
+                ${createNode({ type: 'circle', color: 'gray', text: 'Client', size: 'sm', isDark })}
+                <i data-lucide="arrow-right" class="w-6 h-6 ${isDark ? 'text-slate-500' : 'text-slate-400'}"></i>
+                ${createNode({ type: 'box', color: 'purpleLight', text: 'Proxy', className: 'border-dashed', isDark })}
+                <i data-lucide="arrow-right" class="w-6 h-6 ${isDark ? 'text-purple-400' : 'text-purple-500'}"></i>
+                ${createNode({ type: 'box', color: 'purple', text: 'Real', isDark })}
+              </div>`
+            }
+          ]
+        },
+        behavioral: {
+          title: '행위 (Behavioral) 패턴',
+          icon: 'zap',
+          description: '객체나 클래스 사이의 알고리즘이나 책임 분배, 통신과 상호작용을 정의한다.',
+          theme: 'green',
+          items: [
+            {
+              name: 'Chain of Responsibility',
+              desc: '요청을 처리할 객체들을 사슬처럼 연결해, 처리할 객체를 찾을 때까지 요청을 넘긴다.',
+              analogy: '고객센터 ARS: 자신이 처리할 수 없는 요청이면 다음 담당 부서(다음 사슬)로 전화를 넘긴다.',
+              visual: `
+              <div class="flex items-center gap-3">
+                ${createNode({ type: 'circle', color: 'gray', text: 'Req', size: 'sm', isDark })}
+                <i data-lucide="arrow-right" class="w-5 h-5 ${isDark ? 'text-slate-500' : 'text-slate-400'}"></i>
+                ${createNode({ type: 'box', color: 'greenLight', text: 'H1', size: 'md', isDark })}
+                <i data-lucide="arrow-right" class="w-5 h-5 ${isDark ? 'text-slate-500' : 'text-slate-400'}"></i>
+                ${createNode({ type: 'box', color: 'greenLight', text: 'H2', size: 'md', isDark })}
+                <i data-lucide="arrow-right" class="w-5 h-5 font-bold ${
+                  isDark ? 'text-green-400' : 'text-green-500'
+                }"></i>
+                ${createNode({ type: 'box', color: 'green', text: 'H3', size: 'md', isDark })}
+              </div>`
+            },
+            {
+              name: 'Command',
+              desc: '실행될 요청을 객체로 캡슐화하여 큐에 넣거나 실행 취소(Undo)를 가능하게 한다.',
+              analogy:
+                "식당 주문서: 웨이터가 손님의 주문을 '주문서 객체'로 만들어 주방에 넘기면 주방장이 나중에 실행한다.",
+              visual: `
+              <div class="flex items-center gap-5">
+                ${createNode({ type: 'box', color: 'gray', text: 'Invoker', size: 'md', isDark })}
+                <div class="flex flex-col items-center">
+                  <span class="text-xs mb-2 ${isDark ? 'text-slate-400' : 'text-slate-500'}">Command Obj</span>
+                  ${createNode({ type: 'pill', color: 'greenLight', text: 'Action()', isDark })}
+                </div>
+                ${createNode({ type: 'box', color: 'grayDark', text: 'Receiver', size: 'md', isDark })}
+              </div>`
+            },
+            {
+              name: 'Interpreter',
+              desc: '문법 규칙을 정의하고, 이를 해석해 구문을 처리하는 해석기를 만든다.',
+              analogy: '음악 악보: 악보라는 문법 규칙을 정의하면, 연주자(해석기)가 이를 읽고 실제 음악으로 해석한다.',
+              visual: `
+              <div class="flex flex-col items-center gap-4">
+                <div class="font-mono text-sm px-4 py-2 rounded-lg w-full text-center ${
+                  isDark ? 'bg-slate-800 text-green-300' : 'bg-slate-800 text-green-400'
+                }">
+                  "A + B"
+                </div>
+                <i data-lucide="arrow-down" class="w-6 h-6 ${isDark ? 'text-slate-500' : 'text-slate-400'}"></i>
+                ${createNode({
+                  type: 'box',
+                  color: 'green',
+                  text: 'Interpreter',
+                  size: 'md',
+                  className: 'w-32',
+                  isDark
+                })}
+              </div>`
+            },
+            {
+              name: 'Iterator',
+              desc: '컬렉션의 내부 구조를 노출하지 않고도 요소들을 순차적으로 접근할 수 있게 한다.',
+              analogy:
+                "TV 리모컨: 내부에 채널이 어떻게 저장됐는지 몰라도 '다음 채널' 버튼으로 순차적으로 넘길 수 있다.",
+              visual: `
+              <div class="flex items-center gap-3 p-3 rounded-xl relative ${isDark ? 'bg-slate-800' : 'bg-slate-100'}">
+                ${createNode({ type: 'box', color: 'gray', size: 'sm', text: '1', isDark })}
+                ${createNode({ type: 'box', color: 'gray', size: 'sm', text: '2', isDark })}
+                ${createNode({
+                  type: 'box',
+                  color: 'green',
+                  size: 'sm',
+                  text: '3',
+                  isDark,
+                  className: `ring-4 ring-offset-2 ${
+                    isDark ? 'ring-green-500 ring-offset-slate-800' : 'ring-green-400 ring-offset-white'
+                  }`
+                })}
+                ${createNode({ type: 'box', color: 'gray', size: 'sm', text: '4', isDark })}
+                <div class="absolute -top-4 left-[50%] text-xs px-2 py-0.5 rounded-md font-bold ${
+                  isDark ? 'bg-green-600 text-white' : 'bg-green-500 text-white'
+                }">next()</div>
+              </div>`
+            },
+            {
+              name: 'Mediator',
+              desc: '상호작용 로직을 하나의 중재자 객체에 캡슐화하여 객체 간의 직접적인 결합을 막는다.',
+              analogy: "공항 관제탑: 비행기들이 서로 직접 통신하지 않고, 오직 '관제탑(중재자)'을 통해서만 조율한다.",
+              visual: `
+              <div class="relative w-32 h-32 flex items-center justify-center">
+                ${createNode({
+                  type: 'circle',
+                  color: 'green',
+                  text: 'Med',
+                  size: 'md',
+                  className: 'z-10 absolute',
+                  isDark
+                })}
+                ${createNode({
+                  type: 'circle',
+                  color: 'gray',
+                  size: 'sm',
+                  className: 'absolute top-0 left-1/2 -translate-x-1/2',
+                  isDark
+                })}
+                ${createNode({
+                  type: 'circle',
+                  color: 'gray',
+                  size: 'sm',
+                  className: 'absolute bottom-0 left-1/2 -translate-x-1/2',
+                  isDark
+                })}
+                ${createNode({
+                  type: 'circle',
+                  color: 'gray',
+                  size: 'sm',
+                  className: 'absolute left-0 top-1/2 -translate-y-1/2',
+                  isDark
+                })}
+                ${createNode({
+                  type: 'circle',
+                  color: 'gray',
+                  size: 'sm',
+                  className: 'absolute right-0 top-1/2 -translate-y-1/2',
+                  isDark
+                })}
+                <div class="absolute inset-0 border-2 border-dashed rounded-full scale-75 z-0 ${
+                  isDark ? 'border-green-800' : 'border-green-200'
+                }"></div>
+              </div>`
+            },
+            {
+              name: 'Memento',
+              desc: '캡슐화를 위배하지 않으면서 이전 상태를 저장해 두었다가 복원할 수 있게 한다.',
+              analogy: '게임 세이브/로드: 보스전 돌입 전 상태를 저장(세이브)해 두고, 죽으면 그대로 복원(로드)한다.',
+              visual: `
+              <div class="flex items-center gap-5">
+                ${createNode({ type: 'box', color: 'gray', text: 'State A', size: 'md', isDark })}
+                <div class="flex flex-col items-center gap-2">
+                  <i data-lucide="arrow-right" class="w-5 h-5 ${isDark ? 'text-slate-500' : 'text-slate-400'}"></i>
+                  <i data-lucide="arrow-right" class="w-5 h-5 rotate-180 ${
+                    isDark ? 'text-slate-500' : 'text-slate-400'
+                  }"></i>
+                </div>
+                ${createNode({ type: 'pill', color: 'greenLight', text: 'Save / Load', isDark })}
+                ${createNode({ type: 'box', color: 'green', text: 'Memento', size: 'md', isDark })}
+              </div>`
+            },
+            {
+              name: 'Observer',
+              desc: '상태가 변하면, 그 객체에 의존(구독)하는 다른 객체들에게 자동으로 알림을 보낸다.',
+              analogy: '유튜브 구독: 유튜버가 영상을 올리면 구독자들의 스마트폰으로 알림이 자동으로 전송된다.',
+              visual: `
+              <div class="flex items-center gap-6">
+                ${createNode({ type: 'circle', color: 'green', text: 'Subj', size: 'lg', isDark })}
+                <div class="flex flex-col gap-3 justify-center">
+                  <div class="flex items-center gap-2"><i data-lucide="arrow-right" class="w-5 h-5 ${
+                    isDark ? 'text-green-400' : 'text-green-500'
+                  }"></i>${createNode({ type: 'box', color: 'greenLight', size: 'sm', isDark })}</div>
+                  <div class="flex items-center gap-2"><i data-lucide="arrow-right" class="w-5 h-5 ${
+                    isDark ? 'text-green-400' : 'text-green-500'
+                  }"></i>${createNode({ type: 'box', color: 'greenLight', size: 'sm', isDark })}</div>
+                  <div class="flex items-center gap-2"><i data-lucide="arrow-right" class="w-5 h-5 ${
+                    isDark ? 'text-green-400' : 'text-green-500'
+                  }"></i>${createNode({ type: 'box', color: 'greenLight', size: 'sm', isDark })}</div>
+                </div>
+              </div>`
+            },
+            {
+              name: 'State',
+              desc: '객체의 내부 상태가 바뀔 때마다 스스로의 행동 방식을 변경하도록 한다.',
+              analogy: "스마트폰 소리 모드: '벨소리', '진동', '무음' 상태에 따라 전화가 왔을 때의 행동이 달라진다.",
+              visual: `
+              <div class="flex items-center gap-6">
+                ${createNode({ type: 'box', color: 'grayDark', text: 'Context', size: 'md', isDark })}
+                <i data-lucide="refresh-cw" class="w-8 h-8 ${isDark ? 'text-slate-500' : 'text-slate-400'}"></i>
+                <div class="flex flex-col gap-2 p-3 rounded-xl ${isDark ? 'bg-slate-800' : 'bg-slate-100'}">
+                  ${createNode({ type: 'pill', color: 'green', text: 'State A (Action X)', isDark })}
+                  ${createNode({ type: 'pill', color: 'greenLight', text: 'State B (Action Y)', isDark })}
+                </div>
+              </div>`
+            },
+            {
+              name: 'Strategy',
+              desc: '동일 계열의 알고리즘을 캡슐화하여 상황에 맞게 유연하게 바꿔 낄 수 있게 한다.',
+              analogy:
+                "내비게이션: '최단 거리', '무료 도로', '고속도로' 등 상황에 맞게 알고리즘(전략)을 바꿔 실행한다.",
+              visual: `
+              <div class="flex items-center gap-5">
+                ${createNode({ type: 'box', color: 'gray', text: 'Context', size: 'md', isDark })}
+                <div class="flex flex-col gap-2 border-l-4 pl-5 ${isDark ? 'border-green-600' : 'border-green-500'}">
+                  ${createNode({
+                    type: 'box',
+                    color: 'greenLight',
+                    text: 'Strat A',
+                    isDark,
+                    className: isDark ? 'opacity-40' : 'opacity-50'
+                  })}
+                  ${createNode({
+                    type: 'box',
+                    color: 'green',
+                    text: 'Strat B',
+                    isDark,
+                    className: 'shadow-lg scale-110'
+                  })}
+                  ${createNode({
+                    type: 'box',
+                    color: 'greenLight',
+                    text: 'Strat C',
+                    isDark,
+                    className: isDark ? 'opacity-40' : 'opacity-50'
+                  })}
+                </div>
+              </div>`
+            },
+            {
+              name: 'Template Method',
+              desc: '알고리즘의 뼈대만 부모에 정의하고, 구체적인 세부 단계는 서브클래스에 미룬다.',
+              analogy: "라면 레시피: '물 끓이기 -> 면 넣기' 뼈대는 같지만, '치즈/파 추가'는 끓이는 사람이 결정한다.",
+              visual: `
+              <div class="flex flex-col gap-3 w-full">
+                <div class="p-3 rounded-lg text-center text-sm font-bold ${
+                  isDark ? 'bg-slate-800 text-slate-300' : 'bg-slate-200 text-slate-700'
+                }">
+                  [ Base ] step1() → <span class="${
+                    isDark ? 'text-green-400' : 'text-green-600'
+                  }">step2()</span> → step3()
+                </div>
+                <div class="flex gap-3 justify-center">
+                  <div class="border-2 p-2 rounded-lg text-xs font-bold ${
+                    isDark
+                      ? 'bg-green-900/40 border-green-700 text-green-300'
+                      : 'bg-green-100 border-green-300 text-green-800'
+                  }">
+                    Sub A: step2(Cheese)
+                  </div>
+                  <div class="border-2 p-2 rounded-lg text-xs font-bold ${
+                    isDark
+                      ? 'bg-green-900/40 border-green-700 text-green-300'
+                      : 'bg-green-100 border-green-300 text-green-800'
+                  }">
+                    Sub B: step2(Onion)
+                  </div>
+                </div>
+              </div>`
+            },
+            {
+              name: 'Visitor',
+              desc: '구조 내 원소들을 순회하며, 구조 변경 없이 새로운 연산을 추가할 수 있게 한다.',
+              analogy:
+                "마트 바코드 스캐너: 장바구니 속 물품(데이터) 변경 없이, 스캐너(방문자)가 순회하며 '가격 계산'을 한다.",
+              visual: `
+              <div class="flex items-center gap-5">
+                <div class="flex gap-3 p-3 rounded-lg border-2 ${
+                  isDark ? 'bg-slate-800 border-slate-600' : 'bg-slate-100 border-slate-300'
+                }">
+                  ${createNode({ type: 'circle', color: 'gray', size: 'sm', text: 'A', isDark })}
+                  ${createNode({ type: 'box', color: 'gray', size: 'sm', text: 'B', isDark })}
+                </div>
+                <i data-lucide="arrow-right" class="w-6 h-6 ${isDark ? 'text-slate-500' : 'text-slate-400'}"></i>
+                <div class="flex flex-col items-center">
+                  ${createNode({ type: 'pill', color: 'green', text: 'Visitor (Calc)', isDark })}
+                  <span class="text-xs mt-2 ${isDark ? 'text-slate-400' : 'text-slate-500'}">visits A & B</span>
+                </div>
+              </div>`
+            }
+          ]
+        }
+      });
+
+      // --- 글로벌 액션 핸들러 ---
+      window.setActiveTab = (tab) => {
+        state.activeTab = tab;
+        render();
+      };
+
+      window.toggleDarkMode = () => {
+        state.isDark = !state.isDark;
+        const htmlEl = document.documentElement;
+        if (state.isDark) {
+          htmlEl.classList.add('dark');
+        } else {
+          htmlEl.classList.remove('dark');
+        }
+        render();
+      };
+
+      // --- 렌더링 로직 ---
+      function render() {
+        const { activeTab, isDark } = state;
+        render();
+      }
+
+      window.closePrintGuide = () => {
+        state.showPrintGuide = false;
+        render();
+      };
+
+      window.downloadMarkdown = () => {
+        let md = '# GOF 디자인 패턴 가이드\n\n';
+        const rawData = getPatternData(false);
+
+        Object.keys(rawData).forEach((key) => {
+          const section = rawData[key];
+          md += `## ${section.title}\n`;
+          md += `${section.description}\n\n`;
+
+          section.items.forEach((item) => {
+            md += `### ${item.name}\n`;
+            md += `- **설명:** ${item.desc}\n`;
+            md += `- **일상 속 비유:** ${item.analogy}\n\n`;
+          });
+        });
+
+        const blob = new Blob([md], { type: 'text/markdown;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'gof_design_patterns.md';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      };
+
+      // --- 렌더링 로직 ---
+      function render() {
+        const { activeTab, isDark, showPrintGuide } = state;
+        const patternData = getPatternData(isDark);
+        const activeSection = patternData[activeTab];
+        const activeTheme = activeSection.theme;
+
+        // 테마별 색상 설정
+        const themeColors = {
+          blue: isDark ? 'text-blue-300 bg-blue-900/20 border-blue-800/50' : 'text-blue-600 bg-blue-50 border-blue-200',
+          purple: isDark
+            ? 'text-purple-300 bg-purple-900/20 border-purple-800/50'
+            : 'text-purple-600 bg-purple-50 border-purple-200',
+          green: isDark
+            ? 'text-emerald-300 bg-emerald-900/20 border-emerald-800/50'
+            : 'text-emerald-600 bg-emerald-50 border-emerald-200'
+        };
+
+        let html = `
+        <header class="space-y-4 text-center relative">
+          <!-- 우측 상단 컨트롤 버튼 -->
+          <div class="absolute right-0 top-0 md:-top-2 flex items-center gap-2 print:hidden">
+            <button onclick="toggleDarkMode()" class="p-2 rounded-full transition-all duration-300 ${
+              isDark
+                ? 'bg-slate-800 text-amber-400 hover:bg-slate-700 border border-slate-700 hover:shadow-lg'
+                : 'bg-white text-slate-500 hover:bg-slate-100 shadow-sm border border-slate-200 hover:shadow-md'
+            }" title="다크모드 토글">
+              ${
+                isDark
+                  ? '<i data-lucide="sun" class="w-5 h-5 md:w-6 md:h-6"></i>'
+                  : '<i data-lucide="moon" class="w-5 h-5 md:w-6 md:h-6"></i>'
+              }
+            </button>
+          </div>
+
+          <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight transition-colors ${
+            isDark ? 'text-white' : 'text-slate-900'
+          }">
+            GOF 디자인 패턴 시각화 가이드
+          </h1>
+          <p class="text-lg max-w-2xl mx-auto transition-colors print:text-slate-600 ${
+            isDark ? 'text-slate-400' : 'text-slate-600'
+          }">
+            디자인 패턴의 원리를 다이어그램과 일상생활 비유로 쉽게 이해해보자.
+          </p>
+        </header>
+
+        <!-- 탭 컨트롤 -->
+        <div class="flex flex-wrap justify-center gap-3 print:hidden">
+          ${Object.keys(patternData)
+            .map((key) => {
+              const isActive = activeTab === key;
+              const tColor = patternData[key].theme;
+              let btnClass = `flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all border-2 `;
+              if (isActive) {
+                btnClass +=
+                  tColor === 'blue'
+                    ? 'bg-blue-600 text-white border-blue-600 shadow-md scale-105'
+                    : tColor === 'purple'
+                    ? 'bg-purple-600 text-white border-purple-600 shadow-md scale-105'
+                    : 'bg-emerald-600 text-white border-emerald-600 shadow-md scale-105';
+              } else {
+                btnClass += isDark
+                  ? 'bg-slate-800 text-slate-400 border-slate-700 hover:border-slate-600 hover:text-slate-200 hover:bg-slate-700'
+                  : 'bg-white text-slate-500 border-slate-200 hover:border-slate-300 hover:bg-slate-50';
+              }
+              return `<button onclick="setActiveTab('${key}')" class="${btnClass}">
+                      <i data-lucide="${patternData[key].icon}" class="w-5 h-5"></i>
+                      ${patternData[key].title}
+                    </button>`;
+            })
+            .join('')}
+        </div>
+
+        <!-- 카테고리 설명 -->
+        <div class="text-center max-w-3xl mx-auto py-4 print:py-2">
+          <p class="text-lg font-medium inline-block px-6 py-2 rounded-full shadow-sm border transition-colors print:bg-slate-100 print:text-slate-800 print:border-slate-300 ${
+            isDark ? 'bg-slate-800 text-slate-300 border-slate-700' : 'bg-white text-slate-700 border-slate-200'
+          }">
+            ${activeSection.description}
+          </p>
+        </div>
+
+        <!-- 패턴 그리드 -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 print:grid-cols-1 print:gap-6">
+          ${activeSection.items
+            .map(
+              (item) => `
+            <div class="rounded-2xl overflow-hidden border shadow-sm hover:-translate-y-1 transition-all duration-300 flex flex-col group print:border-slate-300 print:shadow-none print:break-inside-avoid print:bg-white ${
+              isDark
+                ? 'bg-slate-800 border-slate-700 hover:shadow-slate-900 hover:border-slate-600'
+                : 'bg-white border-slate-200 hover:shadow-xl'
+            }">
+              <!-- 시각 자료 영역 -->
+              <div class="h-56 md:h-64 w-full flex items-center justify-center p-6 border-b relative overflow-x-auto overflow-y-hidden hide-scrollbar transition-colors print:bg-slate-50 print:border-slate-200 ${
+                isDark ? 'bg-slate-900/50 border-slate-700' : 'bg-slate-50/50 border-slate-100'
+              }">
+                <div class="absolute top-0 left-0 min-w-full h-1 opacity-50 bg-gradient-to-r from-transparent to-transparent print:hidden ${
+                  isDark ? 'via-slate-600' : 'via-slate-300'
+                }"></div>
+                <div class="min-w-max flex items-center justify-center">
+                  ${item.visual}
+                </div>
+              </div>
+
+              <!-- 텍스트 영역 -->
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-xl font-extrabold mb-3 transition-colors print:text-slate-900
+                  ${
+                    activeTheme === 'blue'
+                      ? isDark
+                        ? 'text-slate-100 group-hover:text-blue-400'
+                        : 'text-slate-900 group-hover:text-blue-600'
+                      : activeTheme === 'purple'
+                      ? isDark
+                        ? 'text-slate-100 group-hover:text-purple-400'
+                        : 'text-slate-900 group-hover:text-purple-600'
+                      : isDark
+                      ? 'text-slate-100 group-hover:text-emerald-400'
+                      : 'text-slate-900 group-hover:text-emerald-600'
+                  }">
+                  ${item.name}
+                </h3>
+
+                <p class="text-sm font-medium mb-4 flex-grow transition-colors print:text-slate-700 ${
+                  isDark ? 'text-slate-400' : 'text-slate-600'
+                }">
+                  ${item.desc}
+                </p>
+
+                <div class="rounded-xl p-4 border transition-colors print:bg-slate-50 print:border-slate-200 print:text-slate-800 ${
+                  themeColors[activeTheme]
+                }">
+                  <div class="text-xs font-bold mb-1 opacity-80 uppercase tracking-wider">일상 속 비유</div>
+                  <p class="text-sm font-medium leading-relaxed">${item.analogy}</p>
+                </div>
+              </div>
+            </div>
+          `
+            )
+            .join('')}
+        </div>
+      `;
+
+        document.getElementById('app').innerHTML = html;
+
+        // DOM 업데이트 후 아이콘 다시 그리기
+        lucide.createIcons();
+      }
+
+      // 초기 렌더링
+      render();
+    </script>
+  </body>
+</html>
