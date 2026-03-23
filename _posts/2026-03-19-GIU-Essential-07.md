@@ -393,3 +393,188 @@ tags: [study, english, giuessential]     # TAG names should always be lowercase
 - James isn't very well today. I think he should go to the doctor.
 - The hotel is too expensive for us. I don't think we should stay there.
 
+## Unit 033. I have to ...
+
+---
+
+### A
+
+- This is my medicine. I have to take it three times a day.
+- I have to do something = it is necessary for me to do it, I am obliged to do it
+
+- I'll be late for work tomorrow. I have to go to the dentist.
+- Jane starts work at 7 o'clock, so she has to get up at 6.
+- You have to pass a test before you can get a drive licence.
+
+### B
+
+---
+
+- The past (yesterday / last week etc.) is **had to** ...:
+  - I was late for work yesterday. I had to go to the dentist.
+  - We had to walk home last night. There were no buses.
+
+### C
+
+---
+
+- In questions and negatives we use do/does (present) and did (past):
+  - What time do you have to go to the dentist tomorrow?
+  - Does Jane have to work on Sundays?
+  - Why did they have to leave the party early?
+
+- I don't have to (do something) = it is not necessary to do it:
+  - I'm not working tomorrow, so I don't have to get up early.
+  - Ian doesn't have to work very hard. He's got an easy job.
+  - We didn't have to wait very long for the bus - it came in a few minutes.
+
+### D
+
+---
+
+- **must** and **have to**
+- You can use **must** or **have to** when you say what you think is necessary, when you give your opinion:
+  - It's a fantastic film. You must see it. or You have to see it.
+
+- When you are not giving your personal opinion, use **have to** (*not* **must**). Compare:
+  - Jane won't be at work this afternoon. She has to go to the doctor.
+    - (this is not my personal opinion - it is a fact)
+  - Jane isn't well. She doesn't want to go to the doctor, but I told her she must go.
+    - (this is my personal opinion.)
+
+### Exercise
+
+---
+
+- My eyes are not very good. I have to wear glasses.
+- At the end of the course all the students have to do a test.
+- Sarah is studying literature. She has to read a lot of books.
+- Albert doesn't understand much English. You have to speak very slowly to him.
+- Kate is not often at home. She has to travel a lot in her job.
+- In tennis you have to hit the ball over the net.
+
+- We had to walk home last night. There were no buses.
+- It's late. I have to go now. I'll see you tomorrow.
+- I went to the supermarket after work yesterday. I had to buy some food.
+- This train doesn't go all the way to London. You have to change at Bristol.
+- We did an exam yesterday. We had to answer six questions out of ten.
+
+- I have to get up early tomorrow. 
+  - What time do you have to get up?
+- George had to wait a long time. 
+  - How long did he have to wait?
+- Liz has to go somewhere.
+  - Where does she have to go?
+- We had to pay a lot of money.
+  - How much did you have to pay?
+- I have to do some work.
+  - What exactly do you have to do?
+
+- Why are you going out? You don't have to go out.
+- Why is Sue waiting? She doesn't have to wait.
+- Why did you get up early? You didn't have to get up early.
+- Why is Paul working so hard? He doesn't have to work so hard.
+- Why do you want to leave now? You don't have to leave now.
+
+- It's a fantastic film.
+  - You must see it.
+  - You have to see it.
+- Julia won't be at work this afternoon. She has to go to the doctor.
+- You can't park your car here for nothing. You have to pay.
+- I didn't have any money with me last night, so I had to borrow some.
+- I eat too much chocolate. 
+  - I really must stop.
+  - I really have to stop.
+- Paul is in a hurry. He has to meet somebody in five minutes.
+- What's wrong? 
+  - You must tell me. I want to help you. 
+  - You have to tell me. I want to help you.
+
+## Unit 034. Would you like ...? I'd like ...
+
+---
+
+### A
+
+---
+
+- **Would you like** ...? = Do you want ...?
+- We use **Would you like** ...? to offer things:
+  - Would you like some coffee?
+    - No, thank you.
+  - Would you like a chocolate?
+    - Yes, please.
+  - What would you like, tea or coffee?
+    - Tea, please.
+
+- We use **Would you like to** ...? to invite somebody:
+  - Would you like to go for a walk?
+  - Would you like to have dinner with us on Sunday?
+    - Yes, I'd love to.
+  - What would you like to do this evening?
+
+### B
+
+---
+
+- **I'd like** ... is a polite way to say 'I want'. I'd like = I would like:
+  - I'm thirsty. I'd like a drink.
+  - (*In a tourist office*) I'd like some information about hotels, please.
+  - I'm feeling tired. I'd like to stay at home this evening.
+
+### C
+
+---
+
+- Would you like ...? / I'd like ...
+  - Would you like some tea? = Do you want some tea?
+  - Would you like to go to the cinema tonight?
+    - Yes, I'd love to.
+  - I'd like an orange, please.
+    - (= can I have an orange?)
+  - What would you like to do next weekend?
+
+- Do you like ...? / I like ...
+  - Do you like tea? = Do you think tea is nice?
+  - Do you like going to the cinema? (*in general*)
+    - Yes, I go to the cinema a lot.
+  - I like oranges. (*in general*)
+  - What do you like to do at weekends?
+
+### Exercise
+
+---
+
+- Would you like a chocolate?
+- Would you like an apple?
+- Would you like some coffee?
+- Would you like some cheese?
+- Would you like a sandwich?
+- Would you like some cake?
+
+- Would you like to go to the cinema tonight?
+- Would you like to play tennis tomorrow?
+- Would you like to come to a concert next week?
+- Would you like to borrow my umbrella?
+
+- Would you like a chocolate?
+  - Yes, plaese.
+- Do you like bananas?
+  - Yes, I love them.
+- Would you like an ice-cream? 
+  - No, thank you.
+- What would you like to drink?
+  - A glass of water, please.
+- Would you like to go out for a walk?
+  - Not now. Perhaps later.
+- I like tomatoes, but I don't eat them very often.
+- What time would you like to have dinner this evening?
+- Would you like something to eat? 
+  - No, thanks. I'm not hungry.
+- Do you like your new job?
+  - Yes, I'm enjoying it.
+- I'm tired. I'd like to go to sleep now.
+- I'd like a sandwich, please.
+  - Sure. What kind of sandwich?
+- What kind of music do you like?
+  - All kinds.
