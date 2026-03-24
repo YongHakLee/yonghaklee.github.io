@@ -578,3 +578,182 @@ tags: [study, english, giuessential]     # TAG names should always be lowercase
   - Sure. What kind of sandwich?
 - What kind of music do you like?
   - All kinds.
+
+## Unit 035. Do this! Don't do that! Let's do this!
+
+---
+
+### A
+
+---
+
+We use come/look/go/wait/do/be etc. when we tell somebody to do something:
+- Come here and look at this!
+  - What is it?
+- I don't want to talk to you. Go away!
+- I'm not ready yet. Please wait for me.
+- Please be quiet. I'm working.
+
+also
+- Bye! Have a good holiday! / Have a nice time! / Have a good flight! / Have fun!
+  - (= I hope you have a good holiday etc.)
+- Have a chocolate. (= would you like a chocolate?)
+  - Oh, thanks.
+
+### B
+
+---
+
+We use **don't** ... when we tell somebody not to do something:
+- Be careful! Don't fall.
+- Please don't go. Stay here with me.
+- Be here on time. Don't be late.
+
+### C
+
+---
+
+You can say **Let's** ...when you want people to do things with you. Let's = Let us.
+- It's a nice day. Let's go out.
+- Come on! Let's dance.
+- Are you ready? Let's go.
+- Let's have fish for dinner tonight.
+- Shall we go out tonight?
+  - No, I'm tired. Let's stay at home.
+
+The negative is **Let's not** ...:
+- It's cold. Let's not go out. Let's stay at home.
+- Let's not have fish for dinner tonight. Let's have chicken.
+
+Or you can say **Don't let's** ...
+- It's cold. Don't let's go out. Let's stay at home.
+
+### Exercise
+
+---
+
+- Come in!
+- Don't drink the water!
+- It's too expensive. Don't buy it.
+- OK, are you ready? Smile!
+- Don't sit on the cat!
+- Bye! Have a nice time!
+- Don't forget to phone me. 
+  - Don't worry. I won't.
+- I'm going to bed now.
+  - OK. Sleep well.
+- Be careful with that vase. Don't drop it.
+
+- Would you like to play tennis?
+  - No, let's go for a swim.
+- Do you want to walk home?
+  - No, let's take a taxi.
+- Shall I put a CD on?
+  - No, let's watch TV.
+- Shall we have dinner at home?
+  - No, let's go to a restaurant.
+- Would you like to go out now?
+  - No, let's wait a little.
+
+- Shall I wait for you?
+  - No, don't wait for me.
+- Shall we go home now?
+  - No, let's not go home yet.
+- Shall we go out?
+  - No, let's not go out.
+- Do you want me to close the window?
+  - No, don't close the window.
+- Shall I phone you tonight?
+  - No, don't phone me tonight.
+- Do you think we should wait for Andy?
+  - No, let's not wait for Andy.
+- Do you want me to turn on the light?
+  - No, don't turn on the light.
+- Shall we go by bus?
+  - No, let's not go by bus.
+
+## Unit 036. I used to ...
+
+---
+
+### A
+
+---
+
+- (DAVE a few years ago) I work in a factory.
+- (DAVE today) I work in a supermarket. I used to work in a factory.
+
+Dave used to work in a factory. Now he works in a supermarket.
+Dave used to work in a factory = he worked in a factory before, but he doesn't work there now:
+- past/now
+
+### B
+
+---
+
+You can say I used to work ... / she used to have ... / they used to be ... etc.:
+- When I was a child, I used to like chocolate.
+- I used to read a lot of books, but I don't read much these days.
+- Liz has got very short hair now, but it used to be very long.
+- They used to live in the same street as us, so we used to see them a lot. But we don't see them very often these days.
+- Helen used to have a piano, but she sold it a few years ago.
+
+The negative is **I didn't use to** ...:
+- When I was a child, I didn't use to like tomatoes.
+
+The question is **did you use to** ...?
+- Where did you use to live before you came here?
+
+### C
+
+---
+
+We use **used to** ... only for the past. You cannot say 'I use to ...' for the present:
+- I used to play tennis. These days I play golf. (*not* I use to play golf)
+- We usually get up early. (*not* We use to get up early)
+
+### Exercise
+
+---
+
+- This is me a few years ago.
+  - She used to have long hair.
+- When I was younger ...
+  - He used to play football.
+- I'm a hairdresser now.
+  - She used be a taxi driver.
+- We live in London now.
+  - They used to live in the country.
+- This is me 20 years ago. I never wear glasses now.
+  - He used to wear glasses.
+- This building used to be a hotel.
+
+- Do you do any sport?
+  - Yes, I swim every day and I play volleyball.
+  - She used to swim every day.
+- Do you go out much?
+  - Yes, most evenings.
+  - She used to go out most evenings.
+- Do you play a musical instrument?
+  - Yes, the guitar.
+  - She used to play the guitar.
+- Do you like reading?
+  - Yes, I read a lot.
+  - She used to read a lot.
+- Do you travel much?
+  - Yes, I go away two or three times a year.
+  - She used to travel a lot.
+
+- I used to play tennis. I stopped playing a few years ago.
+- Do you do any sport?
+  - Yes, I play basketball.
+- Have you got a car?
+  - No, I used to have one, but I sold it.
+- George used to be a waiter. Now he's the manager of a hotel.
+- Do you go to work by car?
+  - Sometime, but most days I go to work by train.
+- When I was a child, I never used to eat meat, but I eat it now.
+- Mary loves watching TV. She watches TV every evening.
+- We used to live near the airport, but we moved to city centre a few years ago.
+- Normally I start work at 7 o'clock, so I get up very early.
+- What games did you use to play when you were a child?
