@@ -183,4 +183,109 @@ For past simple and present perfect, see [Unit 20.](https://yonghaklee.github.io
 - Ten years ago there were 500 children at the school. Now there are more than a thousand.
 - Last week I went back to the town where I was born. It's very different now. There have been a lot of changes.
 - I think everything will be OK. I don't think there will be any problems.
-- 
+ 
+## Unit 039. It ...
+
+---
+
+### A
+
+---
+
+We use **it** for time/day/distance/weather:
+
+*time*
+- What time is it?
+- It's half past ten.
+- It's late.
+- It's time to go home.
+
+*day*
+- What day is it?
+- It's Thursday.
+- It's 16 March.
+- It was my birthday yesterday.
+
+*distance*
+- It's three kilometres from our house to the city centre.
+- How far is it from New York to Los Angeles?
+- It's a long way from here to the station.
+- We can walk home. It isn't far.
+
+We use **far** in questions (is it far?) and negatives (it isn't far). <br>
+In positive sentences, we use a long way (it's a long way).
+
+*weather*
+- It's raining. It isn't raining. Is it snowing?
+- It rains a lot here. It didn't rain yesterday. Does it snow very often?
+- It's warm/hot/cold/fine/couldy/windy/sunny/foggy/dark etc.
+- It's a nice day today.
+
+Compare **it** and **there**:
+- It rains a lot in winter.
+  - There is a lot of rain in winter.
+- It was very windy.
+  - There was a strong wind yesterday.
+
+### B
+
+---
+
+It's nice to ... etc.
+- It's nice to see you again.
+- It's impossible to understand her.
+- It wasn't easy to find your house.
+
+### C
+
+---
+
+Don't forget **it**:
+- It's raining again. 
+- Is it true that you're going away?
+
+### Exercise
+
+---
+
+- It's raining.
+- It's cold.
+- It's windy.
+- It's sunny.
+- It's snowing.
+- It's couldy.
+
+- What time is it?
+- We must go now. It's very late.
+- Is it true that Bill fly a helicopter?
+- What day is it today? Tuesday?
+  - No, it's Wednesday.
+- It's ten kilometres from the airport to the city centre.
+- Is it possible to phone you at your office?
+- Do you want to walk to the hotel?
+  - I don't know. How far is it?
+- It's Lisa's birthday. She's 27.
+- I don't believe it! It's impossible.
+
+- How far is it from here to the station?
+- How far is it from the hotel to the beach.
+- How far is it from New York to Washington?
+- How far is it from your house to the airport?
+
+- The weather isn't so nice today. It's cloudy.
+- There was a strong wind yesterday.
+- It's hot in this room. Open a window.
+- It was a nice day yesterday. It was warm and sunny.
+- There was a storm last night. Did you hear it?
+- I was afraid because it was very dark.
+- It's often cold here, but there isn't much rain.
+- It's a long way from here to the nearest shop.
+
+- If you go to bed late, it's difficult to get up early in the morning.
+- Hello, Jane. It's nice to see you again. How are you?
+- It's impossible to work in this office. There is too much noise.
+- Everybody is very nice at work. It's easy to make friends.
+- I like travelling. It's interesting to visit different places.
+- Some cities are not safe. It's dangerous to go out alone.
+
+
