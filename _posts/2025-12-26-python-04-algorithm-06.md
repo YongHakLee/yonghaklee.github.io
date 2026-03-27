@@ -210,7 +210,7 @@ def threeSum(self, nums: List[int]) -> List[List[int]]:
 
 ## 10 배열 파티션 I
 
-Q. n개의 페어를 이용한 `min(a,b)`의 합으로 만들 수 있는 가장 큰 수를 출력하라. [(Leet Code)](https://leetcode.com/problems/array-partition-i)
+Q. n개의 페어를 이용한 `min(a,b)`의 합으로 만들 수 있는 가장 큰 수를 출력하라. [(Leet Code)](https://leetcode.com/problems/array-partition)
 
 - Input: `[1, 4, 3, 2]`
 - Output: `4`
@@ -234,3 +234,60 @@ def arrayPairSum(self, nums: List[int]) -> int:
 
     return sum
 ```
+
+### 풀이 2 짝수 번째 값 계산
+
+---
+
+```python
+def arrayPairSum(self, nums: List[int]) -> int:
+    sum = 0
+    nums.sort()
+
+    for i, n in enumerate(nums):
+        # 짝수 번째 값의 합 계산
+        if i % 2 == 0:
+          sum += n
+
+    return sum
+```
+
+### 풀이 3 파이썬다운 방식
+
+---
+
+```python
+def arrayPairSum(self, nums: List[int]) -> int:
+    return sum(sorted(nums)[::2])
+```
+
+## 11 자신을 제외한 배열의 곱
+
+---
+
+[(Leet Code)](https://leetcode.com/problems/product-of-array-except-self)
+
+Q. 배열을 입력받아 output[i]가 자신을 제외한 나머지 모든 요소의 곱셈 결과가 되도록 출력하라.
+
+- 주의: 나눗셈을 하지 않고 $$ O(n) $$ 에 풀이하라.
+
+### 풀이 1 왼쪽 곱셈 결과에 오른쪽 값을 차례대로 곱셈
+
+---
+
+```python
+def productExceptSelf(self, nums: List[int]) -> List[int]:
+    out = []
+    p = 1
+    # 왼쪽 곱셈
+    for i in range(0, len(nums)):
+        out.append(p)
+        p = p * nums[i]
+    p = 1
+    # 왼쪽 곱셈 결과에 오른쪽 값을 차례대로 곱셈
+    for i in range(len(nums) - 1, 0 - 1, -1):
+        out[i] = out[i] * p
+        p = p * nums[i]
+    return out
+```
+

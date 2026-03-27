@@ -138,3 +138,284 @@ We use did for the past simple:
   - Yes, I was.
 
 
+## Unit 041. Have you? Are you? Don't you? etc.
+
+---
+
+### A
+
+---
+
+- I've bought a new car. 
+  - Oh, have you?
+- I'm writing a book.
+  - Are you really? What about?
+- I don't like George.
+  - Don't you? Why not?
+
+You can say **have you?** / **is it?** / **can't he?** etc. to show that you are interested or surprised:
+- You are late.
+  - Oh, am I? I'm sorry.
+- I was ill last week.
+  - Were you? I didn't know that.
+- It's raining again.
+  - Is it? It was sunny ten minutes ago.
+- There's a letter for you.
+  - Is there? Where is it?
+- Bill can't drive.
+  - Can't he? I didn't know that.
+- I'm not hungry.
+  - Aren't you? I am.
+- Sue isn't at work today.
+  - Isn't she? Is she ill?
+
+Use **do/does** for the *present simple*, and did for the *past simple*:
+- I speak four languages.
+  - Do you? Which ones?
+- Tim doesn't eat meat.
+  - Doesn't he? Does he eat fish?
+- Nicole got married last week.
+  - Did she? Really?
+
+### B
+
+---
+
+You can use **have you?** / **is it?** / **can't she?** etc. at the end of a sentence.
+
+These 'mini-questions' are *question tags*.
+
+*positive* sentence -> *negative* question tag
+- It's a beautiful day, isn't it?
+  - Yes, it's perfect.
+- Sally lives in London, doesn't she?
+  - Yes, that's right.
+- You closed the window, didn't you?
+  - Yes, I think so.
+- Those shoes are nice, aren't they?
+  - Yes, very nice.
+- Tom will be here soon, won't he?
+  - Yes, probably.
+
+*negative* sentence -> *positive* question tag
+- That isn't your car, is it?
+  - No, it's mother's.
+- You haven't met my mother, have you?
+  - No, I haven't.
+- Sally doesn't go out much, does she?
+  - No, she doesn't.
+- You won't be late, will you?
+  - No, I'm never late.
+
+### Exercise
+
+---
+
+- I speak four languages. 
+  - Do you? Which ones?
+- I work in a bank.
+  - Do you? I work in a bank too.
+- I didn't go to work yesterday.
+  - Didn't you? Were you ill?
+- Jane doesn't like me. 
+  - Doesn't she? Why not?
+- You look tired.
+  - Do I? I feel fine.
+- Kate phoned me last night.
+  - Did she? What did she say?
+
+- I've bought a new car.
+  - Have you? What make is it?
+- Tim doesn't eat meat.
+  - Doesn't he? Does he eat fish?
+- I've lost my key.
+  - Have you? When did you last have it?
+- Sue can't drive.
+  - Can't she? She should learn.
+- I was born in Italy.
+  - Were you? I didn't know that.
+- I didn't sleep well last night.
+  - Didn't you? Was the bed uncomfortable?
+- There's a film on TV tonight.
+  - Is there? Are you going to watch it?
+- I'm not happy.
+  - Aren't you? Why not?
+- I saw Paula last week.
+  - Did you? How is she?
+- Maria works in a factory.
+  - Does she? What kind of factory?
+- I won't be here next week.
+  - Won't you? Where will you be?
+- The clock isn't working.
+  - Isn't it? It was working yesterday.
+
+- It's a beautiful day, isn't it?
+  - Yes, it's perfect.
+- These flowers are nice, aren't they?
+  - Yes, what are they?
+- Jane was at the party, wasn't she?
+  - Yes, but I didn't speak to her.
+- You've been to Paris, haven't you?
+  - Yes, many times.
+- You speak German, don't you?
+  - Yes, but not very well.
+- Martin looks tired, doesn't he?
+  - Yes, he works very hard.
+- You'll help me, won't you?
+  - Yes, of course I will.
+
+- You haven't got a car, have you?
+  - No, I can't drive.
+- You aren't tired, are you?
+  - No, I feel fine.
+- Lisa is a very nice person, isn't she?
+  - Yes, everybody likes her.
+- You can play the piano, can't you?
+  - Yes, but I'm not very good.
+- You don't know Mike's sister, do you?
+  - No, I've never met her.
+- Sarah went to university, didn't she?
+  - Yes, she studied psychology.
+- The film wasn't very good, was it?
+  - No, it was terrible.
+- Anna lives near you, doesn't she?
+  - That's right. In the same street.
+- You won't tell anybody what I said, will you?
+  - No, of course not.
+
+## Unit 042. too/either    so am I / neither do I etc.
+
+---
+
+### A
+
+---
+
+**too** and **either**
+
+- I'm happy.
+  - I'm happy too.
+- I'm not happy.
+  - I'm not happy either.
+
+We use **too** and **either** at the end of a sentence.
+
+We use **too** after a *positive* verb:
+- I'm happy.
+  - I'm happy too.
+- I enjoyed the film.
+  - I enjoyed it too.
+- Jane is a doctor. Her husband is a doctor too.
+
+We use **either** after a *negative* verb:
+- I'm not happy.
+  - I'm not happy either.
+    - (*not* I'm not ... too.)
+  - I can't cook.
+    - I can't either.
+  - Bill doesn't watch TV. He doesn't read newspapers either.
+
+### B
+
+---
+
+**so am I** / **neither do I etc.**
+- I'm happy.
+  - So am I.
+- I'm not happy.
+  - Neither do I.
+
+**so am I** = I am too
+**so I have** = I have too (etc.)
+- I'm working.
+  - So am I. (= I'm working too)
+- I was late for work today.
+  - So was Sam. (= Sam was late too)
+- I work in a bank.
+  - So do I.
+- We went to the cinema last night.
+  - Did you? So did we.
+- I'd like to go to Australia.
+  - So would I.
+
+neither am I = I'm not either
+neither can I = I can't either (etc.)
+- I haven't got a key.
+  - Neither have I. (I haven't either)
+- Kate can't cook.
+  - Neither can Tom.
+- I won't be here tomorrow.
+  - Neither will I.
+- I never go to the cinema.
+  - Neither do I.
+
+You can also use **Nor** (=Neither):
+- I'm not married.
+  - Nor am I. or Neither am I.
+
+### Exercise
+
+---
+
+- I'm happy.
+  - I'm happy too.
+- I'm not hungry.
+  - I'm not hungry either.
+- I'm going out.
+  - I'm going out too.
+- It rained on Saturday.
+  - It rained on Sunday too.
+- Jenny can't drive a car.
+  - She can't ride a bicycle either.
+- I don't like shopping.
+  - I don't like shopping either.
+- Emma's mother is a teacher.
+  - Her father is a teacher too.
+
+- I went to bed late last night.
+  - So did I.
+- I'm thirsty.
+  - So am I.
+- I've just had dinner.
+  - So have I.
+- I need a holiday.
+  - So do I.
+- I'll be late tomorrow.
+  - So will I.
+- I was very tired this morning.
+  - So was I.
+- I can't go to the party.
+  - Neither can I.
+- I didn't phone Alex last night.
+  - Neither did I.
+- I haven't got any money.
+  - Neither have I.
+- I'm not going out tomorrow.
+  - Netiher am I.
+- I don't know what to do.
+  - Neither do I.
+
+- I'm learning English.
+  - So am I.
+- I can ride a bicycle.
+  - So can I.
+- I'm not American.
+  - Neither am I.
+- I like cooking.
+  - I don't.
+- I don't like cold weather.
+  - Neither do I.
+- I slept well last night.
+  - So did I.
+- I've never been to Scotland.
+  - Neither have I.
+- I don't use my phone much.
+  - I do.
+- I'm going out tomorrow evening.
+  - So am I.
+- I haven't got a headache.
+  - I have.
+- I didn't watch TV last night.
+  - Neither did I.
+- I go to the cinema a lot.
+  - I don't.
