@@ -419,3 +419,154 @@ You can also use **Nor** (=Neither):
   - Neither did I.
 - I go to the cinema a lot.
   - I don't.
+
+## Unit 043. isn't, haven't, don't etc. (negatives)
+
+---
+
+### A
+
+---
+
+We use **not** **(n't)** in negative sentences.
+- I'm not tired.
+- It's not raining.
+- They're not here.
+- Julian wasn't hungry.
+- The shops weren't open.
+- I haven't finished my work.
+- Sue hasn't got a car.
+- We won't be here tomorrow.
+- George can't drive.
+- I couldn't sleep last night.
+- I mustn't forget to phone Jane.
+- You shouldn't work so hard.
+- I wouldn't like to be an actor.
+
+### B
+
+---
+
+- I want to go out.
+  - I don't want to go out.
+- They work hard.
+  - They don't work hard.
+- Liz plays the guitar.
+  - Liz doesn't play the guitar.
+- My father likes his job.
+  - My father doesn't like his job.
+- I got up early this morning.
+  - I didn't get up early this morning.
+- They worked hard yesterday.
+  - They didn't work hard yesterday.
+- We played tennis.
+  - We didn't play tennis.
+- Diane had dinner with us.
+  - Diane didn't have dinner with us.
+
+- Look!
+  - Don't look!
+- Wait for me.
+  - Don't wait for me.
+
+Sometimes **do** is the main verb:
+- Do something!
+  - Don't do anything!
+- Sue does a lot at weekends.
+  - Sue doesn't do much at weekends.
+- I did what you said.
+  - I didn't do what you said.
+
+### Exercise
+
+---
+
+- He's gone away.
+  - He hasn't gone away.
+- They're married.
+  - They're not married.
+- I've had dinner.
+  - I haven't had dinner.
+- It's cold today.
+  - It's not cold today.
+- We'll be late.
+  - We won't be late.
+- You should go.
+  - You shouldn't go.
+
+- She saw me.
+  - She didn't see me.
+- I like cheese.
+  - I don't like cheese.
+- They understood.
+  - They didn't understand.
+- He lives here.
+  - He doesn't live here.
+- Go away!
+  - Don't go away!
+- I did the shopping.
+  - I didn't do the shopping.
+
+- She can swim.
+  - She can't swim.
+- They've arrived.
+  - They haven't arrived.
+- I went to the bank.
+  - I didn't go to the bank.
+- He speaks German.
+  - He doesn't speak German.
+- We were angry.
+  - We weren't angry.
+- He'll be pleased.
+  - He won't be pleased.
+- Phone me tonight.
+  - Don't phone me tonight.
+- It rained yesterday.
+  - It didn't rain yesterday.
+- I could hear them.
+  - I couldn't hear them.
+- I believe you.
+  - I don't believe you.
+
+- They aren't rich. They haven't got much money.
+- Would you like something to eat?
+  - No, thank you. I'm not hungry.
+- I can't find my glasses. Have you seen them?
+- Steve doesn't like use email much. He prefers to talk on the phone.
+- We can walk to the station from here. It isn't very far.
+- Where's Jane?
+  - I don't know. I haven't seen her today.
+- Be careful! Don't fall!
+- We went to the cinema last night. I didn't like the film very much.
+- I've been to Japan many times, but I haven't been to Korea.
+- Julia won't be here tomorrow. She's going away.
+- Who broke the window?
+  - Not me. I didn't do it.
+- We didn't see what happened. We weren't looking at the time.
+- Lisa bought a new coat a few days ago, but she hasn't worn it yet.
+- You don't drive so fast. It's dangerous.
+
+- Are you married?
+  - No. (He isn't married.)
+- Do you live in London?
+  - Yes. (He lives in London.)
+- Were you born in London?
+  - No. (He wasn't born in London.)
+- Do you like London?
+  - No. (He doesn't like London.)
+- Would you like to live in the country?
+  - Yes. (He would like to live in the country.)
+- Can you drive?
+  - Yes. (He can drive.)
+- Have you got a car?
+  - No. (He hasn't got a car.)
+- Do you read newspapers?
+  - No. (He doesn't read newspapers.)
+- Are you interested in politics?
+  - No. (He's not intersted in politics.)
+- Do you watch TV most evenings?
+  - Yes. (He watches TV most evenings.)
+- Did you watch TV last night?
+  - No. (He didn't watch TV last night.)
+- Did you go out last night?
+  - Yess (He went out last night.)

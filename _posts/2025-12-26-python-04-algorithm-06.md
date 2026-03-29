@@ -321,7 +321,7 @@ def maxProfit(self, prices: List[int]) -> int:
 ```python
 def maxProfit(self, prices: List[int]) -> int:
     profit = 0
-    min_price = sys.maxsize
+    min_price = sys.maxsize # 초깃값 지정
 
     # 최솟값과 최댓값을 계속 갱신
     for price in prices:
@@ -330,4 +330,6 @@ def maxProfit(self, prices: List[int]) -> int:
 
     return profit
 ```
+
+
 
