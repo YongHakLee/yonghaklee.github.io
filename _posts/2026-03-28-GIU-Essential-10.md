@@ -263,3 +263,263 @@ Use **who** for people (somebody). Use **what** for things, ideas etc. (somethin
 - It was my birthday last week and I had some presents. X gave me a book and Catherine gave me X.
   - Who gave you a book?
   - What did Catherine give you?
+
+## Unit 046. Who is she talking to?  What is it like?
+
+---
+
+### A
+
+---
+
+- Julia is talking to somebody.
+  - Who is she talking to?
+
+In questions beginning (**Who** ...? **What** ...? **Where** ...? **Which** ...?,)
+prepositions (**to**/**from**/**with** etc.) usually go at the end:
+- Where are you from?
+  - I'm from Thailand.
+- Jack was afraid.
+  - What was he afraid of?
+- Who do these books belong to?
+  - They're mine.
+- Tom's father is in hospital.
+  - Which hospital is he in?
+- Kate is going on holiday.
+  - Who with? / Who is she going with?
+- Can we talk?
+  - Sure. What do you want to talk about?
+
+### B
+
+---
+
+- What's your new house like?
+  - It's very big.
+- What's it like? = What is it like?
+- What's it like? = tell me
+
+When we say 'What is it like?', **like** is a *preposition*. It is not the verb like
+('Do you like your new house?' etc.)
+
+- There's a new restaurant in our street.
+  - What's it like? Is it good?
+- I don't know. I haven't eaten there yet.
+
+- What's your new teacher like?
+  - She's very good. We learn a lot.
+
+- I met Nicole's parents yesterday.
+  - Did you? What are they like?
+- They're very nice.
+
+- Did you have a good holiday? What was the weather like?
+  - It was lovely. It was sunny every day.
+
+### Exercise
+
+---
+
+- The letter is from X.
+  - Who is the letter from?
+- I'm looking for a X.
+  - What are you looking for?
+- I went to the cinema with X.
+  - Who did you go to the cinema with?
+- The film was about X.
+  - What was the film about?
+- I gave the money to X.
+  - Who did you give money to?
+- The book was written by X.
+  - Who was the book written by?
+
+- Who is she talking to?
+- What are they looking at?
+- Which restaurant is he going to?
+- What is they talking about?
+- What is she listening to?
+- Which bus are they waiting for?
+
+- Tom's father is in hospital.
+  - Which hospital is he in?
+- We stayed at a hotel.
+  - Which hotel did you stay at?
+- Jack plays for a football team.
+  - Which team does he play for?
+- I went to school in this town.
+  - Which school did you go to?
+
+- What are the roads like?
+- What is the food like?
+- What are the people like?
+- What is the weather like?
+
+- What was the weather like?
+- What was the film like?
+- What were the lessons like?
+- What was the hotel like?
+
+## Unit 047. What ...? Which ...? How ...?
+
+---
+
+### A
+
+---
+
+What + *noun* (What color ...? / What kind ...? etc.)
+- What colour is your car?
+- What size is this shirt?
+- What time is it?
+- What kind of job do you want?
+- What colour are your eyes?
+- What make is your TV set?
+- What day is it today?
+
+What without a noun:
+- What's your favourite colour?
+- What do you want to do tonight?
+
+### B
+
+---
+
+Which + *noun* (things or people):
+- Which train did you catch - the 9.50 or the 10.30?
+- Which doctor did you see - Doctor Ellis, Doctor Gray ...
+
+We use **which** without a noun for things, not people:
+- Which is bigger - Canada or Australia?
+
+We use **who** for people (without a noun):
+- **Who** is taller - Joe or Gray? (*not* Which is taller?)
+
+### C
+
+---
+
+**What** or **which**?
+
+We use **which** when we are thinking about a small number of possibilities (perhaps 2,3 or 4):
+- We can go this way or that way. Which way shall we go?
+- There are four umbrellas here. Which is yours?
+
+**What** is more general:
+- What's the capital of Argentina? (of all the cities in Argentina)
+- What sort of music do you like? (of all kinds of music)
+
+Compare:
+- What colour are his eyes? (*not* Which colour?)
+  - Which colour do you prefer, pink or yellow?
+- What is the longest river in the world?
+  - Which is the longest river - the Mississippi, the Amazon or the Nile?
+
+### D
+
+---
+
+How ...?
+- How was the party last night?
+  - It was great.
+- How do you usually go to work?
+  - By bus.
+
+You can use how + *adjective*/*adverb* (how tall / how old / how often etc.):
+- How tall are you?
+  - I'm 1 metre 70.
+- How big is the house?
+  - Not very big.
+- How old is your mother?
+  - She's 45.
+- How far is it from here to the airport?
+  - Five kilometres.
+- How often do you use your car?
+  - Every day.
+- How long have they been married?
+  - Ten years.
+- How much was the meal?
+  - Thirty pounds.
+
+### Exercise
+
+---
+
+- I've got a new TV set.
+  - What make is it?
+- I want a job.
+  - What kind of job do you want?
+- I've got a new sweater.
+  - What colour is it?
+- I got up early this morning.
+  - What time did you get up?
+- I like music.
+  - What type of music do you like?
+- I want to buy a car.
+  - What kind of car do you want (to buy)?
+
+- Which way shall we go?
+- Which coat is yours?
+- Which film do you want to see?
+- Which bus goes to the centre?
+
+- What is that man's name?
+- Which way shall we go? Left or right?
+- You can have tea or coffee. Which do you prefer?
+- What day is it today?
+  - Friday.
+- This is a nice office. Which desk is yours?
+- What is your favourite sport?
+- Which is more expensive, meat or fish?
+- Who is older, Liz or Steve?
+- What kind of camera have you got?
+- I've got three cameras.
+  - Which camera do you use most?
+- What nationality are you?
+
+- How high is Mount Everest?
+  - Nearly 9000 metres.
+- How far is it to the station?
+  - It's about two kilometres from here.
+- How old is Helen?
+  - She's 26.
+- How often do the buses run?
+  - Every ten minutes.
+- How deep is the water in the pool?
+  - Two metres.
+- How long have you lived here?
+  - Nearly three years.
+
+- Are you 1 metre 70? 1.75? 
+  - How tall are you?
+- Is this box one kilogram? Two?
+  - How heavy is this box??
+- Are you 20 years old? 23?
+  - How old are you?
+- Did you spend $20? ..?
+  - How much did you spend?
+- Do you watch TV every day? Once a week? Never?
+  - How often do you watch TV?
+- Is it 1000 miles from Paris to Mowcow? 1500?
+  - How far is it from Paris to Mowcow?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
