@@ -502,9 +502,88 @@ You can use how + *adjective*/*adverb* (how tall / how old / how often etc.):
 - Is it 1000 miles from Paris to Mowcow? 1500?
   - How far is it from Paris to Mowcow?
 
+## Unit 048. How long does it take ...?
 
+---
 
+### A
 
+---
+
+How long does it take from ... to ...?
+- How long does it take by plane from New York to Washington?
+  - It takes one hour.
+- How long does it take by train from London to Manchester?
+- It takes two hours by train from London to Manchester.
+- How long does it take by car from your house to the station?
+- It takes ten minutes by car from my house to the station.
+
+### B
+
+---
+
+How long does it take to do something?
+- How long does it take to cross the Atlantic by ship?
+- I came by train.
+  - Did you? How long did it take to get here?
+- How long will it take to get from here to the hotel?
+- It takes a long time to learn a language.
+- It doesn't take long to cook an omelette.
+- It won't take long to fix the computer.
+
+### C
+
+---
+
+How long does it take you to do something?
+- I started reading the book on Monday. I finished it on Wednesday evening. It took me three days to read it.
+- How long will it take me to learn to drive?
+- It takes Tom 20 minutes to get to work in the morning.
+- It took us an hour to do the shopping.
+- Did it take you a long time to find a job?
+- It will take me an hour to cook dinner.
+
+### Exercise
+
+---
+
+- How long does it take by plane from London to Amsterdam?
+- How long does it take by car from Milan to Rome?
+- How long does it take by train from Paris to Geneva?
+- How long does it take by bus from the city centre to the airport?
+
+- fly from your city/country to London
+  - It takes two hours to fly from Madrid to London.
+- fly from your city/country to New York
+  - It takes n hours to fly from x to y.
+- study to be a doctor in your country.
+  - It takes n years to study to be a doctor in x.
+- walk from your home to the nearest shop
+  - It takes x minutes to walk from my home to the nearest shop.
+- get from your home to the nearest airport
+  - It takes x hours to get from my home to the nearest airport.
+
+- Jane found a job.
+  - How long did it take her to find a job?
+- I walked to the station.
+  - How long did it take you to walk to the station?
+- Tom painted the bathroom.
+  - How long did it take him to paint the bathroom?
+- I learnt to ski.
+  - How long did it take you to learn to ski?
+- They repaired the computer.
+  - How long did it take them to repair the computer?
+
+- I read a book last week. I started reading it on Monday. I finished it three days later.
+  - It took me three days to read the book.
+- We walked home last night. We left at 10 o'clock and we arrived home at 10.20.
+  - It took us 20 minutes to walk home.
+- I learnt to drive last year. I had my first driving lesson in January. I passed my driving test six months later.
+  - It took me six months to learn to drive.
+- Mark drove to London yesterday. He left home at 7 o'clock and got to London at 10.
+  - It took Mark three hours to drive to London.
+- Lisa began looking for a job a long time ago. She got a job last week.
+  - It took Lisa a long time to get a job.
 
 
 
