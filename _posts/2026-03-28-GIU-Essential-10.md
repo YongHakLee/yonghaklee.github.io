@@ -585,6 +585,144 @@ How long does it take you to do something?
 - Lisa began looking for a job a long time ago. She got a job last week.
   - It took Lisa a long time to get a job.
 
+## Unit 049. Do you know where ...?  I don't know what ... etc.
+
+---
+
+### A
+
+---
+
+- Where is Paula?
+  - Do you know where Puala is?
+  - (*not* Do you know where is Paula?)
+
+Compare:
+- Who are those people?
+  - Do you know who those people are?
+- How old is Nicole?
+  - Can you tell me how old Nicole is?
+- What time is it?
+  - Do you know what time it is?
+- Where can I go?
+  - Can you tell me where I can go?
+- How much is this camera?
+  - I know how much this camera is.
+- When are you going away?
+  - I don't know when you are going away.
+- Where have they gone?
+  - I don't remember where they have gone.
+- What was Kate wearing?
+  - I don't know what Kate was wearing.
+
+### B
+
+---
+
+Questions with do/does/did (*present simple* and *past simple*)
+- Where does he live?
+  - Do you know where he lives?
+  - (*not* Do you know where does he live?)
+
+Compare:
+- How do aeroplanes fly?
+  - Do you know how aeroplanes fly?
+- What does Jane want?
+  - I don't know what Jane wants.
+- Why did she go home?
+  - I don't remember why she went home.
+- Where did I put the key?
+  - I know where I put the key.
+
+### C
+
+---
+
+Questions beginning Is ...? / DO ...? / Can ...? etc. (yes/no questions)
+
+Compare:
+- Is Jack at home?
+  - Do you know if Jack is at home?
+- Have they got a car?
+  - Do you know whether they've got a car?
+- Can Brian swim?
+  - I don't know if Brian can swim.
+- Do they live near here?
+  - I don't know whether they live near hear.
+- Did anybody see you?
+  - I don't know if anybody saw you.
+
+You can use if or whether in these sentences:
+- Do you know if they've got a car?
+  - Do you know whether they've got a car?
+- I don't know if anybody saw me.
+  - I don't know whether anybody saw me.
+
+### Exercise
+
+---
+
+- Have your friends gone home?
+  - I don't know where they've gone.
+- Is Kate in her office?
+  - I don't know where she is.
+- Is the castle very old?
+  - I don't know how old the it is.
+- Will Paul be here soon?
+  - I don't know when he will be here.
+- Was he angry because I was late?
+  - I don't know why he was angry.
+- Has Sally lived here a long time?
+  - I don't know how long she has lived here.
+
+- How do aeroplanes fly?
+  - Do you know how aeroplanes fly?
+- Where does Susan work?
+  - I don't know where Susan works.
+- What did Peter say?
+  - Do you remember what Peter said?
+- Why did he go home early?
+  - I don't know why he went home early.
+- What time does the meeting begin?
+  - Do you know what time the meeting begins?
+- How did the accident happen?
+  - I don't remember how the accident happened.
+
+- Do you know what time it is?
+- Why are you going away?
+- I don't know where they are going.
+- Can you tell me where the museum is?
+- Where do you want to go for your holidays?
+- Do you know what elephants eat?
+- I don't know how far it is from the hotel to the station.
+
+- Have they got a car?
+  - Do you know if they have got a car?
+- Are they married?
+  - Do you know if they are married?
+- Does Sue know Bill?
+  - Do you know if Sue knows Bill?
+- Will Gary be here tomorrow?
+  - Do you know if Gary will be here tomorrow?
+- Did he pass his exam?
+  - Do you know if he passed his exam?
+
+- What does Laura want?
+  - Do you know what Laura wants?
+- Where is Paula?
+  - Do you know where Paula is?
+- Is she working today?
+  - Do you know she is working today?
+- What time does she start work?
+  - Do you know what time she starts work?
+- Are the shops open tomorrow?
+  - Do you know if the shops are open tomorrow?
+- Where do Sarah and Tim live?
+  - Do you know where Sarah and Tim live?
+- Did they go to Jane's party?
+  - Do you know if they went to Jane's party?
+
+
 
 
 
