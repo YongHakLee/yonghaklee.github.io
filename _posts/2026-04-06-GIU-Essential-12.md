@@ -310,3 +310,94 @@ You can say **Let's** ...when you want people to do something with you:
 - Kate doesn't like me. 
   - What makes you think that?
 
+## Unit 054. I went to the shop to ...
+
+---
+
+### A
+
+---
+
+Paula wanted a newspaper, so she went to the shop.
+
+Why did she go to the shop? - **To get** a newspaper.
+
+She went to the shop to get a newspaper.
+
+**to** ... (to get / to see etc.) tells us why a person does something:
+- Why are you going out?
+  - To get some bread.
+- Catherine went to the station to meet her friend.
+- Sue turned on the television to watch the news.
+- I'd like to go to Spain to learn Spanish.
+
+**money**/**time** **to** (do something):
+- We need some money to buy food.
+- I haven't got time to watch television.
+
+### B
+
+---
+
+**to** ... and **for** ...
+
+**to** + *verb*
+- I went to the shop to get a newspaper.
+- They're going to Brazil to see their friends.
+- We need some money to buy food.
+
+**for** + *noun*
+- I went to the shop for a newspaper.
+- They're going to Brazil for a holiday.
+- We need some money for food.
+
+### C
+
+---
+
+**wait for** ...:
+- Please wait for me.
+- Are you waiting for the bus?
+
+**wait to** (do something):
+- Hurry up! I'm waiting to go.
+- Are you waiting to see the doctor?
+
+**wait for** (somebody/something) **to** ...:
+- I can't go out yet. I'm waiting for John to phone.
+- Are you waiting for the doctor to come?
+
+### Exercise
+
+---
+
+- I went to the post office to get some stamps.
+- I went to the cafe to meet a friend.
+- I went to the chemist to get some medicine.
+- I went to the supermarket to buy some food.
+
+- I turned on the television to watch the news.
+- Alice sat down in an armchair to read the newspaper.
+- Do I need a key to open this door?
+- I went for a walk by the river to get some fresh air.
+- I knocked on the door of David's room to wake him up.
+- The doorbell rang, so I looked out of the window to see who it was.
+
+- I went out to get some bread.
+- We went to a restaurant to have dinner.
+- Roberts wants to go to university to study economics.
+- I'm going to London for an interview next week.
+- I'm going to London to visit some friends of mine.
+- Have you got time for a cup of coffee?
+- I got up late this morning. I didn't have time to wash.
+- Everybody needs money to live.
+- We didn't have any money for a taxi, so we walked home.
+- The office is very small. There's space only for a desk and chair.
+- Excuse me, are you waiting to use the phone?
+  - No, I'm waiting for somebody.
+
+- I can't go out yet. I'm waiting for John to phone.
+- I sat down in the cinema and waited for the film to begin.
+- We called an ambulance and waited for it to arrive.
+- Do you know what to do?
+  - No, I'm waiting for you to tell me.
