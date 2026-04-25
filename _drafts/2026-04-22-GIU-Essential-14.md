@@ -126,3 +126,103 @@ give it/them to ...:
 - Do you know that man?
   - Yes, but I don't know his name.
 - We live in Barton Street. Our house is at the end on the left.
+
+## Unit 061. Whose is this? It's mine/yours/hers etc.
+
+---
+
+### A
+
+---
+
+- It's my money. It's mine.
+- It's our money. It's ours.
+- It's your money. It's yours.
+- It's his money. It's his.
+- It's her money. It's hers.
+- It's their money. It's theirs.
+
+### B
+
+---
+
+We use **my**/**your** etc. + *noun*
+- My hands are cold.
+- Is this your book?
+- Helen gave me her umbrella.
+- It's their problem, not our problem.
+
+We use **mine**/**yours** etc. without a noun:
+- Is this book mine or yours?
+- I didn't have an umbrella, so Helen gave me hers.
+- It's their problem, not ours.
+- We went in our car, and they went in theirs.
+
+You can use **his** with or without a noun:
+- Is this camera his or hers?
+  - It's his.
+
+### C
+
+---
+
+a friend of mine / a friend of his / some friends of yours etc.
+- I went out to meet a friend of mine. 
+- Tom was in the restaurant with a friend of his.
+- Are those people friends of yours?
+
+### D
+
+---
+
+Whose ...?
+- Whose book is this?
+
+You can use whose with or without a noun:
+- Whose money is this?
+- Whose is this?
+- Whose shoes are these?
+- Whose are these?
+
+### Exercise
+
+---
+
+- It's your money. It's yours.
+- It's my bag. It's mine.
+- It's our car. It's ours.
+- They're her shoes. They're hers.
+- It's their house. It's theirs.
+- They're your books. They're yours.
+- They're my glasses. They're mine.
+- It's his coat. It's his.
+
+- It's their problem, not ours.
+- This is a nice camera. Is it yours?
+- That's not my umbrella. Mine is black.
+- Whose books are these? Yours or mine?
+- Catherine is going out with her friends this evening.
+- My room is bigger than hers.
+- They've got two children, but I don't know their names.
+- Can we use your washing machine? Ours isn't working.
+
+- I went to the cinema with a friend of mine.
+- They went on holiday with some freinds of theirs.
+- She's going out with a friend of hers.
+- We had dinner with some friends of ours.
+- I played tennis with a friend of mine.
+- Tom is going to meet a friend of his.
+- Do you know those people? Are they friends of yours?
+
+- Whose car is this?
+  - It's theirs.
+- Whose camera is this? 
+  - It's hers.
+- Whose gloves are these?
+  - They're mine.
+- Whose hat is this?
+  - It's his.
+- Whose money is this?
+  - It's yours.
+- Whose books are these?
+  - They're ours.
