@@ -226,3 +226,58 @@ You can use whose with or without a noun:
   - It's yours.
 - Whose books are these?
   - They're ours.
+
+## Unit 062. I/me/my/mine
+
+---
+
+### B
+
+---
+
+Study these examples:
+- Do you know that man?
+  - Yes, I know him, but I can't remember his name.
+- She was very pleased because we invited her to stay with us at our house.
+- Where are the children? Have you seen them?
+  - Yes, they are playing with their friends in the park.
+- That's my pen. Can you give it to me please?
+- Is this your umbrella?
+  - No, it's yours.
+- He didn't have an umbrella, so she gave him hers.
+- I'm going out with a friend of mine this evening.
+
+- Do you know that man?
+  - Yes, I know him, but I can't remember his name.
+- Do you know that woman?
+  - Yes, I know her, but I can't remember her name.
+- Do you know those people?
+  - Yes, I know them, but I can't remember their names.
+- Do you know me?
+  - Yes, I know you, but I can't remember your name.
+
+- We invited her to stay with us at our house.
+- He invited us to stay with him at his house.
+- They invited me to stay with them at their house.
+- I invited them to stay with me at my house.
+- She invited us to stay with her at her house.
+- Did you invite him to stay with you at your house?
+
+- I gave him my address, and he gave me his.
+- I gave her my address, and she gave me hers.
+- He gave me his address, and I gave him mine.
+- We gave them our address, and they gave us theirs.
+- She gave him her address, and he gave her his.
+- You gave us your address, and we gave you ours.
+- They gave you their address, and you gave them yours.
+
+- Where's Amanda? Have you seen her?
+- Where are my keys? Where did I put them?
+- This letter is for Bill. Can you give it to him?
+- We don't see our neighbours much. They're not at home very often.
+- I can't find my pen. Can I use yours?
+  - Yes, of course.
+- We're going to the cinema. Why don't you come with us?
+- Did your sister pass her exams?
+- Some people talk about their jobs all the time.
+- Last night I went out for a meal with a friend of mine.
