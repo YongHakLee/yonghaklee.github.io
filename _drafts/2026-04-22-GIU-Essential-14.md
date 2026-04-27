@@ -281,3 +281,93 @@ Study these examples:
 - Did your sister pass her exams?
 - Some people talk about their jobs all the time.
 - Last night I went out for a meal with a friend of mine.
+
+## Unit 063. myself/yourself/themselves etc.
+
+---
+
+### A
+
+---
+
+- I looked at myself in the mirror.
+- He cut himself with a knife.
+- She fell of her bike, but she didn't hurt herself.
+- Please help yourself. (one person)
+- Please help yourselves. (two or more people)
+- We had a good holiday. We enjoyed ourselves.
+- They had a nice time. They enjoyed themselves.
+
+### B
+
+---
+
+me/him/them etc.
+- You never talk to me.
+- I didn't pay for them.
+- I'm sorry. Did I hurt you?
+
+myself/himself/themselves etc.
+- Sometimes I talk to myself.
+- They paid for themselves.
+- Be careful. Don't hurt yourself.
+
+### C
+
+---
+
+by myself / by yourself etc. = alone:
+- I went on holiday by myself. (= I went alone)
+- Was she with friends?
+  - No, she was by herself.
+
+### D
+
+---
+
+each other
+- Kate and Helen are good friends. They know each other well.
+- Paul and I live near each other.
+
+Compare **each other** and **-selves**:
+- Tim and Sue looked at each other. (= he looked at her, she looked at him)
+- Tim and Sue looked at themselves. (= he looked at himself, she looked at herself)
+
+### Exercise
+
+---
+
+- He looked at himself in the mirror.
+- I'm not angry with you. I'm angry with myself.
+- Karen had a good time in Australia. She enjoyed herself.
+- My friends had a good time in Australia. They enjoyed themselves.
+- I picked up a very hot plate and burnt myself.
+- He never thinks about other people. He only thinks about himself.
+- I want to know more about you. Tell me about yourself.
+- Goodbye! Have a good trip and look after yourselves!
+
+- I went on holiday by myself.
+- When I saw him, he was by himself.
+- Don't go out by yourself.
+- I went to the cinema by myself.
+- My sister lives by herself.
+- Many people live by themselves.
+
+- They like each other.
+- They can't see each other.
+- They phone each other a lot.
+- They don't know each other.
+- They're sitting next to each other.
+- They gave each other a present.
+
+- Paul and I live near each other.
+- Who are those people? Do you know them?
+- You can hel Tom, and Tom can help you. So you and Tom can help each other.
+- There's food in the kitchen. If you and Chris are hungry, you can help yourselves.
+- We didn't go to Emily's party. She didn't invite us.
+- When we go on holiday, we always enjoy ourselves.
+- Mary and Jane were at school together, but they never see each other now.
+- Diane and I are very good friends. We've known each other for a long time.
+- Did you see Sam and Laura at the party? Yes, but I didn't speak to them.
+- Many people talk to themselves when they're alone.
+
