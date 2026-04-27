@@ -371,3 +371,83 @@ Compare **each other** and **-selves**:
 - Did you see Sam and Laura at the party? Yes, but I didn't speak to them.
 - Many people talk to themselves when they're alone.
 
+## Unit 064. -'s (Kate's camera / my brother's car etc.)
+
+---
+
+### A
+
+---
+
+We normally use **-'s** for people:
+- I stayed at my sister's house.
+- Have you met Mr Black's wife?
+- Are you going to James's party?
+- Paul is a man's name. Paula is a woman's name.
+
+You can use **-'s** without a noun after it:
+- Sophie's hair is longer than Kate's.
+- Whose umbrella is this?
+  - It's my mother's
+- Where were you last night?
+  - I was at Paul's.
+
+### B
+
+---
+
+**friend**'s and **friends'**
+- My friend's house = *one friend* (= his house or her house)
+
+We write **'s** after friend/student/mother etc. (*singular*):
+- my mother's car
+- my father's car
+
+my friends' house = *two or more friends* (= their house)
+
+We write **'** after friends/students/parents etc. (plural):
+- my parents' car (two parents)
+
+### C
+
+---
+
+We use **of** ... for things, places etc.:
+- Look at the roof of that buliding. (*not* that building's roof)
+- We didn't see the beginning of the film. (*not* the film's beginning)
+- What's the name of this village?
+- Do you know the cause of the problem?
+- You can sit in the back of the car.
+- Madrid is the capital of Spain.
+
+### Exercise
+
+---
+
+- Brian is Helen's husband.
+- Sarah is Daniel's mother.
+- Helen is Brian's wife.
+- James is Sarah's brother.
+- James is Daniel's uncle.
+- Sarah is Paul's wife.
+- Helen is Daniel's grandmother.
+- Sarah is James's sister.
+- Paul is Sarah's husband.
+- Paul is Daniel's father.
+- Daniel is James's nephew.
+
+- I stayed at my sister's house.
+- What is the name of the village?
+- Do you like the colour of this coat?
+- Do you know Simon's phone number?
+- My brother's job is very interesting.
+- Write you name at the top of the page.
+- For me, the morning is the best part of the day.
+- Paula's favourite colour is blue.
+- When is your mother's birthday?
+- My parents' house isn't very big.
+- The walls of this house are very thin.
+- The car stopped at the end of the street.
+- Are you going to Silvia's party next week?
+- The manager of the hotel is not here at the moment.
+- 
