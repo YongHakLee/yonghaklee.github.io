@@ -450,4 +450,3 @@ We use **of** ... for things, places etc.:
 - The car stopped at the end of the street.
 - Are you going to Silvia's party next week?
 - The manager of the hotel is not here at the moment.
-- 
