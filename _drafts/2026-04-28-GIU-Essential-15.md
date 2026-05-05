@@ -210,3 +210,188 @@ People is plural (= they), so we say people are / people have etc.:
 - I need my glasses, but I can't find them.
 - I'm going to buy some new jeans today.
 - 
+
+## Unit 067. a bottle / some water (countable / uncountable)
+
+---
+
+### A
+
+---
+
+A noun can be *countable* or *uncountable*.
+
+Countable nouns
+- car, man, bottle, house, key, idea, accident
+- one bottle, two bottles, three men, four houses
+  
+Countable nouns can be *singular* or *plural*:
+- I've got a car.
+- New cars are very expensive.
+- There aren't many cars in the car park.
+
+You can't use the singular alone. You need a/an:
+- We can't get into the house without a key.
+
+### B
+
+---
+
+Uncountable nouns
+- water, air, rice, salt, plastic, money, music, tennis
+
+Uncountable nouns have only one form:
+- money, the money, some money, my money, much money etc.
+- I've got some money.
+- There isn't much money in the box.
+- Money isn't everything.
+
+You can't use a/an + *uncountable nouns*
+
+But you can say **a piece of** ... / **a bottle of** ... etc.
+- a bottle of water
+- a piece of cheese
+- a bowl of rice
+- a carton of milk
+- a bottle of perfume
+- a cup of coffee
+- a bar of chocolate
+- a piece of music
+- a game of tennis
+
+### Exercise
+
+---
+
+- It's salt.
+- It's a spoon.
+- It's a jug.
+- It's water.
+- It's toothpaste.
+- It's a toothbrush.
+- It's an egg.
+- It's money.
+- It's a wallet.
+- It's sand.
+- It's a bucket.
+- It's an evelop.
+
+- I haven't got a watch.
+- Do you like cheese?
+- I never wear a hat.
+- Are you looking for a job?
+- Kate doesn't eat meat.
+- Kate eats an apple every day.
+- I'm going to a party tonight.
+- Music is a wonderful thing.
+- Jamaica is an island.
+- I don't need a key.
+- Everybody nees food.
+- I've got a good idea.
+- Can you drive a car?
+- Do you want a cup of coffee?
+- I don't like coffee without milk.
+- Don't go out without an umbrella.
+
+- a carton of milk.
+- a piece of wood.
+- a glass of water.
+- a bar of chocolate.
+- a cup of coffee.
+- a piece of paper.
+- a bowl of soup.
+- a loaf of bread.
+- a jar of honey.
+
+## Unit 068. a cake / some cake / some cakes 
+
+---
+
+### A
+
+---
+
+**a/an** + *singular countable nouns* (car/apple/shoe etc.):
+- I need a new car.
+- Would you like an apple?
+
+**some** + *plural countable nouns* (cars/apples/shoes etc.):
+- I need some new shoes.
+- Would you like some apples?
+
+**some** + *uncountable nouns* (water/money/music etc.):
+- I need some water.
+- Would you like some cheese?
+  - (*or* Would you like a piece of cheese?)
+
+Compare **a** and **some**:
+- Nicole bought a hat, some shoes, and some perfume.
+- I read a newspaper, made some phone calls, and listened to some music.
+
+### B
+
+---
+
+Many nouns are sometimes countable and sometimes uncountable:
+- a cake, some cakes / some cake *or* a piece of cake
+- a chicken, some chickens / some chicken *or* a piece of chicken
+
+Compare **a paper** and **some paper**: 
+- I want something to read. I'm going to buy a paper.
+- *but* I want to make a shopping list. I need some paper / a piece of paper. (*not* a paper)
+
+### C
+
+---
+
+Be careful with:
+- advice, bread, furniture, hair, information, news, weather, work
+
+These nouns are usually uncountable. So you can't say a/an ..., and they can't be plural.
+- Can I talk to you? I need some advice.
+- I'm going to some bread. 
+- They've got some very nice furniture in their house.
+- Silvia has got very long hair.
+- I'd like some information about hotels in London.
+- Listen! I've just had some good news.
+- It's nice weather today.
+- Do you like your job?
+  - Yes, but it's hard work.
+
+We say **a job** (*but* *not* a work):
+- I've got a new job.
+
+### Exercise
+
+---
+
+- I bought a hat, some shoes, some perfume.
+- I bought some flowers, a newspaper, a pen.
+- I bought some bread, some postcards, some stamps.
+- I bought some toothpaste, some soap, a comb.
+
+- Would you like some cheese?
+- Would you like some coffee?
+- Would you like a biscuit?
+- Would you like some bread?
+- Would you like a chocolate?
+- Would you like some cake? (a piece of cake)
+
+- I read a book and listened to some music.
+- I need some money. I want to buy some food.
+- We met some interesting people at the party.
+- I'm going to open a window to get some fresh air.
+- Rachel didn't eat much for lunch - only an apple and some bread.
+- We live in a big house. There's a nice garden with some beautiful trees.
+- I'm going to make a table. First I need some wood.
+- Listen to me carefully. I'm going to give you some advice.
+- I want to write a letter. I need some paper and a pen.
+
+- I'm going to buy some new shoes.
+- Martin has got brown eyes.
+- Paula has got short black hair.
+- The tour guide gave us some information about the city.
+- We're going to buy some new chairs.
+- We're going to buy some new furniture.
+- It's hard to find a job at the moment.
+- We had wonderful weather when we were on holiday.
