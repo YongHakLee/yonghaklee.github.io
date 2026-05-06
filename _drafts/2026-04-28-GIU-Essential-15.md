@@ -395,3 +395,99 @@ We say **a job** (*but* *not* a work):
 - We're going to buy some new furniture.
 - It's hard to find a job at the moment.
 - We had wonderful weather when we were on holiday.
+
+## Unit 069. a/an and the
+
+---
+
+### A 
+
+---
+
+**a**/**an**
+- Can you open a window?
+  - There are *three* windows here.
+  - **a** window = window 1 or 2 or 3
+- I've got a car.
+  - There are many cars and I've got one.
+- Can I ask a question?
+  - There are many questions - can I ask one?
+- Is there a hotel near here?
+  - There are many hotels - is there one near hear?
+- Paris is an interesting city.
+  - There are many interesting cities and Paris is one.
+- Lisa is a student.
+  - There are many students and Lisa is one.
+
+**the**
+- Can you open **the** winodw?
+  - There is only *one* window here - the window.
+- I'm going to clean the car tomorrow.
+  - my car
+- Can you repeat the question, please?
+  - The question that you asked
+- We enjoyed our holiday. The hotel was very nice.
+  - our hotel
+- Paris is the capital of France.
+  - There is only one capital of France.
+- Lisa is the youngest student in her class.
+  - There is only one youngest student in her class.
+
+Campare **a** and **the**:
+- I bought a jacket and a shirt. The jacket was cheap, but the shirt was expensive.
+  - The jacket and the shirt that I bought
+
+### B
+
+---
+
+We say **the** ... when it is clear which thing or person we mean.
+- the door / the ceiling / the floor / the carpet / the light etc. (*of a room*)
+- the roof / the garden / the kitchen / the bathroom etc. (*of a house*)
+- the centre / the station / the airport / the town hall etc. (*of a town*)
+
+- Where's Tom?
+  - In the kitchen.
+- Turn off the light and closed the door.
+- Do you live far from the centre?
+- I'd like to speak to the manager, please.
+
+### Exercise
+
+---
+
+- We enjoyed our trip. The hotel was very nice.
+- Can I ask a question? 
+  - Sure. What do you want to know?
+- You look very tired. You need a holiday.
+- Where's Tom?
+  - He's in the garden.
+- Eve is an interesting person. You should meet her.
+- Excuse me, can you tell me how to get to the city centre?
+  - Yes, go straight on and then take the next turning left.
+- Shall we go out for a meal this evening?
+  - Yes, that's a good idea.
+- It's a nice morning. Let's go for a walk.
+- Amanda is a student. When she finishes her studies, she wants to be a journalist.
+She lives with two friends in an apartment near the college where she is studying.
+The apartment is small, but she likes it.
+- Peter and Mary have got two children, a boy and a girl. The boy is seven years old, and the girl is three.
+Peter works in a factory. Mary hasn't got a job at the moment.
+
+- Can you open the door, please?
+- How far is it to the airport?
+- Can I have a cup of coffee, please?
+- That's a nice picture - I like it.
+- Can you pass me the dictionary, please?
+- Why are you sitting on the floor?
+
+- Don't forget to turn off the light when you go out.
+- Enjoy your trip, and don't forget to send me a postcard.
+- What is the name of this village?
+- Canada is a very big country.
+- What is the largest city in Canada?
+- I like this room, but I don't like the colour of the carpet.
+- Are you OK?
+  - No, I've got a headache.
+- We live in an old house near the station.
+- What is the name of the director of the film we saw last night?
