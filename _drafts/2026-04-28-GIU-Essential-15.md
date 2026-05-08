@@ -491,3 +491,221 @@ Peter works in a factory. Mary hasn't got a job at the moment.
   - No, I've got a headache.
 - We live in an old house near the station.
 - What is the name of the director of the film we saw last night?
+
+## Unit 070. the ...
+
+---
+
+### A 
+
+---
+
+We use **the** when it is clear which thing or person we mean:
+- What is the name of this street? (there is only one name)
+- Who is the best player in your team? (there is only one best player)
+- Can you tell me the time, please? (= the time *now*)
+- My coffee is on the first floor. (= the first floor of the building)
+
+Don't forget **the**:
+- Do you live near the city centre?
+- Excuse me, where is the nearest bank?
+
+### B
+
+---
+
+**the same ...**
+- We live in the same street. (*not* in same street)
+- Are these two books different?
+  - No, they're the same.
+
+### C
+
+---
+
+the sun / the moon / the world / the sky / the sea / the country
+- The sky is blue and the sun is shining.
+- Do you live in a town or in the country?
+
+the police / the fire brigade / the army (of a city, country etc.)
+- My brother is a soldier. He's in the army.
+- What do you think of the police? Do they do a good job?
+
+the top / the end / the middle / the left etc.
+- Write your name at the top of the page.
+- My house is at the end of the street.
+- The table is in the middle of the room.
+- Do you drive on the right or on the left in your country?
+
+(play) the piano / the guitar / the trumpet etc. (musical instruments)
+- Puala is learning to play the piano.
+
+the radio
+- I listen to the radio a lot.
+
+the Internet
+- Do you use the Internet much?
+
+### D
+
+---
+
+We do *not* use **the** with:
+
+television / TV
+- I watch TV a lot.
+- What's on television tonight?
+
+*but* Can you turn off the television? (the TV set)
+
+breakfast / lunch / dinner
+- What did you have for breakfast?
+- Dinner is ready!
+
+next / last + week/month/year/summer/Monday etc.
+- I'm not working next week. (*not* the next week)
+- Did you have a holiday last summer? (*not* the last summer)
+
+### Exercise
+
+---
+
+- What is the name of this street?
+- What's on television tonight?
+- Our apartment is on the second floor.
+- Would you like to go to the moon?
+- Which is the best hotel in this town?
+- What time is lunch?
+- How far is it to the city centre?
+- We're going away at the end of May.
+- What are you doing next weekend?
+- I didn't like her the first time I met her.
+- I'm going out after dinner.
+- The Internet is a good way of getting information.
+- My sister got married last month.
+- My dictionary is on the top shelf on the right.
+- We live in the country about ten miles from the nearest town.
+
+- I live in North Street and you live in North Street. We live in the same street.
+- I arrived at 8.30 and you arrived at 8.30. We arrived at the same time.
+- Jim is 25 and Sue is 25. Jim and Sue are the same age.
+- My shirt is dark blue and so is my jacket. My shirt and jacket are the same colour.
+- I've got no money and you've got no money. We've got the same problem.
+
+- The sun is shining.
+- She's playing the guitar.
+- They're having breakfast.
+- He's watching TV.
+- They're swimming in the sea.
+- Tim's name is at the bottom of the list.
+
+- We had dinner at a restaurant last night.
+- We stayed at a very nice hotel, but I don't remember the name.
+- The sky is very clear tonight. You can see all the stars.
+- Sometimes there are some good films on television late at night.
+- Somebody was trying to break into the shop, so I called the police.
+- Tokyo is the capital of Japan.
+- What did you have for lunch?
+  - A salad.
+- I woke up in the middle of the night.
+
+## Unit 071. go to work / go home / go to the cinema
+
+---
+
+### A
+
+---
+
+We say:
+
+(go) to work, (be) at work, start work, finish work
+- Bye! I'm going to work now.
+- I finish work at 5 o'clock every day.
+
+(go) to school, (be) at school, start school, leave school etc.
+- What did you learn at school today?
+- Some childen don't like school.
+
+(go) to university/college, (be) at university/college
+- Helen wants to go to university when she leaves school.
+- What did you study at college?
+
+(go) to hospital, (be) in hospital
+- Jack had an accident. He had to go to hospital.
+
+(go) to prison, (be) in prison
+- Why is he in prison? What did he do?
+
+(go) to church, (be) in/at church
+- David usually goes to church on Sundays.
+
+(go) to bed, (be) in bed
+- I'm tired. I'm going to bed.
+- Where's Jane?
+  - She's in bed.
+
+(go) home, (be) at home etc.
+- I'm tired. I'm going home.
+- Are you going out tonight, or are you staying at home?
+
+### B
+
+---
+
+We say:
+
+(go to) the cinema / the theatre / the bank / the post office / the station / the airport / the city centre
+- I never go to the theatre, but I go to the cinema a lot.
+- Are you going to the bank?
+  - No, to the post office.
+- The number 5 bus goes to the airport; the number 8 goes to the city centre.
+
+(go to) the doctor, the dentist
+- You're not well. Why don't you go to the doctor?
+- I have to go to the dentist tomorrow.
+
+### Exercise
+
+---
+
+- He's in bed.
+- They're at the cinema.
+- She's in hospital.
+- She's at the airport.
+- They're at home.
+- He's in prison.
+
+- I need to change some money. I have to go to the bank.
+- David usually goes to church on Sundays.
+- In Britain, children go to school from the age of five.
+- There were a lot of people at the station waiting for the train.
+- I phoned you last night, but you weren't at home.
+- I'm going to bed now, Goodnight!
+- I'm going to the post office to get some stamps.
+
+- If you want to catch a plane, you go to the airport.
+- If you want to see a film, you go to the cinema.
+- If you are tired and you want to sleep, you go to bed.
+- If you rob a bank and the police catch you, you go to prison.
+- If you have a problem with your teeth, you go to the dentist.
+- If you want to study after you leave school, you go to college.
+- If you are badly injured in an accident, you go to hospital.
+
+- We went to the cinema last night.
+- I finish work at 5 o'clock every day.
+- Lisa wasn't feeling well yesterday, so she went to the doctor.
+- I wasn't feeling well this morning, so I stayed in bed.
+- Why is Angela always late for work?
+- Where are your children?
+  - They're at school.
+- We have no money in the bank.
+- When I was younger, I went to church every Sunday.
+- What time do you usually get home from work?
+- Do you live far from the city centre?
+- Where shall we meet?
+  - At the station.
+- Jim is ill. He's in hospital.
+- Kate takes her children to school every day.
+- Would you like to go to university?
+- Would you like to go to the theatre this evening?
