@@ -709,3 +709,198 @@ We say:
 - Kate takes her children to school every day.
 - Would you like to go to university?
 - Would you like to go to the theatre this evening?
+
+## Unit 072. I like music / I hate exams
+
+---
+
+### A
+
+---
+
+Do not use **the** for general ideas:
+- I like music, especially classical music.
+- We don't eat meat very often.
+- Life is not possible without water.
+- I hate exams.
+- Do you know a shop that sells foreign newspapers?
+- I'm not very good at writing letters.
+
+Do not use **the** for games and sports:
+- My favourtie sports are football and skiing.
+
+Do not use **the** for languages or school subjects:
+- Do you think English is difficult?
+- Tom's brother is studying physics and chemistry.
+
+### B
+
+---
+
+- Flowers are beautiful. (= flowers in general)
+- I love this garden. The flowers are beautiful. (= the flowers in this garden)
+
+- I don't like cold weather. (= cold weather in general)
+- The weather isn't very good today. (= the weather today)
+
+- We don't eat fish very often. (= fish in general) 
+- We had a great meal last night. The fish was excellent. (= the fish we ate last night)
+
+- Are you interested in history? (= history in general)
+- Do you know much about the history of your country?
+
+### Exercise
+
+---
+
+- My favourite sport is football.
+- I like this hotel. The rooms are very nice.
+- Everybody needs friends.
+- Jane doesn't go to parties very often.
+- I went shopping this morning. The shops were very busy.
+- Where's the milk?
+  - It's in the fridge.
+- I don't like milk. I never drink it.
+- Do you do any sports?
+  - Yes, I play the basketball.
+- What does your brother do?
+  - He sells computers.
+- We went for a swim in the river. The water was very cold.
+- I don't like swimming in cold water.
+- Excuse me, can you pass the salt, please?
+- I like this town. I like the people here.
+- Vegetables are good for you.
+- The houses in the street are all the same.
+- I can't sing this song. I don't know the words.
+- I enjoy taking photographs. It's my hobby.
+- Do you want to see the photographs that I took when I was on holiday?
+- English is used a lot in international business.
+- Money doesn't always bring happiness.
+
+## Unit 073. the ... (names of places)
+
+---
+
+### A
+
+---
+
+Places (continents, countries, states, islands, towns etc.)
+
+In general we do *not* use **the** with names of places:
+- France is a very large country.
+- Cairo is the capital of Egypt.
+- Corsica is an island in the Mediterranean.
+- Peru is in South America.
+
+But we use **the** in names with 'republic'/'states'/'kingdom':
+- the Czech Republic
+- the United States of America (the USA)
+- the United Kingdom (the UK)
+
+### B
+
+---
+
+the -s (plural names)
+
+We use **the** with *plural* names of countries/islands/mountains:
+- the Netherlands, the Canary Islands, the Philippines, the Alps
+
+### C
+
+---
+
+Seas, rivers etc.
+
+We use **the** with names of oceans/seas/rivers/canals:
+- the Atlantic (Ocean), the Mediterranean (Sea), the Amazon, the (River) Nile, the Suez Canal, the Black Sea
+
+### D
+
+---
+
+Places in towns (streets, buildings etc.)
+
+In general we do *not* use **the** with names of steerts, squares etc.:
+- Kevin lives in Newton Street.
+- Where is Highfield Road, please?
+- Times square is in New York.
+
+We do not use **the** with names of airports, stations and many other important buildings:
+- Kennedy Airport, Westminster Abbey, London Zoo, Victoria Station, Cambridge University, Edinburgh Castle.
+
+But we use **the** with names of most hotels, museums, theatres, and cinemas:
+- the Regent hotel, the Science museum, the National Theatre, the Odeon (cinema)
+
+### E
+
+---
+
+the ... of ...
+
+We use **the** + names with ... of ...:
+- the Museum of Modern Art
+- the University of California
+- the Great Wall of China
+- the Tower of London
+
+We say the north / the south / the east / the west (of ...):
+- I've been to the north of Italy, but not to the south.
+
+### Exercise
+
+---
+
+- Cairo is the capital of Egypt.
+- The Atlantic is between Africa and America.
+- Sweden is a country in northern Europe.
+- The Amazon is a river in South America.
+- Asia is the largest continent in the world.
+- The Pacific is the largest ocean.
+- The Rhine is a river in Europe.
+- Kenya is a country in East Africa.
+- The United States is between Canada and Mexico.
+- The Andes are mountains in South America.
+- Bangkok is the capital of Thailand.
+- The Alps are mountains in central Europe.
+- The Red Sea is between Saudi Arabia and Africa.
+- Jamaica is an island in the Caribbean.
+- The Bahamas are a group of islands near Florida.
+
+- Kevin lives in Newton Street.
+- We went to see a play at the National Theatre.
+- Have you ever been to China?
+- Have you ever been to the Philippines?
+- Have you ever been to the south of France?
+- Can you tell me where the Regal Cinema is?
+- Can you tell me where Merrion Street is?
+- Can you tell me where the Museum of Art is?
+- Europe is bigger than Australia. 
+- Belgium is smaller than the Netherlands.
+- Which river is longer - the Mississippi or the Nile?
+- Did you go to the National Gallery when you were in London?
+- We stayed at the Park Hotel in Hudson Road.
+- How far is it from Trafalgar Square to Victoria Station?
+- The Rocky Mountains are in North America.
+- Texas is famous for oil and cowboy.
+- I hope to go to the United States next year.
+- Mary comes from the west of Ireland.
+- Alan is a student at Manchester University.
+- The Panama Canal joins the Atlantic Ocean and the Pacific Ocean.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
