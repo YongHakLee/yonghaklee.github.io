@@ -229,3 +229,125 @@ one (= a ...)
   - Which ones?
 - The ones I took at the party last week.
 
+## Unit 076. some and any
+
+---
+
+### A 
+
+---
+
+Use **some** in *positive* sentences:
+- I've got some money.
+- I'm going to buy some clothes.
+- There's some ice in the fridge.
+- We made some mistakes.
+
+Use **any** in *negative* sentences:
+- I'm not going to buy any clothes.
+- There isn't any milk in the fridge.
+- We didn't make any mistakes.
+
+### B
+
+---
+
+**any** and **some** in questions
+
+In most questions (but not all) we use **any** (*not* **some**):
+- Is there any ice in the fridge?
+- Has he got any friends?
+- Do you need any help?
+
+We normally use some (*not* **any**) when we *offer* things (Would you like ...?):
+- Would you like some coffee?
+  - Yes, please.
+
+or when we *ask for* things (Can I have ...? etc.):
+- Can I have some soup, please?
+  - Yes, Help yourself.
+- Can you lend me some money?
+  - Sure. How much do you need?
+
+### C
+
+---
+
+**some** and **any** without a noun
+- I didn't take any photographs, but Jane took some.
+- You can have some coffee, but I don't want any.
+- I've just made some coffee. Would you like some?
+- Where's your luggage?
+  - I haven't got any.
+- Are there any biscuits?
+  - Yes, there are some in the kitchen.
+
+### D
+
+---
+
+**something** / **somebody** (*or* **someone**)
+- She said something.
+- I saw somebody (*or* someone).
+- Would you like something to eat?
+- Somebody's at the door.
+
+**anything** / **anybody** (*or* **anyone**)
+- She didn't say anything.
+- I didn't see anybody. (*or* anyone)
+- Are you doing anything tonight?
+- Where's Sue? Has anybody seen her?
+
+### Exercise
+
+---
+
+- I bought some cheese, but I didn'y buy any bread.
+- I'm going to the post office. I need some stamps.
+- There aren't any shops in this part of town.
+- Gary and Alice haven't got any children.
+- Have you got any brothers or sisters?
+- There are some beautiful flowers in the garden.
+- Do you know any good hotels in London?
+- Would you like some tea?
+  - Yes, please.
+- When we were on holiday, we visited some very interesting places.
+- Don't buy any rice. We don't need any.
+- I went out to buy some oranges, buy they didn't have any in the shop.
+- I'm thirsty. Can I have some water, please?
+
+- I want to wash my hair. Is there any shampoo?
+- The police want to talk to you. They want to ask you some questions.
+- I haven't got my camera, so I can't take any photographs.
+- Do you speak any foreign languages?
+- Yesterday evening I went to a restaurant with some friends of mine.
+- Can I have some milk in my coffee, please?
+- The radio isn't working. There aren't any batteries in it.
+- It's hot in this office. I'm going out for some fresh air.
+- Would you like some cheese?
+  - No, thank you. I've had enough to eat.
+- I can do this job alone. I don't need any help.
+
+- Jane didn't take any photographs, but I took some.
+- Where's your luggage?
+  - I haven't got any.
+- Do you need any money?
+  - No, thank you. I have some.
+- Can you lend me some money?
+  - I'm sorry, but I haven't got any.
+- The tomatoes in the shop didn't look very good, so I didn't buy any.
+- There were some nice oranges in the shop, so I bought some.
+- How many phone calls did you make yesterday? 
+  - I didn't make any.
+
+- A woman stopped me and said something, but I didn't understand.
+- What's wrong?
+  - There's something in my eye.
+- Do you know something about politics?
+- I went to the shop, but I didn't buy anything.
+- Somebody has broken the window. I don't know who.
+- There isn't anything in the bag. It's empty.
+- I'm looking for my keys. Has anybody seen them?
+- Would you like something to drink?
+- I didn't eat anything because I wasn't hungry.
+- This is a secret. Please don't tell anybody.
