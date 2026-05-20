@@ -351,3 +351,126 @@ or when we *ask for* things (Can I have ...? etc.):
 - Would you like something to drink?
 - I didn't eat anything because I wasn't hungry.
 - This is a secret. Please don't tell anybody.
+
+## Unit 077. not + any  no  none
+
+---
+
+### A 
+
+---
+
+- The car park is empyty.
+  - There aren't any cars in the car park.
+  - There are no cars in the car park.
+  - How many cars are there in the car park?
+    - None.
+
+not (-n't) + any
+- There aren't any cars in the car park.
+- Tracey and Jeff haven't got any children.
+- You can have some coffee, but I don't want any.
+
+no ... = not any *or* not a
+- There are no cars in the car park.
+- We've got no coffee.
+- It's nice house, but there's no garden.
+
+We use **no** ... especially after **have** (**got**) and **there** **is**/**are**.
+
+*negative verb* + **any** = *positive verb* + **no**
+- They haven't got any children. 
+  - They've got no children.
+- There isn't any sugar in your coffee.
+  - There's no sugar in your coffee.
+
+### B
+
+---
+
+**no** and **none**
+
+Use **no** + noun
+- We've got no money.
+- Everything was OK. There were no problems.
+
+Use **non** alone (*without* a noun)
+- How much money have you got?
+  - None.
+- Were there any problems?
+  - No, none.
+
+### C
+
+---
+
+**none** and **no-one**
+
+**None** is an answer for **How much**? / **How many**? (things or people)
+- How much money have you got?
+  - None.
+- How many people did you meet?
+  - None.
+
+No-one is an answer for **Who**?
+- Who did you meet?
+  - No-one. *or* Nobody.
+
+### Exercise
+
+---
+
+- We haven't got any money. 
+  - We've got no money.
+- There aren't any shops near here.
+  - There are no shops near here.
+- Carla hasn't got any free time.
+  - Carla has no free time.
+- There isn't a light in this room.
+  - There is no light in this room.
+- We've got no money.
+  - We haven't got any money.
+- There's no milk in the fridge.
+  - There isn't any milk in the fridge.
+- There are no buses today.
+  - There aren't any buses today.
+- Tom has got no brothers or sisters.
+  - Tom hasn't got any brothers or sisters.
+
+- There's no sugar in your coffee.
+- My brother is married, but he hasn't got any children.
+- Sue doesn't speak any foreign languages.
+- I'm afraid there's no coffee. Would you like some tea?
+- Look at those birds!
+  - Birds? Where? I can't see any birds.
+- Do you know where Jessica is?
+  - No, I've got no idea.
+- There aren't any pictures on the wall.
+- The weather was cold, but there was no wind.
+- I wanted to buy some oranges, but they didn't have any in the shop.
+- Everything was correct. There were no mistakes.
+- How much luggage have you got?
+  - None.
+- How much luggage have you got?
+  - I haven't got any.
+
+- Everything was OK. There were no problems.
+- Jack and Emily would like to go on holiday, but they've got no money.
+- I'm not going to answer any questions.
+- He's always alone. He's got no friends.
+- There is no difference between these two machines. They're exactly the same.
+- There wasn't no furniture in the room. It was completely empty.
+- I tried to phone you yesterday, but there was no answer.
+- The house is cold because there isn't any heating.
+- There was no queue outside the cinema, so we didn't have to wait to get our tickets.
+
+---
+
+## Unit 078. not + anybody/anyone/anything  nobody/no-one/nothing
+
+---
+
+### A 
+
+---
+
