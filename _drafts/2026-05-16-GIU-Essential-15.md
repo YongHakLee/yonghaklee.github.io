@@ -474,3 +474,118 @@ No-one is an answer for **Who**?
 
 ---
 
+- There isn't anybody(anyone) in the room.
+- There is nobody(no-one) in the room.
+- Who is in the room?
+  - Nobody. / No-one.
+
+**-body** and **-one** are the same
+
+- There isn't anything in the bag.
+- There is nothing in the bag.
+- What's in the bag?
+  - Nothing.
+
+### B
+
+---
+
+- I don't know anybody (anyone)
+- I'm lonely. I've got nobody to talk to.
+  - (= I haven't got anybody)
+- The house is empty. There is no-one.
+  - (= There isn't anyone in it.)
+
+- I can't remember anything.
+- She said nothing.
+  - She didn't say anything.
+- There's nothing to eat.
+  - There isn't anything to eat.
+
+### C
+
+---
+
+You can use nobody/no-one/nothing at the beginning of a sentence or alone:
+- The house is empty. Nobody lives there.
+- Who did you speak to?
+  - No-one.
+- Nothing happened.
+- What did you say?
+  - Nothing.
+
+### D
+
+---
+
+Remember:
+- *negative verb* + anybody/anyone/anything
+- *positive verb* + nobody/no-one/nothing
+
+- He doesn't know anything.
+- Don't tell anybody.
+- There is nothing to do in this town.
+
+### Exercise
+
+---
+
+- There isn't anything in the bag.
+  - There's nothing in the bag.
+- There isn't anybody in the office.
+  - There's nobody in the office.
+- I haven't got anything to do.
+  - I've got nothing to do.
+- There isn't anything on TV.
+  - There's nothing on TV.
+- There wasn't anyone at home.
+  - There was nobody at home.
+- We didn't find anything.
+  - We found nothing.
+
+- There's nothing in the bag.
+  - There isn't anything in the bag.
+- There was nobody on the bus.
+  - There wasn't anybody on the bus.
+- I've got nothing to read.
+  - I haven't got anything to read.
+- I've got no-one to help.
+  - I haven't got anybody to help.
+- She heard nothing.
+  - She didn't hear anything.
+- We've got nothing for dinner.
+  - We haven't got anything for dinner.
+
+- What did you say?
+  - Nothing.
+- Who saw you?
+  - Nobody.
+- What do you want?
+  - Nothing.
+- Who did you meet?
+  - Nobody.
+- Who knows the answer?
+  - Nobody.
+- What did you buy?
+  - Nothing.
+- What happened?
+  - Nothing.
+- Who was late?
+  - Nobody.
+
+- The house is empty. Nobody lives there.
+- Jack has a bad memory. He can't remember anything.
+- Be quiet! Don't say anything.
+- I didn't know about the meeting. Nobody told me.
+- What did you have to eat?
+  - Nothing. I wasn't hungry.
+- I didn't eat anything. I wasn't hungry.
+- Helen was sitting alone. She wasn't with anybody.
+- I'm afraid I can't help you. There's nothing I can do.
+- I don't know anything about car engines.
+- The museum is free. It doesn't cost anything to go in.
+- I heard knock on the door, but when I opened it, there was nobody there.
+- The hotel receptionist spoke very fast. I didn't understand anything.
+- What are you doing tonight?
+  - Nothing. Why?
+- Helen has gone away. Nobody knows where she is. She didn't tell anybody where shw was going.
