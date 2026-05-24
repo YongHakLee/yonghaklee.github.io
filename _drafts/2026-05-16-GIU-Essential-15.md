@@ -589,3 +589,124 @@ Remember:
 - What are you doing tonight?
   - Nothing. Why?
 - Helen has gone away. Nobody knows where she is. She didn't tell anybody where shw was going.
+
+---
+
+## Unit 079. somebody/anything/nowhere etc.
+
+---
+
+### A
+
+---
+
+somebody/someone
+- A person, but we don't know who
+- Somebody (or Someone) has broken the window.
+
+something
+- A thing, but we don't know what
+- She has got something in her mouth.
+
+somewhere
+- in/to a place, but we don't know where
+- Tom lives somewhere near London.
+
+### B
+
+---
+
+- There is somebody (*or* someone) at the door.
+- Is there anybody (*or* anyone) at the door?
+- There isn't anybody (*or* anyone) at the door.
+- There is nobody (or no-one) at the door.
+
+- Lucy said something, but I didn't understand what she said.
+- Are you doing anything at the weekend?
+- I was angry, but I didn't say anything.
+- What did you say?
+  - Nothing.
+
+- Ruth's parents live somewhere in the south of England.
+- Did you go anywhere interesting for your holidays?
+- I'm staying here. I'm not going anywhere.
+- I don't like this town. There is nowhere to go.
+
+### C
+
+---
+
+- Did you meet anybody interesting at the party?
+- We always go to the same place. Let's go somewhere different.
+- What's that letter?
+  - It's nothing important.
+
+### D
+
+---
+
+- I'm hungry. I want something to eat.
+- Tony hasn't got anybody to talk to.
+- There is nowhere to go in this town.
+
+### Exercise
+
+---
+
+- Lucy said something.
+  - What did she say?
+- I've lost something.
+  - What have you lost?
+- Sue and Tom went somewhere.
+  - Where did they go?
+- I'm going to phone somebody.
+  - Who are you going to phone?
+
+- What did you say?
+  - Nothing.
+- Where are you going?
+  - Nowhere.
+- What do you want?
+  - Nothing.
+- Who are you looking for?
+  - Nobody.
+
+- I didn't say anything.
+- I'm not going anywhere.
+- I don't want anything.
+- I'm not looking for anybody.
+
+- It's dark. I can't see anything.
+- Tom lives somewhere near London.
+- Do you know anything about computers?
+- Listen!
+  - What? I can't here anything.
+- What are you doing here?
+  - I'm waiting for somebody.
+- We need to talk. There's something I want to tell you.
+- Did anybody see the accident?
+  - No, nobody.
+- We weren't hungry, so we didn't eat anything.
+- What's going to happen?
+  - I don't know. Nobody knows.
+- Do you know anyone in Paris?
+  - Yes, a few people.
+- What's in that cupboard?
+  - Nothing. It's empty.
+- I'm looking for my glasses. I can't find them anywhere.
+- I don't like cold weather. I want to live somewhere warm.
+- Is there anything interesting on television tonight?
+- Have you ever met anybody famous?
+
+- We don't go out very much because there's where to go.
+- There isn't any food in the house. We haven't got anything to eat.
+- I'm bored. I've got nothing to do.
+- Why are you standing?
+  - Because there isn't anything to sit.
+- Would you like something to drink?
+  - Yes, please - a glass of water.
+- If you're going to the city centre, take the bus. Don't drive because there's nowhere to park.
+- I want something to read. I'm going to buy a magazine.
+- I need somewhere to stay in London. Can you recommend a hotel?
+
+
