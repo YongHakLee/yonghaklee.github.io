@@ -709,4 +709,100 @@ somewhere
 - I want something to read. I'm going to buy a magazine.
 - I need somewhere to stay in London. Can you recommend a hotel?
 
+## Unit 080. every and all
+
+---
+
+### A
+
+---
+
+We use **every** + *singular* *noun* (every house / every country etc.):
+- Sarah has been to every country in Europe.
+- Every summer we have a holiday by the sea.
+- She looks different every time I see her.
+
+Use a *singular verb* after **every** ...:
+- Every house in the street is the same.
+- Every country has a national flag.
+
+Compare **every** and **all**:
+- Every student in the class passed the exam.
+  - All the students in the class passed the exam.
+- Every country has a national flag.
+  - All the countries have a national flag.
+
+### B
+
+---
+
+**every day** and **all day**
+
+**every day** = on all days:
+- It rained every day last week.
+- Bill watches TV for about two hours every evening. (= on all evenings)
+
+**all day** = the complete day:
+- It rained all day yesterday.
+- On Monday, I watched TV all evening. (= the complete evening)
+
+### C
+
+---
+
+- Everybody needs friends. 
+  - (= All people need friends)
+- Have you got everything you need?
+  - (= All the things you need)
+- I lost my watch. I've looked everywhere for it.
+  - (= I've looked in all places)
+
+### Exercise
+
+- Every student in the class passed the exam.
+- My job is very boring. Every day is the same.
+- Kate is a very good tennis player. When we play, she wins every time.
+- Every room in the hotel has satellite TV.
+- Did you understand what she said?
+  - Most of it, but not every word.
+
+- Yesterday it rained all day.
+- I buy a newspaper every day, but sometimes I don't read it.
+- I'm not going out tomorrow. I'll be at home all day.
+- I usually drink about four cups of coffee every day.
+- Paula was ill yesterday, so she stayed in bed all day.
+- I'm tired now because I've been working hard all day.
+- Last year, we went to the seaside for a week, and it rained every day.
+
+- Bill watches TV for about two hours every evening.
+- Julia gets up at 6.30 every morning.
+- The weather was nice yesterday, so we sat outside all afternoon.
+- I'm going away on Monday. I'll be away all week.
+- How often do you go skiing?
+  - Every year. Usually in March.
+- Were you at home at 10 o'clock yesterday?
+  - Yes, I was at home all morning. I went out after lunch.
+- My sister loves new cars. She buys one every year.
+- I saw Sam at the party, but he didn't speak to me all evening.
+- We go away on holiday for two or three weeks every summer.
+
+- Everybody nees friends.
+- Chris knows everything about computers.
+- I like the people here. Everybody is very friendly.
+- This is a nice hotel. It's comfortable and everything is very clean.
+- Kevin never uses his car. He goes everywhere by motorcycle.
+- Let's get something to eat. Everybody is hungry.
+- Sue's house is full of books. There are books everywhere.
+- You are right. Everything you say is true.
+
+- Everybody has problems.
+- Are you ready yet? Everybody is waiting for you.
+- The house is empty. Everyone has gone out.
+- Gary is very popular. Everybody likes him.
+- This town is completely different now. Everything has changed.
+- I got home very late last night. I came in quietly because everyone was asleep.
+- Everybody makes mistakes!
+- Is everything clear? Does everybody know what to do?
+  - Yes, we all understand.
+
 
