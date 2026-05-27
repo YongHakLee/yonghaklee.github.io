@@ -805,4 +805,109 @@ Compare **every** and **all**:
 - Is everything clear? Does everybody know what to do?
   - Yes, we all understand.
 
+## Unit 081. all  most  some  any  no/none
+
+---
+
+### A
+
+---
+
+children/money/books etc. (in general):
+- Children like playing. (= children in general)
+- Money isn't everything. (= money in general)
+- I enjoy reading books.
+- Everybody needs friends.
+
+the children / the money / these books etc:
+- Where are the children? (= our children)
+- I want to buy a car, but I haven't got the money. (= the money for a car)
+- Have you read these books?
+- I often go out with my friends.
+
+### B
+
+---
+
+most / most of ..., some / some of ... etc.
+
+![view](/assets/img/posts/GIU-Essential-15-01.png)
+
+most/some etc. + noun
+- Most children like playing. (= children in general)
+- I don't want any money.
+- Some books are better than others.
+- He's got no friends.
+- All cities have the same problems. (= cities in general)
+
+Do not use **of** in these sentences:
+- Most people drive too fast. (*not* Most of people)
+- Some birds can't fly. (*not* Some of birds)
+
+most of / some of etc. + the/this/my ... etc.
+- Most of the children at this school are under 11 years old.
+- I don't want any of this money.
+- Some of these books are very old.
+- None of my friends live near me.
+
+You can say **all the ...** or **all of the ...** (with or without of)
+- All the students in our class passed the exam. (*or* All of the studens ...)
+- Silvia has lived in London all her life. (*or* all of her life.)
+
+### C
+
+---
+
+all of it / most of them / none of us etc.
+- You can have some of this cake, but not all of it.
+- Do you know those people?
+  - Most of them, but not all of them.
+- Some of us are going out tonight. Why don't you come with us?
+- I've got a lot of books, but I haven't read any of them.
+- How many of these books have you read?
+  - None of them.
+
+### Exercise
+
+---
+
+- Most children like playing.
+- Some of this money is yours.
+- Some people never stop talking.
+- Most of the shops in the city centre close at 6.30.
+- You can change your money in most banks.
+- I don't like any of the pictures in the living room.
+- He's lost all his money.
+- None of my friends are married.
+- Do you know any of the poeple in this photograph?
+- Most birds can fly.
+- I enjoyed most of the film, but I didn't like the ending.
+- Some sports are very dangerous.
+- We can't find anywhere to stay. All the hotels are full.
+- You must have some of this cheese. It's delicious.
+- The weather was bad when we were on holiday. It rained most of the time.
+
+- How many of the poeple are women?
+  - Most of them.
+- How many of the boxes are on the table?
+  - All of them.
+- How many of the men are wearing hats?
+  - Some of them.
+- How many of the windows are open?
+  - None of them.
+- How many of the people are standing?
+  - Most of them.
+- How much of the money is Ben's?
+  - None of it. 
+
+- Most children like playing.
+- All the students failed the exam.
+- Some people work too hard.
+- Some of the questions in the exam were very easy.
+- I haven't seen any of those people before.
+- All insects have six legs.
+- Have you read all (of) these books?
+- Most of the students in our class are very nice.
+- Most of my friends are going to the party.
+- I'm very tired this morning. I was awake most of the night.
 
