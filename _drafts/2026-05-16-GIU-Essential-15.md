@@ -911,3 +911,92 @@ all of it / most of them / none of us etc.
 - Most of my friends are going to the party.
 - I'm very tired this morning. I was awake most of the night.
 
+## Unit 082. both  either  neither
+
+---
+
+### A
+
+---
+
+We use both/either/neither to talk about two things or people:
+- Rebecca has two children. Both are married. (both = the two children)
+- Would you like tea or coffee? You can have either. (either = tea or coffee)
+- Do you want to go to the cinema or the theatre?
+  - Neither. I want to stay at home. (neither = not the cinema or the theatre)
+
+Compare either and neither:
+- Would you like tea or coffee?
+  - Either. I don't mind. (= tea or coffee)
+  - I don't want either. (*not* I don't want neither)
+  - Neither. (= not tea or coffee)
+
+### B
+
+---
+
+**both** + *plural* / **either** or **neither** + *singular*
+- Last year, I went to Paris and Rome. I liked both cities very much.
+- First I worked in an office, and later in a shop. Neither job was very interesting.
+- There are two ways from here to the station. You can go either way.
+
+### C
+
+---
+
+- Neither of my parents is British.
+- I haven't read either of these books.
+
+You can say both of the/those/my ... or both the/those/my ... (with or without of):
+- I like both of those pictures. *or* I like both those pictures.
+- Both of Paul's sisters are married. *or* Both Paul's sisters are married.
+- Neither of Paul's sisters are married. (*not* Neither Paul's sisters)
+
+### D
+
+---
+
+- Paul has got two sisters. Both of them are married.
+- Sue and I didn't eat anything. Neither of us was hungry.
+- Who are those two people? I don't know either of them.
+
+### Exercise
+
+---
+
+- Last year I went to Paris and Rome. I liked both cities very much.
+- There were two pictures on the wall. I didn't like either of them.
+- I was a good football match. Both teams played well.
+- It wasn't a good football match. Neither team played well.
+- Is your friend English or American?
+  - Neither. She's Australian.
+- We went away for two days, but the weather wasn't good. It rained both days.
+- I bought two newspapers. Which one do you want?
+  - Either. It doesn't matter which one.
+- I invited Donna and Mike to the party, but neither of them came.
+- Do you go to work by car or by bus?
+  - Neither. I always walk.
+- Which jacket do you prefer, this one or that one?
+  - I don't like either of them.
+- Do you work or are you a student?
+  - Both. I work and I'm a student too.
+- Paula and I didn't know the time because neither of us had a watch.
+- Helen has got two sisters and a brother. Both sisters are married.
+- Helen has got two sisters and a brother. I've met her brother, but I haven't met either of her sisters.
+
+- Both cups are empty. 
+- Both windows are open.
+- Neither of them (Neither man) is wearing a hat.
+- Both men have beards.
+- Both buses go to the airport.
+- Neither answer is right.
+
+- Neither of them is married.
+- Both of them are 21.
+- Both of them are students.
+- Neither of them has got a car.
+- Both of them live in London.
+- Both of them like cooking.
+- Neither of them can play the piano.
+- Both of them read newspapers.
+- Neither of them is interested in sport.
