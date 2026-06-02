@@ -1000,3 +1000,119 @@ You can say both of the/those/my ... or both the/those/my ... (with or without o
 - Neither of them can play the piano.
 - Both of them read newspapers.
 - Neither of them is interested in sport.
+
+## Unit 083. a lot    much    many
+
+---
+
+### A
+
+---
+
+We use **much** + *uncountable noun* (much food / much money etc.):
+- Did you buy much food?
+- We haven't got much luggage.
+- How much money do you want?
+- Have you got any money?
+  - I've got some, but not much.
+
+We use **many** + *plural noun* (many books / many people etc.):
+- Did you buy many books?
+- We don't know many people.
+- How many photos did you take?
+- Did you take any photos?
+  - I took some, but not many.
+
+We use **a lot of** + *both types of noun*:
+- We bought a lot of food.
+- Paula hasn't got a lot of free time.
+- We bought a lot of books.
+- Did they ask a lot of questions?
+
+We say:
+- There is a lot of food/money/water ... (*singular verb*)
+- There are a lot of trees/shops/people (*plural verb*)
+- A lot of people speak English. (*not* speaks)
+
+### B
+
+---
+
+We use **much** in *questions* and *negative sentence*:
+- Do you drink much coffee?
+- I don't drink much coffee.
+
+But we do not often use much in *positive sentences*:
+- I drink a lot of coffee. (*not* I drink much coffee)
+- Do you drink much coffee?
+  - Yes, a lot. (*not* Yes, much)
+
+We use **many** and **a lot of** in all types of sentences (positive/negative/question):
+- We've got many friends / a lot of friends.
+- We haven't got many friends / a lot of friends.
+- Have you got many friends? / a lot of friends?
+
+### C
+
+---
+
+You can use **much** and **a lot** without a noun:
+- Donna spoke to me, but she didn't say much.
+- Do you watch TV much?
+  - No, not much. (= not often)
+- We like films, so we go to the cinema a lot. (*not* go to the cinema much)
+- I don't like him very much.
+
+### Exercise
+
+---
+
+- Did you buy much food?
+- There aren't many hotels in this town.
+- We haven't got much petrol. We need to stop and get some.
+- Were there many people on the train?
+- Did many students fail the exam?
+- Paula hasn't got much money.
+- I wans't hungry, so I didn't eat much.
+- I don't know where Gary lives these days. I haven't seen him for many years.
+- How many people are coming to the party?
+- How much milk do you want in your coffee?
+- How much bread did you buy?
+- How many players are there in a football team?
+
+- I don't read very much. I haven't got many books.
+- Hurry up! We haven't got much time.
+- Do you travel a lot? Have you been to many countries?
+- Tina hasn't lived here very long, so she doesn't know many people.
+- Have you got much luggage?
+  - No, only this bag.
+- I know Tokyo well. I've been there many times.
+
+- I like reading. I have a lot of books.
+- We enjoyed our visit to the museum. We saw a lot of interesting things.
+- This road is very dangerous. There are a lot of accidents.
+- We enjoyed our holiday. We had a lot of fun.
+- It took me a very long time to drive here. There was a lot of traffic.
+
+- Do you drink much coffee?
+- I drink a lot of tea.
+- It was a cold winter. We had a lot of snow.
+- There wasn't much snow last winter.
+- It costs a lot of money to travel around the world.
+- We had a cheap holiday. It didn't cost much.
+- Do you know much about computers?
+- Have you got any luggage?
+  - Yes, a lot.
+
+- Jim loves film.
+  - He goes to the cinema a lot.
+- Nicole thinks TV is boring.
+  - She doesn't watch TV much.
+- Tina is a good tennis player.
+  - She plays tennis a lot.
+- Martin doesn't like driving. 
+  - He doesn't use his car much.
+- Paul spends most of the time at home.
+  - He doesn't go out much.
+- Sue has been all over the world.
+  - She travels a lot.
