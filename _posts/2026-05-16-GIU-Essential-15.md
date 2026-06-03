@@ -1116,3 +1116,129 @@ You can use **much** and **a lot** without a noun:
   - He doesn't go out much.
 - Sue has been all over the world.
   - She travels a lot.
+
+## Unit 084. (a) little    (a) few
+
+---
+
+### A
+
+---
+
+**(a) little** + *uncountable noun*:
+- (a) little water
+- (a) little time
+- (a) little money
+- (a) little soup
+
+**(a) few** + *plural noun*:
+- (a) few books
+- (a) few questions
+- (a) few people
+- (a) few days
+
+### B
+
+---
+
+**a little** = some but not much
+- She didn't eat anything, but she drank a little water.
+- I speak a little Spanish.
+- Can you speak Spanish?
+  - A little.
+
+**a few** = some but not many
+- Excuse me, I have to make a few phone calls.
+- We're going away for a few days.
+- I speak a few words of Spanish.
+- Are there any shops near here?
+  - Yes, a few.
+
+### C
+
+---
+
+**little** (without a) = nearly no *or* nearly nothing
+- There was little food in the fridge. It was nearly empty.
+
+You can say **very little**:
+- Dan is very thin because he eats very little. (= nearly nothing)
+
+**few** (without a) = nearly no
+- There were few people in the theatre. It was nearly empty.
+
+You can say very few:
+- Your Enlgish  is very good. You make very few mistakes.
+
+### D
+
+---
+
+**A little** is a *positive* idea:
+- They have a little money, so they're not poor. (= they have some money)
+
+**Little** (or **very little**) is a *negative* idea:
+- They have little money. They are very poor. (= nearly no money)
+
+**A few** is a *positive* idea:
+- I've got a few friends, so I'm not lonely. (= I've got some friends)
+
+**Few** (or **very few**) is *negative* idea:
+- I'm sad and I'm lonely. I've got few friends. (= nearly no friends)
+
+### Exercise
+
+---
+
+- Have you got any money?
+  - Yes, a little.
+- Have you got any envelops?
+  - Yes, a few.
+- Do you want sugar in your coffee?
+  - Yes, a little.
+- Did you take any photographs when you were on holiday?
+  - Yes, a few.
+- Does your friend speak English?
+  - Yes, a little.
+- Are there any good restaurants in this town?
+  - Yes, a few.
+
+- Martin speaks Italian well. He lived in Italy for a few years.
+- Can I have a little milk in my coffee, please?
+- When did Julia go away?
+  - A few days ago.
+- Do you speak any foreign languages?
+  - I can speak a little Russian.
+- Are you going out alone?
+  - No, I'm going with a few friends.
+- Have you ever been to Mexico?
+  - Yes, a few times.
+- There wasn't much furniture in the room - just a table and a few chairs.
+- I'm going out for a walk. 
+  - I need a little fresh air.
+
+- Your English is very good. You make very few mistakes.
+- I drink very little coffee. I don't like it.
+- The weather here is very dry in summer. There is very little rain.
+- It's difficult to find a place to stay in this town. There are very few hotels.
+- Hurry up. We've got very little time.
+- The town is very quiet at night. Very few people go out.
+- Some people in the office are very lazy. They do very little work.
+
+- There was little food in the fridge. It was nearly empty.
+- When did Sarah go out?
+  - A few minutes a go.
+- I can't decide now. I need a little time to think about it.
+- There was little traffic, so we arrived earlier than we expected.
+- The bus service isn't very good at night - there are few buses after 9 o'clock.
+- Would you like some soup?
+  - Yes, a little, please.
+- I'd like to practise my English more, but I have little opportunity.
+
+- We are going away for a few days next week.
+- Everybody needs a little luck.
+- I can't talk to you now - I've got a few things to do.
+- I eat very little meat - I don't like it very much.
+- Excuse me, can I ask you a few questions?
+- There were few people on the bus - it was nearly empty.
+- Martin is a very private person. Few people know him well.
