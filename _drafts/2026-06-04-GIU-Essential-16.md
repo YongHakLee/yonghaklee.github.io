@@ -90,3 +90,104 @@ look/feel/smell/taste/sound + *adjective*
   - Are they? They don't look heavy.
 - That soup looks good.
   - Maybe, but it doesn't taste good.
+
+## Unit 086. quickly/badly/suddenly etc. (adverbs)
+
+---
+
+### A
+
+---
+
+- He ate his dinner very quickly.
+- Suddenly the shelf fell down.
+- quickly, badly, suddenly, carefully, heavily etc.
+
+### B
+
+---
+
+Adverbs tell you *how* something happens or *how* somebody does something:
+- The train stopped suddenly.
+- I opened the door slowly.
+- Please listen carefully.
+- I understand you perfectly.
+
+Compare:
+- *adjective*
+  - Sue is very quiet.
+  - Be carefull!
+  - It was a bad game.
+  - I felt nervous. (= I was nervous) 
+- *adverb*
+  - Sue speaks very quietly.
+  - Listen carefully!
+  - Our team played badly.
+  - I waited nervously.
+
+### C
+
+---
+
+These words are adjectives *and* adverbs:
+- **hard fast late early**
+- Sue's job is very hard.
+  - Sue works very hard.
+- Ben is a very fast runner.
+  - Ben can run fast.
+- The bus was late/early.
+  - I went to bed late/early.
+
+### D
+
+---
+
+good (*adjective*) -> well (*adverb*)
+- Your English is very good.
+- It was a good game.
+- You speak English very well.
+- Our team played well.
+
+But **well** is also an *adjective* (= not ill, in good health)
+- How are you?
+  - I'm very well, thank you. And you?
+
+### Exercises
+
+---
+
+- It's raining heavily.
+- He sings very badly.
+- They came in quietly.
+- She shouted at me angrily.
+- She can run very fast.
+- He was driving dangerously.
+
+- I'm going to tell you something very important, so please listen carefully.
+- They work hard. At the end of the day they're always tired.
+- I'm tired this morning. I didn't sleep well last night.
+- You play tennis much better than me. When you play, you always win easily.
+- Think carefully before you answer the question.
+- I've met Alice a few times, but I don't know her very well.
+- Our teacher doesn't explain things very clearly. We never understand him.
+- Helen! I need you help. Come quickly!
+
+- Don't eat so quickly. It's not good for you.
+- Why are you angry? I haven't done anything.
+- Can you speak slowly, please?
+- Comeo on, Dave! Why are you always so slow?
+- Bill is a very careful driver.
+- Jane is studying hard for her examinations.
+- Where's Diane?
+  - She was here, but she left suddenly.
+- Please be quiet. I'm studying.
+- Some companies pay their workers very badly.
+- Those oranges look nice. Can I have one?
+- I don't remember much about the accident. Everything happend quickly.
+
+- Your English is very good. You speak it very well.
+- Jackie did very well in her exams.
+- The party was very good. I enjoyed it very much.
+- Martin has a difficult job, but he does it well.
+- How are your parents? Are they well?
+- Did you have a good holiday? Was the weather good?
