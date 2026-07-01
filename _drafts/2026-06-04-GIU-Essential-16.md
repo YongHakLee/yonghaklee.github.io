@@ -360,3 +360,97 @@ We usually say: than me / than him / than her / than us / than them.
 - It's a bit warmer than yesterday.
 - Sarah is a much better tennis player than me.
   - Sarah plays tennis much better than me.
+
+## Unit 089. not as ... as
+
+---
+
+### A
+
+---
+
+not as ... as
+- She's old, but she's not as old as he is.
+- Box A isn't as big as Box B.
+
+- Rome isn't as old as Athens.
+- The Grand Hotel isn't as expensive as the Europa.
+- I don't play tennis as often as you.
+- The weather is better than it was yesterday. It isn't as cold. (= as cold as it was yesterday)
+
+### B
+
+---
+
+not as much as ... / not as many as ...
+- I haven't got as much money as you.
+- I don't know as many people as you.
+- I don't go out as much as you.
+
+### C
+
+---
+
+Compare not as ... as and than:
+- Rome is not as old as Athens.
+  - Athens is older than Rome.
+- Tennis isn't as popular as football.
+  - Football is more popular than tennis.
+- I don't go out as much as you.
+  - You go out more than me.
+
+### D
+
+---
+
+- She's not as old as him.
+  - She's not as old as he is.
+- You don't work as hard as me.
+  - You don't work as hard as I do.
+
+### E
+
+---
+
+We say **the same as** ...
+- The weather today is the same as yesterday.
+- My hair is the same colour as yours.
+- I arrived at the same time as Tim.
+
+### Exercises
+
+---
+
+- A is bigger than C, but not as big as B.
+- A is longer than B, but not as long as C.
+- C is heavier than A, but not as heavy as B.
+- A is older than C, but not as old as B.
+- B has got more money than C, but not as much as A.
+- C works harder than A, but not as hard as B.
+
+- Athens is older than Rome.
+  - Rome isn't as old as Athens.
+- My room is bigger than yours.
+  - Your room isn't as big as mine.
+- You got up earlier than me.
+  - I didn't get up as early as you.
+- We played better than them.
+  - They didn't play as well as us.
+- I've been here longer than you.
+  - You haven't been here as long as me.
+- She's more nervous than him.
+  - He isn't as nervous as her.
+
+- Athens is older than Rome.
+- I don't watch TV as much as you.
+- You eat more than me.
+- I'm more tired today than I was yesterday.
+- Joe isn't as intelligent as he thinks.
+- Belgium is smaller than Switzerland.
+- Brazil isn't as big as Canada.
+- I can't wait longer than an hour.
+
+- Andy is the same age as Laura.
+- Julia lives in the same street as Laura.
+- Julia got up at the same time as Andy.
+- Andy's car is the same colour as Laura.
