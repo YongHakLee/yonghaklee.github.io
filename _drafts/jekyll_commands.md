@@ -9,4 +9,3 @@ bundle exec jekyll s --force_polling
 ```shell
 TZ="Asia/Seoul" date +"%Y-%m-%d %H:%M:%S %z"
 ```
-.
