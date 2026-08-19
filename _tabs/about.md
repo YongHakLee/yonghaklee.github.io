@@ -37,7 +37,9 @@ Although I have much to learn, I continuously strive to improve.
 ---
 
 [1] Kang J., Lee C., **Lee Y.**, Yang S. (2026) 
-Topology-Constrained NeuroB-Rep: Contact-Aware CAD Reconstruction From 3-D Point Clouds,
+Topology-Constrained NeuroB-Rep:
+Contact-Aware CAD Reconstruction
+From 3D Point Clouds,
 *IEEE Access*. <br>
 [2] Hwang M.,†, Jeong Y., Kim S., Noh T., Jeong S., Jeong H. and **Lee Y.** (2025) A Two-
 Stage Diffusion Pipeline for Consistent Front-Back Clothing Generation,

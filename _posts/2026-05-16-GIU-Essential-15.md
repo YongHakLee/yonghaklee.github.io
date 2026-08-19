@@ -14,7 +14,7 @@ tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 
 - this (singular)
-  - Do you like this picture?
+  - Do you like this picture??
   - (this picture here)
 - these (plural)
   - These flowers are for you.
