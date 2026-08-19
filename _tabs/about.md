@@ -34,6 +34,7 @@ Although I have much to learn, I continuously strive to improve.
 ---
 
 ### PUBLICATIONS
+
 ---
 
 [1] Kang J., Lee C., **Lee Y.**, Yang S. (2026) 
