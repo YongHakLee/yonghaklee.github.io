@@ -36,8 +36,9 @@ Module 1은 01–08, Module 2는 09–11, Appendix는 12에 해당한다.
 | 총 단어 수 | 56,986 |
 | 이미지 | 73개 고유 (참조 75회), 7.6 MB |
 | 코드 블록(`<pre>`) | 60 |
-| 문단(`<p>`) | 645 |
-| 리스트 항목(`<li>`) | 308 |
+| 문단(`<p>`) | 645 (그중 106개는 `<p><a name="..."></a></p>` 형태의 빈 앵커 문단) |
+| 리스트 항목(`<li>`) | 308 (그중 20개는 빈 항목) |
+| **번역 대상 조각** | **827** (텍스트 있는 `<p>` 539 + 텍스트 있는 `<li>` 288) |
 | figcaption | 60 |
 | 인라인 SVG | 3 |
 | iframe | 1 (`convolutional-networks`의 합성곱 데모) |
@@ -264,14 +265,29 @@ print(margins.sum())
 
 ### 3.11 특수 항목
 
-- **인라인 SVG 3개** (`neural-networks-1`의 뉴런·신경망 다이어그램): kramdown이 원시
+- **인라인 SVG 3개** (`optimization-2`의 역전파 회로 다이어그램): kramdown이 원시
   HTML을 통과시키므로 SVG를 그대로 삽입한다. 텍스트 라벨이 SVG 안에 영어로 남는데,
   이는 원문 그림 그대로이므로 의도에 부합한다.
+
+  다만 이 SVG들은 `stroke="black"`과 검은색 기본 텍스트를 쓰므로 **Chirpy 다크
+  모드에서 배경에 묻혀 보이지 않는다.** 각 SVG를 흰 배경 컨테이너로 감싸 두 테마
+  모두에서 읽히게 한다. 인라인 스타일이라 테마 CSS를 건드리지 않는다.
+
+  ```html
+  <div style="background:#fff; padding:1rem; border-radius:8px; overflow-x:auto">
+    <svg style="max-width: 420px" viewbox="0 0 420 220">...</svg>
+  </div>
+  ```
 - **iframe 1개** (`convolutional-networks`의 합성곱 애니메이션 데모):
   `https://cs231n.github.io/assets/conv-demo/index.html`을 `<iframe>`으로 임베드하고,
   바로 아래에 원본 링크와 한국어 설명을 붙인다. 이 데모는 해당 절의 핵심 설명
   수단이라 링크만 걸면 내용이 비게 된다. 해당 URL은 `X-Frame-Options` 헤더가 없어
   임베드가 가능함을 확인했다.
+- **페이지 내 앵커 링크 105개**: 원문 목차가 `#image-classification` 같은 슬러그로
+  각 절을 가리키는데, 이 슬러그는 원문 `<h2 id="...">`와 일치한다. 영어 제목을 그대로
+  유지하므로 kramdown이 동일한 id를 재생성해 링크가 그대로 동작한다. 원문의
+  `<p><a name="intro"></a></p>` 형태의 빈 앵커 문단 106개는 어디에서도 참조되지
+  않으므로 버린다. htmlproofer가 내부 해시 링크를 검사하므로 어긋나면 CI에서 잡힌다.
 - **상대 링크**: 원문의 `/assignments/`, `/optimization-1/` 같은 사이트 내부 링크는
   절대 URL(`https://cs231n.github.io/...`)로 변환한다. 단, 이 시리즈 안에 대응
   포스트가 있는 링크는 해당 포스트의 사이트 내부 경로로 바꾼다.
@@ -294,7 +310,7 @@ print(margins.sum())
 
 ### 4.2 `convert.py`
 
-각 페이지의 `<div class="post-content">`를 순회하며 마크다운 스켈레톤을 만든다.
+각 페이지의 `<article class="post-content">` … `</article>` 구간을 순회하며 마크다운 스켈레톤을 만든다.
 
 | 원문 요소 | 스켈레톤 출력 |
 | --- | --- |
@@ -320,10 +336,24 @@ print(margins.sum())
 완성된 포스트를 원문과 대조한다. 다섯 가지를 검사한다.
 
 1. `<!-- KO -->` 잔여 0개 — 번역 누락 검출
-2. 원문 인용 조각 수 == 원문 `<p>` + `<li>` 수 (= **953**) — 문단 누락 검출.
-   인용 블록 안의 문단 하나를 1개로, 인용 블록 안의 `- ` / `1. ` 항목 하나를 1개로
-   센다. 원문 `<blockquote>` 안의 `<p>` 14개는 이미 645에 포함되므로 중복해서 세지
-   않는다
+2. 원문 인용 조각 수 == **텍스트가 있는** `<p>` + `<li>` 수 (전체 **827**) — 문단
+   누락 검출. 인용 블록 안의 문단 하나를 1개로, 인용 블록 안의 `- ` / `1. ` 항목
+   하나를 1개로 센다.
+   - 태그를 걷어냈을 때 빈 문자열이 되는 `<p>` 106개(`<p><a name="intro"></a></p>`
+     형태의 앵커 자리표시자)와 빈 `<li>` 20개는 **제외**한다. 이들은 번역할 내용이
+     없으며 변환기가 출력에서 버린다
+   - 원문 `<blockquote>` 안의 `<p>` 14개는 이미 645에 포함되므로 중복해서 세지 않는다
+
+   페이지별 기대치는 아래와 같다.
+
+   | slug | 조각 수 | slug | 조각 수 |
+   | --- | ---: | --- | ---: |
+   | `classification` | 73 | `neural-networks-3` | 120 |
+   | `linear-classify` | 81 | `neural-networks-case-study` | 49 |
+   | `optimization-1` | 61 | `convolutional-networks` | 156 |
+   | `optimization-2` | 57 | `understanding-cnn` | 20 |
+   | `neural-networks-1` | 71 | `transfer-learning` | 19 |
+   | `neural-networks-2` | 71 | `rnn` | 49 |
 3. 이미지 참조 수 == 원문 `<img>` 수, **그리고 참조된 파일이 실제로 존재**
 4. 코드 블록 수 == 원문 `<pre>` 수
 5. `$$` 개수가 짝수 — 수식 구분자 깨짐 검출
