@@ -43,14 +43,13 @@ image:
 
 > **Motivation**. In this section we will introduce the Image Classification problem, which is the task of assigning an input image one label from a fixed set of categories. This is one of the core problems in Computer Vision that, despite its simplicity, has a large variety of practical applications. Moreover, as we will see later in the course, many other seemingly distinct Computer Vision tasks (such as object detection, segmentation) can be reduced to image classification.
 
-**동기(Motivation).** 이 절에서는 이미지 분류(image classification) 문제를 소개한다. 고정된 카테고리 집합에서 레이블 하나를 골라 입력 이미지에 할당하는 작업이다. 컴퓨터 비전의 핵심 문제 가운데 하나로, 단순해 보이지만 실제 응용 범위는 대단히 넓다. 게다가 뒤에서 보겠지만 물체 검출(object detection)이나 분할(segmentation)처럼 겉보기에는 전혀 달라 보이는 컴퓨터 비전 과제도 상당수가 이미지 분류로 환원된다.
+**동기(Motivation).** 이 절에서는 이미지 분류 문제를 소개한다. 고정된 카테고리 집합에서 레이블 하나를 골라 입력 이미지에 할당하는 작업이다. 컴퓨터 비전의 핵심 문제 가운데 하나로, 단순해 보이지만 실제 응용 범위는 대단히 넓다. 게다가 뒤에서 보겠지만 물체 검출(object detection)이나 분할(segmentation)처럼 겉보기에는 전혀 달라 보이는 컴퓨터 비전 과제도 상당수가 이미지 분류로 환원된다.
 
 > **Example**. For example, in the image below an image classification model takes a single image and assigns probabilities to 4 labels, *{cat, dog, hat, mug}*. As shown in the image, keep in mind that to a computer an image is represented as one large 3-dimensional array of numbers. In this example, the cat image is 248 pixels wide, 400 pixels tall, and has three color channels Red,Green,Blue (or RGB for short). Therefore, the image consists of 248 x 400 x 3 numbers, or a total of 297,600 numbers. Each number is an integer that ranges from 0 (black) to 255 (white). Our task is to turn this quarter of a million numbers into a single label, such as *“cat”*.
 
 **예시(Example).** 아래 그림에서 이미지 분류 모델은 이미지 한 장을 받아 *{cat, dog, hat, mug}* 네 개 레이블에 확률을 매긴다. 그림에서 보듯 컴퓨터에게 이미지란 커다란 3차원 숫자 배열 하나라는 점을 기억해두자. 이 예시의 고양이 이미지는 너비 248픽셀, 높이 400픽셀이고 빨강, 초록, 파랑(줄여서 RGB) 세 개의 색 채널을 가진다. 따라서 이 이미지는 248 x 400 x 3개, 모두 297,600개의 숫자로 이루어진다. 각 숫자는 0(검정)부터 255(흰색)까지의 정수다. 우리가 할 일은 이 25만 개 남짓한 숫자를 *"고양이"*라는 레이블 하나로 바꾸는 것이다.
 
-![The task in Image Classification is to predict a single label (or a distribution over labels as shown here...](/assets/img/posts/cs231n/classification/classify.png){: width="540" height="377" }
-
+![The task in Image Classification is to predict a single label (or a distribution over labels as shown here to](/assets/img/posts/cs231n/classification/classify.png){: width="540" height="377" }
 _The task in Image Classification is to predict a single label (or a distribution over labels as shown here to indicate our confidence) for a given image. Images are 3-dimensional arrays of integers from 0 to 255, of size Width x Height x 3. The 3 represents the three color channels Red, Green, Blue._
 
 이미지 분류의 과제는 주어진 이미지에 대해 레이블 하나를, 혹은 그림처럼 확신도를 나타내는 레이블 분포를 예측하는 것이다. 이미지는 너비 x 높이 x 3 크기이고 0부터 255까지의 정수로 이루어진 3차원 배열이다. 여기서 3은 빨강, 초록, 파랑 세 개의 색 채널을 뜻한다.
@@ -86,7 +85,6 @@ _The task in Image Classification is to predict a single label (or a distributio
 **데이터 기반 접근법(data-driven approach).** 이미지를 서로 다른 카테고리로 분류하는 알고리즘은 어떻게 짜야 할까? 숫자 목록을 정렬하는 알고리즘과 달리, 이미지에서 고양이를 찾아내는 알고리즘을 어떻게 짤지는 전혀 자명하지 않다. 그래서 관심 있는 카테고리 하나하나가 어떻게 생겼는지를 코드로 직접 명시하는 대신, 아이를 가르칠 때와 크게 다르지 않은 방식을 택한다. 각 클래스의 예시를 컴퓨터에 잔뜩 보여주고, 그 예시들을 살펴 각 클래스의 시각적 생김새를 배우는 학습 알고리즘을 만드는 것이다. 이 방식은 레이블이 붙은 이미지로 이루어진 *학습 데이터셋(training dataset)*을 먼저 모으는 데서 출발하므로 *데이터 기반 접근법*이라고 부른다. 그런 데이터셋의 예는 다음과 같다.
 
 ![An example training set for four visual categories.](/assets/img/posts/cs231n/classification/trainset.jpg){: width="1008" height="463" }
-
 _An example training set for four visual categories. In practice we may have thousands of categories and hundreds of thousands of images for each category._
 
 네 개 시각 카테고리에 대한 학습 집합 예시. 실제로는 카테고리가 수천 개이고 카테고리마다 이미지가 수십만 장일 수 있다.
@@ -114,22 +112,21 @@ _An example training set for four visual categories. In practice we may have tho
 **이미지 분류 데이터셋 예시: CIFAR-10.** 널리 쓰이는 장난감 이미지 분류 데이터셋으로 [CIFAR-10 데이터셋](https://www.cs.toronto.edu/~kriz/cifar.html)이 있다. 이 데이터셋은 가로세로 32픽셀짜리 작은 이미지 60,000장으로 이루어진다. 각 이미지에는 10개 클래스 중 하나가 레이블로 붙어 있다(예: *"airplane, automobile, bird 등"*). 이 60,000장은 학습 집합 50,000장과 테스트 집합 10,000장으로 나뉜다. 아래 그림에서 10개 클래스마다 무작위로 고른 예시 이미지 10장씩을 볼 수 있다.
 
 ![Left: Example images from the CIFAR-10 dataset.](/assets/img/posts/cs231n/classification/nn.jpg){: width="1136" height="438" }
-
 _Left: Example images from the [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html). Right: first column shows a few test images and next to each we show the top 10 nearest neighbors in the training set according to pixel-wise difference._
 
-**왼쪽:** [CIFAR-10 데이터셋](https://www.cs.toronto.edu/~kriz/cifar.html)의 예시 이미지. **오른쪽:** 첫 열은 테스트 이미지 몇 장이고, 그 옆에는 픽셀 단위 차이를 기준으로 학습 집합에서 가장 가까운 이웃 10장을 나란히 놓았다.
+*왼쪽:* [CIFAR-10 데이터셋](https://www.cs.toronto.edu/~kriz/cifar.html)의 예시 이미지. *오른쪽:* 첫 열은 테스트 이미지 몇 장이고, 그 옆에는 픽셀 단위 차이를 기준으로 학습 집합에서 가장 가까운 이웃 10장을 나란히 놓았다.
 
 > Suppose now that we are given the CIFAR-10 training set of 50,000 images (5,000 images for every one of the labels), and we wish to label the remaining 10,000. The nearest neighbor classifier will take a test image, compare it to every single one of the training images, and predict the label of the closest training image. In the image above and on the right you can see an example result of such a procedure for 10 example test images. Notice that in only about 3 out of 10 examples an image of the same class is retrieved, while in the other 7 examples this is not the case. For example, in the 8th row the nearest training image to the horse head is a red car, presumably due to the strong black background. As a result, this image of a horse would in this case be mislabeled as a car.
 
 이제 CIFAR-10 학습 집합 50,000장(레이블마다 5,000장)이 주어졌고 나머지 10,000장에 레이블을 붙이려 한다고 하자. 최근접 이웃 분류기는 테스트 이미지 한 장을 받아 학습 이미지 전부와 일일이 비교한 뒤, 가장 가까운 학습 이미지의 레이블을 답으로 내놓는다. 위 그림 오른쪽이 테스트 이미지 10장에 대해 이 절차를 돌린 결과다. 10개 중 3개 정도만 같은 클래스의 이미지가 찾아졌고 나머지 7개는 그렇지 않다는 점에 주목하자. 예를 들어 여덟 번째 행에서는 말 머리에 가장 가까운 학습 이미지가 빨간 자동차인데, 검은 배경이 강하게 작용한 탓으로 보인다. 그 결과 이 말 이미지는 자동차로 잘못 분류된다.
 
 > You may have noticed that we left unspecified the details of exactly how we compare two images, which in this case are just two blocks of 32 x 32 x 3. One of the simplest possibilities is to compare the images pixel by pixel and add up all the differences. In other words, given two images and representing them as vectors $$I_1, I_2$$ , a reasonable choice for comparing them might be the **L1 distance**:
+>
+> $$
+> d_1 (I_1, I_2) = \sum_{p} \left| I^p_1 - I^p_2 \right|
+> $$
 
 두 이미지를 정확히 어떻게 비교하는지는 아직 정하지 않았다는 것을 눈치챘을 것이다. 여기서 두 이미지는 32 x 32 x 3짜리 숫자 덩어리 두 개일 뿐이다. 가장 단순한 방법 중 하나는 픽셀 하나하나를 비교해 차이를 모두 더하는 것이다. 다시 말해 두 이미지를 벡터 $$I_1, I_2$$로 볼 때, 둘을 비교하는 합리적인 선택 하나는 **L1 거리(L1 distance)**다.
-
-$$
-d_1 (I_1, I_2) = \sum_{p} \left| I^p_1 - I^p_2 \right|
-$$
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
@@ -141,8 +138,7 @@ $$
 
 여기서 합은 모든 픽셀에 대해 취한다. 이 절차를 그림으로 보면 다음과 같다.
 
-![An example of using pixel-wise differences to compare two images with L1 distance (for one color channel in...](/assets/img/posts/cs231n/classification/nneg.jpeg){: width="1158" height="330" }
-
+![An example of using pixel-wise differences to compare two images with L1 distance (for one color channel in](/assets/img/posts/cs231n/classification/nneg.jpeg){: width="1158" height="330" }
 _An example of using pixel-wise differences to compare two images with L1 distance (for one color channel in this example). Two images are subtracted elementwise and then all differences are added up to a single number. If two images are identical the result will be zero. But if the images are very different the result will be large._
 
 L1 거리로 두 이미지를 비교할 때 픽셀 단위 차이를 쓰는 예. 이 예시에서는 색 채널 하나만 보였다. 두 이미지를 원소별로 빼고 그 차이를 모두 더해 숫자 하나로 만든다. 두 이미지가 같으면 결과는 0이 되고, 많이 다르면 결과가 커진다.
@@ -216,12 +212,12 @@ class NearestNeighbor(object):
 이 코드를 돌려보면 이 분류기가 CIFAR-10에서 **38.6%**밖에 얻지 못한다는 것을 알 수 있다. 클래스가 10개이므로 10%가 나오는 무작위 추측보다는 나은 결과지만, 사람의 성능([약 94%로 추정된다](https://karpathy.github.io/2011/04/27/manually-classifying-cifar10/))이나 사람과 맞먹는 95% 근처를 달성하는 최신 합성곱 신경망에는 한참 못 미친다. CIFAR-10을 다룬 최근 Kaggle 대회의 [리더보드](https://www.kaggle.com/c/cifar-10/leaderboard)를 참고하라.
 
 > **The choice of distance.** There are many other ways of computing distances between vectors. Another common choice could be to instead use the **L2 distance**, which has the geometric interpretation of computing the euclidean distance between two vectors. The distance takes the form:
+>
+> $$
+> d_2 (I_1, I_2) = \sqrt{\sum_{p} \left( I^p_1 - I^p_2 \right)^2}
+> $$
 
 **거리의 선택.** 벡터 사이의 거리를 계산하는 방법은 이 밖에도 많다. 또 하나 흔한 선택은 **L2 거리(L2 distance)**인데, 두 벡터 사이의 유클리드 거리를 계산한다는 기하학적 해석을 갖는다. 이 거리는 다음과 같은 형태다.
-
-$$
-d_2 (I_1, I_2) = \sqrt{\sum_{p} \left( I^p_1 - I^p_2 \right)^2}
-$$
 
 > In other words we would be computing the pixelwise difference as before, but this time we square all of them, add them up and finally take the square root. In numpy, using the code from above we would need to only replace a single line of code. The line that computes the distances:
 
@@ -269,8 +265,7 @@ L1은 둘을 구분하지 못하고 똑같이 100으로 본다. 반면 L2는 어
 
 예측을 할 때 가장 가까운 이미지 한 장의 레이블만 쓰는 것이 이상하다고 느꼈을 수 있다. 실제로 **k-최근접 이웃 분류기(k-Nearest Neighbor Classifier)**라고 부르는 것을 쓰면 거의 언제나 더 나은 결과를 얻는다. 발상은 아주 단순하다. 학습 집합에서 가장 가까운 이미지 한 장만 찾는 대신 가장 가까운 **k**장을 찾아, 이들이 테스트 이미지의 레이블을 투표로 정하게 한다. 특히 *k = 1*이면 최근접 이웃 분류기가 된다. 직관적으로 **k**가 커질수록 평활화 효과가 생겨 분류기가 이상치에 덜 흔들린다.
 
-![An example of the difference between Nearest Neighbor and a 5-Nearest Neighbor classifier, using 2-dimensio...](/assets/img/posts/cs231n/classification/knn.jpeg){: width="1052" height="264" }
-
+![An example of the difference between Nearest Neighbor and a 5-Nearest Neighbor classifier, using](/assets/img/posts/cs231n/classification/knn.jpeg){: width="1052" height="264" }
 _An example of the difference between Nearest Neighbor and a 5-Nearest Neighbor classifier, using 2-dimensional points and 3 classes (red, blue, green). The colored regions show the **decision boundaries** induced by the classifier with an L2 distance. The white regions show points that are ambiguously classified (i.e. class votes are tied for at least two classes). Notice that in the case of a NN classifier, outlier datapoints (e.g. green point in the middle of a cloud of blue points) create small islands of likely incorrect predictions, while the 5-NN classifier smooths over these irregularities, likely leading to better **generalization** on the test data (not shown). Also note that the gray regions in the 5-NN image are caused by ties in the votes among the nearest neighbors (e.g. 2 neighbors are red, next two neighbors are blue, last neighbor is green)._
 
 최근접 이웃 분류기와 5-최근접 이웃 분류기의 차이를 2차원 점과 세 개 클래스(빨강, 파랑, 초록)로 보인 예. 색칠된 영역은 L2 거리를 쓰는 분류기가 만들어낸 **결정 경계(decision boundary)**다. 흰 영역은 분류가 모호한 점들, 즉 적어도 두 클래스의 득표가 같은 점들이다. NN 분류기에서는 이상치 데이터(예: 파란 점 무리 한가운데의 초록 점)가 잘못된 예측을 낳는 작은 섬을 만드는 반면, 5-NN 분류기는 이런 불규칙성을 매끄럽게 눌러 테스트 데이터에 대한 **일반화(generalization)**가 더 나아질 가능성이 크다(그림에는 나타나 있지 않다). 또한 5-NN 그림의 회색 영역은 최근접 이웃들의 득표가 동점이라 생긴 것이다(예: 이웃 2개가 빨강, 다음 2개가 파랑, 마지막 1개가 초록인 경우).
@@ -287,7 +282,7 @@ k-최근접 이웃 분류기는 *k*를 정해줘야 한다. 그런데 어떤 값
 
 > You might be tempted to suggest that we should try out many different values and see what works best. That is a fine idea and that’s indeed what we will do, but this must be done very carefully. In particular, **we cannot use the test set for the purpose of tweaking hyperparameters**. Whenever you’re designing Machine Learning algorithms, you should think of the test set as a very precious resource that should ideally never be touched until one time at the very end. Otherwise, the very real danger is that you may tune your hyperparameters to work well on the test set, but if you were to deploy your model you could see a significantly reduced performance. In practice, we would say that you **overfit** to the test set. Another way of looking at it is that if you tune your hyperparameters on the test set, you are effectively using the test set as the training set, and therefore the performance you achieve on it will be too optimistic with respect to what you might actually observe when you deploy your model. But if you only use the test set once at end, it remains a good proxy for measuring the **generalization** of your classifier (we will see much more discussion surrounding generalization later in the class).
 
-여러 값을 시도해보고 가장 잘 되는 것을 고르면 되지 않느냐고 할 수 있다. 좋은 생각이고 실제로도 그렇게 할 것이지만, 아주 조심스럽게 해야 한다. 특히 **하이퍼파라미터를 조정하는 데 테스트 집합을 써서는 안 된다**. 머신러닝 알고리즘을 설계할 때 테스트 집합은 대단히 귀한 자원이라고 생각해야 하며, 맨 마지막에 딱 한 번 쓰기 전까지는 손대지 않는 것이 이상적이다. 그러지 않으면 테스트 집합에서만 잘 동작하도록 하이퍼파라미터를 맞추게 되고, 모델을 실제로 배포했을 때 성능이 눈에 띄게 떨어지는 아주 현실적인 위험이 생긴다. 이런 상황을 두고 테스트 집합에 **과적합(overfitting)**했다고 말한다. 달리 보면, 테스트 집합에서 하이퍼파라미터를 조정하는 것은 사실상 테스트 집합을 학습 집합으로 쓰는 셈이고, 따라서 거기서 얻은 성능은 실제로 배포했을 때 관찰될 성능에 비해 지나치게 낙관적이다. 반면 테스트 집합을 맨 마지막에 한 번만 쓴다면, 그것은 분류기의 **일반화(generalization)** 성능을 재는 좋은 대리 지표로 남는다. 일반화에 관해서는 수업 뒤쪽에서 훨씬 자세히 논의한다.
+여러 값을 시도해보고 가장 잘 되는 것을 고르면 되지 않느냐고 할 수 있다. 좋은 생각이고 실제로도 그렇게 할 것이지만, 아주 조심스럽게 해야 한다. 특히 **하이퍼파라미터를 조정하는 데 테스트 집합을 써서는 안 된다**. 머신러닝 알고리즘을 설계할 때 테스트 집합은 대단히 귀한 자원이라고 생각해야 하며, 맨 마지막에 딱 한 번 쓰기 전까지는 손대지 않는 것이 이상적이다. 그러지 않으면 테스트 집합에서만 잘 동작하도록 하이퍼파라미터를 맞추게 되고, 모델을 실제로 배포했을 때 성능이 눈에 띄게 떨어지는 아주 현실적인 위험이 생긴다. 이런 상황을 두고 테스트 집합에 **과적합(overfitting)**했다고 말한다. 달리 보면, 테스트 집합에서 하이퍼파라미터를 조정하는 것은 사실상 테스트 집합을 학습 집합으로 쓰는 셈이고, 따라서 거기서 얻은 성능은 실제로 배포했을 때 관찰될 성능에 비해 지나치게 낙관적이다. 반면 테스트 집합을 맨 마지막에 한 번만 쓴다면, 그것은 분류기의 **일반화** 성능을 재는 좋은 대리 지표로 남는다. 일반화에 관해서는 수업 뒤쪽에서 훨씬 자세히 논의한다.
 
 >> Evaluate on the test set only a single time, at the very end.
 >
@@ -338,7 +333,6 @@ for k in [1, 3, 5, 10, 20, 50, 100]:
 **교차 검증(cross-validation).** 학습 데이터의 크기가 작아 검증 데이터도 작아지는 경우에는, 하이퍼파라미터 조정에 **교차 검증**이라는 좀 더 정교한 기법을 쓰기도 한다. 앞의 예로 말하면, 앞쪽 1,000개를 임의로 검증 집합으로 삼고 나머지를 학습 집합으로 삼는 대신, 검증 집합을 바꿔가며 여러 번 돌리고 그 성능을 평균 내는 것이다. 그러면 특정 *k* 값이 얼마나 잘 동작하는지를 잡음이 덜한 방식으로 더 잘 추정할 수 있다. 예를 들어 5-겹 교차 검증에서는 학습 데이터를 같은 크기의 5개 겹으로 나눠 4개를 학습에, 1개를 검증에 쓴다. 그다음 어느 겹이 검증 겹이 되는지를 바꿔가며 반복해 성능을 측정하고, 마지막에 겹들의 성능을 평균 낸다.
 
 ![Example of a 5-fold cross-validation run for the parameter k.](/assets/img/posts/cs231n/classification/cvplot.png){: width="621" height="504" }
-
 _Example of a 5-fold cross-validation run for the parameter **k**. For each value of **k** we train on 4 folds and evaluate on the 5th. Hence, for each **k** we receive 5 accuracies on the validation fold (accuracy is the y-axis, each result is a point). The trend line is drawn through the average of the results for each **k** and the error bars indicate the standard deviation. Note that in this particular case, the cross-validation suggests that a value of about **k** = 7 works best on this particular dataset (corresponding to the peak in the plot). If we used more than 5 folds, we might expect to see a smoother (i.e. less noisy) curve._
 
 파라미터 **k**에 대한 5-겹 교차 검증 실행 예. 각 **k** 값마다 4개 겹으로 학습하고 5번째 겹에서 평가한다. 따라서 **k**마다 검증 겹에서 정확도를 5개 얻는다(y축이 정확도이고 결과 하나가 점 하나다). 추세선은 각 **k**의 결과 평균을 이은 것이고, 오차 막대는 표준편차를 나타낸다. 이 데이터셋에서는 교차 검증 결과 **k** = 7 근처가 가장 좋다고 나왔다. 그래프의 봉우리에 해당한다. 겹을 5개보다 많이 썼다면 더 매끄러운, 즉 잡음이 덜한 곡선을 볼 수 있었을 것이다.
@@ -348,7 +342,6 @@ _Example of a 5-fold cross-validation run for the parameter **k**. For each valu
 **실무에서는.** 실무에서는 교차 검증의 계산 비용이 크기 때문에 이를 피하고 검증 분할 하나만 두는 쪽을 선호한다. 흔히 학습 데이터의 50%~90%를 학습에, 나머지를 검증에 쓴다. 다만 이 비율은 여러 요인에 따라 달라진다. 예를 들어 하이퍼파라미터 개수가 많다면 검증 분할을 더 크게 잡는 편이 나을 수 있다. 검증 집합의 예시 수가 적다면(수백 개 정도에 불과하다면) 교차 검증을 쓰는 편이 안전하다. 실무에서 흔히 보이는 겹 수는 3-겹, 5-겹, 10-겹이다.
 
 ![Common data splits. A training and test set is given.](/assets/img/posts/cs231n/classification/crossval.jpeg){: width="830" height="121" }
-
 _Common data splits. A training and test set is given. The training set is split into folds (for example 5 folds here). The folds 1-4 become the training set. One fold (e.g. fold 5 here in yellow) is denoted as the Validation fold and is used to tune the hyperparameters. Cross-validation goes a step further and iterates over the choice of which fold is the validation fold, separately from 1-5. This would be referred to as 5-fold cross-validation. In the very end once the model is trained and all the best hyperparameters were determined, the model is evaluated a single time on the test data (red)._
 
 흔히 쓰는 데이터 분할. 학습 집합과 테스트 집합이 주어진다. 학습 집합은 여러 겹으로 나뉜다(여기서는 5개 겹). 1~4번 겹이 학습 집합이 된다. 겹 하나(여기서는 노란색 5번 겹)를 검증 겹이라 부르고 하이퍼파라미터를 조정하는 데 쓴다. 교차 검증은 여기서 한발 더 나아가, 어느 겹을 검증 겹으로 삼을지를 1번부터 5번까지 바꿔가며 반복한다. 이를 5-겹 교차 검증이라고 부른다. 맨 마지막에 모델을 다 학습하고 최적 하이퍼파라미터를 모두 정한 뒤, 테스트 데이터(빨간색)에서 딱 한 번 평가한다.
@@ -376,7 +369,6 @@ _Common data splits. A training and test set is given. The training set is split
 <!-- markdownlint-restore -->
 
 ![Pixel-based distances on high-dimensional data (and images especially) can be very unintuitive.](/assets/img/posts/cs231n/classification/samenorm.png){: width="751" height="208" }
-
 _Pixel-based distances on high-dimensional data (and images especially) can be very unintuitive. An original image (left) and three other images next to it that are all equally far away from it based on L2 pixel distance. Clearly, the pixel-wise distance does not correspond at all to perceptual or semantic similarity._
 
 고차원 데이터, 특히 이미지에서 픽셀 기반 거리는 대단히 반직관적일 수 있다. 원본 이미지(왼쪽)와, L2 픽셀 거리 기준으로 원본에서 모두 똑같이 떨어져 있는 다른 이미지 세 장이다. 픽셀 단위 거리가 사람이 느끼는 유사도나 의미상의 유사도와 전혀 대응하지 않는다는 것이 분명하다.
@@ -386,7 +378,6 @@ _Pixel-based distances on high-dimensional data (and images especially) can be v
 픽셀 차이로 이미지를 비교하는 것이 부적절하다는 점을 확실히 해줄 시각화를 하나 더 보자. [t-SNE](https://lvdmaaten.github.io/tsne/)라는 시각화 기법을 쓰면 CIFAR-10 이미지를 (국소적인) 쌍별 거리가 최대한 보존되도록 2차원에 배치할 수 있다. 이 시각화에서 가까이 놓인 이미지들은 앞에서 다룬 L2 픽셀 거리 기준으로 아주 가깝다고 판단된 것들이다.
 
 ![CIFAR-10 images embedded in two dimensions with t-SNE.](/assets/img/posts/cs231n/classification/pixels_embed_cifar10.jpg){: width="1281" height="641" }
-
 _CIFAR-10 images embedded in two dimensions with t-SNE. Images that are nearby on this image are considered to be close based on the L2 pixel distance. Notice the strong effect of background rather than semantic class differences. Click [here](https://cs231n.github.io/assets/pixels_embed_cifar10_big.jpg) for a bigger version of this visualization._
 
 t-SNE로 2차원에 배치한 CIFAR-10 이미지. 이 그림에서 가까이 있는 이미지들은 L2 픽셀 거리 기준으로 가깝다고 판단된 것들이다. 의미상의 클래스 차이보다 배경이 훨씬 강하게 작용한다는 점에 주목하자. 더 큰 버전은 [여기](https://cs231n.github.io/assets/pixels_embed_cifar10_big.jpg)에서 볼 수 있다.
