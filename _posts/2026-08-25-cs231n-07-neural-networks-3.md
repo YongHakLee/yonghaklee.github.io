@@ -562,7 +562,7 @@ x += - learning_rate * m / (np.sqrt(v) + eps)
 
 > Notice that the update looks exactly as RMSProp update, except the “smooth” version of the gradient `m` is used instead of the raw (and perhaps noisy) gradient vector `dx`. Recommended values in the paper are `eps = 1e-8`, `beta1 = 0.9`, `beta2 = 0.999`. In practice Adam is currently recommended as the default algorithm to use, and often works slightly better than RMSProp. However, it is often also worth trying SGD+Nesterov Momentum as an alternative. The full Adam update also includes a *bias correction* mechanism, which compensates for the fact that in the first few time steps the vectors `m,v` are both initialized and therefore biased at zero, before they fully “warm up”. With the *bias correction* mechanism, the update looks as follows:
 
-이 갱신이 RMSProp 갱신과 똑같이 생겼다는 점에 주목하자. 다만 날것의(그래서 잡음이 섞였을) 기울기 벡터 `dx` 대신 기울기를 “매끄럽게” 만든 `m`을 쓴다는 점만 다르다. 논문이 권하는 값은 `eps = 1e-8`, `beta1 = 0.9`, `beta2 = 0.999`다. 실전에서 Adam은 현재 기본으로 쓰기를 권하는 알고리즘이며 RMSProp보다 조금 더 잘 되는 경우가 많다. 다만 SGD+Nesterov momentum도 대안으로 시도해볼 만하다. 완전한 Adam 갱신에는 *편향 보정(bias correction)* 장치도 들어간다. 처음 몇 시간 스텝 동안은 벡터 `m`과 `v`가 둘 다 0으로 초기화되어 있어 완전히 “예열”되기 전까지 0 쪽으로 편향되어 있는데, 편향 보정은 이를 바로잡는다. *편향 보정* 장치까지 넣은 갱신은 다음과 같다.
+이 갱신이 RMSProp 갱신과 똑같이 생겼다는 점에 주목하자. 다만 날것의(그래서 잡음이 섞였을) 기울기 벡터 `dx` 대신 기울기를 “매끄럽게” 만든 `m`을 쓴다는 점만 다르다. 논문이 권하는 값은 `eps = 1e-8`, `beta1 = 0.9`, `beta2 = 0.999`다. 실전에서 Adam은 현재 기본으로 쓰기를 권하는 알고리즘이며 RMSProp보다 조금 더 잘 되는 경우가 많다. 다만 SGD+Nesterov momentum도 대안으로 시도해볼 만하다. 완전한 Adam 갱신에는 *편향 보정(bias correction)* 장치도 들어간다. 처음 몇 스텝 동안은 벡터 `m`과 `v`가 둘 다 0으로 초기화되어 있어 완전히 “예열”되기 전까지 0 쪽으로 편향되어 있는데, 편향 보정은 이를 바로잡는다. *편향 보정* 장치까지 넣은 갱신은 다음과 같다.
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
