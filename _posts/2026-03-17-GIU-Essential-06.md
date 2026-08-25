@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (Future 025-028)
 date: 2026-03-17 13:20:12 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 

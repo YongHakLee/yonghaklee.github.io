@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (Go, get, do, make and have 055-058)
 date: 2026-04-19 13:10:11 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 

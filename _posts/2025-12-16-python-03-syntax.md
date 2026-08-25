@@ -1,7 +1,7 @@
 ---
 title: Python 03. Syntax
 date: 2025-12-16 14:34:55 +0900
-categories: [Study, Python]
+categories: [Python, General]
 tags: [study, python]     # TAG names should always be lowercase
 ---
 

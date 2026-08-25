@@ -7,22 +7,17 @@ order: 4
 ## 이용학(YongHak Lee)
 ---
 
-- Department of Applied Statistics, Konkuk University
+- ML/DL AI Researcher
 - Email: feint225@gmail.com
 - Phone: +82-10-8295-3294
 - Website: [yonghaklee.github.io](https://yonghaklee.github.io)
 - GitHub: [GitHub](https://github.com/YongHakLee)
-- CV: [CV_YongHakLee.pdf](/assets/profile/CV_YongHakLee_250530.pdf)
-
----
 
 ### ME
 ---
 
 I am interested in machine learning and deep learning.<br>
 Although I have much to learn, I continuously strive to improve.
-
----
 
 ### EDUCATION
 ---
@@ -31,10 +26,7 @@ Although I have much to learn, I continuously strive to improve.
 - M.S. Statistics, KonKuk University, Seoul, Feb 2022.
 - B.A. Statistics, KonKuk University, Seoul, Feb 2020.
 
----
-
 ### PUBLICATIONS
-
 ---
 
 [1] Kang J., Lee C., **Lee Y.**, Yang S. (2026) 
@@ -78,40 +70,4 @@ Stage Diffusion Pipeline for Consistent Front-Back Clothing Generation,
 [13] Jung S., Yang S., Lee E., **Lee Y.**, Ko J., Lee S., Cho J., Lee J. and Kim S.
 (2020) Estimation of Particulate Levels Using Deep Dehazing Network and Temporal Prior, 
 *Journal of Sensors*. <br>
-
----
-
-### PATENTS
----
-
-[1] Kim S., Lee Y. and Kim J.,
-"Method and Apparatus for Automatic Body Circumference Measurement Using 2D and 3D Data Fusion",
-No. 10-2024-0077839, June 2024,
-Korean Intellectual Property Office, Filled.
-
----
-
-### RESEARCH EXPERIENCE
----
-
-- Graduate Student Researcher, Konkuk University, Department of Applied Statistics,
-- Statistical Artificial Intelligence Lab, Seoul, Korea, Mar 2020 - present.
-- Research Engineer, Mustree, Seoul, Korea, Mar 2022 - present.
-- Research Engineer, Deep Visions, Seoul, Korea, Mar 2020 - Dec 2021. 
-
----
-
-### RESEARCH SUBJECTS
----
-
-- Method for Developing an Image-based Mobile Fine Dust Measurement Device Using Raspberry Pi and Camera Modules.
-- Outlier Detection Method Based on Numerical Data Acquired by Gas Pipeline Inspection Robots.
-- Millimeter-level Accurate Object Measurement Method Using Mobile LiDAR Sensorbased Point Cloud Data.
-- Development of a Model and Management System for Monitoring Water Quality
-Changes in the Han River.
-
----
-
-
-
 

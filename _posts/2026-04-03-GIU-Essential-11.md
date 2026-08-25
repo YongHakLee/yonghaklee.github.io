@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (Reported speech 050)
 date: 2026-04-03 12:20:22 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 

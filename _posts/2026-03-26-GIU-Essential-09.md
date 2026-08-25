@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (Auxiliary verbs 040-043)
 date: 2026-03-26 17:45:12 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 

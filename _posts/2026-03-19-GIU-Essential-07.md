@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (Modals, imperative etc. 029-036)
 date: 2026-03-19 15:30:12 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 

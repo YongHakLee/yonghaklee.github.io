@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (Past 010-014)
 date: 2026-02-06 09:25:25 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 

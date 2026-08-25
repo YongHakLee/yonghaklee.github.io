@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (-ing and to ... 051-054)
 date: 2026-04-06 09:20:22 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 

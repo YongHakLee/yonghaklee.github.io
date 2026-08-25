@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (Determiners and Pronouns 074-084)
 date: 2026-05-16 15:01:11 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 

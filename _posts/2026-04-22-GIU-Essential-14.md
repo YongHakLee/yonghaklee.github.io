@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (Pronouns and possessives 059-064)
 date: 2026-04-22 08:50:24 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 

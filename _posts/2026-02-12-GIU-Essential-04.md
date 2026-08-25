@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (Passive 021-022)
 date: 2026-02-12 17:22:31 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 

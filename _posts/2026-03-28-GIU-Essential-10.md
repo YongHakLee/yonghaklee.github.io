@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (Questions 044-049)
 date: 2026-03-28 16:55:12 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 

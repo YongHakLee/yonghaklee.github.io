@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (There and it 037-039)
 date: 2026-03-25 09:30:12 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 

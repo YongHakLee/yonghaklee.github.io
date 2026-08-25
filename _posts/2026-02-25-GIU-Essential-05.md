@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (Verb forms 023-024)
 date: 2026-02-25 12:41:31 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 
