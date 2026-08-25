@@ -39,6 +39,8 @@ image:
 - [정리: kNN을 실제로 적용하기](#summary-applying-knn-in-practice)
 - [더 읽을거리](#further-reading)
 
+<a id="intro"></a>
+
 ## Image Classification
 
 > **Motivation**. In this section we will introduce the Image Classification problem, which is the task of assigning an input image one label from a fixed set of categories. This is one of the core problems in Computer Vision that, despite its simplicity, has a large variety of practical applications. Moreover, as we will see later in the course, many other seemingly distinct Computer Vision tasks (such as object detection, segmentation) can be reduced to image classification.
@@ -100,6 +102,8 @@ _An example training set for four visual categories. In practice we may have tho
 - **입력:** *N*장의 이미지로 이루어진 집합을 입력으로 받는다. 각 이미지에는 서로 다른 *K*개 클래스 중 하나가 레이블로 붙어 있다. 이 데이터를 *학습 집합(training set)*이라고 부른다.
 - **학습:** 학습 집합을 이용해 각 클래스가 어떻게 생겼는지 배우는 것이 우리의 과제다. 이 단계를 *분류기 학습* 또는 *모델 학습*이라고 부른다.
 - **평가:** 마지막으로 분류기가 한 번도 본 적 없는 새 이미지 집합의 레이블을 예측하게 해서 분류기의 품질을 평가한다. 그런 다음 이 이미지들의 실제 레이블과 분류기가 예측한 레이블을 비교한다. 직관적으로는 예측 상당수가 정답(*ground truth*라고 부른다)과 맞아떨어지기를 기대한다.
+
+<a id="nn"></a>
 
 ### Nearest Neighbor Classifier
 
@@ -259,6 +263,8 @@ concentrated  L1 = 100.0   L2 = 100.0
 
 L1은 둘을 구분하지 못하고 똑같이 100으로 본다. 반면 L2는 어긋남이 한곳에 몰린 쪽을 두 배 더 멀다고 판단한다. 제곱이 큰 값을 훨씬 크게 부풀리기 때문이다. 이미지로 옮기면, L2를 쓰는 분류기는 전체적으로 조금씩 흐릿하게 다른 이미지보다 한 부분이 확 다른 이미지를 더 멀리 있다고 본다.
 
+<a id="knn"></a>
+
 ### k - Nearest Neighbor Classifier
 
 > You may have noticed that it is strange to only use the label of the nearest image when we wish to make a prediction. Indeed, it is almost always the case that one can do better by using what’s called a **k-Nearest Neighbor Classifier**. The idea is very simple: instead of finding the single closest image in the training set, we will find the top **k** closest images, and have them vote on the label of the test image. In particular, when *k = 1*, we recover the Nearest Neighbor classifier. Intuitively, higher values of **k** have a smoothing effect that makes the classifier more resistant to outliers:
@@ -273,6 +279,8 @@ _An example of the difference between Nearest Neighbor and a 5-Nearest Neighbor 
 > In practice, you will almost always want to use k-Nearest Neighbor. But what value of *k* should you use? We turn to this problem next.
 
 실제로는 거의 언제나 k-최근접 이웃을 쓰고 싶을 것이다. 그런데 *k*는 어떤 값을 써야 할까? 이 문제를 다음에서 다룬다.
+
+<a id="val"></a>
 
 ### Validation sets for Hyperparameter tuning
 
@@ -346,6 +354,8 @@ _Common data splits. A training and test set is given. The training set is split
 
 흔히 쓰는 데이터 분할. 학습 집합과 테스트 집합이 주어진다. 학습 집합은 여러 겹으로 나뉜다(여기서는 5개 겹). 1~4번 겹이 학습 집합이 된다. 겹 하나(여기서는 노란색 5번 겹)를 검증 겹이라 부르고 하이퍼파라미터를 조정하는 데 쓴다. 교차 검증은 여기서 한발 더 나아가, 어느 겹을 검증 겹으로 삼을지를 1번부터 5번까지 바꿔가며 반복한다. 이를 5-겹 교차 검증이라고 부른다. 맨 마지막에 모델을 다 학습하고 최적 하이퍼파라미터를 모두 정한 뒤, 테스트 데이터(빨간색)에서 딱 한 번 평가한다.
 
+<a id="procon"></a>
+
 > **Pros and Cons of Nearest Neighbor classifier.**
 
 **최근접 이웃 분류기의 장단점.**
@@ -386,7 +396,7 @@ t-SNE로 2차원에 배치한 CIFAR-10 이미지. 이 그림에서 가까이 있
 
 특히 서로 가까이 놓인 이미지들은 의미상의 정체보다 이미지 전체의 색 분포나 배경 종류에 훨씬 크게 좌우된다는 점에 주목하자. 예를 들어 개와 개구리가 아주 가까이 놓일 수 있는데, 둘 다 흰 배경 위에 있기 때문이다. 이상적으로는 10개 클래스가 각자의 군집을 이뤄서, 배경 같은 무관한 특성이나 변화와 상관없이 같은 클래스의 이미지끼리 가까이 놓이기를 바란다. 그러나 이 성질을 얻으려면 날 픽셀 값 너머로 나아가야 한다.
 
-### Summary
+### Summary {#summary}
 
 > In summary:
 
@@ -412,6 +422,8 @@ t-SNE로 2차원에 배치한 CIFAR-10 이미지. 이 그림에서 가까이 있
 
 다음 강의들에서는 이 어려움들을 하나씩 해결해 나가면서, 결국 90%대의 정확도를 내고, 학습이 끝나면 학습 집합을 통째로 버릴 수 있으며, 테스트 이미지 하나를 1밀리초도 안 되어 평가할 수 있는 해법에 이른다.
 
+<a id="summaryapply"></a>
+
 ### Summary: Applying kNN in practice
 
 > If you wish to apply kNN in practice (hopefully not on images, or perhaps as only a baseline) proceed as follows:
@@ -431,6 +443,8 @@ kNN을 실제로 적용하고 싶다면(이미지에는 쓰지 않기를 바라�
 4. 검증 데이터에서(교차 검증을 한다면 모든 겹에 대해) 여러 **k** 값(예: 많을수록 좋다)과 여러 거리 종류(L1과 L2가 좋은 후보다)로 kNN 분류기를 학습하고 평가한다.
 5. kNN 분류기가 너무 오래 걸린다면 근사 최근접 이웃 라이브러리(예: [FLANN](https://github.com/mariusmuja/flann))로 검색 속도를 높이는 것을 고려한다. 정확도를 조금 내주는 대가다.
 6. 가장 좋은 결과를 낸 하이퍼파라미터를 기록해둔다. 검증 데이터를 학습 집합에 합쳐 전체 학습 집합에 최적 하이퍼파라미터를 그대로 써야 하는지는 따져볼 문제다. 데이터 크기가 커지면 최적 하이퍼파라미터가 달라질 수 있기 때문이다. 실무에서는 최종 분류기에 검증 데이터를 쓰지 않고, 하이퍼파라미터 추정에 *태워버린* 것으로 치는 편이 깔끔하다. 가장 좋은 모델을 테스트 집합에서 평가한다. 테스트 집합 정확도를 보고하고, 그 값을 해당 데이터에 대한 kNN 분류기의 성능으로 선언한다.
+
+<a id="reading"></a>
 
 #### Further Reading
 

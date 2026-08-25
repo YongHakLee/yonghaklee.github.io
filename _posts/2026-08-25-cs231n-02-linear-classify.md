@@ -47,6 +47,8 @@ image:
 - [정리](#summary)
 - [더 읽을거리](#further-reading)
 
+<a id="intro"></a>
+
 ## Linear Classification
 
 > In the last section we introduced the problem of Image Classification, which is the task of assigning a single label to an image from a fixed set of categories. Moreover, we described the k-Nearest Neighbor (kNN) classifier which labels images by comparing them to (annotated) images from the training set. As we saw, kNN has a number of disadvantages:
@@ -62,6 +64,8 @@ image:
 > **Overview**. We are now going to develop a more powerful approach to image classification that we will eventually naturally extend to entire Neural Networks and Convolutional Neural Networks. The approach will have two major components: a **score function** that maps the raw data to class scores, and a **loss function** that quantifies the agreement between the predicted scores and the ground truth labels. We will then cast this as an optimization problem in which we will minimize the loss function with respect to the parameters of the score function.
 
 **개요(Overview).** 이제 이미지 분류에 쓸 더 강력한 접근법을 만들어본다. 이 접근법은 나중에 신경망 전체와 합성곱 신경망으로 자연스럽게 확장된다. 접근법은 두 개의 큰 축으로 이루어진다. 하나는 원시 데이터를 클래스 점수로 보내는 **점수 함수(score function)**이고, 다른 하나는 예측된 점수가 ground truth 레이블과 얼마나 들어맞는지를 수치로 재는 **손실 함수(loss function)**다. 그다음 이것을 점수 함수의 매개변수에 대해 손실 함수를 최소화하는 최적화 문제로 바꿔 다룬다.
+
+<a id="score"></a>
 
 ### Parameterized mapping from images to label scores
 
@@ -98,6 +102,8 @@ image:
 >> Foreshadowing: Convolutional Neural Networks will map image pixels to scores exactly as shown above, but the mapping ( f ) will be more complex and will contain more parameters.
 >
 > 앞으로 볼 것: 합성곱 신경망도 위와 똑같이 이미지 픽셀을 점수로 보낸다. 다만 매핑 $$f$$가 더 복잡해지고 매개변수가 더 많아질 뿐이다.
+
+<a id="interpret"></a>
 
 ### Interpreting a linear classifier
 
@@ -175,6 +181,8 @@ _Illustration of the bias trick. Doing a matrix multiplication and then adding a
 {: .prompt-tip }
 <!-- markdownlint-restore -->
 
+<a id="loss"></a>
+
 ### Loss function
 
 > In the previous section we defined a function from the pixel values to class scores, which was parameterized by a set of weights $$W$$. Moreover, we saw that we don’t have control over the data $$(x_i,y_i)$$ (it is fixed and given), but we do have control over these weights and we want to set them so that the predicted class scores are consistent with the ground truth labels in the training data.
@@ -184,6 +192,8 @@ _Illustration of the bias trick. Doing a matrix multiplication and then adding a
 > For example, going back to the example image of a cat and its scores for the classes “cat”, “dog” and “ship”, we saw that the particular set of weights in that example was not very good at all: We fed in the pixels that depict a cat but the cat score came out very low (-96.8) compared to the other classes (dog score 437.9 and ship score 61.95). We are going to measure our unhappiness with outcomes such as this one with a **loss function** (or sometimes also referred to as the **cost function** or the **objective**). Intuitively, the loss will be high if we’re doing a poor job of classifying the training data, and it will be low if we’re doing well.
 
 예를 들어 고양이 이미지와 "cat", "dog", "ship" 클래스에 대한 점수 예로 돌아가 보면, 그 예에 쓰인 가중치는 전혀 좋지 않았다. 고양이가 찍힌 픽셀을 넣었는데 고양이 점수가 다른 클래스들(dog 437.9, ship 61.95)에 비해 아주 낮게(-96.8) 나왔다. 이런 결과에 대한 불만은 **손실 함수**로 잰다(**비용 함수(cost function)**나 **목적 함수(objective)**라고도 부른다). 직관적으로 학습 데이터를 잘 분류하지 못하면 손실이 크고, 잘하면 손실이 작다.
+
+<a id="svm"></a>
 
 #### Multiclass Support Vector Machine loss
 
@@ -235,6 +245,8 @@ _Illustration of the bias trick. Doing a matrix multiplication and then adding a
 _The Multiclass Support Vector Machine "wants" the score of the correct class to be higher than all other scores by at least a margin of delta. If any class has a score inside the red region (or higher), then there will be accumulated loss. Otherwise the loss will be zero. Our objective will be to find the weights that will simultaneously satisfy this constraint for all examples in the training data and give a total loss that is as low as possible._
 
 Multiclass Support Vector Machine은 정답 클래스의 점수가 다른 모든 점수보다 적어도 델타만큼 높기를 "원한다". 어떤 클래스든 빨간 영역 안에(또는 그보다 높은 곳에) 점수가 있으면 손실이 쌓이고, 그렇지 않으면 손실은 0이다. 우리 목표는 학습 데이터의 모든 예제에 대해 이 조건을 동시에 만족시키면서 전체 손실이 가능한 한 낮아지는 가중치를 찾는 것이다.
+
+<a id="regularization"></a>
 
 > **Regularization**. There is one bug with the loss function we presented above. Suppose that we have a dataset and a set of parameters **W** that correctly classify every example (i.e. all scores are so that all the margins are met, and $$L_i = 0$$ for all i). The issue is that this set of **W** is not necessarily unique: there might be many similar **W** that correctly classify the examples. One easy way to see this is that if some parameters **W** correctly classify all examples (so loss is zero for each example), then any multiple of these parameters $$\lambda W$$ where $$\lambda > 1$$ will also give zero loss because this transformation uniformly stretches all score magnitudes and hence also their absolute differences. For example, if the difference in scores between a correct class and a nearest incorrect class was 15, then multiplying all elements of **W** by 2 would make the new difference 30.
 
@@ -410,6 +422,8 @@ c =  10.0   delta =  10.0   data loss =  58.2491   data loss / c = 5.8249
 
 데이터 손실을 $$c$$로 나누면 언제나 같은 값이다. 즉 $$(\Delta = 1, W)$$에서의 데이터 손실과 $$(\Delta = c, cW)$$에서의 데이터 손실은 상수배 관계이므로 최소점의 위치가 같다. 달라지는 것은 정규화 항뿐이다. $$\lambda R(cW) = c^2 \lambda R(W)$$이므로, $$\Delta$$를 $$c$$배로 바꾸는 것은 $$\lambda$$를 조절하는 것으로 그대로 흡수된다. $$\Delta = 1.0$$으로 고정하고 $$\lambda$$만 교차 검증으로 찾아도 되는 이유가 이것이다.
 
+<a id="softmax"></a>
+
 ### Softmax classifier
 
 > It turns out that the SVM is one of two commonly seen classifiers. The other popular choice is the **Softmax classifier**, which has a different loss function. If you’ve heard of the binary Logistic Regression classifier before, the Softmax classifier is its generalization to multiple classes. Unlike the SVM which treats the outputs $$f(x_i,W)$$ as (uncalibrated and possibly difficult to interpret) scores for each class, the Softmax classifier gives a slightly more intuitive output (normalized class probabilities) and also has a probabilistic interpretation that we will describe shortly. In the Softmax classifier, the function mapping $$f(x_i; W) = W x_i$$ stays unchanged, but we now interpret these scores as the unnormalized log probabilities for each class and replace the *hinge loss* with a **cross-entropy loss** that has the form:
@@ -454,6 +468,8 @@ SVM은 흔히 보는 두 분류기 중 하나다. 다른 하나로 널리 쓰이
 
 이 값은 이미지 $$x_i$$가 주어지고 $$W$$로 매개변수화된 상황에서 정답 레이블 $$y_i$$에 할당된 (정규화된) 확률로 해석할 수 있다. 왜 그런지 보려면 Softmax 분류기가 출력 벡터 $$f$$ 안의 점수를 정규화되지 않은 로그 확률로 해석한다는 것을 떠올리면 된다. 이 값들에 지수를 취하면 (정규화되지 않은) 확률이 되고, 나눗셈이 정규화를 수행해 확률의 합이 1이 되게 한다. 따라서 확률적 해석에서 우리는 정답 클래스의 음의 로그 가능도를 최소화하고 있는 셈이며, 이는 *최대 가능도 추정(Maximum Likelihood Estimation, MLE)*을 하는 것으로 볼 수 있다. 이 관점의 좋은 점은 전체 손실 함수의 정규화 항 $$R(W)$$를 가중치 행렬 $$W$$에 대한 가우시안 사전 분포에서 온 것으로 해석할 수 있다는 점이다. 그러면 MLE가 아니라 *최대 사후 확률(Maximum a posteriori, MAP)* 추정을 하는 셈이 된다. 직관을 돕기 위해 이런 해석들을 언급했지만 유도의 자세한 내용은 이 수업의 범위를 벗어난다.
 
+<a id="softmax-stability"></a>
+
 > **Practical issues: Numeric stability**. When you’re writing code for computing the Softmax function in practice, the intermediate terms $$e^{f_{y_i}}$$ and $$\sum_j e^{f_j}$$ may be very large due to the exponentials. Dividing large numbers can be numerically unstable, so it is important to use a normalization trick. Notice that if we multiply the top and bottom of the fraction by a constant $$C$$ and push it into the sum, we get the following (mathematically equivalent) expression:
 >
 > $$
@@ -480,6 +496,8 @@ p = np.exp(f) / np.sum(np.exp(f)) # safe to do, gives the correct answer
 > **Possibly confusing naming conventions**. To be precise, the *SVM classifier* uses the *hinge loss*, or also sometimes called the *max-margin loss*. The *Softmax classifier* uses the *cross-entropy loss*. The Softmax classifier gets its name from the *softmax function*, which is used to squash the raw class scores into normalized positive values that sum to one, so that the cross-entropy loss can be applied. In particular, note that technically it doesn’t make sense to talk about the “softmax loss”, since softmax is just the squashing function, but it is a relatively commonly used shorthand.
 
 **헷갈리기 쉬운 이름들.** 정확히 말하면 *SVM 분류기*는 *hinge loss*, 다른 이름으로 *max-margin loss*를 쓴다. *Softmax 분류기*는 *교차 엔트로피 손실*을 쓴다. Softmax 분류기라는 이름은 *softmax 함수*에서 왔다. 이 함수는 원시 클래스 점수를 합이 1인 양수 값들로 눌러 담아 교차 엔트로피 손실을 적용할 수 있게 해준다. 특히 엄밀히 따지면 "softmax 손실"이라는 말은 성립하지 않는다는 점에 주목하자. softmax는 눌러 담는 함수일 뿐이기 때문이다. 다만 줄임말로는 비교적 흔히 쓰인다.
+
+<a id="svmvssoftmax"></a>
 
 ### SVM vs. Softmax
 
@@ -546,6 +564,8 @@ for scores in ([10, -2, 3], [10, -100, -100], [10, 9, 9]):
 
 SVM 손실은 세 경우 모두 0이다. 마진 1이 이미 충족되었으니 그 뒤로는 관심을 끊는다. 반면 Softmax 손실은 [10, 9, 9]에서 0.5514까지 올라간다. 정답 확률이 아직 1에서 멀기 때문이다. 점수를 더 벌리면 손실이 계속 줄어들 여지가 남아 있다는 뜻이고, 이것이 "Softmax는 자기가 낸 점수에 결코 만족하지 않는다"는 말의 실제 모습이다.
 
+<a id="webdemo"></a>
+
 ### Interactive web demo
 
 ![We have written an interactive web demo to help your intuitions with linear classifiers.](/assets/img/posts/cs231n/linear-classify/classifydemo.jpeg){: width="776" height="343" }
@@ -553,7 +573,7 @@ _We have written an interactive web demo to help your intuitions with linear cla
 
 선형 분류기에 대한 직관을 돕기 위해 대화형 웹 데모를 만들었다. 이 데모는 2차원 데이터에 대한 장난감 3-클래스 분류 문제로 이 절에서 다룬 손실 함수들을 시각화한다. 또한 조금 앞서 나가 최적화까지 수행하는데, 최적화는 다음 절에서 자세히 다룬다.
 
-### Summary
+### Summary {#summary}
 
 > In summary,
 
@@ -572,6 +592,8 @@ _We have written an interactive web demo to help your intuitions with linear cla
 > We now saw one way to take a dataset of images and map each one to class scores based on a set of parameters, and we saw two examples of loss functions that we can use to measure the quality of the predictions. But how do we efficiently determine the parameters that give the best (lowest) loss? This process is *optimization*, and it is the topic of the next section.
 
 이제 이미지 데이터셋을 받아 매개변수에 따라 각 이미지를 클래스 점수로 보내는 방법 하나를 봤고, 예측의 품질을 재는 데 쓸 수 있는 손실 함수의 예 두 가지도 봤다. 그렇다면 가장 좋은(가장 낮은) 손실을 내는 매개변수를 어떻게 효율적으로 찾을까? 이 과정이 *최적화(optimization)*이고, 다음 절의 주제다.
+
+<a id="furtherreading"></a>
 
 ### Further Reading
 

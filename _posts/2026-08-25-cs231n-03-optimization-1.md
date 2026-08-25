@@ -47,6 +47,8 @@ image:
 - [경사 하강법](#gd)
 - [정리](#summary)
 
+<a id="intro"></a>
+
 ### Introduction
 
 > In the previous section we introduced two key components in context of the image classification task:
@@ -74,6 +76,8 @@ image:
 > **Foreshadowing:** Once we understand how these three core components interact, we will revisit the first component (the parameterized function mapping) and extend it to functions much more complicated than a linear mapping: First entire Neural Networks, and then Convolutional Neural Networks. The loss functions and the optimization process will remain relatively unchanged.
 
 **미리 말해두면:** 이 세 핵심 요소가 어떻게 맞물리는지 이해하고 나면 첫 번째 요소인 매개변수화된 함수 매핑으로 돌아와, 그것을 선형 매핑보다 훨씬 복잡한 함수로 확장한다. 먼저 신경망 전체로, 그다음에는 합성곱 신경망으로 간다. 손실 함수와 최적화 과정은 거의 그대로 남는다.
+
+<a id="vis"></a>
 
 ### Visualizing the loss function
 
@@ -126,11 +130,13 @@ _1-dimensional illustration of the data loss. The x-axis is a single weight and 
 
 *미분 가능하지 않은 손실 함수*. 기술적인 이야기를 덧붙이면, max 연산 때문에 생기는 손실 함수의 *꺾임*은 엄밀히 말해 손실 함수를 미분 불가능하게 만든다. 그 꺾인 지점에서는 기울기가 정의되지 않기 때문이다. 하지만 [부분기울기](http://en.wikipedia.org/wiki/Subderivative)는 여전히 존재하고 보통 그것을 대신 쓴다. 이 수업에서는 *부분기울기*와 *기울기*를 구분 없이 섞어 쓴다.
 
-### Optimization
+### Optimization {#optimization}
 
 > To reiterate, the loss function lets us quantify the quality of any particular set of weights **W**. The goal of optimization is to find **W** that minimizes the loss function. We will now motivate and slowly develop an approach to optimizing the loss function. For those of you coming to this class with previous experience, this section might seem odd since the working example we’ll use (the SVM loss) is a convex problem, but keep in mind that our goal is to eventually optimize Neural Networks where we can’t easily use any of the tools developed in the Convex Optimization literature.
 
 다시 말하지만 손실 함수는 특정 가중치 집합 **W**의 품질을 수치로 재게 해준다. 최적화의 목표는 손실 함수를 최소화하는 **W**를 찾는 것이다. 이제 손실 함수를 최적화하는 방법을 동기부터 짚어가며 차근차근 만들어보겠다. 사전 지식을 갖고 이 수업에 온 사람에게는 이 절이 이상해 보일 수 있다. 예제로 쓸 SVM 손실이 볼록 문제이기 때문이다. 하지만 우리의 최종 목표는 신경망을 최적화하는 것이고, 거기서는 볼록 최적화 문헌의 도구를 그대로 가져다 쓸 수 없다는 점을 염두에 두자.
+
+<a id="opt1"></a>
 
 #### Strategy #1: A first very bad idea solution: Random search
 
@@ -199,6 +205,8 @@ np.mean(Yte_predict == Yte)
 
 **눈을 가린 등산객 비유.** 앞으로 도움이 될 만한 비유가 하나 있다. 눈가리개를 하고 언덕진 지형을 걸으며 바닥에 닿으려 애쓰는 자신을 떠올려보자. CIFAR-10 예에서는 **W**의 크기가 10 x 3073이므로 이 언덕이 30,730차원이다. 언덕 위의 모든 지점에서 우리는 특정 손실 값(지형의 높이)을 얻는다.
 
+<a id="opt2"></a>
+
 #### Strategy #2: Random Local Search
 
 > The first strategy you may think of is to try to extend one foot in a random direction and then take a step only if it leads downhill. Concretely, we will start out with a random $$W$$, generate random perturbations $$\delta W$$ to it and if the loss at the perturbed $$W + \delta W$$ is lower, we will perform an update. The code for this procedure is as follows:
@@ -221,6 +229,8 @@ for i in range(1000):
 > Using the same number of loss function evaluations as before (1000), this approach achieves test set classification accuracy of **21.4%**. This is better, but still wasteful and computationally expensive.
 
 앞과 같은 횟수(1000번)만큼 손실 함수를 계산했을 때 이 방법은 테스트 집합 분류 정확도 **21.4%**를 얻는다. 나아지긴 했지만 여전히 낭비가 심하고 계산 비용이 크다.
+
+<a id="opt3"></a>
 
 #### Strategy #3: Following the Gradient
 
@@ -246,11 +256,15 @@ for i in range(1000):
 
 관심 대상 함수가 숫자 하나가 아니라 숫자 벡터를 입력으로 받으면 그 도함수를 **편미분**이라고 부르며, gradient는 그저 각 차원에 대한 편미분을 모아놓은 벡터다.
 
+<a id="gradcompute"></a>
+
 ### Computing the gradient
 
 > There are two ways to compute the gradient: A slow, approximate but easy way (**numerical gradient**), and a fast, exact but more error-prone way that requires calculus (**analytic gradient**). We will now present both.
 
 기울기를 계산하는 방법에는 두 가지가 있다. 느리고 근사적이지만 쉬운 방법(**수치적 기울기**)과, 빠르고 정확하지만 미적분이 필요해 실수하기 쉬운 방법(**해석적 기울기**)이다. 이제 둘 다 살펴본다.
+
+<a id="numerical"></a>
 
 #### Computing the gradient numerically with finite differences
 
@@ -369,6 +383,8 @@ _Visualizing the effect of step size. We start at some particular spot W and eva
 {: .prompt-tip }
 <!-- markdownlint-restore -->
 
+<a id="analytic"></a>
+
 #### Computing the gradient analytically with Calculus
 
 > The numerical gradient is very simple to compute using the finite difference approximation, but the downside is that it is approximate (since we have to pick a small value of *h*, while the true gradient is defined as the limit as *h* goes to zero), and that it is very computationally expensive to compute. The second way to compute the gradient is analytically using Calculus, which allows us to derive a direct formula for the gradient (no approximations) that is also very fast to compute. However, unlike the numerical gradient it can be more error prone to implement, which is why in practice it is very common to compute the analytic gradient and compare it to the numerical gradient to check the correctness of your implementation. This is called a **gradient check**.
@@ -476,6 +492,8 @@ print("최대 절대 오차 =", float(np.max(np.abs(ga - gn))))
 
 두 오답 클래스가 모두 마진을 못 채웠으므로 지시 함수는 둘 다 1이고, 그래서 0번 행과 1번 행이 똑같이 $$x_i$$ 그 자체다. 정답 클래스인 2번 행은 그 개수 2를 곱하고 부호를 뒤집은 $$-2 x_i$$이며, 실제로 위의 두 행과 정확히 $$-2$$배 관계다. 세 행의 합이 0인 것도 여기서 나온다. 수치적 기울기와 비교했을 때 최대 오차는 1e-11 수준으로, 유한 차분 자체에서 나오는 오차 말고는 차이가 없다. 실전에서 해석적 기울기를 구현하고 나서 하는 일이 바로 이 대조다.
 
+<a id="gd"></a>
+
 ### Gradient Descent
 
 > Now that we can compute the gradient of the loss function, the procedure of repeatedly evaluating the gradient and then performing a parameter update is called *Gradient Descent*. Its **vanilla** version looks as follows:
@@ -515,7 +533,7 @@ while True:
 
 이것의 극단적인 경우는 mini-batch에 예제가 단 하나만 들어 있는 설정이다. 이 과정을 **Stochastic Gradient Descent (SGD)**(또는 때때로 **온라인(on-line)** 경사 하강법)라고 부른다. 이것은 상대적으로 보기 드문데, 실제로는 벡터화된 코드 최적화 덕분에 예제 100개에 대한 기울기를 한 번에 계산하는 편이 예제 하나에 대한 기울기를 100번 계산하는 것보다 계산상 훨씬 효율적일 수 있기 때문이다. SGD는 엄밀히는 한 번에 예제 하나로 기울기를 계산하는 것을 가리키지만, 사람들이 mini-batch 경사 하강법을 가리킬 때도 SGD라는 말을 쓰는 것을 듣게 될 것이다("Minibatch Gradient Descent"의 MGD나 "Batch gradient descent"의 BGD라는 표현은 좀처럼 보이지 않는다). 보통은 mini-batch를 쓴다고 전제하는 것이다. mini-batch의 크기는 하이퍼파라미터지만 이를 교차 검증으로 정하는 일은 그리 흔하지 않다. 보통은 (있다면) 메모리 제약을 기준으로 정하거나 32, 64, 128 같은 값으로 둔다. 실전에서 2의 거듭제곱을 쓰는 이유는 벡터화된 연산 구현 상당수가 입력 크기가 2의 거듭제곱일 때 더 빠르게 동작하기 때문이다.
 
-### Summary
+### Summary {#summary}
 
 ![Summary of the information flow. The dataset of pairs of (x,y) is given and fixed.](/assets/img/posts/cs231n/optimization-1/dataflow.jpeg){: width="400" height="167" }
 _Summary of the information flow. The dataset of pairs of **(x,y)** is given and fixed. The weights start out as random numbers and can change. During the forward pass the score function computes class scores, stored in vector **f**. The loss function contains two components: The data loss computes the compatibility between the scores **f** and the labels **y**. The regularization loss is only a function of the weights. During Gradient Descent, we compute the gradient on the weights (and optionally on data if we wish) and use them to perform a parameter update during Gradient Descent._
