@@ -68,7 +68,7 @@ _Typical-looking filters on the first CONV layer (left), and the 2nd CONV layer 
 ![Maximally activating images for some POOL5 (5th pool layer) neurons of an AlexNet.](/assets/img/posts/cs231n/understanding-cnn/pool5max.jpeg){: width="1165" height="458" }
 _Maximally activating images for some POOL5 (5th pool layer) neurons of an AlexNet. The activation values and the receptive field of the particular neuron are shown in white. (In particular, note that the POOL5 neurons are a function of a relatively large portion of the input image!) It can be seen that some neurons are responsive to upper bodies, text, or specular highlights._
 
-AlexNet의 몇몇 POOL5(다섯 번째 pooling 층) 뉴런을 가장 크게 활성화하는 이미지들. 흰색 숫자가 해당 뉴런의 활성값이고, 흰색 상자가 그 뉴런의 수용 영역이다. (특히 POOL5 뉴런은 입력 이미지의 꽤 넓은 부분에 대한 함수라는 점에 주목하자!) 어떤 뉴런은 상반신에, 어떤 뉴런은 글자에, 또 어떤 뉴런은 반사광(specular highlight)에 반응한다는 것을 볼 수 있다.
+AlexNet의 몇몇 POOL5(다섯 번째 pooling 층) 뉴런을 가장 크게 활성화하는 이미지들. 해당 뉴런의 활성값과 수용 영역이 흰색으로 표시되어 있다. (특히 POOL5 뉴런은 입력 이미지의 꽤 넓은 부분에 대한 함수라는 점에 주목하자!) 어떤 뉴런은 상반신에, 어떤 뉴런은 글자에, 또 어떤 뉴런은 반사광(specular highlight)에 반응한다는 것을 볼 수 있다.
 
 > One problem with this approach is that ReLU neurons do not necessarily have any semantic meaning by themselves. Rather, it is more appropriate to think of multiple ReLU neurons as the basis vectors of some space that represents in image patches. In other words, the visualization is showing the patches at the edge of the cloud of representations, along the (arbitrary) axes that correspond to the filter weights. This can also be seen by the fact that neurons in a ConvNet operate linearly over the input space, so any arbitrary rotation of that space is a no-op. This point was further argued in [Intriguing properties of neural networks](http://arxiv.org/abs/1312.6199) by Szegedy et al., where they perform a similar visualization along arbitrary directions in the representation space.
 
@@ -114,7 +114,7 @@ _Three input images (top). Notice that the occluder region is shown in grey. As 
 
 > [Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps](http://arxiv.org/abs/1312.6034)
 
-[ConvNet 내부 들여다보기: 이미지 분류 모델 시각화와 Saliency Map](http://arxiv.org/abs/1312.6034)
+[Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps](http://arxiv.org/abs/1312.6034)
 
 > **DeconvNet**.
 
@@ -122,7 +122,7 @@ _Three input images (top). Notice that the occluder region is shown in grey. As 
 
 > [Visualizing and Understanding Convolutional Networks](http://arxiv.org/abs/1311.2901)
 
-[ConvNet 시각화하고 이해하기](http://arxiv.org/abs/1311.2901)
+[Visualizing and Understanding Convolutional Networks](http://arxiv.org/abs/1311.2901)
 
 > **Guided Backpropagation**.
 
@@ -130,34 +130,34 @@ _Three input images (top). Notice that the occluder region is shown in grey. As 
 
 > [Striving for Simplicity: The All Convolutional Net](http://arxiv.org/abs/1412.6806)
 
-[단순함을 추구하며: 전부 합성곱 신경망(All Convolutional Net)](http://arxiv.org/abs/1412.6806)
+[Striving for Simplicity: The All Convolutional Net](http://arxiv.org/abs/1412.6806)
 
 ### Reconstructing original images based on CNN Codes
 
 > [Understanding Deep Image Representations by Inverting Them](http://arxiv.org/abs/1412.0035)
 
-[역변환으로 깊은 이미지 표현 이해하기](http://arxiv.org/abs/1412.0035)
+[Understanding Deep Image Representations by Inverting Them](http://arxiv.org/abs/1412.0035)
 
 ### How much spatial information is preserved?
 
 > [Do ConvNets Learn Correspondence?](http://papers.nips.cc/paper/5420-do-convnets-learn-correspondence.pdf) (tldr: yes)
 
-[ConvNet은 대응 관계를 학습하는가?](http://papers.nips.cc/paper/5420-do-convnets-learn-correspondence.pdf) (tldr: 그렇다)
+[Do ConvNets Learn Correspondence?](http://papers.nips.cc/paper/5420-do-convnets-learn-correspondence.pdf) (tldr: 그렇다)
 
 ### Plotting performance as a function of image attributes
 
 > [ImageNet Large Scale Visual Recognition Challenge](http://arxiv.org/abs/1409.0575)
 
-[ImageNet 대규모 시각 인식 챌린지](http://arxiv.org/abs/1409.0575)
+[ImageNet Large Scale Visual Recognition Challenge](http://arxiv.org/abs/1409.0575)
 
 ## Fooling ConvNets
 
 > [Explaining and Harnessing Adversarial Examples](http://arxiv.org/abs/1412.6572)
 
-[적대적 예제 설명하고 다루기](http://arxiv.org/abs/1412.6572)
+[Explaining and Harnessing Adversarial Examples](http://arxiv.org/abs/1412.6572)
 
 ## Comparing ConvNets to Human labelers
 
 > [What I learned from competing against a ConvNet on ImageNet](http://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/)
 
-[ImageNet에서 ConvNet과 겨루며 배운 것](http://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/)
+[What I learned from competing against a ConvNet on ImageNet](http://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/)
