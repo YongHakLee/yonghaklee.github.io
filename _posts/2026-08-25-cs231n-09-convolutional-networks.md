@@ -7,7 +7,7 @@ tags: [study, computer vision, cs231n, deep learning]
 math: true
 image:
   path: /assets/img/posts/cs231n/convolutional-networks/neural_net2.jpeg
-  alt: "Left: A regular 3-layer Neural Network. Right: A ConvNet arranges its neurons in three dimensions (width, h..."
+  alt: "A regular 3-layer neural network beside a ConvNet, which arranges its neurons in three dimensions."
 ---
 
 <!-- markdownlint-capture -->

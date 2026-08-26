@@ -7,7 +7,7 @@ tags: [study, computer vision, cs231n, deep learning]
 math: true
 image:
   path: /assets/img/posts/cs231n/classification/classify.png
-  alt: "The task in Image Classification is to predict a single label (or a distribution over labels as shown here..."
+  alt: "An image classification example: an input image is mapped to a single label, or to a distribution over labels."
 ---
 
 <!-- markdownlint-capture -->

@@ -7,7 +7,7 @@ tags: [study, computer vision, cs231n, deep learning]
 math: true
 image:
   path: /assets/img/posts/cs231n/understanding-cnn/act1.jpeg
-  alt: "Typical-looking activations on the first CONV layer (left), and the 5th CONV layer (right) of a trained Ale..."
+  alt: "Typical activations from the first and the fifth convolutional layer of a trained network."
 ---
 
 <!-- markdownlint-capture -->

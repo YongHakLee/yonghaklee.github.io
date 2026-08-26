@@ -7,7 +7,7 @@ tags: [study, computer vision, cs231n, deep learning]
 math: true
 image:
   path: /assets/img/posts/cs231n/optimization-1/svm1d.png
-  alt: "Loss function landscape for the Multiclass SVM (without regularization) for one single example (left,middle..."
+  alt: "A one-dimensional slice through the Multiclass SVM loss landscape for a single example."
 ---
 
 <!-- markdownlint-capture -->
