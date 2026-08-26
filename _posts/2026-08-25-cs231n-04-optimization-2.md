@@ -116,9 +116,9 @@ math: true
 <!-- markdownlint-disable -->
 > **역주.** $$\mathbb{1}(\cdot)$$는 괄호 안의 조건이 참이면 1, 거짓이면 0을 내놓는 지시 함수다.
 > 두 입력이 정확히 같을 때($$x = y$$)에는 위 식이 양쪽 모두에 1을 주는데, 바로 그 지점이 max
-> 함수의 꺾임이라 도함수가 정의되지 않는다. 여기서 고른 값은 도함수가 아니라 부분기울기 중
-> 하나일 뿐이며, 실제 구현은 보통 한쪽에만 1을 주어 아래로 흘려보내는 기울기의 총합이 1이
-> 되도록 한다.
+> 함수의 꺾임이라 도함수가 정의되지 않는다. 이때 위 식이 내놓는 $$(1,1)$$은 사실 부분기울기가
+> 아니다 — 진짜 부분기울기는 두 성분의 합이 1이 되는 조합($$(1,0)$$, $$(0.5,0.5)$$ 등)이며,
+> 실제 구현은 보통 한쪽에만 1을 주어 아래로 흘려보내는 기울기의 총합이 1이 되도록 한다.
 {: .prompt-tip }
 <!-- markdownlint-restore -->
 
@@ -538,4 +538,4 @@ Erik Learned-Miller도 행렬·벡터 미분에 관해 더 긴 글을 써두었�
 
 > - [Automatic differentiation in machine learning: a survey](http://arxiv.org/abs/1502.05767)
 
-- [기계 학습에서의 자동 미분: 개관(Automatic differentiation in machine learning: a survey)](http://arxiv.org/abs/1502.05767)
+- [Automatic differentiation in machine learning: a survey](http://arxiv.org/abs/1502.05767)는 기계 학습에서의 자동 미분을 개관하는 논문이다.

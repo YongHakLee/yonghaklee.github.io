@@ -22,7 +22,7 @@ math: true
 
 > Table of Contents:
 
-목차:
+목차는 다음과 같다.
 
 > - [Transfer Learning](#tf)
 > - [Additional References](#add)
