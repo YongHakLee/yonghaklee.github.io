@@ -1,5 +1,5 @@
 ---
-title: Python 04. [Algorithm 05] 문자열 조작
+title: 05. 문자열 조작
 date: 2025-12-20 17:42:31 +0900
 categories: [Python, Algorithm]
 tags: [study, python, algorithm]     # TAG names should always be lowercase

@@ -1,5 +1,5 @@
 ---
-title: Python 04. [Algorithm 02] 자료형
+title: 02. 자료형
 date: 2025-12-17 15:56:32 +0900
 categories: [Python, Algorithm]
 tags: [study, python, algorithm]     # TAG names should always be lowercase

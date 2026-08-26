@@ -1,5 +1,5 @@
 ---
-title: Python 04. [Algorithm 03] 리스트 (List)
+title: 03. 리스트 (List)
 date: 2025-12-18 10:37:32 +0900
 categories: [Python, Algorithm]
 tags: [study, python, algorithm]     # TAG names should always be lowercase

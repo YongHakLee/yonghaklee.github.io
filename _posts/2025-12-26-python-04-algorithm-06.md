@@ -1,5 +1,5 @@
 ---
-title: Python 04. [Algorithm 06] 배열
+title: 06. 배열
 date: 2025-12-26 20:15:30 +0900
 categories: [Python, Algorithm]
 tags: [study, python, algorithm]     # TAG names should always be lowercase

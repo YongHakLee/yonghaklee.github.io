@@ -1,5 +1,5 @@
 ---
-title: Python 04. [Algorithm 07] 연결 리스트
+title: 07. 연결 리스트
 date: 2026-03-29 15:12:12 +0900
 categories: [Python, Algorithm]
 tags: [study, python, algorithm]     # TAG names should always be lowercase

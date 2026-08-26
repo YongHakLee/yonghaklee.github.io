@@ -1,5 +1,5 @@
 ---
-title: Python 04. [Algorithm 01] 시간복잡도와 Big O
+title: 01. 시간복잡도와 Big O
 date: 2025-12-17 09:56:11 +0900
 categories: [Python, Algorithm]
 tags: [study, python, algorithm]     # TAG names should always be lowercase
