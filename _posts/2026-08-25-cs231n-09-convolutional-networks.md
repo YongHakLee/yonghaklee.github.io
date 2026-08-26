@@ -172,7 +172,7 @@ Conv 층은 합성곱 신경망의 핵심 구성 요소이며, 계산의 무거�
 
 > *Example 1*. For example, suppose that the input volume has size [32x32x3], (e.g. an RGB CIFAR-10 image). If the receptive field (or the filter size) is 5x5, then each neuron in the Conv Layer will have weights to a [5x5x3] region in the input volume, for a total of 5\*5\*3 = 75 weights (and +1 bias parameter). Notice that the extent of the connectivity along the depth axis must be 3, since this is the depth of the input volume.
 
-*예 1*. 예컨대 입력 부피의 크기가 [32x32x3](예컨대 RGB CIFAR-10 이미지)이라고 하자. 수용 영역(곧 필터 크기)이 5x5라면 Conv 층의 각 뉴런은 입력 부피의 [5x5x3] 영역에 대한 가중치를 갖고, 모두 합쳐 5\*5\*3 = 75개의 가중치(그리고 편향 매개변수 +1개)를 갖는다. 깊이 축을 따라 뻗는 범위는 반드시 3이어야 하는데, 그것이 입력 부피의 깊이이기 때문이다.
+*예 1*. 예컨대 입력 부피의 크기가 [32x32x3] (예컨대 RGB CIFAR-10 이미지)이라고 하자. 수용 영역(곧 필터 크기)이 5x5라면 Conv 층의 각 뉴런은 입력 부피의 [5x5x3] 영역에 대한 가중치를 갖고, 모두 합쳐 5\*5\*3 = 75개의 가중치(그리고 편향 매개변수 +1개)를 갖는다. 깊이 축을 따라 뻗는 범위는 반드시 3이어야 하는데, 그것이 입력 부피의 깊이이기 때문이다.
 
 > *Example 2*. Suppose an input volume had size [16x16x20]. Then using an example receptive field size of 3x3, every neuron in the Conv Layer would now have a total of 3\*3\*20 = 180 connections to the input volume. Notice that, again, the connectivity is local in 2D space (e.g. 3x3), but full along the input depth (20).
 
