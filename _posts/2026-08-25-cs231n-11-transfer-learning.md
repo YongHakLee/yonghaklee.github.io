@@ -11,8 +11,6 @@ math: true
 <!-- markdownlint-disable -->
 > **원문**: [Transfer Learning and Fine-tuning Convolutional Neural Networks](https://cs231n.github.io/transfer-learning/)
 > — CS231n: Convolutional Neural Networks for Visual Recognition (Stanford University) · © 2015 Andrej Karpathy, MIT License
->
-> 원문을 문단 단위로 인용하고 그 아래에 한국어 번역을 붙였다. 인용 블록이 원문, 그 아래 문단이 번역이며, `역주` 박스와 `보충` 섹션은 원문에 없는 추가 내용이다.
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
@@ -23,12 +21,6 @@ math: true
 > Table of Contents:
 
 목차는 다음과 같다.
-
-> - [Transfer Learning](#tf)
-> - [Additional References](#add)
-
-- [전이 학습](#tf)
-- [추가 참고 자료](#add)
 
 <span id="tf"></span>
 

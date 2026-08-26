@@ -5,61 +5,18 @@ date: 2026-08-25 09:30:00 +0900
 categories: [Computer Vision, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
-image:
-  path: /assets/img/posts/cs231n/neural-networks-3/learningrates.jpeg
-  alt: "Left: A cartoon depicting the effects of different learning rates."
 ---
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
 > **원문**: [Neural Networks Part 3: Learning and Evaluation](https://cs231n.github.io/neural-networks-3/)
 > — CS231n: Convolutional Neural Networks for Visual Recognition (Stanford University) · © 2015 Andrej Karpathy, MIT License
->
-> 원문을 문단 단위로 인용하고 그 아래에 한국어 번역을 붙였다. 인용 블록이 원문, 그 아래 문단이 번역이며, `역주` 박스와 `보충` 섹션은 원문에 없는 추가 내용이다.
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
 > Table of Contents:
 
 목차는 다음과 같다.
-
-> - [Gradient checks](#gradcheck)
-> - [Sanity checks](#sanitycheck)
-> - [Babysitting the learning process](#baby)
-> - [Loss function](#loss)
-> - [Train/val accuracy](#accuracy)
-> - [Weights:Updates ratio](#ratio)
-> - [Activation/Gradient distributions per layer](#distr)
-> - [Visualization](#vis)
-> - [Parameter updates](#update)
-> - [First-order (SGD), momentum, Nesterov momentum](#sgd)
-> - [Annealing the learning rate](#anneal)
-> - [Second-order methods](#second)
-> - [Per-parameter adaptive learning rates (Adagrad, RMSProp)](#ada)
-> - [Hyperparameter Optimization](#hyper)
-> - [Evaluation](#eval)
-> - [Model Ensembles](#ensemble)
-> - [Summary](#summary)
-> - [Additional References](#add)
-
-- [gradient check](#gradcheck)
-- [온전성 점검](#sanitycheck)
-- [학습 과정 돌보기](#baby)
-- [손실 함수](#loss)
-- [학습/검증 정확도](#accuracy)
-- [가중치:갱신량 비율](#ratio)
-- [층별 활성값/기울기 분포](#distr)
-- [시각화](#vis)
-- [매개변수 갱신](#update)
-- [1차 방법(SGD), momentum, Nesterov momentum](#sgd)
-- [학습률 담금질하기](#anneal)
-- [2차 방법](#second)
-- [매개변수별 적응적 학습률(Adagrad, RMSProp)](#ada)
-- [하이퍼파라미터 최적화](#hyper)
-- [평가](#eval)
-- [모델 앙상블](#ensemble)
-- [정리](#summary)
-- [추가 참고 자료](#add)
 
 ## Learning
 
@@ -258,9 +215,11 @@ for scale in (1.0, 1e-5):
 
 학습 중에 추적하면 좋은 첫 번째 양은 손실이다. 손실은 순전파 때 배치마다 계산된다. 아래는 시간에 따른 손실을 그린 개념도로, 그 모양이 학습률에 대해 무엇을 말해주는지를 특히 보여준다.
 
-![Left: A cartoon depicting the effects of different learning rates.](/assets/img/posts/cs231n/neural-networks-3/learningrates.jpeg){: width="459" height="414" }
-![Left: A cartoon depicting the effects of different learning rates.](/assets/img/posts/cs231n/neural-networks-3/loss.jpeg){: width="614" height="491" }
-_**Left:** A cartoon depicting the effects of different learning rates. With low learning rates the improvements will be linear. With high learning rates they will start to look more exponential. Higher learning rates will decay the loss faster, but they get stuck at worse values of loss (green line). This is because there is too much "energy" in the optimization and the parameters are bouncing around chaotically, unable to settle in a nice spot in the optimization landscape. **Right:** An example of a typical loss function over time, while training a small network on CIFAR-10 dataset. This loss function looks reasonable (it might indicate a slightly too small learning rate based on its speed of decay, but it's hard to say), and also indicates that the batch size might be a little too low (since the cost is a little too noisy)._
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;align-items:start">
+<img src="/assets/img/posts/cs231n/neural-networks-3/learningrates.jpeg" alt="Left: A cartoon depicting the effects of different learning rates." width="459" height="414" style="width:100%">
+<img src="/assets/img/posts/cs231n/neural-networks-3/loss.jpeg" alt="Left: A cartoon depicting the effects of different learning rates." width="614" height="491" style="width:100%">
+<em style="grid-column:1/-1"><strong>Left:</strong> A cartoon depicting the effects of different learning rates. With low learning rates the improvements will be linear. With high learning rates they will start to look more exponential. Higher learning rates will decay the loss faster, but they get stuck at worse values of loss (green line). This is because there is too much "energy" in the optimization and the parameters are bouncing around chaotically, unable to settle in a nice spot in the optimization landscape. <strong>Right:</strong> An example of a typical loss function over time, while training a small network on CIFAR-10 dataset. This loss function looks reasonable (it might indicate a slightly too small learning rate based on its speed of decay, but it's hard to say), and also indicates that the batch size might be a little too low (since the cost is a little too noisy).</em>
+</div>
 
 **왼쪽:** 학습률이 다를 때의 효과를 그린 개념도. 학습률이 낮으면 개선이 선형에 가깝다. 학습률이 높으면 좀 더 지수적인 모양이 되기 시작한다. 학습률이 높을수록 손실이 더 빨리 떨어지지만 더 나쁜 손실 값에서 멈춰버린다(초록색 선). 최적화에 “에너지”가 너무 많아 매개변수들이 어지럽게 튀어 다니느라 최적화 지형의 좋은 자리에 내려앉지 못하기 때문이다. **오른쪽:** CIFAR-10 데이터셋으로 작은 신경망을 학습시킬 때 나온, 시간에 따른 전형적인 손실 함수의 예. 이 손실 함수는 그럭저럭 괜찮아 보이며(떨어지는 속도로 보아 학습률이 살짝 작을 수도 있지만 단정하기는 어렵다), 비용이 조금 지나치게 들쭉날쭉한 것으로 보아 배치 크기가 조금 작을 수도 있음을 시사한다.
 
@@ -326,9 +285,11 @@ print update_scale / param_scale # want ~1e-3
 
 마지막으로, 이미지 픽셀을 다루고 있다면 첫 번째 층의 특징을 눈으로 그려보는 것이 도움이 되고 보람도 있다.
 
-![Examples of visualized weights for the first layer of a neural network.](/assets/img/posts/cs231n/neural-networks-3/weights.jpeg){: width="374" height="282" }
-![Examples of visualized weights for the first layer of a neural network.](/assets/img/posts/cs231n/neural-networks-3/cnnweights.jpg){: width="437" height="288" }
-_Examples of visualized weights for the first layer of a neural network. **Left**: Noisy features indicate could be a symptom: Unconverged network, improperly set learning rate, very low weight regularization penalty. **Right:** Nice, smooth, clean and diverse features are a good indication that the training is proceeding well._
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;align-items:start">
+<img src="/assets/img/posts/cs231n/neural-networks-3/weights.jpeg" alt="Examples of visualized weights for the first layer of a neural network." width="374" height="282" style="width:100%">
+<img src="/assets/img/posts/cs231n/neural-networks-3/cnnweights.jpg" alt="Examples of visualized weights for the first layer of a neural network." width="437" height="288" style="width:100%">
+<em style="grid-column:1/-1">Examples of visualized weights for the first layer of a neural network. <strong>Left</strong>: Noisy features indicate could be a symptom: Unconverged network, improperly set learning rate, very low weight regularization penalty. <strong>Right:</strong> Nice, smooth, clean and diverse features are a good indication that the training is proceeding well.</em>
+</div>
 
 신경망 첫 번째 층의 가중치를 시각화한 예. **왼쪽:** 잡음이 많은 특징은 신경망이 아직 수렴하지 않았거나, 학습률이 잘못 설정되었거나, 가중치 정규화 벌점이 지나치게 낮다는 징후일 수 있다. **오른쪽:** 매끄럽고 깔끔하며 다양한 특징은 학습이 잘 진행되고 있다는 좋은 신호다.
 
@@ -605,9 +566,11 @@ x += - learning_rate * mt / (np.sqrt(vt) + eps)
 
 - [Unit Tests for Stochastic Optimization](http://arxiv.org/abs/1312.6055)은 확률적 최적화의 표준 벤치마크로 삼을 만한 일련의 테스트를 제안한다.
 
-![Animations that may help your intuitions about the learning process dynamics.](/assets/img/posts/cs231n/neural-networks-3/opt2.gif){: width="620" height="480" }
-![Animations that may help your intuitions about the learning process dynamics.](/assets/img/posts/cs231n/neural-networks-3/opt1.gif){: width="620" height="480" }
-_Animations that may help your intuitions about the learning process dynamics. **Left:** Contours of a loss surface and time evolution of different optimization algorithms. Notice the "overshooting" behavior of momentum-based methods, which make the optimization look like a ball rolling down the hill. **Right:** A visualization of a saddle point in the optimization landscape, where the curvature along different dimension has different signs (one dimension curves up and another down). Notice that SGD has a very hard time breaking symmetry and gets stuck on the top. Conversely, algorithms such as RMSprop will see very low gradients in the saddle direction. Due to the denominator term in the RMSprop update, this will increase the effective learning rate along this direction, helping RMSProp proceed. Images credit: [Alec Radford](https://twitter.com/alecrad)._
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;align-items:start">
+<img src="/assets/img/posts/cs231n/neural-networks-3/opt2.gif" alt="Animations that may help your intuitions about the learning process dynamics." width="620" height="480" style="width:100%">
+<img src="/assets/img/posts/cs231n/neural-networks-3/opt1.gif" alt="Animations that may help your intuitions about the learning process dynamics." width="620" height="480" style="width:100%">
+<em style="grid-column:1/-1">Animations that may help your intuitions about the learning process dynamics. <strong>Left:</strong> Contours of a loss surface and time evolution of different optimization algorithms. Notice the "overshooting" behavior of momentum-based methods, which make the optimization look like a ball rolling down the hill. <strong>Right:</strong> A visualization of a saddle point in the optimization landscape, where the curvature along different dimension has different signs (one dimension curves up and another down). Notice that SGD has a very hard time breaking symmetry and gets stuck on the top. Conversely, algorithms such as RMSprop will see very low gradients in the saddle direction. Due to the denominator term in the RMSprop update, this will increase the effective learning rate along this direction, helping RMSProp proceed. Images credit: <a href="https://twitter.com/alecrad">Alec Radford</a>.</em>
+</div>
 
 학습 과정의 동역학에 대한 직관을 돕는 애니메이션. **왼쪽:** 손실 곡면의 등고선과 여러 최적화 알고리즘의 시간에 따른 궤적. momentum 계열 방법이 “지나쳐버리는” 모습에 주목하자. 최적화가 언덕을 굴러 내려가는 공처럼 보인다. **오른쪽:** 최적화 지형에 있는 안장점의 시각화로, 차원마다 곡률의 부호가 다르다(한 차원은 위로 굽고 다른 차원은 아래로 굽는다). SGD가 대칭을 깨는 데 매우 애를 먹으며 꼭대기에 갇히는 것에 주목하자. 반대로 RMSprop 같은 알고리즘은 안장 방향에서 아주 작은 기울기를 보게 된다. RMSprop 갱신의 분모 항 덕분에 이 방향의 실효 학습률이 커지고, 그래서 RMSProp이 앞으로 나아갈 수 있다. 이미지 출처: [Alec Radford](https://twitter.com/alecrad).
 

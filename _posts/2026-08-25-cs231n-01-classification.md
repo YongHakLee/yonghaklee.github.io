@@ -5,39 +5,18 @@ date: 2026-08-25 09:00:00 +0900
 categories: [Computer Vision, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
-image:
-  path: /assets/img/posts/cs231n/classification/classify.png
-  alt: "An image classification example: an input image is mapped to a single label, or to a distribution over labels."
 ---
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
 > **원문**: [Image Classification: Data-driven Approach, k-Nearest Neighbor, train/val/test splits](https://cs231n.github.io/classification/)
 > — CS231n: Convolutional Neural Networks for Visual Recognition (Stanford University) · © 2015 Andrej Karpathy, MIT License
->
-> 원문을 문단 단위로 인용하고 그 아래에 한국어 번역을 붙였다. 인용 블록이 원문, 그 아래 문단이 번역이며, `역주` 박스와 `보충` 섹션은 원문에 없는 추가 내용이다.
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
 > This is an introductory lecture designed to introduce people from outside of Computer Vision to the Image Classification problem, and the data-driven approach. The Table of Contents:
 
 컴퓨터 비전을 처음 접하는 사람에게 이미지 분류(image classification) 문제와 데이터 기반 접근법을 소개하는 입문 강의다. 목차는 다음과 같다.
-
-> - [Image Classification](#image-classification)
-> - [Nearest Neighbor Classifier](#nearest-neighbor-classifier)
-> - [k - Nearest Neighbor Classifier](#k---nearest-neighbor-classifier)
-> - [Validation sets for Hyperparameter tuning](#validation-sets-for-hyperparameter-tuning)
-> - [Summary](#summary)
-> - [Summary: Applying kNN in practice](#summary-applying-knn-in-practice)
-> - [Further Reading](#further-reading)
-
-- [이미지 분류](#image-classification)
-- [최근접 이웃 분류기](#nearest-neighbor-classifier)
-- [k-최근접 이웃 분류기](#k---nearest-neighbor-classifier)
-- [하이퍼파라미터 튜닝을 위한 검증 집합](#validation-sets-for-hyperparameter-tuning)
-- [정리](#summary)
-- [정리: kNN을 실제로 적용하기](#summary-applying-knn-in-practice)
-- [더 읽을거리](#further-reading)
 
 <span id="intro"></span>
 

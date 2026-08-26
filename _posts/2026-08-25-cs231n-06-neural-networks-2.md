@@ -5,39 +5,18 @@ date: 2026-08-25 09:25:00 +0900
 categories: [Computer Vision, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
-image:
-  path: /assets/img/posts/cs231n/neural-networks-2/prepro1.jpeg
-  alt: "Common data preprocessing pipeline. Left: Original toy, 2-dimensional input data."
 ---
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
 > **원문**: [Neural Networks Part 2: Setting up the Data and the Loss](https://cs231n.github.io/neural-networks-2/)
 > — CS231n: Convolutional Neural Networks for Visual Recognition (Stanford University) · © 2015 Andrej Karpathy, MIT License
->
-> 원문을 문단 단위로 인용하고 그 아래에 한국어 번역을 붙였다. 인용 블록이 원문, 그 아래 문단이 번역이며, `역주` 박스와 `보충` 섹션은 원문에 없는 추가 내용이다.
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
 > Table of Contents:
 
 목차는 다음과 같다.
-
-> - [Setting up the data and the model](#intro)
-> - [Data Preprocessing](#datapre)
-> - [Weight Initialization](#init)
-> - [Batch Normalization](#batchnorm)
-> - [Regularization](#reg) (L2/L1/Maxnorm/Dropout)
-> - [Loss functions](#losses)
-> - [Summary](#summary)
-
-- [데이터와 모델 준비하기](#intro)
-- [데이터 전처리](#datapre)
-- [가중치 초기화](#init)
-- [Batch Normalization](#batchnorm)
-- [정규화](#reg) (L2/L1/Maxnorm/Dropout)
-- [손실 함수](#losses)
-- [정리](#summary)
 
 <span id="intro"></span>
 

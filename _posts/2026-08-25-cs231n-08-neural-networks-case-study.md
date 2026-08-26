@@ -5,45 +5,18 @@ date: 2026-08-25 09:35:00 +0900
 categories: [Computer Vision, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
-image:
-  path: /assets/img/posts/cs231n/neural-networks-case-study/spiral_raw.png
-  alt: "The toy spiral data consists of three classes (blue, red, yellow) that are not linearly separable."
 ---
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
 > **원문**: [Putting it Together: Minimal Neural Network Case Study](https://cs231n.github.io/neural-networks-case-study/)
 > — CS231n: Convolutional Neural Networks for Visual Recognition (Stanford University) · © 2015 Andrej Karpathy, MIT License
->
-> 원문을 문단 단위로 인용하고 그 아래에 한국어 번역을 붙였다. 인용 블록이 원문, 그 아래 문단이 번역이며, `역주` 박스와 `보충` 섹션은 원문에 없는 추가 내용이다.
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
 > Table of Contents:
 
 목차는 다음과 같다.
-
-> - [Generating some data](#data)
-> - [Training a Softmax Linear Classifier](#linear)
-> - [Initialize the parameters](#init)
-> - [Compute the class scores](#scores)
-> - [Compute the loss](#loss)
-> - [Computing the analytic gradient with backpropagation](#grad)
-> - [Performing a parameter update](#update)
-> - [Putting it all together: Training a Softmax Classifier](#together)
-> - [Training a Neural Network](#net)
-> - [Summary](#summary)
-
-- [데이터 만들기](#data)
-- [Softmax 선형 분류기 학습시키기](#linear)
-- [매개변수 초기화하기](#init)
-- [클래스 점수 계산하기](#scores)
-- [손실 계산하기](#loss)
-- [역전파로 해석적 기울기 계산하기](#grad)
-- [매개변수 갱신하기](#update)
-- [전부 합치기: Softmax 분류기 학습시키기](#together)
-- [신경망 학습시키기](#net)
-- [정리](#summary)
 
 > In this section we’ll walk through a complete implementation of a toy Neural Network in 2 dimensions. We’ll first implement a simple linear classifier and then extend the code to a 2-layer Neural Network. As we’ll see, this extension is surprisingly simple and very few changes are necessary.
 

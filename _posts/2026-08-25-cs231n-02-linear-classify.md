@@ -5,47 +5,18 @@ date: 2026-08-25 09:05:00 +0900
 categories: [Computer Vision, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
-image:
-  path: /assets/img/posts/cs231n/linear-classify/imagemap.jpg
-  alt: "An example of mapping an image to class scores."
 ---
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
 > **원문**: [Linear Classification: Support Vector Machine, Softmax](https://cs231n.github.io/linear-classify/)
 > — CS231n: Convolutional Neural Networks for Visual Recognition (Stanford University) · © 2015 Andrej Karpathy, MIT License
->
-> 원문을 문단 단위로 인용하고 그 아래에 한국어 번역을 붙였다. 인용 블록이 원문, 그 아래 문단이 번역이며, `역주` 박스와 `보충` 섹션은 원문에 없는 추가 내용이다.
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
 > Table of Contents:
 
 목차는 다음과 같다.
-
-> - [Linear Classification](#linear-classification)
-> - [Parameterized mapping from images to label scores](#parameterized-mapping-from-images-to-label-scores)
-> - [Interpreting a linear classifier](#interpreting-a-linear-classifier)
-> - [Loss function](#loss-function)
-> - [Multiclass Support Vector Machine loss](#multiclass-support-vector-machine-loss)
-> - [Practical Considerations](#practical-considerations)
-> - [Softmax classifier](#softmax-classifier)
-> - [SVM vs. Softmax](#svm-vs-softmax)
-> - [Interactive web demo](#interactive-web-demo)
-> - [Summary](#summary)
-> - [Further Reading](#further-reading)
-
-- [선형 분류](#linear-classification)
-- [이미지에서 클래스 점수로 가는 매개변수화된 매핑](#parameterized-mapping-from-images-to-label-scores)
-- [선형 분류기 해석하기](#interpreting-a-linear-classifier)
-- [손실 함수](#loss-function)
-- [Multiclass Support Vector Machine 손실](#multiclass-support-vector-machine-loss)
-- [실전에서 고려할 것들](#practical-considerations)
-- [Softmax 분류기](#softmax-classifier)
-- [SVM 대 Softmax](#svm-vs-softmax)
-- [대화형 웹 데모](#interactive-web-demo)
-- [정리](#summary)
-- [더 읽을거리](#further-reading)
 
 <span id="intro"></span>
 

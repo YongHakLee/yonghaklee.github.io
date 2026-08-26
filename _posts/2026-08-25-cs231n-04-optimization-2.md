@@ -11,34 +11,12 @@ math: true
 <!-- markdownlint-disable -->
 > **원문**: [Backpropagation, Intuitions](https://cs231n.github.io/optimization-2/)
 > — CS231n: Convolutional Neural Networks for Visual Recognition (Stanford University) · © 2015 Andrej Karpathy, MIT License
->
-> 원문을 문단 단위로 인용하고 그 아래에 한국어 번역을 붙였다. 인용 블록이 원문, 그 아래 문단이 번역이며, `역주` 박스와 `보충` 섹션은 원문에 없는 추가 내용이다.
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
 > Table of Contents:
 
 목차는 다음과 같다.
-
-> - [Introduction](#intro)
-> - [Simple expressions, interpreting the gradient](#grad)
-> - [Compound expressions, chain rule, backpropagation](#backprop)
-> - [Intuitive understanding of backpropagation](#intuitive)
-> - [Modularity: Sigmoid example](#sigmoid)
-> - [Backprop in practice: Staged computation](#staged)
-> - [Patterns in backward flow](#patterns)
-> - [Gradients for vectorized operations](#mat)
-> - [Summary](#summary)
-
-- [들어가며](#intro)
-- [간단한 식과 기울기의 해석](#grad)
-- [복합 식, 연쇄 법칙, 역전파](#backprop)
-- [역전파의 직관적 이해](#intuitive)
-- [모듈화: sigmoid 예제](#sigmoid)
-- [실전에서의 역전파: 단계별 계산](#staged)
-- [역방향 흐름에 나타나는 패턴](#patterns)
-- [벡터화된 연산의 기울기](#mat)
-- [정리](#summary)
 
 <span id="intro"></span>
 

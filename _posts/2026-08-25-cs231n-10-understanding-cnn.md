@@ -5,17 +5,12 @@ date: 2026-08-25 09:45:00 +0900
 categories: [Computer Vision, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
-image:
-  path: /assets/img/posts/cs231n/understanding-cnn/act1.jpeg
-  alt: "Typical activations from the first and the fifth convolutional layer of a trained network."
 ---
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
 > **원문**: [Understanding and Visualizing Convolutional Neural Networks](https://cs231n.github.io/understanding-cnn/)
 > — CS231n: Convolutional Neural Networks for Visual Recognition (Stanford University) · © 2015 Andrej Karpathy, MIT License
->
-> 원문을 문단 단위로 인용하고 그 아래에 한국어 번역을 붙였다. 인용 블록이 원문, 그 아래 문단이 번역이며, `역주` 박스와 `보충` 섹션은 원문에 없는 추가 내용이다.
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
@@ -43,9 +38,11 @@ image:
 {: .prompt-tip }
 <!-- markdownlint-restore -->
 
-![Typical-looking activations on the first CONV layer (left), and the 5th CONV layer (right) of a trained](/assets/img/posts/cs231n/understanding-cnn/act1.jpeg){: width="556" height="554" }
-![Typical-looking activations on the first CONV layer (left), and the 5th CONV layer (right) of a trained](/assets/img/posts/cs231n/understanding-cnn/act2.jpeg){: width="553" height="554" }
-_Typical-looking activations on the first CONV layer (left), and the 5th CONV layer (right) of a trained AlexNet looking at a picture of a cat. Every box shows an activation map corresponding to some filter. Notice that the activations are sparse (most values are zero, in this visualization shown in black) and mostly local._
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;align-items:start">
+<img src="/assets/img/posts/cs231n/understanding-cnn/act1.jpeg" alt="Typical-looking activations on the first CONV layer (left), and the 5th CONV layer (right) of a trained" width="556" height="554" style="width:100%">
+<img src="/assets/img/posts/cs231n/understanding-cnn/act2.jpeg" alt="Typical-looking activations on the first CONV layer (left), and the 5th CONV layer (right) of a trained" width="553" height="554" style="width:100%">
+<em style="grid-column:1/-1">Typical-looking activations on the first CONV layer (left), and the 5th CONV layer (right) of a trained AlexNet looking at a picture of a cat. Every box shows an activation map corresponding to some filter. Notice that the activations are sparse (most values are zero, in this visualization shown in black) and mostly local.</em>
+</div>
 
 고양이 사진을 보고 있는 학습된 AlexNet의 첫 번째 CONV 층(왼쪽)과 다섯 번째 CONV 층(오른쪽)에서 나타나는 전형적인 활성값. 상자 하나하나가 어떤 필터에 대응하는 활성값 지도를 보여준다. 활성값이 희소하고(대부분의 값이 0이며, 이 시각화에서는 검은색으로 표시된다) 대체로 국소적이라는 점에 주목하자.
 
@@ -53,9 +50,11 @@ _Typical-looking activations on the first CONV layer (left), and the 5th CONV la
 
 **Conv/FC 필터**. 두 번째로 흔한 전략은 가중치를 시각화하는 것이다. 날것 그대로의 픽셀 데이터를 직접 들여다보는 첫 CONV 층에서 이 방법이 대개 가장 잘 해석되지만, 신경망 더 깊은 곳의 필터 가중치도 얼마든지 보여줄 수 있다. 가중치를 시각화하는 것이 쓸모 있는 이유는, 잘 학습된 신경망은 대개 잡음 섞인 패턴 없이 매끈하고 깔끔한 필터를 보여주기 때문이다. 잡음 섞인 패턴은 신경망이 충분히 오래 학습되지 않았다는 신호이거나, 정규화 세기가 너무 낮아 과적합으로 이어졌다는 신호일 수 있다.
 
-![Typical-looking filters on the first CONV layer (left), and the 2nd CONV layer (right) of a trained AlexNet.](/assets/img/posts/cs231n/understanding-cnn/filt1.jpeg){: width="560" height="558" }
-![Typical-looking filters on the first CONV layer (left), and the 2nd CONV layer (right) of a trained AlexNet.](/assets/img/posts/cs231n/understanding-cnn/filt2.jpeg){: width="557" height="555" }
-_Typical-looking filters on the first CONV layer (left), and the 2nd CONV layer (right) of a trained AlexNet. Notice that the first-layer weights are very nice and smooth, indicating nicely converged network. The color/grayscale features are clustered because the AlexNet contains two separate streams of processing, and an apparent consequence of this architecture is that one stream develops high-frequency grayscale features and the other low-frequency color features. The 2nd CONV layer weights are not as interpretable, but it is apparent that they are still smooth, well-formed, and absent of noisy patterns._
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;align-items:start">
+<img src="/assets/img/posts/cs231n/understanding-cnn/filt1.jpeg" alt="Typical-looking filters on the first CONV layer (left), and the 2nd CONV layer (right) of a trained AlexNet." width="560" height="558" style="width:100%">
+<img src="/assets/img/posts/cs231n/understanding-cnn/filt2.jpeg" alt="Typical-looking filters on the first CONV layer (left), and the 2nd CONV layer (right) of a trained AlexNet." width="557" height="555" style="width:100%">
+<em style="grid-column:1/-1">Typical-looking filters on the first CONV layer (left), and the 2nd CONV layer (right) of a trained AlexNet. Notice that the first-layer weights are very nice and smooth, indicating nicely converged network. The color/grayscale features are clustered because the AlexNet contains two separate streams of processing, and an apparent consequence of this architecture is that one stream develops high-frequency grayscale features and the other low-frequency color features. The 2nd CONV layer weights are not as interpretable, but it is apparent that they are still smooth, well-formed, and absent of noisy patterns.</em>
+</div>
 
 학습된 AlexNet의 첫 번째 CONV 층(왼쪽)과 두 번째 CONV 층(오른쪽)에서 나타나는 전형적인 필터. 첫 번째 층의 가중치는 매우 깔끔하고 매끈하며, 이는 신경망이 잘 수렴했음을 보여준다. 색상/흑백 특징이 무리 지어 나타나는 이유는 AlexNet이 두 개의 별도 처리 흐름으로 이루어져 있기 때문이며, 이 구조가 낳는 눈에 띄는 결과 하나는 한쪽 흐름은 고주파의 흑백 특징을, 다른 쪽 흐름은 저주파의 색상 특징을 발달시킨다는 것이다. 두 번째 CONV 층의 가중치는 그만큼 해석하기 쉽지는 않지만, 여전히 매끈하고 잘 형성되어 있으며 잡음 섞인 패턴이 없다는 것은 확인할 수 있다.
 

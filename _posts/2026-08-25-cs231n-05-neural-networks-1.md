@@ -5,49 +5,18 @@ date: 2026-08-25 09:20:00 +0900
 categories: [Computer Vision, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
-image:
-  path: /assets/img/posts/cs231n/neural-networks-1/neuron.png
-  alt: "A cartoon drawing of a biological neuron (left) and its mathematical model (right)."
 ---
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
 > **원문**: [Neural Networks Part 1: Setting up the Architecture](https://cs231n.github.io/neural-networks-1/)
 > — CS231n: Convolutional Neural Networks for Visual Recognition (Stanford University) · © 2015 Andrej Karpathy, MIT License
->
-> 원문을 문단 단위로 인용하고 그 아래에 한국어 번역을 붙였다. 인용 블록이 원문, 그 아래 문단이 번역이며, `역주` 박스와 `보충` 섹션은 원문에 없는 추가 내용이다.
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
 > Table of Contents:
 
 목차는 다음과 같다.
-
-> - [Quick intro without brain analogies](#quick)
-> - [Modeling one neuron](#intro)
-> - [Biological motivation and connections](#bio)
-> - [Single neuron as a linear classifier](#classifier)
-> - [Commonly used activation functions](#actfun)
-> - [Neural Network architectures](#nn)
-> - [Layer-wise organization](#layers)
-> - [Example feed-forward computation](#feedforward)
-> - [Representational power](#power)
-> - [Setting number of layers and their sizes](#arch)
-> - [Summary](#summary)
-> - [Additional references](#add)
-
-- [뇌 비유 없이 빠르게 훑기](#quick)
-- [뉴런 하나 모델링하기](#intro)
-- [생물학적 동기와 연결점](#bio)
-- [선형 분류기로서의 단일 뉴런](#classifier)
-- [흔히 쓰는 활성화 함수](#actfun)
-- [신경망 구조](#nn)
-- [층 단위 구성](#layers)
-- [순방향 계산 예제](#feedforward)
-- [표현력](#power)
-- [층 수와 층 크기 정하기](#arch)
-- [정리](#summary)
-- [참고 문헌](#add)
 
 <span id="quick"></span>
 
@@ -81,9 +50,11 @@ image:
 
 뇌의 기본 계산 단위는 **뉴런**이다. 사람의 신경계에는 뉴런이 대략 860억 개 있고 이들은 대략 10^14~10^15개의 **시냅스(synapse)**로 연결되어 있다. 아래 그림은 생물학적 뉴런을 그린 만화(왼쪽)와 흔히 쓰는 수학적 모델(오른쪽)이다. 각 뉴런은 **수상돌기(dendrite)**로 입력 신호를 받고 (하나뿐인) **축삭(axon)**을 따라 출력 신호를 내보낸다. 축삭은 끝에서 여러 갈래로 뻗어 시냅스를 통해 다른 뉴런의 수상돌기와 연결된다. 뉴런의 계산 모델에서는 축삭을 타고 온 신호(예컨대 $$x_0$$)가 그 시냅스의 세기(예컨대 $$w_0$$)에 따라 상대 뉴런의 수상돌기와 곱셈으로 상호작용한다(예컨대 $$w_0 x_0$$). 여기서 핵심 착상은 시냅스의 세기, 곧 가중치 $$w$$가 학습 가능하며 한 뉴런이 다른 뉴런에 미치는 영향의 세기와 방향(양의 가중치면 흥분성, 음의 가중치면 억제성)을 조절한다는 것이다. 기본 모델에서 수상돌기는 신호를 세포체로 나르고 세포체에서 신호가 전부 더해진다. 최종 합이 어떤 문턱값을 넘으면 뉴런은 *발화*하여 축삭을 따라 스파이크를 내보낸다. 계산 모델에서는 스파이크가 정확히 언제 나오는지는 중요하지 않고 발화 빈도만이 정보를 전달한다고 가정한다. 이 *발화율 부호(rate code)* 해석에 따라 뉴런의 *발화율(firing rate)*을 **활성화 함수** $$f$$로 모델링하는데, 이 함수가 축삭을 따라 흐르는 스파이크의 빈도를 나타낸다. 역사적으로 활성화 함수로 흔히 고른 것은 **sigmoid 함수** $$\sigma$$였다. 실숫값 입력(합을 낸 뒤의 신호 세기)을 받아 0과 1 사이로 눌러 넣기 때문이다. 이 활성화 함수들은 이 절 뒤쪽에서 자세히 본다.
 
-![A cartoon drawing of a biological neuron (left) and its mathematical model (right).](/assets/img/posts/cs231n/neural-networks-1/neuron.png){: width="758" height="324" }
-![A cartoon drawing of a biological neuron (left) and its mathematical model (right).](/assets/img/posts/cs231n/neural-networks-1/neuron_model.jpeg){: width="659" height="376" }
-_A cartoon drawing of a biological neuron (left) and its mathematical model (right)._
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;align-items:start">
+<img src="/assets/img/posts/cs231n/neural-networks-1/neuron.png" alt="A cartoon drawing of a biological neuron (left) and its mathematical model (right)." width="758" height="324" style="width:100%">
+<img src="/assets/img/posts/cs231n/neural-networks-1/neuron_model.jpeg" alt="A cartoon drawing of a biological neuron (left) and its mathematical model (right)." width="659" height="376" style="width:100%">
+<em style="grid-column:1/-1">A cartoon drawing of a biological neuron (left) and its mathematical model (right).</em>
+</div>
 
 생물학적 뉴런을 그린 만화(왼쪽)와 그것의 수학적 모델(오른쪽).
 
@@ -151,9 +122,11 @@ class Neuron(object):
 
 활성화 함수(또는 *비선형성*)는 하나같이 숫자 하나를 받아 거기에 정해진 수학 연산을 수행한다. 실전에서 마주칠 만한 활성화 함수가 몇 가지 있다.
 
-![Left: Sigmoid non-linearity squashes real numbers to range between (0,1) Right: The tanh non-linearity](/assets/img/posts/cs231n/neural-networks-1/sigmoid.jpeg){: width="320" height="204" }
-![Left: Sigmoid non-linearity squashes real numbers to range between (0,1) Right: The tanh non-linearity](/assets/img/posts/cs231n/neural-networks-1/tanh.jpeg){: width="320" height="202" }
-_**Left:** Sigmoid non-linearity squashes real numbers to range between [0,1] **Right:** The tanh non-linearity squashes real numbers to range between [-1,1]._
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;align-items:start">
+<img src="/assets/img/posts/cs231n/neural-networks-1/sigmoid.jpeg" alt="Left: Sigmoid non-linearity squashes real numbers to range between (0,1) Right: The tanh non-linearity" width="320" height="204" style="width:100%">
+<img src="/assets/img/posts/cs231n/neural-networks-1/tanh.jpeg" alt="Left: Sigmoid non-linearity squashes real numbers to range between (0,1) Right: The tanh non-linearity" width="320" height="202" style="width:100%">
+<em style="grid-column:1/-1"><strong>Left:</strong> Sigmoid non-linearity squashes real numbers to range between [0,1] <strong>Right:</strong> The tanh non-linearity squashes real numbers to range between [-1,1].</em>
+</div>
 
 **왼쪽:** sigmoid 비선형성은 실수를 [0,1] 범위로 눌러 넣는다. **오른쪽:** tanh 비선형성은 실수를 [-1,1] 범위로 눌러 넣는다.
 
@@ -189,9 +162,11 @@ _**Left:** Sigmoid non-linearity squashes real numbers to range between [0,1] **
 
 **Tanh.** tanh 비선형성은 위 그림의 오른쪽에 그려져 있다. 실숫값을 [-1, 1] 범위로 눌러 넣는다. sigmoid 뉴런처럼 활성값이 포화하지만, sigmoid 뉴런과 달리 출력이 0을 중심으로 놓인다. 그래서 실전에서는 *tanh 비선형성이 sigmoid 비선형성보다 언제나 낫다.* 또한 tanh 뉴런이 sigmoid 뉴런을 크기 조정한 것에 지나지 않는다는 점에도 유의하자. 구체적으로 $$\tanh(x) = 2 \sigma(2x) -1$$가 성립한다.
 
-![Left: Rectified Linear Unit (ReLU) activation function, which is zero when x < 0 and then linear with slope 1](/assets/img/posts/cs231n/neural-networks-1/relu.jpeg){: width="311" height="210" }
-![Left: Rectified Linear Unit (ReLU) activation function, which is zero when x < 0 and then linear with slope 1](/assets/img/posts/cs231n/neural-networks-1/alexplot.jpeg){: width="419" height="334" }
-_**Left:** Rectified Linear Unit (ReLU) activation function, which is zero when x < 0 and then linear with slope 1 when x > 0. **Right:** A plot from [Krizhevsky et al.](http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf) (pdf) paper indicating the 6x improvement in convergence with the ReLU unit compared to the tanh unit._
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;align-items:start">
+<img src="/assets/img/posts/cs231n/neural-networks-1/relu.jpeg" alt="Left: Rectified Linear Unit (ReLU) activation function, which is zero when x &lt; 0 and then linear with slope 1" width="311" height="210" style="width:100%">
+<img src="/assets/img/posts/cs231n/neural-networks-1/alexplot.jpeg" alt="Left: Rectified Linear Unit (ReLU) activation function, which is zero when x &lt; 0 and then linear with slope 1" width="419" height="334" style="width:100%">
+<em style="grid-column:1/-1"><strong>Left:</strong> Rectified Linear Unit (ReLU) activation function, which is zero when x &lt; 0 and then linear with slope 1 when x &gt; 0. <strong>Right:</strong> A plot from <a href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf">Krizhevsky et al.</a> (pdf) paper indicating the 6x improvement in convergence with the ReLU unit compared to the tanh unit.</em>
+</div>
 
 **왼쪽:** ReLU(Rectified Linear Unit) 활성화 함수. x < 0에서는 0이고 x > 0에서는 기울기(slope)가 1인 직선이다. **오른쪽:** [Krizhevsky 등](http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf)(pdf)의 논문에 실린 그래프로, tanh 유닛에 비해 ReLU 유닛의 수렴이 6배 빨라짐을 보여준다.
 
@@ -311,9 +286,11 @@ for lr in (0.1, 1.0, 10.0, 50.0):
 
 **그래프 위의 뉴런으로 본 신경망**. 신경망은 비순환 그래프로 연결된 뉴런들의 모음으로 모델링한다. 다시 말해 어떤 뉴런의 출력이 다른 뉴런의 입력이 될 수 있다. 순환은 허용되지 않는데, 순환이 있으면 신경망의 순전파가 무한 루프에 빠진다는 뜻이 되기 때문이다. 신경망 모델은 뉴런들이 아무렇게나 뭉친 덩어리 대신 뚜렷이 구분되는 층으로 구성되는 경우가 많다. 보통의 신경망에서 가장 흔한 층 유형은 **완전 연결 층(fully-connected layer)**이다. 이웃한 두 층 사이의 뉴런은 쌍마다 빠짐없이 연결되지만 같은 층 안의 뉴런끼리는 연결이 없는 층이다. 아래는 완전 연결 층을 쌓아 만든 신경망 위상 구조 두 가지 예다.
 
-![Left: A 2-layer Neural Network (one hidden layer of 4 neurons (or units) and one output layer with 2](/assets/img/posts/cs231n/neural-networks-1/neural_net.jpeg){: width="511" height="350" }
-![Left: A 2-layer Neural Network (one hidden layer of 4 neurons (or units) and one output layer with 2](/assets/img/posts/cs231n/neural-networks-1/neural_net2.jpeg){: width="791" height="388" }
-_**Left:** A 2-layer Neural Network (one hidden layer of 4 neurons (or units) and one output layer with 2 neurons), and three inputs. **Right:** A 3-layer neural network with three inputs, two hidden layers of 4 neurons each and one output layer. Notice that in both cases there are connections (synapses) between neurons across layers, but not within a layer._
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;align-items:start">
+<img src="/assets/img/posts/cs231n/neural-networks-1/neural_net.jpeg" alt="Left: A 2-layer Neural Network (one hidden layer of 4 neurons (or units) and one output layer with 2" width="511" height="350" style="width:100%">
+<img src="/assets/img/posts/cs231n/neural-networks-1/neural_net2.jpeg" alt="Left: A 2-layer Neural Network (one hidden layer of 4 neurons (or units) and one output layer with 2" width="791" height="388" style="width:100%">
+<em style="grid-column:1/-1"><strong>Left:</strong> A 2-layer Neural Network (one hidden layer of 4 neurons (or units) and one output layer with 2 neurons), and three inputs. <strong>Right:</strong> A 3-layer neural network with three inputs, two hidden layers of 4 neurons each and one output layer. Notice that in both cases there are connections (synapses) between neurons across layers, but not within a layer.</em>
+</div>
 
 **왼쪽:** 2층 신경망(뉴런 또는 유닛 4개짜리 은닉층 하나와 뉴런 2개짜리 출력층 하나)이며 입력은 3개다. **오른쪽:** 입력 3개, 각각 뉴런 4개짜리 은닉층 둘, 출력층 하나로 이루어진 3층 신경망. 두 경우 모두 층을 가로지르는 뉴런들 사이에는 연결(시냅스)이 있지만 한 층 안에서는 없다는 점에 주목하자.
 

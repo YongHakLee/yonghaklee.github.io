@@ -5,47 +5,18 @@ date: 2026-08-25 09:10:00 +0900
 categories: [Computer Vision, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
-image:
-  path: /assets/img/posts/cs231n/optimization-1/svm1d.png
-  alt: "A one-dimensional slice through the Multiclass SVM loss landscape for a single example."
 ---
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
 > **원문**: [Optimization: Stochastic Gradient Descent](https://cs231n.github.io/optimization-1/)
 > — CS231n: Convolutional Neural Networks for Visual Recognition (Stanford University) · © 2015 Andrej Karpathy, MIT License
->
-> 원문을 문단 단위로 인용하고 그 아래에 한국어 번역을 붙였다. 인용 블록이 원문, 그 아래 문단이 번역이며, `역주` 박스와 `보충` 섹션은 원문에 없는 추가 내용이다.
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
 > Table of Contents:
 
 목차는 다음과 같다.
-
-> - [Introduction](#intro)
-> - [Visualizing the loss function](#vis)
-> - [Optimization](#optimization)
-> - [Strategy #1: Random Search](#opt1)
-> - [Strategy #2: Random Local Search](#opt2)
-> - [Strategy #3: Following the gradient](#opt3)
-> - [Computing the gradient](#gradcompute)
-> - [Numerically with finite differences](#numerical)
-> - [Analytically with calculus](#analytic)
-> - [Gradient descent](#gd)
-> - [Summary](#summary)
-
-- [들어가며](#intro)
-- [손실 함수 시각화하기](#vis)
-- [최적화](#optimization)
-- [전략 #1: 무작위 탐색](#opt1)
-- [전략 #2: 무작위 국소 탐색](#opt2)
-- [전략 #3: 기울기를 따라가기](#opt3)
-- [기울기 계산하기](#gradcompute)
-- [유한 차분으로 수치적으로 계산하기](#numerical)
-- [미적분으로 해석적으로 계산하기](#analytic)
-- [경사 하강법](#gd)
-- [정리](#summary)
 
 <span id="intro"></span>
 
@@ -85,10 +56,12 @@ image:
 
 이 수업에서 다룰 손실 함수는 보통 아주 높은 차원의 공간 위에서 정의된다(예를 들어 CIFAR-10에서 선형 분류기의 가중치 행렬은 [10 x 3073] 크기이므로 매개변수가 모두 30,730개다). 그래서 눈으로 보기가 어렵다. 그래도 고차원 공간을 직선(1차원)이나 평면(2차원)을 따라 잘라보면 어느 정도 직관은 얻을 수 있다. 예를 들어 무작위 가중치 행렬 $$W$$(공간 속의 한 점에 해당한다)를 하나 만든 다음, 어떤 직선을 따라 걸어가며 손실 함수 값을 기록할 수 있다. 즉 무작위 방향 $$W_1$$을 하나 만들고 $$a$$를 여러 값으로 바꿔가며 $$L(W + a W_1)$$을 계산하면 그 방향을 따라간 손실을 알 수 있다. 이렇게 하면 $$a$$ 값이 x축, 손실 함수 값이 y축인 간단한 그래프가 나온다. 같은 방법을 2차원으로도 할 수 있는데, $$a, b$$를 바꿔가며 손실 $$L(W + a W_1 + b W_2)$$를 계산하면 된다. 이때 $$a, b$$가 각각 x축과 y축이 되고 손실 함수 값은 색으로 나타낼 수 있다.
 
-![Loss function landscape for the Multiclass SVM (without regularization) for one single example (left,middle)](/assets/img/posts/cs231n/optimization-1/svm1d.png){: width="273" height="250" }
-![Loss function landscape for the Multiclass SVM (without regularization) for one single example (left,middle)](/assets/img/posts/cs231n/optimization-1/svm_one.jpg){: width="250" height="248" }
-![Loss function landscape for the Multiclass SVM (without regularization) for one single example (left,middle)](/assets/img/posts/cs231n/optimization-1/svm_all.jpg){: width="250" height="249" }
-_Loss function landscape for the Multiclass SVM (without regularization) for one single example (left,middle) and for a hundred examples (right) in CIFAR-10. Left: one-dimensional loss by only varying **a**. Middle, Right: two-dimensional loss slice, Blue = low loss, Red = high loss. Notice the piecewise-linear structure of the loss function. The losses for multiple examples are combined with average, so the bowl shape on the right is the average of many piece-wise linear bowls (such as the one in the middle)._
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;align-items:start">
+<img src="/assets/img/posts/cs231n/optimization-1/svm1d.png" alt="Loss function landscape for the Multiclass SVM (without regularization) for one single example (left,middle)" width="273" height="250" style="width:100%">
+<img src="/assets/img/posts/cs231n/optimization-1/svm_one.jpg" alt="Loss function landscape for the Multiclass SVM (without regularization) for one single example (left,middle)" width="250" height="248" style="width:100%">
+<img src="/assets/img/posts/cs231n/optimization-1/svm_all.jpg" alt="Loss function landscape for the Multiclass SVM (without regularization) for one single example (left,middle)" width="250" height="249" style="width:100%">
+<em style="grid-column:1/-1">Loss function landscape for the Multiclass SVM (without regularization) for one single example (left,middle) and for a hundred examples (right) in CIFAR-10. Left: one-dimensional loss by only varying <strong>a</strong>. Middle, Right: two-dimensional loss slice, Blue = low loss, Red = high loss. Notice the piecewise-linear structure of the loss function. The losses for multiple examples are combined with average, so the bowl shape on the right is the average of many piece-wise linear bowls (such as the one in the middle).</em>
+</div>
 
 정규화(regularization)를 뺀 Multiclass SVM의 손실 함수 지형. CIFAR-10에서 예제 한 개에 대한 것(왼쪽, 가운데)과 예제 백 개에 대한 것(오른쪽)이다. 왼쪽: **a**만 바꿔 얻은 1차원 손실. 가운데, 오른쪽: 2차원 손실 단면이며 파란색은 낮은 손실, 빨간색은 높은 손실이다. 손실 함수가 조각별 선형(piecewise-linear) 구조라는 점에 주목하자. 여러 예제의 손실은 평균으로 합쳐지므로 오른쪽의 그릇 모양은 (가운데 것과 같은) 조각별 선형 그릇을 여럿 평균 낸 결과다.
 

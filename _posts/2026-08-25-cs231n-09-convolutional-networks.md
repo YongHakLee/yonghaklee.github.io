@@ -5,51 +5,18 @@ date: 2026-08-25 09:40:00 +0900
 categories: [Computer Vision, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
-image:
-  path: /assets/img/posts/cs231n/convolutional-networks/neural_net2.jpeg
-  alt: "A regular 3-layer neural network beside a ConvNet, which arranges its neurons in three dimensions."
 ---
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
 > **원문**: [Convolutional Neural Networks: Architectures, Convolution / Pooling Layers](https://cs231n.github.io/convolutional-networks/)
 > — CS231n: Convolutional Neural Networks for Visual Recognition (Stanford University) · © 2015 Andrej Karpathy, MIT License
->
-> 원문을 문단 단위로 인용하고 그 아래에 한국어 번역을 붙였다. 인용 블록이 원문, 그 아래 문단이 번역이며, `역주` 박스와 `보충` 섹션은 원문에 없는 추가 내용이다.
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
 > Table of Contents:
 
 목차는 다음과 같다.
-
-> - [Architecture Overview](#overview)
-> - [ConvNet Layers](#layers)
-> - [Convolutional Layer](#conv)
-> - [Pooling Layer](#pool)
-> - [Normalization Layer](#norm)
-> - [Fully-Connected Layer](#fc)
-> - [Converting Fully-Connected Layers to Convolutional Layers](#convert)
-> - [ConvNet Architectures](#architectures)
-> - [Layer Patterns](#layerpat)
-> - [Layer Sizing Patterns](#layersizepat)
-> - [Case Studies](#case) (LeNet / AlexNet / ZFNet / GoogLeNet / VGGNet)
-> - [Computational Considerations](#comp)
-> - [Additional References](#add)
-
-- [구조 훑어보기](#overview)
-- [ConvNet을 이루는 층](#layers)
-- [합성곱 층](#conv)
-- [Pooling 층](#pool)
-- [정규화 층](#norm)
-- [완전 연결 층](#fc)
-- [완전 연결 층을 합성곱 층으로 바꾸기](#convert)
-- [ConvNet 구조](#architectures)
-- [층 배치 패턴](#layerpat)
-- [층 크기 잡기 패턴](#layersizepat)
-- [사례 연구](#case) (LeNet / AlexNet / ZFNet / GoogLeNet / VGGNet)
-- [계산상의 고려사항](#comp)
-- [추가 참고 자료](#add)
 
 ## Convolutional Neural Networks (CNNs / ConvNets)
 
@@ -83,9 +50,11 @@ image:
 {: .prompt-tip }
 <!-- markdownlint-restore -->
 
-![Left: A regular 3-layer Neural Network. Right: A ConvNet arranges its neurons in three dimensions (width](/assets/img/posts/cs231n/convolutional-networks/neural_net2.jpeg){: width="791" height="388" }
-![Left: A regular 3-layer Neural Network. Right: A ConvNet arranges its neurons in three dimensions (width](/assets/img/posts/cs231n/convolutional-networks/cnn.jpeg){: width="569" height="202" }
-_Left: A regular 3-layer Neural Network. Right: A ConvNet arranges its neurons in three dimensions (width, height, depth), as visualized in one of the layers. Every layer of a ConvNet transforms the 3D input volume to a 3D output volume of neuron activations. In this example, the red input layer holds the image, so its width and height would be the dimensions of the image, and the depth would be 3 (Red, Green, Blue channels)._
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;align-items:start">
+<img src="/assets/img/posts/cs231n/convolutional-networks/neural_net2.jpeg" alt="Left: A regular 3-layer Neural Network. Right: A ConvNet arranges its neurons in three dimensions (width" width="791" height="388" style="width:100%">
+<img src="/assets/img/posts/cs231n/convolutional-networks/cnn.jpeg" alt="Left: A regular 3-layer Neural Network. Right: A ConvNet arranges its neurons in three dimensions (width" width="569" height="202" style="width:100%">
+<em style="grid-column:1/-1">Left: A regular 3-layer Neural Network. Right: A ConvNet arranges its neurons in three dimensions (width, height, depth), as visualized in one of the layers. Every layer of a ConvNet transforms the 3D input volume to a 3D output volume of neuron activations. In this example, the red input layer holds the image, so its width and height would be the dimensions of the image, and the depth would be 3 (Red, Green, Blue channels).</em>
+</div>
 
 왼쪽: 보통의 3층 신경망. 오른쪽: ConvNet은 뉴런을 3차원(가로, 세로, 깊이)으로 배열하며, 그림에서는 그중 한 층을 그렸다. ConvNet의 모든 층은 3차원 입력 부피를 뉴런 활성값의 3차원 출력 부피로 변환한다. 이 예에서 빨간 입력층은 이미지를 담고 있으므로 가로와 세로는 이미지의 크기이고 깊이는 3(빨강, 초록, 파랑 채널)이다.
 
@@ -178,9 +147,11 @@ Conv 층은 합성곱 신경망의 핵심 구성 요소이며, 계산의 무거�
 
 *예 2*. 입력 부피의 크기가 [16x16x20]이라고 하자. 수용 영역 크기를 3x3으로 잡으면 이제 Conv 층의 각 뉴런은 입력 부피에 대해 모두 3\*3\*20 = 180개의 연결을 갖는다. 여기서도 연결은 2차원 공간에서는 국소적이지만(예컨대 3x3), 입력 깊이(20) 전체로는 빠짐없이 이어진다는 점에 유의하자.
 
-![Left: An example input volume in red (e.g.](/assets/img/posts/cs231n/convolutional-networks/depthcol.jpeg){: width="464" height="326" }
-![Left: An example input volume in red (e.g.](/assets/img/posts/cs231n/convolutional-networks/neuron_model.jpeg){: width="659" height="376" }
-_**Left:** An example input volume in red (e.g. a 32x32x3 CIFAR-10 image), and an example volume of neurons in the first Convolutional layer. Each neuron in the convolutional layer is connected only to a local region in the input volume spatially, but to the full depth (i.e. all color channels). Note, there are multiple neurons (5 in this example) along the depth, all looking at the same region in the input: the lines that connect this column of 5 neurons do not represent the weights (i.e. these 5 neurons do not share the same weights, but they are associated with 5 different filters), they just indicate that these neurons are connected to or looking at the same receptive field or region of the input volume, i.e. they share the same receptive field but not the same weights. **Right:** The neurons from the Neural Network chapter remain unchanged: They still compute a dot product of their weights with the input followed by a non-linearity, but their connectivity is now restricted to be local spatially._
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;align-items:start">
+<img src="/assets/img/posts/cs231n/convolutional-networks/depthcol.jpeg" alt="Left: An example input volume in red (e.g." width="464" height="326" style="width:100%">
+<img src="/assets/img/posts/cs231n/convolutional-networks/neuron_model.jpeg" alt="Left: An example input volume in red (e.g." width="659" height="376" style="width:100%">
+<em style="grid-column:1/-1"><strong>Left:</strong> An example input volume in red (e.g. a 32x32x3 CIFAR-10 image), and an example volume of neurons in the first Convolutional layer. Each neuron in the convolutional layer is connected only to a local region in the input volume spatially, but to the full depth (i.e. all color channels). Note, there are multiple neurons (5 in this example) along the depth, all looking at the same region in the input: the lines that connect this column of 5 neurons do not represent the weights (i.e. these 5 neurons do not share the same weights, but they are associated with 5 different filters), they just indicate that these neurons are connected to or looking at the same receptive field or region of the input volume, i.e. they share the same receptive field but not the same weights. <strong>Right:</strong> The neurons from the Neural Network chapter remain unchanged: They still compute a dot product of their weights with the input followed by a non-linearity, but their connectivity is now restricted to be local spatially.</em>
+</div>
 
 **왼쪽:** 빨간색으로 그린 예시 입력 부피(예컨대 32x32x3 CIFAR-10 이미지)와, 첫 합성곱 층의 예시 뉴런 부피. 합성곱 층의 각 뉴런은 입력 부피에서 공간적으로 국소적인 영역에만 연결되지만 깊이로는 전체(곧 모든 색 채널)에 연결된다. 깊이를 따라 여러 개의 뉴런(이 예에서는 5개)이 있고 그것들이 모두 입력의 같은 영역을 들여다본다는 점에 유의하자. 이 5개 뉴런의 기둥을 잇는 선은 가중치를 나타내는 것이 아니다(곧 이 5개 뉴런은 같은 가중치를 공유하지 않으며 서로 다른 5개의 필터에 대응한다). 그 선은 이 뉴런들이 입력 부피의 같은 수용 영역, 곧 같은 영역에 연결되어 있고 그곳을 들여다보고 있다는 것만 나타낸다. 다시 말해 수용 영역은 공유하지만 가중치는 공유하지 않는다. **오른쪽:** 신경망 장에서 본 뉴런은 그대로다. 여전히 자기 가중치와 입력의 내적을 계산하고 그 뒤에 비선형성을 씌운다. 다만 이제 연결이 공간적으로 국소적이도록 제한될 뿐이다.
 
@@ -402,9 +373,11 @@ ConvNet 구조에서는 잇달아 놓인 Conv 층 사이사이에 Pooling 층을
 
 **일반적인 pooling**. max pooling 말고도 pooling 유닛은 *average pooling*이나 *L2-norm pooling* 같은 다른 함수를 수행할 수도 있다. average pooling은 역사적으로 자주 쓰였지만, 실제로 더 잘 동작한다고 밝혀진 max pooling 연산에 밀려 최근에는 인기를 잃었다.
 
-![Pooling layer downsamples the volume spatially, independently in each depth slice of the input volume.](/assets/img/posts/cs231n/convolutional-networks/pool.jpeg){: width="514" height="406" }
-![Pooling layer downsamples the volume spatially, independently in each depth slice of the input volume.](/assets/img/posts/cs231n/convolutional-networks/maxpool.jpeg){: width="787" height="368" }
-_Pooling layer downsamples the volume spatially, independently in each depth slice of the input volume. **Left:** In this example, the input volume of size [224x224x64] is pooled with filter size 2, stride 2 into output volume of size [112x112x64]. Notice that the volume depth is preserved. **Right:** The most common downsampling operation is max, giving rise to **max pooling**, here shown with a stride of 2. That is, each max is taken over 4 numbers (little 2x2 square)._
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;align-items:start">
+<img src="/assets/img/posts/cs231n/convolutional-networks/pool.jpeg" alt="Pooling layer downsamples the volume spatially, independently in each depth slice of the input volume." width="514" height="406" style="width:100%">
+<img src="/assets/img/posts/cs231n/convolutional-networks/maxpool.jpeg" alt="Pooling layer downsamples the volume spatially, independently in each depth slice of the input volume." width="787" height="368" style="width:100%">
+<em style="grid-column:1/-1">Pooling layer downsamples the volume spatially, independently in each depth slice of the input volume. <strong>Left:</strong> In this example, the input volume of size [224x224x64] is pooled with filter size 2, stride 2 into output volume of size [112x112x64]. Notice that the volume depth is preserved. <strong>Right:</strong> The most common downsampling operation is max, giving rise to <strong>max pooling</strong>, here shown with a stride of 2. That is, each max is taken over 4 numbers (little 2x2 square).</em>
+</div>
 
 Pooling 층은 입력 부피의 깊이 슬라이스마다 독립적으로 부피의 공간 크기를 줄인다. **왼쪽:** 이 예에서는 [224x224x64] 크기의 입력 부피를 필터 크기 2, stride 2로 pooling해 [112x112x64] 크기의 출력 부피로 만든다. 부피의 깊이가 그대로 유지된다는 점에 유의하자. **오른쪽:** 가장 흔한 다운샘플링 연산은 최댓값을 고르는 것이고 여기서 **max pooling**이 나왔다. 그림에서는 stride 2로 그렸다. 곧 최댓값 하나하나를 네 개의 수(작은 2x2 정사각형)에서 고른다.
 
