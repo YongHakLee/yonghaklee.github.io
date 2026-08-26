@@ -49,7 +49,7 @@ image:
 
 이 절에서는 2차원에서 동작하는 장난감 신경망을 처음부터 끝까지 구현해본다. 먼저 간단한 선형 분류기를 구현한 다음 그 코드를 2층 신경망으로 확장한다. 곧 보겠지만 이 확장은 놀랄 만큼 간단해서 고쳐야 할 곳이 거의 없다.
 
-<a id="data"></a>
+<span id="data"></span>
 
 ## Generating some data
 
@@ -91,11 +91,11 @@ _The toy spiral data consists of three classes (blue, red, yellow) that are not 
 
 보통은 각 특징의 평균이 0이고 표준편차가 1이 되도록 데이터셋을 전처리하고 싶겠지만, 지금은 특징이 이미 -1에서 1 사이의 좋은 범위에 들어 있으므로 이 단계는 건너뛴다.
 
-<a id="linear"></a>
+<span id="linear"></span>
 
 ## Training a Softmax Linear Classifier
 
-<a id="init"></a>
+<span id="init"></span>
 
 ### Initialize the parameters
 
@@ -113,7 +113,7 @@ b = np.zeros((1,K))
 
 `D = 2`가 차원 수이고 `K = 3`이 클래스 개수라는 것을 떠올리자.
 
-<a id="scores"></a>
+<span id="scores"></span>
 
 ### Compute the class scores
 
@@ -130,7 +130,7 @@ scores = np.dot(X, W) + b
 
 이 예제에는 2차원 점이 300개 있으므로 이 곱셈을 마치고 나면 배열 `scores`의 크기는 [300 x 3]이 되고, 각 행은 세 클래스(파랑, 빨강, 노랑)에 대응하는 클래스 점수를 담는다.
 
-<a id="loss"></a>
+<span id="loss"></span>
 
 ### Compute the loss
 
@@ -189,7 +189,7 @@ loss = data_loss + reg_loss
 
 이 코드에서 정규화 세기 $$\lambda$$는 `reg`에 들어 있다. 정규화 항에 곱한 `0.5`라는 편의상의 인자가 왜 붙었는지는 잠시 뒤에 분명해진다. 처음에 (무작위 매개변수로) 이 값을 계산해보면 `loss = 1.1`쯤이 나오는데, 이것은 `-np.log(1.0/3)`이다. 초기 가중치가 작은 난수이면 모든 클래스에 매겨지는 확률이 전부 3분의 1 언저리이기 때문이다. 이제 우리는 손실을 가능한 한 낮추려 하며, 절대적인 하한은 `loss = 0`이다. 그리고 손실이 낮을수록 모든 예제에서 정답 클래스에 매겨진 확률이 높다는 뜻이다.
 
-<a id="grad"></a>
+<span id="grad"></span>
 
 ### Computing the Analytic Gradient with Backpropagation
 
@@ -263,7 +263,7 @@ dW += reg*W # don't forget the regularization gradient
 
 여기서 우리가 행렬 곱 연산을 통과해 역전파했고 정규화가 보태는 몫도 더했다는 것을 볼 수 있다. 정규화 기울기가 `reg*W`라는 아주 간단한 형태인 것은 손실에 보태는 몫에 상수 `0.5`를 곱해뒀기 때문이다(즉 $$\frac{d}{dw} ( \frac{1}{2} \lambda w^2) = \lambda w$$). 기울기 식을 간단하게 만드는, 흔히 쓰는 편의상의 요령이다.
 
-<a id="update"></a>
+<span id="update"></span>
 
 ### Performing a parameter update
 
@@ -277,7 +277,7 @@ W += -step_size * dW
 b += -step_size * db
 ```
 
-<a id="together"></a>
+<span id="together"></span>
 
 ### Putting it all together: Training a Softmax Classifier
 
@@ -378,7 +378,7 @@ _Linear classifier fails to learn the toy spiral dataset._
 
 선형 분류기는 장난감 나선형 데이터셋을 학습하는 데 실패한다.
 
-<a id="net"></a>
+<span id="net"></span>
 
 ## Training a Neural Network
 

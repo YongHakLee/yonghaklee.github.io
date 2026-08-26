@@ -61,8 +61,11 @@ jobs:
 
       - name: Test Site
         run: |
+          # 인용한 cs231n 원문의 참고문헌에는 https 를 제공하지 않는 호스트가
+          # 여럿 있어(yann.lecun.com, torch.ch 등) https 로 바꾸면 링크가 죽는다.
           bundle exec htmlproofer _site \
             --disable-external \
+            --no-enforce-https \
             --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
 
       - name: Upload site artifact

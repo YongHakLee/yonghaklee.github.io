@@ -40,7 +40,7 @@ math: true
 - [벡터화된 연산의 기울기](#mat)
 - [정리](#summary)
 
-<a id="intro"></a>
+<span id="intro"></span>
 
 ### Introduction
 
@@ -60,7 +60,7 @@ math: true
 
 연쇄 법칙으로 기울기를 유도하는 데 이미 익숙한 채로 이 수업에 왔더라도 이 절만큼은 훑어보기를 권한다. 역전파를 실숫값 회로 위의 역방향 흐름으로 보는, 흔히 다루지 않는 관점을 제시하기 때문이다. 여기서 얻은 통찰은 수업 내내 도움이 될 것이다.
 
-<a id="grad"></a>
+<span id="grad"></span>
 
 ### Simple expressions and interpretation of the gradient
 
@@ -122,7 +122,7 @@ math: true
 {: .prompt-tip }
 <!-- markdownlint-restore -->
 
-<a id="backprop"></a>
+<span id="backprop"></span>
 
 ### Compound expressions with chain rule
 
@@ -165,7 +165,7 @@ _The real-valued *"circuit"* on left shows the visual representation of the comp
 
 왼쪽의 실숫값 *"회로"*는 계산 과정을 그림으로 나타낸 것이다. **순전파**는 입력에서 출력 쪽으로 값을 계산한다(초록색). 이어지는 **역전파**는 끝에서 시작해 연쇄 법칙을 재귀적으로 적용하며 회로의 입력까지 기울기를 계산해 내려간다(빨간색). 기울기가 회로를 거꾸로 흘러간다고 생각하면 된다.
 
-<a id="intuitive"></a>
+<span id="intuitive"></span>
 
 ### Intuitive understanding of backpropagation
 
@@ -200,7 +200,7 @@ _The real-valued *"circuit"* on left shows the visual representation of the comp
 
 따라서 역전파는 게이트들이 (기울기 신호를 통해) 서로에게 자기 출력이 커지기를 원하는지 작아지기를 원하는지, 그리고 얼마나 강하게 원하는지를 전달해 최종 출력 값을 더 높이려 하는 과정이라고 볼 수 있다.
 
-<a id="sigmoid"></a>
+<span id="sigmoid"></span>
 
 ### Modularity: Sigmoid example
 
@@ -298,7 +298,7 @@ dw = [x[0] * ddot, x[1] * ddot, 1.0 * ddot] # backprop into w
 
 이 절의 요점은, 역전파를 구체적으로 어떻게 수행할지 그리고 순전파 함수의 어느 부분을 게이트로 볼지는 편의의 문제라는 것이다. 식의 어느 부분이 국소 기울기를 쉽게 구할 수 있는 부분인지 알아두면 도움이 된다. 그래야 가장 적은 코드와 수고로 그것들을 연쇄시킬 수 있다.
 
-<a id="staged"></a>
+<span id="staged"></span>
 
 ### Backprop in practice: Staged computation
 
@@ -434,7 +434,7 @@ print("= 로 쓰면 dx = %.10f  dy = %.10f" % grad(x, y, accumulate=False))
 곳(`sigy`, `xpy`) 가운데 하나의 기여만 남아 완전히 다른 값이 된다. 바로 위 문단의 경고가
 문장이 아니라 숫자로 확인되는 셈이다.
 
-<a id="patterns"></a>
+<span id="patterns"></span>
 
 ### Patterns in backward flow
 
@@ -470,7 +470,7 @@ _An example circuit demonstrating the intuition behind the operations that backp
 
 *직관에 어긋나는 효과와 그 여파*. 곱셈 게이트의 입력 하나가 아주 작고 다른 하나가 아주 크면 곱셈 게이트가 다소 직관에 어긋나는 일을 한다는 점에 주목하자. 작은 입력에는 상대적으로 어마어마하게 큰 기울기를, 큰 입력에는 아주 작은 기울기를 준다. 가중치를 입력과 내적하는(즉 곱하는) $$w^Tx_i$$ 형태의 선형 분류기에서는, 이것이 곧 데이터의 크기가 가중치에 대한 기울기의 크기에 영향을 준다는 뜻이 된다. 예를 들어 전처리 과정에서 모든 입력 데이터 예제 $$x_i$$에 1000을 곱했다면 가중치에 대한 기울기는 1000배가 되고, 이를 상쇄하려면 학습률을 그만큼 낮춰야 한다. 그래서 전처리가 아주 중요하며, 때로는 이렇게 미묘한 방식으로 중요하다! 그리고 기울기가 어떻게 흐르는지 직관적으로 이해하고 있으면 이런 경우를 디버깅하는 데 도움이 된다.
 
-<a id="mat"></a>
+<span id="mat"></span>
 
 ### Gradients for vectorized operations
 

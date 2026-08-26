@@ -19,7 +19,7 @@ image:
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
-<a id="vis"></a>
+<span id="vis"></span>
 
 > (this page is currently in draft form)
 

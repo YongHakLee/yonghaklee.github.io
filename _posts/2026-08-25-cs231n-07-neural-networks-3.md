@@ -67,7 +67,7 @@ image:
 
 앞의 절들에서는 신경망의 정적인 부분, 곧 신경망의 연결 구조와 데이터와 손실 함수를 어떻게 마련하는지를 다뤘다. 이 절은 동역학, 다시 말해 매개변수를 학습하고 좋은 하이퍼파라미터를 찾아내는 과정에 관한 것이다.
 
-<a id="gradcheck"></a>
+<span id="gradcheck"></span>
 
 ### Gradient Checks
 
@@ -222,7 +222,7 @@ for scale in (1.0, 1e-5):
 갖기 때문이다. 참고로 맞는 구현의 상대 오차는 두 경우 모두 1e-12 언저리로, 원문이 "기뻐해도
 된다"고 한 1e-7보다도 다섯 자릿수 아래다.
 
-<a id="sanitycheck"></a>
+<span id="sanitycheck"></span>
 
 ### Before learning: sanity checks Tips/Tricks
 
@@ -238,7 +238,7 @@ for scale in (1.0, 1e-5):
 - 두 번째 온전성 점검으로, 정규화 세기를 키우면 손실도 커져야 한다
 - **아주 작은 데이터 부분집합에 과적합시켜본다.** 마지막이자 가장 중요한 것으로, 데이터셋 전체로 학습하기 전에 데이터의 아주 작은 일부(예컨대 예제 20개)로 학습해 비용이 0까지 내려가는지 확인하자. 이 실험에서도 정규화는 0으로 두는 것이 좋다. 그러지 않으면 비용이 0이 되지 못할 수 있다. 작은 데이터셋에서 이 온전성 점검을 통과하지 못한다면 전체 데이터셋으로 넘어갈 이유가 없다. 다만 아주 작은 데이터셋에는 과적합시킬 수 있으면서도 구현이 틀린 경우가 있을 수 있다는 점은 알아두자. 예컨대 어떤 버그 때문에 데이터의 특징이 무작위 값이라면, 작은 학습 집합에는 과적합시킬 수 있어도 전체 데이터셋으로 넓혔을 때 일반화는 전혀 나타나지 않을 것이다.
 
-<a id="baby"></a>
+<span id="baby"></span>
 
 ### Babysitting the learning process
 
@@ -250,7 +250,7 @@ for scale in (1.0, 1e-5):
 
 아래 그래프들의 x축은 언제나 epoch 단위다. epoch은 학습 중에 각 예제가 기댓값으로 몇 번이나 사용되었는지를 재는 단위다(예컨대 1 epoch은 모든 예제가 한 번씩 사용되었다는 뜻이다). 반복 횟수보다 epoch을 추적하는 편이 낫다. 반복 횟수는 배치 크기를 어떻게 잡느냐에 따라 임의로 달라지기 때문이다.
 
-<a id="loss"></a>
+<span id="loss"></span>
 
 #### Loss function
 
@@ -276,7 +276,7 @@ _**Left:** A cartoon depicting the effects of different learning rates. With low
 
 손실 함수가 우스꽝스러운 모양이 될 때도 있다. [lossfunctions.tumblr.com](http://lossfunctions.tumblr.com/)을 보라.
 
-<a id="accuracy"></a>
+<span id="accuracy"></span>
 
 #### Train/Val accuracy
 
@@ -289,7 +289,7 @@ _The gap between the training and validation accuracy indicates the amount of ov
 
 학습 정확도와 검증 정확도 사이의 간격은 과적합의 정도를 말해준다. 왼쪽 그림에 가능한 두 경우가 나와 있다. 파란색 검증 오차 곡선은 학습 정확도에 비해 검증 정확도가 매우 낮아 강한 과적합을 나타낸다(어느 시점 이후로는 검증 정확도가 아예 떨어지기 시작할 수도 있다). 실제로 이런 모습을 보면 정규화를 키우거나(더 강한 L2 가중치 벌점, 더 많은 dropout 등) 데이터를 더 모으고 싶어질 것이다. 다른 가능한 경우는 검증 정확도가 학습 정확도를 꽤 잘 따라가는 경우다. 이는 모델의 수용력이 충분히 높지 않다는 뜻이다. 매개변수 수를 늘려 모델을 더 크게 만들자.
 
-<a id="ratio"></a>
+<span id="ratio"></span>
 
 #### Ratio of weights:updates
 
@@ -310,7 +310,7 @@ print update_scale / param_scale # want ~1e-3
 
 최솟값이나 최댓값을 추적하는 대신 기울기와 갱신량의 노름을 계산해 추적하기를 선호하는 사람들도 있다. 이 지표들은 대개 서로 상관이 있어서 대체로 비슷한 결과를 준다.
 
-<a id="distr"></a>
+<span id="distr"></span>
 
 #### Activation / Gradient distributions per layer
 
@@ -318,7 +318,7 @@ print update_scale / param_scale # want ~1e-3
 
 초기화가 잘못되면 학습이 느려지거나 아예 완전히 멈춰버릴 수 있다. 다행히 이 문제는 비교적 쉽게 진단할 수 있다. 한 가지 방법은 신경망의 모든 층에 대해 활성값과 기울기의 히스토그램을 그려보는 것이다. 직관적으로, 이상한 분포가 보이는 것은 좋은 신호가 아니다. 예컨대 tanh 뉴런이라면 뉴런 활성값이 [-1,1] 구간 전체에 퍼진 분포를 보고 싶지, 모든 뉴런이 0을 내놓거나 모든 뉴런이 -1이나 1에서 완전히 포화한 모습을 보고 싶지는 않다.
 
-<a id="vis"></a>
+<span id="vis"></span>
 
 #### First-layer Visualizations
 
@@ -332,7 +332,7 @@ _Examples of visualized weights for the first layer of a neural network. **Left*
 
 신경망 첫 번째 층의 가중치를 시각화한 예. **왼쪽:** 잡음이 많은 특징은 신경망이 아직 수렴하지 않았거나, 학습률이 잘못 설정되었거나, 가중치 정규화 벌점이 지나치게 낮다는 징후일 수 있다. **오른쪽:** 매끄럽고 깔끔하며 다양한 특징은 학습이 잘 진행되고 있다는 좋은 신호다.
 
-<a id="update"></a>
+<span id="update"></span>
 
 ### Parameter updates
 
@@ -344,7 +344,7 @@ _Examples of visualized weights for the first layer of a neural network. **Left*
 
 깊은 신경망의 최적화는 현재 매우 활발한 연구 분야라는 점을 짚어둔다. 이 절에서는 실전에서 마주칠 만한, 어느 정도 자리 잡은 흔한 기법 몇 가지를 짚고 그 직관을 짧게 설명하되, 자세한 분석은 이 수업의 범위 밖으로 둔다. 관심 있는 독자를 위해 더 볼거리를 몇 개 남겨둔다.
 
-<a id="sgd"></a>
+<span id="sgd"></span>
 
 #### SGD and bells and whistles
 
@@ -445,7 +445,7 @@ x += -mu * v_prev + (1 + mu) * v # position update changes form
 - Yoshua Bengio의 [Advances in optimizing Recurrent Networks](http://arxiv.org/pdf/1212.0901v2.pdf) 3.5절.
 - [Ilya Sutskever의 학위 논문](http://www.cs.utoronto.ca/~ilya/pubs/ilya_sutskever_phd_thesis.pdf)(pdf) 7.2절에 이 주제가 더 길게 설명되어 있다
 
-<a id="anneal"></a>
+<span id="anneal"></span>
 
 #### Annealing the learning rate
 
@@ -465,7 +465,7 @@ x += -mu * v_prev + (1 + mu) * v # position update changes form
 
 실전에서는 계단 감쇠가 약간 더 낫다고 본다. 계단 감쇠에 들어가는 하이퍼파라미터(감쇠 비율과 epoch 단위로 표현한 감쇠 시점)가 하이퍼파라미터 $$k$$보다 해석하기 쉽기 때문이다. 마지막으로, 계산 예산에 여유가 있다면 감쇠를 더 느리게 하는 쪽으로 기울이고 더 오래 학습시켜라.
 
-<a id="second"></a>
+<span id="second"></span>
 
 #### Second order methods
 
@@ -503,7 +503,7 @@ x += -mu * v_prev + (1 + mu) * v # position update changes form
 - [Large Scale Distributed Deep Networks](http://research.google.com/archive/large_deep_networks_nips2012.html)는 Google Brain 팀의 논문으로, 대규모 분산 최적화에서 L-BFGS와 SGD 변형들을 비교한다.
 - [SFO](http://arxiv.org/abs/1311.2115) 알고리즘은 SGD의 장점과 L-BFGS의 장점을 결합하려 한다.
 
-<a id="ada"></a>
+<span id="ada"></span>
 
 #### Per-parameter adaptive learning rate methods
 
@@ -664,7 +664,7 @@ $$0.1^2$$을 향해 내려가고, 실효 학습률은 1.003e-03에서 9.986e-02�
 실효 학습률이 커지고, 그래서 RMSProp이 앞으로 나아갈 수 있다"고 말한 것이 이 회복이다.
 Adagrad라면 같은 자리에서 그대로 굳는다.
 
-<a id="hyper"></a>
+<span id="hyper"></span>
 
 ### Hyperparameter optimization
 
@@ -717,11 +717,11 @@ Bergstra와 Bengio의 [Random Search for Hyper-Parameter Optimization](http://ww
 
 **베이지안 하이퍼파라미터 최적화**는 하이퍼파라미터 공간을 더 효율적으로 헤쳐 나가는 알고리즘을 만들어내는 데 매달리는 하나의 연구 분야다. 핵심 착상은 서로 다른 하이퍼파라미터에서 성능을 물어볼 때 탐험과 활용 사이의 균형을 적절히 잡는 것이다. 이 모델들에 기반한 라이브러리도 여럿 개발되었는데, 더 잘 알려진 것으로는 [Spearmint](https://github.com/JasperSnoek/spearmint), [SMAC](http://www.cs.ubc.ca/labs/beta/Projects/SMAC/), [Hyperopt](http://jaberg.github.io/hyperopt/)가 있다. 다만 ConvNet을 다루는 실전 상황에서는 잘 고른 구간에서의 무작위 탐색을 이기기가 여전히 상당히 어렵다. 현장에서 나온 논의는 [여기](http://nlpers.blogspot.com/2014/10/hyperparameter-search-bayesian.html)에서 더 볼 수 있다.
 
-<a id="eval"></a>
+<span id="eval"></span>
 
 ## Evaluation
 
-<a id="ensemble"></a>
+<span id="ensemble"></span>
 
 ### Model Ensembles
 
@@ -765,7 +765,7 @@ Bergstra와 Bengio의 [Random Search for Hyper-Parameter Optimization](http://ww
 - 좋은 하이퍼파라미터는 (격자 탐색이 아니라) 무작위 탐색으로 찾는다. 탐색은 성기게(하이퍼파라미터 범위를 넓게, 1~5 epoch만 학습)에서 촘촘하게(범위를 좁게, 훨씬 더 많은 epoch으로 학습)로 단계를 나눈다
 - 성능을 더 얻으려면 모델 앙상블을 만든다
 
-<a id="add"></a>
+<span id="add"></span>
 
 ## Additional References
 

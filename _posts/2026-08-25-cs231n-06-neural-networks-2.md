@@ -39,7 +39,7 @@ image:
 - [손실 함수](#losses)
 - [정리](#summary)
 
-<a id="intro"></a>
+<span id="intro"></span>
 
 ## Setting up the data and the model
 
@@ -47,7 +47,7 @@ image:
 
 앞 절에서는 내적을 구한 뒤 비선형성을 씌우는 뉴런 모델과, 그 뉴런들을 층으로 배열한 신경망을 소개했다. 이 선택들이 합쳐져 **점수 함수**의 새로운 형태를 정의하며, 이는 선형 분류 절에서 본 단순한 선형 사상을 확장한 것이다. 구체적으로 신경망은 선형 사상과 비선형성을 번갈아 엮어 차례로 수행한다. 이 절에서는 데이터 전처리, 가중치 초기화, 손실 함수에 관한 추가적인 설계 선택들을 다룬다.
 
-<a id="datapre"></a>
+<span id="datapre"></span>
 
 ### Data Preprocessing
 
@@ -165,7 +165,7 @@ _**Left:** An example set of 49 images. **2nd from Left:** The top 144 out of 30
 {: .prompt-tip }
 <!-- markdownlint-restore -->
 
-<a id="init"></a>
+<span id="init"></span>
 
 ### Weight Initialization
 
@@ -241,7 +241,7 @@ _**Left:** An example set of 49 images. **2nd from Left:** The top 144 out of 30
 
 **실전에서는** ReLU 유닛을 쓰고 [He 등](http://arxiv-web3.library.cornell.edu/abs/1502.01852)에서 논한 대로 `w = np.random.randn(n) * sqrt(2.0/n)`을 쓰는 것이 현재의 권장 사항이다.
 
-<a id="batchnorm"></a>
+<span id="batchnorm"></span>
 
 > **Batch Normalization**. A recently developed technique by Ioffe and Szegedy called [Batch Normalization](http://arxiv.org/abs/1502.03167) alleviates a lot of headaches with properly initializing neural networks by explicitly forcing the activations throughout a network to take on a unit gaussian distribution at the beginning of the training. The core observation is that this is possible because normalization is a simple differentiable operation. In the implementation, applying this technique usually amounts to insert the BatchNorm layer immediately after fully connected layers (or convolutional layers, as we’ll soon see), and before non-linearities. We do not expand on this technique here because it is well described in the linked paper, but note that it has become a very common practice to use Batch Normalization in neural networks. In practice networks that use Batch Normalization are significantly more robust to bad initialization. Additionally, batch normalization can be interpreted as doing preprocessing at every layer of the network, but integrated into the network itself in a differentiable manner. Neat!
 
@@ -296,7 +296,7 @@ randn * sqrt(2/n)     0.8250   0.8293   0.8166   0.7772   0.7264   0.7373   0.72
 초기화 배율로 맞추는 대신 층 안에서 매번 강제로 맞춰버리는 방법이라고 보면 된다. 원문이 "나쁜
 초기화에 훨씬 강건하다"고 말한 것이 이 뜻이다.
 
-<a id="reg"></a>
+<span id="reg"></span>
 
 ### Regularization
 
@@ -484,7 +484,7 @@ dropout을 아예 모르는 채로 두어도 된다. 요즘 프레임워크에�
 일이 바로 학습 때만 걸던 이 마스크를 꺼주는 것이며, 그것을 잊었을 때 나타나는 증상이 위 표의 어긋난
 숫자들이다.
 
-<a id="losses"></a>
+<span id="losses"></span>
 
 ### Loss functions
 

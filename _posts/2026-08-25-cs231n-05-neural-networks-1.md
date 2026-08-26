@@ -49,7 +49,7 @@ image:
 - [정리](#summary)
 - [참고 문헌](#add)
 
-<a id="quick"></a>
+<span id="quick"></span>
 
 ## Quick intro
 
@@ -65,7 +65,7 @@ image:
 
 3층 신경망도 마찬가지로 $$s = W_3 \max(0, W_2 \max(0, W_1 x))$$처럼 쓸 수 있고, $$W_3, W_2, W_1$$은 모두 학습할 매개변수다. 중간 은닉 벡터의 크기는 신경망의 하이퍼파라미터이며 어떻게 정하는지는 뒤에서 본다. 이제 이 계산들을 뉴런과 신경망의 관점에서 어떻게 해석할 수 있는지 살펴보자.
 
-<a id="intro"></a>
+<span id="intro"></span>
 
 ## Modeling one neuron
 
@@ -73,7 +73,7 @@ image:
 
 신경망이라는 분야는 원래 생물학적 신경계를 모델링하겠다는 목표에서 주로 영감을 얻었지만, 이후로는 그와 갈라져 기계 학습 과제에서 좋은 결과를 내기 위한 공학의 문제가 되었다. 그럼에도 이 분야의 상당 부분이 영감을 얻어온 그 생물학적 시스템을 아주 짧고 큰 틀에서 설명하는 것으로 이야기를 시작한다.
 
-<a id="bio"></a>
+<span id="bio"></span>
 
 ### Biological motivation and connections
 
@@ -109,7 +109,7 @@ class Neuron(object):
 
 **엉성한 모델.** 이 생물학적 뉴런 모델이 매우 엉성하다는 점은 짚어둘 필요가 있다. 예를 들어 뉴런에는 성질이 제각각인 종류가 아주 많다. 생물학적 뉴런의 수상돌기는 복잡한 비선형 계산을 수행한다. 시냅스는 가중치 하나가 아니라 복잡한 비선형 동역학계다. 게다가 많은 시스템에서 출력 스파이크가 정확히 언제 나오는지가 중요하다고 알려져 있는데, 이는 발화율 근사가 성립하지 않을 수도 있다는 뜻이다. 이런 것들을 비롯한 수많은 단순화 때문에, 신경망을 진짜 뇌에 빗대어 이야기했다가는 신경과학을 좀 아는 사람이 앓는 소리를 내는 것을 듣게 될 각오를 해야 한다. 관심이 있다면 이 [리뷰](https://physics.ucsd.edu/neurophysics/courses/physics_171/annurev.neuro.28.061604.135703.pdf)(pdf)나 더 최근의 이 [리뷰](http://www.sciencedirect.com/science/article/pii/S0959438814000130)를 보라.
 
-<a id="classifier"></a>
+<span id="classifier"></span>
 
 ### Single neuron as a linear classifier
 
@@ -143,7 +143,7 @@ class Neuron(object):
 >
 > 뉴런 하나로 이진 분류기(예컨대 이진 Softmax 분류기나 이진 SVM 분류기)를 구현할 수 있다.
 
-<a id="actfun"></a>
+<span id="actfun"></span>
 
 ### Commonly used activation functions
 
@@ -299,11 +299,11 @@ for lr in (0.1, 1.0, 10.0, 50.0):
 추측(약 0.69)보다도 나빠진다. 50.0에서는 99개가 죽는다. 바꾼 것은 학습률 하나뿐인데 신경망의 대부분이
 영구히 사라진 셈이다.
 
-<a id="nn"></a>
+<span id="nn"></span>
 
 ## Neural Network architectures
 
-<a id="layers"></a>
+<span id="layers"></span>
 
 ### Layer-wise organization
 
@@ -339,7 +339,7 @@ _**Left:** A 2-layer Neural Network (one hidden layer of 4 neurons (or units) an
 
 감을 잡을 수 있도록 덧붙이면, 요즘의 합성곱 신경망은 매개변수가 1억 개 규모이고 보통 10~20개 층으로 이루어진다(그래서 *딥러닝*이다). 다만 뒤에서 보겠지만 매개변수 공유 덕분에 *실효* 연결 수는 그보다 훨씬 많다. 이에 대해서는 합성곱 신경망 모듈에서 더 다룬다.
 
-<a id="feedforward"></a>
+<span id="feedforward"></span>
 
 ### Example feed-forward computation
 
@@ -364,7 +364,7 @@ out = np.dot(W3, h2) + b3 # output neuron (1x1)
 >
 > 완전 연결 층의 순전파는 행렬 곱 한 번에 편향을 더하고 활성화 함수를 씌우는 것에 해당한다.
 
-<a id="power"></a>
+<span id="power"></span>
 
 ### Representational power
 
@@ -396,7 +396,7 @@ out = np.dot(W3, h2) + b3 # output neuron (1x1)
 - [Do Deep Nets Really Need to be Deep?](http://arxiv.org/abs/1312.6184)
 - [FitNets: Hints for Thin Deep Nets](http://arxiv.org/abs/1412.6550)
 
-<a id="arch"></a>
+<span id="arch"></span>
 
 ### Setting number of layers and their sizes
 
@@ -454,7 +454,7 @@ _The effects of regularization strength: Each neural network above has 20 hidden
 - 신경망이 **보편 함수 근사기**임을 봤지만, 이 성질이 신경망이 널리 쓰이는 이유와는 별 상관이 없다는 사실도 이야기했다. 신경망이 쓰이는 이유는 실전에서 마주치는 함수들의 형태에 대해 어떤 "옳은" 가정을 하기 때문이다.
 - 큰 신경망은 언제나 작은 신경망보다 잘 되지만, 그만큼 커진 모델 수용력은 더 강한 정규화(예컨대 더 큰 가중치 감쇠)로 적절히 다스려야 하며 그러지 않으면 과적합할 수 있다는 것을 이야기했다. 정규화의 다른 형태들, 특히 dropout은 뒤쪽 절에서 더 본다.
 
-<a id="add"></a>
+<span id="add"></span>
 
 ## Additional References
 

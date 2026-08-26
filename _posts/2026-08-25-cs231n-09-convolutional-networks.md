@@ -61,7 +61,7 @@ image:
 
 그렇다면 무엇이 달라지는가? ConvNet 구조는 입력이 이미지라고 대놓고 가정한다. 그 덕분에 몇 가지 성질을 구조 자체에 새겨 넣을 수 있다. 그렇게 새겨 넣은 성질은 순전파 함수를 더 효율적으로 구현하게 해주고, 신경망의 매개변수 개수를 크게 줄여준다.
 
-<a id="overview"></a>
+<span id="overview"></span>
 
 ### Architecture Overview
 
@@ -93,7 +93,7 @@ _Left: A regular 3-layer Neural Network. Right: A ConvNet arranges its neurons i
 >
 > ConvNet은 층으로 이루어진다. 모든 층은 간단한 API 하나를 갖는다. 매개변수가 있을 수도 없을 수도 있는 미분 가능한 함수로 3차원 입력 부피를 3차원 출력 부피로 바꾼다.
 
-<a id="layers"></a>
+<span id="layers"></span>
 
 ### Layers used to build ConvNets
 
@@ -146,7 +146,7 @@ _The activations of an example ConvNet architecture. The initial volume stores t
 
 이제 각 층을 하나씩 살펴보며 하이퍼파라미터와 연결 방식을 자세히 설명한다.
 
-<a id="conv"></a>
+<span id="conv"></span>
 
 #### Convolutional Layer
 
@@ -364,7 +364,7 @@ numpy에서 위의 `*` 연산은 배열 사이의 원소별 곱을 뜻한다는 
 
 **팽창 합성곱.** 최근의 진전으로(예컨대 [Fisher Yu와 Vladlen Koltun의 논문](https://arxiv.org/abs/1511.07122)을 보라) CONV 층에 *팽창(dilation)*이라는 하이퍼파라미터를 하나 더 도입하는 것이 있다. 지금까지는 칸이 서로 붙어 있는 CONV 필터만 이야기했다. 하지만 칸 사이에 틈이 있는 필터도 가능하고 이것을 팽창이라 부른다. 예를 들어 1차원에서 크기 3인 필터 `w`는 입력 `x`에 대해 `w[0]*x[0] + w[1]*x[1] + w[2]*x[2]`를 계산한다. 이것이 팽창 0이다. 팽창 1이라면 필터는 대신 `w[0]*x[0] + w[1]*x[2] + w[2]*x[4]`를 계산한다. 다시 말해 적용 지점 사이에 1칸의 틈이 생긴다. 이것을 팽창 0인 필터와 함께 쓰면 어떤 상황에서는 매우 쓸모가 있는데, 더 적은 층으로 입력 전체의 공간 정보를 훨씬 공격적으로 합칠 수 있기 때문이다. 예컨대 3x3 CONV 층 두 개를 위아래로 쌓으면 두 번째 층의 뉴런이 입력의 5x5 조각의 함수라는 것을 직접 따져 확인할 수 있다(이 뉴런들의 *실효 수용 영역*이 5x5라고 말한다). 팽창 합성곱을 쓰면 이 실효 수용 영역이 훨씬 빠르게 커진다.
 
-<a id="pool"></a>
+<span id="pool"></span>
 
 #### Pooling Layer
 
@@ -416,7 +416,7 @@ Pooling 층은 입력 부피의 깊이 슬라이스마다 독립적으로 부피
 
 **pooling 없애기**. pooling 연산을 싫어해서 그것 없이도 해낼 수 있다고 생각하는 사람이 많다. 예컨대 [Striving for Simplicity: The All Convolutional Net](http://arxiv.org/abs/1412.6806)은 pooling 층을 버리고 CONV 층만 반복해 쌓은 구조를 쓰자고 제안한다. 표현의 크기를 줄이기 위해서는 가끔 CONV 층에서 stride를 크게 쓰라고 권한다. pooling 층을 버리는 것은 변분 오토인코더(VAE)나 생성적 적대 신경망(GAN) 같은 좋은 생성 모델을 학습시킬 때도 중요하다는 사실이 밝혀졌다. 앞으로의 구조에는 pooling 층이 아주 적거나 아예 없을 가능성이 높아 보인다.
 
-<a id="norm"></a>
+<span id="norm"></span>
 
 #### Normalization Layer
 
@@ -424,7 +424,7 @@ Pooling 층은 입력 부피의 깊이 슬라이스마다 독립적으로 부피
 
 ConvNet 구조에 쓸 정규화(normalization) 층은 여러 종류가 제안되었고, 더러는 생물학적 뇌에서 관찰되는 억제 기전을 구현하려는 의도였다. 하지만 이 층들은 실제로 기여하는 바가 있다 해도 미미하다는 것이 드러나면서 이후 인기를 잃었다. 여러 종류의 정규화에 대해서는 Alex Krizhevsky의 [cuda-convnet 라이브러리 API](http://code.google.com/p/cuda-convnet/wiki/LayerParams#Local_response_normalization_layer_(same_map)) 설명을 보라.
 
-<a id="fc"></a>
+<span id="fc"></span>
 
 #### Fully-connected layer
 
@@ -432,7 +432,7 @@ ConvNet 구조에 쓸 정규화(normalization) 층은 여러 종류가 제안되
 
 완전 연결 층의 뉴런은 보통의 신경망에서 봤듯이 앞 층의 모든 활성값에 빠짐없이 연결된다. 따라서 이 뉴런들의 활성값은 행렬 곱을 하고 편향을 더하는 것으로 계산할 수 있다. 더 자세한 내용은 강의 노트의 *신경망* 절을 참고하자.
 
-<a id="convert"></a>
+<span id="convert"></span>
 
 #### Converting FC layers to CONV layers
 
@@ -488,7 +488,7 @@ FC 층과 CONV 층의 유일한 차이는 CONV 층의 뉴런이 입력의 국소
 
 - [Net Surgery](https://github.com/BVLC/caffe/blob/master/examples/net_surgery.ipynb) IPython Notebook은 이 변환을 실제 코드에서 (Caffe로) 어떻게 하는지 보여준다
 
-<a id="architectures"></a>
+<span id="architectures"></span>
 
 ### ConvNet Architectures
 
@@ -496,7 +496,7 @@ FC 층과 CONV 층의 유일한 차이는 CONV 층의 뉴런이 입력의 국소
 
 합성곱 신경망이 흔히 CONV, POOL(따로 말이 없으면 Max pooling으로 본다), FC(완전 연결의 줄임말)라는 세 가지 층으로만 이루어진다는 것을 봤다. 여기에 더해 원소별로 비선형성을 적용하는 RELU 활성화 함수도 하나의 층으로 명시해 쓰겠다. 이 절에서는 이것들을 흔히 어떻게 쌓아 ConvNet 전체를 만드는지 이야기한다.
 
-<a id="layerpat"></a>
+<span id="layerpat"></span>
 
 #### Layer Patterns
 
@@ -534,7 +534,7 @@ ConvNet 구조에서 가장 흔한 형태는 CONV-RELU 층을 몇 개 쌓고 그
 
 **실전에서는 ImageNet에서 가장 잘 되는 것을 쓴다**. 구조를 어떻게 정할지 고민하는 데 슬슬 지쳤다면, 응용의 90% 이상에서는 이런 걱정을 할 필요가 없다는 사실이 반가울 것이다. 나는 이 점을 “*영웅이 되려 하지 말라*”로 요약하곤 한다. 문제마다 자기만의 구조를 지어내는 대신, 지금 ImageNet에서 가장 잘 되는 구조를 찾아 미리 학습된 모델을 내려받아 자기 데이터에 fine-tuning하면 된다. ConvNet을 맨바닥에서 학습시키거나 맨바닥에서 설계할 일은 거의 없어야 한다. [Deep Learning school](https://www.youtube.com/watch?v=u6aEYuemt0M)에서도 이 이야기를 했다.
 
-<a id="layersizepat"></a>
+<span id="layersizepat"></span>
 
 #### Layer Sizing Patterns
 
@@ -578,7 +578,7 @@ ConvNet 구조에서 가장 흔한 형태는 CONV-RELU 층을 몇 개 쌓고 그
 {: .prompt-tip }
 <!-- markdownlint-restore -->
 
-<a id="case"></a>
+<span id="case"></span>
 
 #### Case studies
 
@@ -706,7 +706,7 @@ FC 층 셋의 가중치가 전체에서 차지하는 비율       : 89%
 한다. 다만 원문이 이 표에서 끌어내는 결론 — 메모리는 앞쪽 CONV 층에, 매개변수는 뒤쪽 FC 층에 쏠린다 — 은 어느
 쪽 수를 쓰든 그대로다. 첫 CONV 두 층만으로 전체 활성값의 42%다.
 
-<a id="comp"></a>
+<span id="comp"></span>
 
 #### Computational Considerations
 
@@ -726,7 +726,7 @@ ConvNet 구조를 짤 때 가장 크게 신경 써야 할 병목은 메모리 �
 
 값의 전체 개수를(활성값, 기울기, 자잘한 것을 모두 합쳐) 대략 어림잡았다면 그 수를 GB 단위 크기로 바꿔야 한다. 값의 개수에 4를 곱해 날것 그대로의 바이트 수를 얻고(부동소수점 하나가 4바이트이므로, 배정밀도라면 8을 곱한다), 그다음 1024로 여러 번 나눠 KB, MB, 그리고 마침내 GB 단위의 메모리 양을 구한다. 신경망이 메모리에 들어가지 않는다면 “들어가게 만드는” 흔한 어림법은 배치 크기를 줄이는 것이다. 메모리의 대부분은 대개 활성값이 차지하기 때문이다.
 
-<a id="add"></a>
+<span id="add"></span>
 
 ### Additional Resources
 

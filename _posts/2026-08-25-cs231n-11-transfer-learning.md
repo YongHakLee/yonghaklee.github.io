@@ -30,7 +30,7 @@ math: true
 - [전이 학습](#tf)
 - [추가 참고 자료](#add)
 
-<a id="tf"></a>
+<span id="tf"></span>
 
 ## Transfer Learning
 
@@ -82,7 +82,7 @@ math: true
 {: .prompt-tip }
 <!-- markdownlint-restore -->
 
-<a id="add"></a>
+<span id="add"></span>
 
 ## Additional References
 

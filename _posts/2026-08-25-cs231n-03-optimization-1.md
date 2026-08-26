@@ -47,7 +47,7 @@ image:
 - [경사 하강법](#gd)
 - [정리](#summary)
 
-<a id="intro"></a>
+<span id="intro"></span>
 
 ### Introduction
 
@@ -77,7 +77,7 @@ image:
 
 **미리 말해두면:** 이 세 핵심 요소가 어떻게 맞물리는지 이해하고 나면 첫 번째 요소인 매개변수화된 함수 매핑으로 돌아와, 그것을 선형 매핑보다 훨씬 복잡한 함수로 확장한다. 먼저 신경망 전체로, 그다음에는 합성곱 신경망으로 간다. 손실 함수와 최적화 과정은 거의 그대로 남는다.
 
-<a id="vis"></a>
+<span id="vis"></span>
 
 ### Visualizing the loss function
 
@@ -136,7 +136,7 @@ _1-dimensional illustration of the data loss. The x-axis is a single weight and 
 
 다시 말하지만 손실 함수는 특정 가중치 집합 **W**의 품질을 수치로 재게 해준다. 최적화의 목표는 손실 함수를 최소화하는 **W**를 찾는 것이다. 이제 손실 함수를 최적화하는 방법을 동기부터 짚어가며 차근차근 만들어보겠다. 사전 지식을 갖고 이 수업에 온 사람에게는 이 절이 이상해 보일 수 있다. 예제로 쓸 SVM 손실이 볼록 문제이기 때문이다. 하지만 우리의 최종 목표는 신경망을 최적화하는 것이고, 거기서는 볼록 최적화 문헌의 도구를 그대로 가져다 쓸 수 없다는 점을 염두에 두자.
 
-<a id="opt1"></a>
+<span id="opt1"></span>
 
 #### Strategy #1: A first very bad idea solution: Random search
 
@@ -205,7 +205,7 @@ np.mean(Yte_predict == Yte)
 
 **눈을 가린 등산객 비유.** 앞으로 도움이 될 만한 비유가 하나 있다. 눈가리개를 하고 언덕진 지형을 걸으며 바닥에 닿으려 애쓰는 자신을 떠올려보자. CIFAR-10 예에서는 **W**의 크기가 10 x 3073이므로 이 언덕이 30,730차원이다. 언덕 위의 모든 지점에서 우리는 특정 손실 값(지형의 높이)을 얻는다.
 
-<a id="opt2"></a>
+<span id="opt2"></span>
 
 #### Strategy #2: Random Local Search
 
@@ -230,7 +230,7 @@ for i in range(1000):
 
 앞과 같은 횟수(1000번)만큼 손실 함수를 계산했을 때 이 방법은 테스트 집합 분류 정확도 **21.4%**를 얻는다. 나아지긴 했지만 여전히 낭비가 심하고 계산 비용이 크다.
 
-<a id="opt3"></a>
+<span id="opt3"></span>
 
 #### Strategy #3: Following the Gradient
 
@@ -256,7 +256,7 @@ for i in range(1000):
 
 관심 대상 함수가 숫자 하나가 아니라 숫자 벡터를 입력으로 받으면 그 도함수를 **편미분**이라고 부르며, gradient는 그저 각 차원에 대한 편미분을 모아놓은 벡터다.
 
-<a id="gradcompute"></a>
+<span id="gradcompute"></span>
 
 ### Computing the gradient
 
@@ -264,7 +264,7 @@ for i in range(1000):
 
 기울기를 계산하는 방법에는 두 가지가 있다. 느리고 근사적이지만 쉬운 방법(**수치적 기울기**)과, 빠르고 정확하지만 미적분이 필요해 실수하기 쉬운 방법(**해석적 기울기**)이다. 이제 둘 다 살펴본다.
 
-<a id="numerical"></a>
+<span id="numerical"></span>
 
 #### Computing the gradient numerically with finite differences
 
@@ -383,7 +383,7 @@ _Visualizing the effect of step size. We start at some particular spot W and eva
 {: .prompt-tip }
 <!-- markdownlint-restore -->
 
-<a id="analytic"></a>
+<span id="analytic"></span>
 
 #### Computing the gradient analytically with Calculus
 
@@ -492,7 +492,7 @@ print("최대 절대 오차 =", float(np.max(np.abs(ga - gn))))
 
 두 오답 클래스가 모두 마진을 못 채웠으므로 지시 함수는 둘 다 1이고, 그래서 0번 행과 1번 행이 똑같이 $$x_i$$ 그 자체다. 정답 클래스인 2번 행은 그 개수 2를 곱하고 부호를 뒤집은 $$-2 x_i$$이며, 실제로 위의 두 행과 정확히 $$-2$$배 관계다. 세 행의 합이 0인 것도 여기서 나온다. 수치적 기울기와 비교했을 때 최대 오차는 1e-11 수준으로, 유한 차분 자체에서 나오는 오차 말고는 차이가 없다. 실전에서 해석적 기울기를 구현하고 나서 하는 일이 바로 이 대조다.
 
-<a id="gd"></a>
+<span id="gd"></span>
 
 ### Gradient Descent
 
