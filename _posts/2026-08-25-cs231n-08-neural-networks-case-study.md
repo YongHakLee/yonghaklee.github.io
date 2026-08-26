@@ -14,10 +14,6 @@ math: true
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
-> Table of Contents:
-
-목차는 다음과 같다.
-
 > In this section we’ll walk through a complete implementation of a toy Neural Network in 2 dimensions. We’ll first implement a simple linear classifier and then extend the code to a 2-layer Neural Network. As we’ll see, this extension is surprisingly simple and very few changes are necessary.
 
 이 절에서는 2차원에서 동작하는 장난감 신경망을 처음부터 끝까지 구현해본다. 먼저 간단한 선형 분류기를 구현한 다음 그 코드를 2층 신경망으로 확장한다. 곧 보겠지만 이 확장은 놀랄 만큼 간단해서 고쳐야 할 곳이 거의 없다.

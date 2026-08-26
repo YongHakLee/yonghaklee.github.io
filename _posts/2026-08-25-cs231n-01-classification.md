@@ -14,9 +14,9 @@ math: true
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
-> This is an introductory lecture designed to introduce people from outside of Computer Vision to the Image Classification problem, and the data-driven approach. The Table of Contents:
+> This is an introductory lecture designed to introduce people from outside of Computer Vision to the Image Classification problem, and the data-driven approach.
 
-컴퓨터 비전을 처음 접하는 사람에게 이미지 분류(image classification) 문제와 데이터 기반 접근법을 소개하는 입문 강의다. 목차는 다음과 같다.
+컴퓨터 비전을 처음 접하는 사람에게 이미지 분류(image classification) 문제와 데이터 기반 접근법을 소개하는 입문 강의다.
 
 <span id="intro"></span>
 

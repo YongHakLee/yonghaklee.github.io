@@ -18,10 +18,6 @@ math: true
 
 (이 노트는 현재 초안 상태이며 계속 작성되고 있다.)
 
-> Table of Contents:
-
-목차는 다음과 같다.
-
 <span id="tf"></span>
 
 ## Transfer Learning

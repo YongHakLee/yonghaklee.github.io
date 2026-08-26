@@ -14,10 +14,6 @@ math: true
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
-> Table of Contents:
-
-목차는 다음과 같다.
-
 ## Learning
 
 > In the previous sections we’ve discussed the static parts of a Neural Networks: how we can set up the network connectivity, the data, and the loss function. This section is devoted to the dynamics, or in other words, the process of learning the parameters and finding good hyperparameters.

@@ -14,10 +14,6 @@ math: true
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
-> Table of Contents:
-
-목차는 다음과 같다.
-
 <span id="intro"></span>
 
 ## Setting up the data and the model

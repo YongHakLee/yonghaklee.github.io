@@ -14,10 +14,6 @@ math: true
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
-> Table of Contents:
-
-목차는 다음과 같다.
-
 ## Convolutional Neural Networks (CNNs / ConvNets)
 
 > Convolutional Neural Networks are very similar to ordinary Neural Networks from the previous chapter: they are made up of neurons that have learnable weights and biases. Each neuron receives some inputs, performs a dot product and optionally follows it with a non-linearity. The whole network still expresses a single differentiable score function: from the raw image pixels on one end to class scores at the other. And they still have a loss function (e.g. SVM/Softmax) on the last (fully-connected) layer and all the tips/tricks we developed for learning regular Neural Networks still apply.
