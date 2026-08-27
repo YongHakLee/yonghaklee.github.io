@@ -16,10 +16,6 @@ math: true
 
 <span id="vis"></span>
 
-> (this page is currently in draft form)
-
-(이 페이지는 아직 초안 상태다.)
-
 ## Visualizing what ConvNets learn
 
 > Several approaches for understanding and visualizing Convolutional Networks have been developed in the literature, partly as a response the common criticism that the learned features in a Neural Network are not interpretable. In this section we briefly survey some of these approaches and related work.
@@ -107,56 +103,28 @@ _Three input images (top). Notice that the occluder region is shown in grey. As 
 
 ### Visualizing the data gradient and friends
 
-> **Data Gradient**.
+**Data Gradient**(데이터 기울기). [Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps](http://arxiv.org/abs/1312.6034)
 
-**데이터 기울기**.
+**DeconvNet**. [Visualizing and Understanding Convolutional Networks](http://arxiv.org/abs/1311.2901)
 
-> [Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps](http://arxiv.org/abs/1312.6034)
-
-[Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps](http://arxiv.org/abs/1312.6034)
-
-> **DeconvNet**.
-
-**DeconvNet**.
-
-> [Visualizing and Understanding Convolutional Networks](http://arxiv.org/abs/1311.2901)
-
-[Visualizing and Understanding Convolutional Networks](http://arxiv.org/abs/1311.2901)
-
-> **Guided Backpropagation**.
-
-**Guided Backpropagation**.
-
-> [Striving for Simplicity: The All Convolutional Net](http://arxiv.org/abs/1412.6806)
-
-[Striving for Simplicity: The All Convolutional Net](http://arxiv.org/abs/1412.6806)
+**Guided Backpropagation**. [Striving for Simplicity: The All Convolutional Net](http://arxiv.org/abs/1412.6806)
 
 ### Reconstructing original images based on CNN Codes
-
-> [Understanding Deep Image Representations by Inverting Them](http://arxiv.org/abs/1412.0035)
 
 [Understanding Deep Image Representations by Inverting Them](http://arxiv.org/abs/1412.0035)
 
 ### How much spatial information is preserved?
 
-> [Do ConvNets Learn Correspondence?](http://papers.nips.cc/paper/5420-do-convnets-learn-correspondence.pdf) (tldr: yes)
-
-[Do ConvNets Learn Correspondence?](http://papers.nips.cc/paper/5420-do-convnets-learn-correspondence.pdf) (tldr: 그렇다)
+[Do ConvNets Learn Correspondence?](http://papers.nips.cc/paper/5420-do-convnets-learn-correspondence.pdf) (tldr: yes — 그렇다)
 
 ### Plotting performance as a function of image attributes
-
-> [ImageNet Large Scale Visual Recognition Challenge](http://arxiv.org/abs/1409.0575)
 
 [ImageNet Large Scale Visual Recognition Challenge](http://arxiv.org/abs/1409.0575)
 
 ## Fooling ConvNets
 
-> [Explaining and Harnessing Adversarial Examples](http://arxiv.org/abs/1412.6572)
-
 [Explaining and Harnessing Adversarial Examples](http://arxiv.org/abs/1412.6572)
 
 ## Comparing ConvNets to Human labelers
-
-> [What I learned from competing against a ConvNet on ImageNet](http://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/)
 
 [What I learned from competing against a ConvNet on ImageNet](http://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/)

@@ -728,10 +728,6 @@ Bergstra와 Bengio의 [Random Search for Hyper-Parameter Optimization](http://ww
 
 ## Additional References
 
-> - [SGD](http://research.microsoft.com/pubs/192769/tricks-2012.pdf) tips and tricks from Leon Bottou
-> - [Efficient BackProp](http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf) (pdf) from Yann LeCun
-> - [Practical Recommendations for Gradient-Based Training of Deep Architectures](http://arxiv.org/pdf/1206.5533v2.pdf) from Yoshua Bengio
-
-- Leon Bottou의 [SGD](http://research.microsoft.com/pubs/192769/tricks-2012.pdf) 요령 모음
-- Yann LeCun의 [Efficient BackProp](http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf)(pdf)
-- Yoshua Bengio의 [Practical Recommendations for Gradient-Based Training of Deep Architectures](http://arxiv.org/pdf/1206.5533v2.pdf)
+- [SGD](http://research.microsoft.com/pubs/192769/tricks-2012.pdf) tips and tricks from Leon Bottou (Leon Bottou가 정리한 SGD 요령 모음)
+- [Efficient BackProp](http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf) (pdf) from Yann LeCun (Yann LeCun이 쓴 역전파 학습 실무 지침, pdf)
+- [Practical Recommendations for Gradient-Based Training of Deep Architectures](http://arxiv.org/pdf/1206.5533v2.pdf) from Yoshua Bengio (Yoshua Bengio가 정리한 실무 권고)

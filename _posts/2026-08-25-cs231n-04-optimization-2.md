@@ -510,6 +510,4 @@ Erik Learned-Miller도 행렬·벡터 미분에 관해 더 긴 글을 써두었�
 
 ### References
 
-> - [Automatic differentiation in machine learning: a survey](http://arxiv.org/abs/1502.05767)
-
-- [Automatic differentiation in machine learning: a survey](http://arxiv.org/abs/1502.05767)는 기계 학습에서의 자동 미분을 개관하는 논문이다.
+- [Automatic differentiation in machine learning: a survey](http://arxiv.org/abs/1502.05767) (기계 학습에서의 자동 미분을 개관하는 논문이다.)

@@ -568,6 +568,4 @@ _We have written an interactive web demo to help your intuitions with linear cla
 
 아래 읽을거리는 선택 사항이며 관심이 갈 만한 것들을 가리킨다.
 
-> - [Deep Learning using Linear Support Vector Machines](https://arxiv.org/abs/1306.0239) from Charlie Tang 2013 presents some results claiming that the L2SVM outperforms Softmax.
-
-- Charlie Tang의 2013년 논문 [Deep Learning using Linear Support Vector Machines](https://arxiv.org/abs/1306.0239)는 L2SVM이 Softmax를 능가한다고 주장하는 결과를 제시한다.
+- [Deep Learning using Linear Support Vector Machines](https://arxiv.org/abs/1306.0239) from Charlie Tang 2013 presents some results claiming that the L2SVM outperforms Softmax. (Charlie Tang의 2013년 논문으로, L2SVM이 Softmax를 능가한다고 주장하는 결과를 제시한다.)

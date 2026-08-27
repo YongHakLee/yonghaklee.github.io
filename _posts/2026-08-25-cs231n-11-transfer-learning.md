@@ -14,10 +14,6 @@ math: true
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
-> (These notes are currently in draft form and under development)
-
-(이 노트는 현재 초안 상태이며 계속 작성되고 있다.)
-
 <span id="tf"></span>
 
 ## Transfer Learning
@@ -74,10 +70,6 @@ math: true
 
 ## Additional References
 
-> - [CNN Features off-the-shelf: an Astounding Baseline for Recognition](http://arxiv.org/abs/1403.6382) trains SVMs on features from ImageNet-pretrained ConvNet and reports several state of the art results.
-> - [DeCAF](http://arxiv.org/abs/1310.1531) reported similar findings in 2013. The framework in this paper (DeCAF) was a Python-based precursor to the C++ Caffe library.
-> - [How transferable are features in deep neural networks?](http://arxiv.org/abs/1411.1792) studies the transfer learning performance in detail, including some unintuitive findings about layer co-adaptations.
-
-- [CNN Features off-the-shelf: an Astounding Baseline for Recognition](http://arxiv.org/abs/1403.6382)는 ImageNet으로 미리 학습된 ConvNet의 특징으로 SVM을 학습시켜 여러 최고 성능 결과를 보고한다.
-- [DeCAF](http://arxiv.org/abs/1310.1531)는 2013년에 비슷한 결과를 보고했다. 이 논문(DeCAF)의 프레임워크는 C++로 된 Caffe 라이브러리보다 앞서 나온, Python 기반의 선행 프레임워크였다.
-- [How transferable are features in deep neural networks?](http://arxiv.org/abs/1411.1792)는 층 간 공적응(co-adaptation)에 관한 다소 직관에 어긋나는 발견을 포함해 전이 학습의 성능을 자세히 연구한다.
+- [CNN Features off-the-shelf: an Astounding Baseline for Recognition](http://arxiv.org/abs/1403.6382) trains SVMs on features from ImageNet-pretrained ConvNet and reports several state of the art results. (ImageNet으로 미리 학습된 ConvNet의 특징으로 SVM을 학습시켜 여러 최고 성능 결과를 보고한다.)
+- [DeCAF](http://arxiv.org/abs/1310.1531) reported similar findings in 2013. The framework in this paper (DeCAF) was a Python-based precursor to the C++ Caffe library. (2013년에 비슷한 결과를 보고했다. 이 논문의 프레임워크는 C++로 된 Caffe 라이브러리보다 앞서 나온, Python 기반의 선행 프레임워크였다.)
+- [How transferable are features in deep neural networks?](http://arxiv.org/abs/1411.1792) studies the transfer learning performance in detail, including some unintuitive findings about layer co-adaptations. (층 간 공적응(co-adaptation)에 관한 다소 직관에 어긋나는 발견을 포함해 전이 학습의 성능을 자세히 연구한다.)

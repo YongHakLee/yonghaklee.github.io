@@ -703,12 +703,7 @@ ConvNet 구조를 짤 때 가장 크게 신경 써야 할 병목은 메모리 �
 
 구현과 관련해 더 볼 자료는 다음과 같다.
 
-> - [Soumith benchmarks for CONV performance](https://github.com/soumith/convnet-benchmarks)
-> - [ConvNetJS CIFAR-10 demo](http://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html) allows you to play with ConvNet architectures and see the results and computations in real time, in the browser.
-> - [Caffe](http://caffe.berkeleyvision.org/), one of the popular ConvNet libraries.
-> - [State of the art ResNets in Torch7](http://torch.ch/blog/2016/02/04/resnets.html)
-
-- [CONV 성능에 대한 Soumith의 벤치마크](https://github.com/soumith/convnet-benchmarks)
-- [ConvNetJS CIFAR-10 데모](http://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html)에서는 ConvNet 구조를 직접 만져보며 결과와 계산 과정을 브라우저에서 실시간으로 볼 수 있다.
-- [Caffe](http://caffe.berkeleyvision.org/), 널리 쓰이는 ConvNet 라이브러리 가운데 하나.
-- [Torch7로 구현한 최신 ResNet](http://torch.ch/blog/2016/02/04/resnets.html)
+- [Soumith benchmarks for CONV performance](https://github.com/soumith/convnet-benchmarks) (CONV 성능에 대한 Soumith의 벤치마크)
+- [ConvNetJS CIFAR-10 demo](http://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html) allows you to play with ConvNet architectures and see the results and computations in real time, in the browser. (ConvNet 구조를 직접 만져보며 결과와 계산 과정을 브라우저에서 실시간으로 볼 수 있다.)
+- [Caffe](http://caffe.berkeleyvision.org/), one of the popular ConvNet libraries. (널리 쓰이는 ConvNet 라이브러리 가운데 하나.)
+- [State of the art ResNets in Torch7](http://torch.ch/blog/2016/02/04/resnets.html) (Torch7로 구현한 최신 ResNet)

@@ -431,8 +431,5 @@ kNN을 실제로 적용하고 싶다면(이미지에는 쓰지 않기를 바라�
 
 더 읽어보면 좋을 (선택) 링크들이다.
 
-> - [A Few Useful Things to Know about Machine Learning](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf), where especially section 6 is related but the whole paper is a warmly recommended reading.
-> - [Recognizing and Learning Object Categories](https://people.csail.mit.edu/torralba/shortCourseRLOC/index.html), a short course of object categorization at ICCV 2005.
-
-- [A Few Useful Things to Know about Machine Learning](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf). 특히 6절이 이 내용과 관련이 깊지만, 논문 전체를 읽어볼 것을 권한다.
-- [Recognizing and Learning Object Categories](https://people.csail.mit.edu/torralba/shortCourseRLOC/index.html). ICCV 2005에서 열린 물체 분류 단기 강좌다.
+- [A Few Useful Things to Know about Machine Learning](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf), where especially section 6 is related but the whole paper is a warmly recommended reading. (특히 6절이 이 내용과 관련이 깊지만, 논문 전체를 읽어볼 것을 권한다.)
+- [Recognizing and Learning Object Categories](https://people.csail.mit.edu/torralba/shortCourseRLOC/index.html), a short course of object categorization at ICCV 2005. (ICCV 2005에서 열린 물체 분류 단기 강좌다.)

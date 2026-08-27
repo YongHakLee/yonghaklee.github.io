@@ -431,10 +431,6 @@ _The effects of regularization strength: Each neural network above has 20 hidden
 
 ## Additional References
 
-> - [deeplearning.net tutorial](http://www.deeplearning.net/tutorial/mlp.html) with Theano
-> - [ConvNetJS](http://cs.stanford.edu/people/karpathy/convnetjs/) demos for intuitions
-> - [Michael Nielsen’s](http://neuralnetworksanddeeplearning.com/chap1.html) tutorials
-
-- Theano를 쓰는 [deeplearning.net 튜토리얼](http://www.deeplearning.net/tutorial/mlp.html)
-- 직관을 얻기 좋은 [ConvNetJS](http://cs.stanford.edu/people/karpathy/convnetjs/) 데모
-- [Michael Nielsen의](http://neuralnetworksanddeeplearning.com/chap1.html) 튜토리얼
+- [deeplearning.net tutorial](http://www.deeplearning.net/tutorial/mlp.html) with Theano (Theano를 쓰는 튜토리얼)
+- [ConvNetJS](http://cs.stanford.edu/people/karpathy/convnetjs/) demos for intuitions (직관을 얻기 좋은 데모)
+- [Michael Nielsen’s](http://neuralnetworksanddeeplearning.com/chap1.html) tutorials (Michael Nielsen의 튜토리얼)
