@@ -198,22 +198,3 @@ The image below will toggle dark/light mode based on theme preference, notice it
 
 [^footnote]: The footnote source
 [^fn-nth-2]: The 2nd footnote source
-
-## Python Syntax Highlighting Test
-
-```python
-def fibonacci(n):
-    a, b = 0, 1
-    for _ in range(n):
-        yield a
-        a, b = b, a + b
-class Test:
-    def __init__(self, value):
-        self.value = value
-
-    def display(self):
-        print(f"Value is: {self.value}")
-```
-
-## Test
-Why too late
