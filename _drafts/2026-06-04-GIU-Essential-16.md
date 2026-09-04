@@ -1,7 +1,7 @@
 ---
 title: GIU Essential (Adjectives and Adverbs 085-092)
 date: 2026-06-04 17:21:11 +0900
-categories: [Study, English]
+categories: [English, Grammar In Use]
 tags: [study, english, giuessential]     # TAG names should always be lowercase
 ---
 
@@ -454,3 +454,74 @@ We say **the same as** ...
 - Julia lives in the same street as Laura.
 - Julia got up at the same time as Andy.
 - Andy's car is the same colour as Laura.
+
+## Unit 090. the oldest    the most expensive
+
+### A 
+
+- Box A is bigger than Box B.
+- Box A is bigger than all the other boxes.
+- Box A is the biggest box.
+
+- The Europa Hotel is more expensive than the Grand.
+- The Europa Hotel is more expensive than all the other hotels in the city.
+- The Europa is the most expensive hoel in the city.
+
+### C
+
+We say the oldest ... / the most expensive ... etc. (with **the**):
+- The church is very old. It's the oldest building in the town.
+  - It is older than all the other buildings in the town.
+- What is the longest river in the world?
+- Money is important, but it isn't the most important thing in life.
+- Excuse me, where is the most nearest bank?
+
+### D
+
+You can use the oldest / the best / the most expensive etc. without a noun:
+- Ken is a good player, but he isn't the best in the team.
+  - (the best = the best player)
+
+### E
+
+You can use *superlative* + I've ever ... / you've ever ... etc.:
+- The film was very bad. I think it's the worst film I've ever seen.
+- What is the most unusual thing you've ever done?
+
+### Exercise
+
+- A is bigger than D.
+- A is the biggest.
+- B is the smallest.
+
+- C is longer than A.
+- D is the longest.
+- B is the shortest.
+
+- D is younger than C.
+- B is the youngest.
+- C is the oldest.
+
+- D is more expensive than A.
+- C is the mose expensive.
+- A is the cheapest.
+
+- A is better than C.
+- A is the best.
+- D is the worst.
+
+- This building is very old. It's the oldest building in the town.
+- It was a very happy day. It was the happiest day of my life.
+- It's a very good film. It's the best film I've ever seen.
+- She's very popular singer. She's the most popular singer in the country.
+- It was a very bad mistake. It was the worst mistake I've ever made.
+- It's a very pretty village. It's the prettiest village I've ever seen.
+- It was a very cold day. It was the coldest day of the year.
+- He's a very boring person. He's the most boring person I've ever met.
+
+- Sydney is the largest city in Australia.
+- Everest is the highest mountain in the world.
+- Brazil is the largest country in South America.
+- Alaska is the largest state in the USA.
+- The Nile is the longest river in Africa.
+- Jupiter is the largest planet in the solar system.
