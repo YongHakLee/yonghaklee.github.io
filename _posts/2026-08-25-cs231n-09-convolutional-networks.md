@@ -2,7 +2,7 @@
 title: "09. Convolutional Neural Networks: Architectures, Convolution / Pooling Layers"
 description: "CONV·POOL·FC 층의 동작 원리, 하이퍼파라미터 설정, 그리고 대표적인 ConvNet 구조 사례."
 date: 2026-08-25 09:40:00 +0900
-categories: [Computer Vision, cs231n]
+categories: [Artificial Intelligence, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
 ---

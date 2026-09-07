@@ -2,7 +2,7 @@
 title: "03. Optimization: Stochastic Gradient Descent"
 description: "손실 함수 최적화, 수치적·해석적 기울기 계산, 경사 하강법과 mini-batch SGD."
 date: 2026-08-25 09:10:00 +0900
-categories: [Computer Vision, cs231n]
+categories: [Artificial Intelligence, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
 ---

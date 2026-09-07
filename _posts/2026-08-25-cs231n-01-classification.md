@@ -2,7 +2,7 @@
 title: "01. Image Classification: Data-driven Approach, k-Nearest Neighbor, train/val/test splits"
 description: "이미지 분류 문제, 데이터 기반 접근법, k-최근접 이웃 분류기, 하이퍼파라미터 튜닝을 위한 train/val/test 분할."
 date: 2026-08-25 09:00:00 +0900
-categories: [Computer Vision, cs231n]
+categories: [Artificial Intelligence, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
 ---

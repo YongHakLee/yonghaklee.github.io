@@ -2,7 +2,7 @@
 title: "04. Backpropagation, Intuitions"
 description: "연쇄 법칙에 기반한 역전파의 직관적 이해, 계산 그래프와 게이트, 벡터화된 기울기 계산."
 date: 2026-08-25 09:15:00 +0900
-categories: [Computer Vision, cs231n]
+categories: [Artificial Intelligence, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
 ---

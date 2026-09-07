@@ -2,7 +2,7 @@
 title: "08. Putting it Together: Minimal Neural Network Case Study"
 description: "2차원 나선형 데이터에 선형 분류기와 2층 신경망을 처음부터 구현해보는 전 과정."
 date: 2026-08-25 09:35:00 +0900
-categories: [Computer Vision, cs231n]
+categories: [Artificial Intelligence, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
 ---

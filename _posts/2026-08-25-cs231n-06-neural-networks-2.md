@@ -2,7 +2,7 @@
 title: "06. Neural Networks Part 2: Setting up the Data and the Loss"
 description: "데이터 전처리, 가중치 초기화, batch normalization, 정규화와 손실 함수 설정."
 date: 2026-08-25 09:25:00 +0900
-categories: [Computer Vision, cs231n]
+categories: [Artificial Intelligence, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
 ---

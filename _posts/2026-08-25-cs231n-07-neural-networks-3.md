@@ -2,7 +2,7 @@
 title: "07. Neural Networks Part 3: Learning and Evaluation"
 description: "기울기 점검, 학습 과정 모니터링, 매개변수 갱신 방식, 하이퍼파라미터 최적화와 앙상블."
 date: 2026-08-25 09:30:00 +0900
-categories: [Computer Vision, cs231n]
+categories: [Artificial Intelligence, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
 ---

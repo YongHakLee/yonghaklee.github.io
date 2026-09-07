@@ -2,7 +2,7 @@
 title: "05. Neural Networks Part 1: Setting up the Architecture"
 description: "생물학적 뉴런에서 출발한 신경망 모델, 활성화 함수의 종류, 층 구조와 표현력."
 date: 2026-08-25 09:20:00 +0900
-categories: [Computer Vision, cs231n]
+categories: [Artificial Intelligence, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
 ---

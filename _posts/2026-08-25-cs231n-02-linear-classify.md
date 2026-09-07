@@ -2,7 +2,7 @@
 title: "02. Linear Classification: Support Vector Machine, Softmax"
 description: "점수 함수와 손실 함수로 이루어진 선형 분류, Multiclass SVM과 Softmax 분류기, 그리고 정규화."
 date: 2026-08-25 09:05:00 +0900
-categories: [Computer Vision, cs231n]
+categories: [Artificial Intelligence, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
 ---

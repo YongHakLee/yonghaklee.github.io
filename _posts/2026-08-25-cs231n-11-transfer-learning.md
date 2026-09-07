@@ -2,7 +2,7 @@
 title: "11. Transfer Learning and Fine-tuning Convolutional Neural Networks"
 description: "사전 학습된 ConvNet을 특징 추출기로 쓰거나 fine-tuning하는 전략과 실무 지침."
 date: 2026-08-25 09:50:00 +0900
-categories: [Computer Vision, cs231n]
+categories: [Artificial Intelligence, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
 ---

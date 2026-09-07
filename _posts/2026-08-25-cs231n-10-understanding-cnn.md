@@ -2,7 +2,7 @@
 title: "10. Understanding and Visualizing Convolutional Neural Networks"
 description: "학습된 ConvNet의 활성화와 필터 시각화, 최근접 이웃과 t-SNE 임베딩으로 표현 이해하기."
 date: 2026-08-25 09:45:00 +0900
-categories: [Computer Vision, cs231n]
+categories: [Artificial Intelligence, cs231n]
 tags: [study, computer vision, cs231n, deep learning]
 math: true
 ---
