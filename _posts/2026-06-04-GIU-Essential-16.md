@@ -525,3 +525,76 @@ You can use *superlative* + I've ever ... / you've ever ... etc.:
 - Alaska is the largest state in the USA.
 - The Nile is the longest river in Africa.
 - Jupiter is the largest planet in the solar system.
+
+## Unit 091. enough
+
+### A
+
+- I've got only three pounds - not enough for a taxi.
+  - She isn't going to take a taxi.
+  - She hasn't got enough money.
+- He can't reach the shelf.
+  - He isn't tall enough.
+
+### B
+
+- **enough** + *noun*
+  - Is there enough milk in your coffee?
+    - Yes, thank you.
+  - We wanted to play football, but we didn't have enough players.
+  - Why don't you buy a car? You've got enough money.
+
+- **enough** *without a noun*
+  - I've got some money, but not enough to buy a car. (I need more money to buy a car)
+  - Would you like some more to eat?
+    - No, thanks. I've had enough.
+  - You're always at home. You don't go out enough.
+
+### C
+
+*adjective* + enough (good enough / tall enough etc.)
+- Shall we sit outside?
+  - No, it isn't warm enough.
+- Can you hear the radio? Is it loud enough for you?
+- Don't buy that coat. It's nice, but it isn't long enough.
+
+Remember: **enough** + *noun* but *adjective* + **enough**
+
+### D
+
+**enough** for somebody/something
+- This pullover isn't big enough for me.
+- I haven't got enough money for a new car.
+- I haven't got enough money to buy a new car.
+- Is your English good enough to have a conversation?
+- There aren't enough chairs for everybody to sit down.
+
+### Exercise
+
+- She hasn't got enough money.
+- There aren't enough chairs.
+- She hasn't got enough paint.
+- There isn't enough wind.
+
+- He isn't tall enough.
+- The car isn't big enough.
+- His legs aren't long enough.
+- He isn't strong enough.
+
+- Is there enough milk in your coffee?
+  - Yes, thank you.
+- Can you hear the radio? Is it loud enough for you?
+- He can leave school if he wants - he's old enough.
+- When I visited New York last year, I didn't have enough time to see all the things I wanted to see.
+- This house isn't big enough for a large family.
+- Tina is very thin. She doesn't eat enough.
+- My office is very small. There isn't enough space.
+- It's late, but I don't want to go to bed now. I'm not tired enough.
+- Lisa isn't a very good tennis player because she doesn't practise enough.
+
+- We haven't got enough money to buy a new car.
+- This knife isn't sharp enough to cut tomatoes.
+- The water wasn't warm enough to go swimming.
+- Have we got enough bread to make sandwiches?
+- We played well, but not well enough to win the game.
+- I don't have enough time to read newspapers.
