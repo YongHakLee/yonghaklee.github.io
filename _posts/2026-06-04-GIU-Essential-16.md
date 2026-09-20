@@ -598,3 +598,87 @@ Remember: **enough** + *noun* but *adjective* + **enough**
 - Have we got enough bread to make sandwiches?
 - We played well, but not well enough to win the game.
 - I don't have enough time to read newspapers.
+
+## Unit 092. too
+
+### A
+
+- His shoes are too big for him.
+- There is too much sugar in it.
+
+### B
+
+**too** + *adjective* / *adverb*
+- Can you turn the radio down? It's too loud. (= louder than I want)
+- I can't work. I'm too tired.
+- I think you work too hard.
+
+### C
+
+**too much** / **too many** = more than you want, more than is good:
+- I don't like the weather here. There is too much rain. (= more rain than is good)
+- Let's go to another restaurant. There are too many people here.
+- Emily studies all the time. I think she studies too much.
+- Traffic is a problem in this town. There are too many cars.
+
+### D
+
+Compare **too** and **not enough**
+- The hat is too big for him.
+- The radio is too loud. Can you turn it down, please?
+- There's too much sugar in my coffee.
+- I don't feel very well. I ate too much.
+- The hat isn't big enough for him. (it's too small)
+- There radio isn't loud enough. Can you turn it up, please?
+- There's not enough sugar in my coffee.
+- You're very thin. You don't eat enough.
+
+### E
+
+- These shoes are too big for me.
+- It's a small house - too small for a large family.
+- I'm too tired to go out.
+- It's too cold to sit outside.
+- She speaks too fast for me to understand.
+
+### Exercise
+
+- The music is too loud.
+- The box is too heavy.
+- The net is too low.
+- She's driving too fast.
+- The ball is too big.
+- The museum is too crowded.
+
+- You're always at home. You don't go out enough.
+- I don't like the weather here. There's too much rain.
+- I can't wait for them. I haven't got enough time.
+- There was nowhere to sit on the beach. There were too many people.
+- You're always tired. I think you work too hard.
+- Did you have enough to eat?
+  - Yes, thank you.
+- You drink too much coffee. It's not good for you.
+- You don't eat enough vegetables. You should eat more.
+- I don't like the weather here. It's too cold.
+- Our team didn't play well. We made too many mistakes.
+- Would you like some milk in your tea?
+  - Yes, but not too much.
+
+- I couldn't work. I was too tired.
+- Can you turn the radio up, please? It isn't loud enough.
+- I don't want to walk home. Is't too far.
+- Don't buy anything in that shop. It is too expensive.
+- You can't put all your things in this bag. It isn't big enough.
+- I couldn't do exercise. It was too difficult.
+- Your work needs to be better. It isn't good enough.
+- I can't talk to you now. I am too busy.
+- I thought the film was boring. It was too long.
+
+- It's too cold to go out.
+- It's too early to go to bed.
+- They're too young to get married.
+- It's too dangerous to go out at night.
+- It's too late to phone Sue (now).
+- I was too surprised to say anything.
+
+
